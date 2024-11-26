@@ -311,7 +311,7 @@ a.card {
   width: 120px;
   height: 150px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  border: 10px solid #932020;
+  border: 10px solid rgb(147, 32, 32, 0.5);
   margin-bottom: 0.5em;
   position: relative;
 }
@@ -325,7 +325,7 @@ div.blank-card {
   width: 120px;
   height: 150px;
   background-color: #b92c2c;
-  border: 10px solid #932020;
+  border: 10px solid rgb(147, 32, 32, 0.5);
   margin-bottom: 0.5em;
 }
 

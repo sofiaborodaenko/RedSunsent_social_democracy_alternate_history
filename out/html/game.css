@@ -174,7 +174,7 @@ blockquote + blockquote.attribution {
   padding: 0.6em;
   width: 14rem;
   color: #431;
-  background-color: #f3f3f3;
+  background-color: rgba(224, 1, 1, 0.28);
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 .tools.left {
@@ -215,14 +215,14 @@ blockquote + blockquote.attribution {
 }
 .tab_button {
     font-family: "Minion Pro", Georgia, serif;
-    background-color: rgba(98, 2, 2, 0.777);
+    background-color: rgba(224, 1, 1, 0.28);
     /*float: left;*/
     border: none;
     outline: none;
     padding: 10px;
 }
 .tab_button.active {
-    background-color: rgba(224, 1, 1, 0.28);
+    background-color: rgba(98, 2, 2, 0.777);
 }
 .tab_button:hover {
     background-color: rgba(255, 204, 0, 0.7);

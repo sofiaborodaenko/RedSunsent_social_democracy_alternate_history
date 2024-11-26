@@ -517,8 +517,6 @@ Q.sh_ban_timer = 0;
 Q.kpd_ultimatum_timer = 0;
 
 
-//assigns what cards are availble from the beginning 
-
 // all the initial advisors are centrists.
 Q.wels_advisor = 1; // Otto Wels
 Q.muller_advisor = 1; // Hermann Müller

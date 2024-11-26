@@ -339,7 +339,7 @@ div.blank-card {
 
 /* TODO: unavailable card */
 .unavailable-card {
-  color: #999;
+  color: rgba(172, 0, 0, 0.777);
   background-color: rgba(0, 0, 0, 0.1) !important;
   cursor: default !important;
 }
@@ -359,7 +359,7 @@ div.blank-card {
   z-index: 2;
   padding: 0.2em;
   border: 1px solid;
-  background-color: #eee;
+  background-color: rgba(172, 0, 0, 0.777);
   left: 105%;
 }
 
@@ -487,14 +487,14 @@ img {
   a.card {
     width: 100px;
     height: 125px;
-    border: 8px solid #ccc;
+    border: 8px solid rgba(172, 0, 0, 0.777);
     margin-bottom: 0.5em;
     position: relative;
   }
   div.blank-card {
     width: 100px;
     height: 125px;
-    border: 8px solid #ccc;
+    border: 8px solid rgba(172, 0, 0, 0.777);
     margin-bottom: 0.5em;
   }
   .card-in-hand, .pinned-card, .deck {

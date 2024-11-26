@@ -215,7 +215,7 @@ blockquote + blockquote.attribution {
 }
 .tab_button {
     font-family: "Minion Pro", Georgia, serif;
-    background-color: #ddd;
+    background-color: rgba(98, 2, 2, 0.777);
     /*float: left;*/
     border: none;
     outline: none;
@@ -225,7 +225,7 @@ blockquote + blockquote.attribution {
     background-color: #f3f3f3;
 }
 .tab_button:hover {
-    background-color: #ececec;
+    background-color: rgba(255, 204, 0, 0.7);
 }
 
 

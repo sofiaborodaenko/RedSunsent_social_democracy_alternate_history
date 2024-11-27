@@ -14,7 +14,7 @@ header, #content, footer {
 }
 #content {
   position: relative;
-  background-image: "img/oldpaper.jpeg";
+  background-image: url("img/oldpaper.jpeg");
   /*background-color: #f3f3f3;*/
   font-size: 1.1em;
   padding: 1em 1.5em 1.5em 1.5em;

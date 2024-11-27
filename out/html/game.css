@@ -132,7 +132,7 @@ ul.choices li div.subtitle {
 }
 ul.choices li.unavailable {
   color: #999;
-  background-color: rgba(255, 204, 0, 0.7) !important;
+  background-color: rgba(175, 140, 0, 0.7) !important;
   cursor: default !important;
 }
 ul.choices li:hover {

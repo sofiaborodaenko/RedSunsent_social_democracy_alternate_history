@@ -131,8 +131,8 @@ ul.choices li div.subtitle {
   font-style: italic;
 }
 ul.choices li.unavailable {
-  color: rgba(255, 204, 0, 0.7);
-  background-color: rgba(0, 0, 0, 0.1) !important;
+  color: #999;
+  background-color: rgba(255, 204, 0, 0.7) !important;
   cursor: default !important;
 }
 ul.choices li:hover {

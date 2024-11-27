@@ -131,7 +131,7 @@ ul.choices li div.subtitle {
   font-style: italic;
 }
 ul.choices li.unavailable {
-  color: #999;
+  color: rgba(255, 204, 0, 0.7);
   background-color: rgba(0, 0, 0, 0.1) !important;
   cursor: default !important;
 }

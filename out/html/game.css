@@ -131,7 +131,7 @@ ul.choices li div.subtitle {
   font-style: italic;
 }
 ul.choices li.unavailable {
-  color: #999;
+  color: #522525;
   background-color: rgba(175, 140, 0, 0.7) !important;
   cursor: default !important;
 }
@@ -208,24 +208,24 @@ blockquote + blockquote.attribution {
 
 /* tabs */
 .tab_container {
-    background-color: rgba(224, 1, 1, 0.28);
+    background-color: #dedede;
     margin-top: -0.6em;
     margin-left: -0.6em;
     margin-right: -0.6em;
 }
 .tab_button {
     font-family: "Minion Pro", Georgia, serif;
-    background-color: rgba(224, 1, 1, 0.28);
+    background-color: #ddd;
     /*float: left;*/
     border: none;
     outline: none;
     padding: 10px;
 }
 .tab_button.active {
-    background-color: rgba(98, 2, 2, 0.777);
+    background-color: #f3f3f3;
 }
 .tab_button:hover {
-    background-color: rgba(255, 204, 0, 0.7);
+    background-color: #ececec;
 }
 
 

@@ -133,7 +133,7 @@ ul.choices li div.subtitle {
 }
 ul.choices li.unavailable {
   color: #522525;
-  background-color: rgba(175, 140, 0, 0.7) !important;
+  background-color: rgba(133, 106, 0, 0.7) !important;
   cursor: default !important;
 }
 ul.choices li:hover {
@@ -175,7 +175,7 @@ blockquote + blockquote.attribution {
   padding: 0.6em;
   width: 14rem;
   color: #431;
-  background-color: rgba(172, 0, 0, 0.777);
+  background-color: #f3f3f3;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 .tools.left {

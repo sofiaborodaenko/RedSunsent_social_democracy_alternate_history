@@ -14,8 +14,8 @@ header, #content, footer {
 }
 #content {
   position: relative;
-  background-image: url("img/oldpaper.jpeg");
-  /*background-color: #f3f3f3;*/
+  /*background-image: url("img/oldpaper.jpeg");*/
+  background-color: #f3f3f3;
   font-size: 1.1em;
   padding: 1em 1.5em 1.5em 1.5em;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
@@ -164,7 +164,6 @@ blockquote + blockquote.attribution {
   position: relative;
 }
 #tools_wrapper {
-  background-image: "img/oldpaper.jpeg";
   position: absolute;
   width: 100%;
   max-width: 69em;

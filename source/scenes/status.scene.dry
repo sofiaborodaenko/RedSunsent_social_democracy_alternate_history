@@ -178,8 +178,8 @@ Catholics: SPD: [+ catholics_spd_normalized +]%, Z: [+ catholics_z_normalized +]
 
 Support for the Republic: [+ pro_republic +]%
 
-
 @budget
+
 = Budget Expense Categories
 
 {!<span class="tooltip-text" title="Covers military expenses, personnel costs, technology development, and infrastructure maintenance. Also includes veterans' benefits. (~15% of budget).">Defence and Miltary</span>!}: ADD VARIABLE HERE

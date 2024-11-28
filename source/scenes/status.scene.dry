@@ -141,7 +141,27 @@ Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
 #@polls
 
-#= Projected election results
+= Budget Expense Categories
+
+{!<span class="tooltip-text" title="Covers military expenses, personnel costs, technology development, and infrastructure maintenance. Also includes veterans' benefits. (~15% of budget).">Defence and Miltary</span>!}: ADD VARIABLE HERE
+
+{!<span class="tooltip-text" title="Diplomatic operations, foreign aid, alliance contributions, client sponsorship, and foreign intelligence.">Foreign AKairs</span>!}: ADD VARIABLE HERE
+
+{!<span class="tooltip-text" title="KGB, domestic security services, and police.">Security Services</span>!}: ADD VARIABLE HERE
+
+{!<span class="tooltip-text" title="Investments in key industries like steel, machinery, and chemicals.">Heavy Industry and Manufacturing</span>!}: ADD VARIABLE HERE
+
+{!<span class="tooltip-text" title="Space exploration, satellites, scientific research, and high-tech computing.">Space, Science, and High-Tech Programs</span>!}: ADD VARIABLE HERE
+
+{!<span class="tooltip-text" title="Development of transportation networks, energy projects, and urban development.">Infrastructure</span>!}: ADD VARIABLE HERE
+
+{!<span class="tooltip-text" title="Support for collective farming, machinery, and crop/livestock management.">Agriculture</span>!}: ADD VARIABLE HERE
+
+{!<span class="tooltip-text" title="Covers educational institutions, cultural institutions, propaganda, and the film/TV industry.">Education and Culture</span>!}: ADD VARIABLE HERE
+
+{!<span class="tooltip-text" title="Investments in healthcare, welfare programs, and public housing.">Healthcare and Social Services</span>!}: ADD VARIABLE HERE
+
+{!<span class="tooltip-text" title="Production of consumer goods and retail services, aiming to improve the standard of living.">Light Industry, Consumer Goods, and Services</span>!}: ADD VARIABLE HERE
 
 #(if the election were to be held now):
 
@@ -179,26 +199,6 @@ Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
 #Support for the Republic: [+ pro_republic +]%
 
-@budget
 
-= Budget Expense Categories
 
-{!<span class="tooltip-text" title="Covers military expenses, personnel costs, technology development, and infrastructure maintenance. Also includes veterans' benefits. (~15% of budget).">Defence and Miltary</span>!}: ADD VARIABLE HERE
 
-{!<span class="tooltip-text" title="Diplomatic operations, foreign aid, alliance contributions, client sponsorship, and foreign intelligence.">Foreign AKairs</span>!}: ADD VARIABLE HERE
-
-{!<span class="tooltip-text" title="KGB, domestic security services, and police.">Security Services</span>!}: ADD VARIABLE HERE
-
-{!<span class="tooltip-text" title="Investments in key industries like steel, machinery, and chemicals.">Heavy Industry and Manufacturing</span>!}: ADD VARIABLE HERE
-
-{!<span class="tooltip-text" title="Space exploration, satellites, scientific research, and high-tech computing.">Space, Science, and High-Tech Programs</span>!}: ADD VARIABLE HERE
-
-{!<span class="tooltip-text" title="Development of transportation networks, energy projects, and urban development.">Infrastructure</span>!}: ADD VARIABLE HERE
-
-{!<span class="tooltip-text" title="Support for collective farming, machinery, and crop/livestock management.">Agriculture</span>!}: ADD VARIABLE HERE
-
-{!<span class="tooltip-text" title="Covers educational institutions, cultural institutions, propaganda, and the film/TV industry.">Education and Culture</span>!}: ADD VARIABLE HERE
-
-{!<span class="tooltip-text" title="Investments in healthcare, welfare programs, and public housing.">Healthcare and Social Services</span>!}: ADD VARIABLE HERE
-
-{!<span class="tooltip-text" title="Production of consumer goods and retail services, aiming to improve the standard of living.">Light Industry, Consumer Goods, and Services</span>!}: ADD VARIABLE HERE

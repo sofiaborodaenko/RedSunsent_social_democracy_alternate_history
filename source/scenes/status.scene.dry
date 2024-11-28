@@ -145,7 +145,7 @@ Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
 {!<span class="tooltip-text" title="Covers military expenses, personnel costs, technology development, and infrastructure maintenance. Also includes veterans' benefits. (~15% of budget).">Defence and Miltary</span>!}: ADD VARIABLE HERE
 
-{!<span class="tooltip-text" title="Diplomatic operations, foreign aid, alliance contributions, client sponsorship, and foreign intelligence.">Foreign AKairs</span>!}: ADD VARIABLE HERE
+{!<span class="tooltip-text" title="Diplomatic operations, foreign aid, alliance contributions, client sponsorship, and foreign intelligence.">Foreign Affairs</span>!}: ADD VARIABLE HERE
 
 {!<span class="tooltip-text" title="KGB, domestic security services, and police.">Security Services</span>!}: ADD VARIABLE HERE
 

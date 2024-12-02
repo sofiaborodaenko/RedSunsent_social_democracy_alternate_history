@@ -3,6 +3,7 @@ new-page: true
 view-if: fundraising_timer <= 0 and (not historical_mode)
 on-arrival: fundraising_timer = 6; month_actions += 1
 frequency: 300
+max-visits: 1
 is-card: true
 card-image: img/poster_2.jpg
 tags: party_affairs

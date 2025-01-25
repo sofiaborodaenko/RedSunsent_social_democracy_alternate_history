@@ -27,9 +27,9 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 = Government
 
-//President: [+ president +]
+#President: [+ president +]
 
-//Chancellor: [+ chancellor +] ([+ chancellor_party +])
+#Chancellor: [+ chancellor +] ([+ chancellor_party +])
 
 Reichstag composition:
 
@@ -57,27 +57,27 @@ Inflation: [+ inflation_2 +]%
 
 [? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
 
-//Next election: [+ next_election_month : month +] [+ next_election_year +]
+#Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 
 # = Public Opinion
 
 @politics
 
-//= Inter-party Relations
+#= Inter-party Relations
 
 
-//{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+#{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
 
-//{!<span class="tooltip-text" title="German Democratic Party">DDP</span>!}: [+ ddp_relation : relationships +]
+#{!<span class="tooltip-text" title="German Democratic Party">DDP</span>!}: [+ ddp_relation : relationships +]
 
-//{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+#{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
 
-//{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
+#{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
 
-//{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
+#{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
 
-//{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+#{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
 
 = Internal Factions of the Politburo
 
@@ -87,9 +87,9 @@ Inflation: [+ inflation_2 +]%
 
 {!<span class=" ">Reactionaries</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
 
-//{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+#{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
-//[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
+#[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
 
 @paramilitaries
@@ -118,62 +118,59 @@ Eastern Europe:
 
 Western Europe
 
-/* //{!<span class="tooltip-text" title=" ">US and Canada</span>!} Strength: [+ rb_strength_2 +] thousand
+#{!<span class="tooltip-text" title=" ">US and Canada</span>!} Strength: [+ rb_strength_2 +] thousand
 
-Reichsbanner Militarization: [+ rb_militancy : militancy +]
+#Reichsbanner Militarization: [+ rb_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Strength: [+ rfb_strength_2 +] thousand
+#{!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Strength: [+ rfb_strength_2 +] thousand
 
-RFB Militarization: [+ rfb_militancy : militancy +]
+#RFB Militarization: [+ rfb_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the DNVP.">Stahlhelm</span>!} Strength: [+ sh_strength_2 +] thousand
+#{!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the DNVP.">Stahlhelm</span>!} Strength: [+ sh_strength_2 +] thousand
 
-Stahlhelm Militarization: [+ sh_militancy : militancy +]
+#Stahlhelm Militarization: [+ sh_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Strength: [+ sa_strength_2 +] thousand
+#{!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Strength: [+ sa_strength_2 +] thousand
 
-SA Militarization: [+ sa_militancy : militancy +]
+#SA Militarization: [+ sa_militancy : militancy +]
 
-= Official military/paramilitaries
+#= Official military/paramilitaries
 
-Reichswehr: [+ reichswehr_strength +] thousand troops.
+#Reichswehr: [+ reichswehr_strength +] thousand troops.
 
-Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +]
+#Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +]
 
-Prussian police: [+ prussian_police_strength +] thousand members.
+#Prussian police: [+ prussian_police_strength +] thousand members.
 
-Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
+#Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
-[? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
+#[? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
-*/ 
 
 @polls
 
-/*
-= Budget Expense Categories
+#= Budget Expense Categories
 
-{!<span class="tooltip-text" title="Covers military expenses, personnel costs, technology development, and infrastructure maintenance. Also includes veterans' benefits. (~15% of budget).">Defence and Miltary</span>!}: ADD VARIABLE HERE
+#{!<span class="tooltip-text" title="Covers military expenses, personnel costs, technology development, and infrastructure maintenance. Also includes veterans' benefits. (~15% of budget).">Defence and Miltary</span>!}: ADD VARIABLE HERE
 
-{!<span class="tooltip-text" title="Diplomatic operations, foreign aid, alliance contributions, client sponsorship, and foreign intelligence.">Foreign Affairs</span>!}: ADD VARIABLE HERE
+#{!<span class="tooltip-text" title="Diplomatic operations, foreign aid, alliance contributions, client sponsorship, and foreign intelligence.">Foreign Affairs</span>!}: ADD VARIABLE HERE
 
-{!<span class="tooltip-text" title="KGB, domestic security services, and police.">Security Services</span>!}: ADD VARIABLE HERE
+#{!<span class="tooltip-text" title="KGB, domestic security services, and police.">Security Services</span>!}: ADD VARIABLE HERE
 
-{!<span class="tooltip-text" title="Investments in key industries like steel, machinery, and chemicals.">Heavy Industry and Manufacturing</span>!}: ADD VARIABLE HERE
+#{!<span class="tooltip-text" title="Investments in key industries like steel, machinery, and chemicals.">Heavy Industry and Manufacturing</span>!}: ADD VARIABLE HERE
 
-{!<span class="tooltip-text" title="Space exploration, satellites, scientific research, and high-tech computing.">Space, Science, and High-Tech Programs</span>!}: ADD VARIABLE HERE
+#{!<span class="tooltip-text" title="Space exploration, satellites, scientific research, and high-tech computing.">Space, Science, and High-Tech Programs</span>!}: ADD VARIABLE HERE
 
-{!<span class="tooltip-text" title="Development of transportation networks, energy projects, and urban development.">Infrastructure</span>!}: ADD VARIABLE HERE
+#{!<span class="tooltip-text" title="Development of transportation networks, energy projects, and urban development.">Infrastructure</span>!}: ADD VARIABLE HERE
 
-{!<span class="tooltip-text" title="Support for collective farming, machinery, and crop/livestock management.">Agriculture</span>!}: ADD VARIABLE HERE
+#{!<span class="tooltip-text" title="Support for collective farming, machinery, and crop/livestock management.">Agriculture</span>!}: ADD VARIABLE HERE
 
-{!<span class="tooltip-text" title="Covers educational institutions, cultural institutions, propaganda, and the film/TV industry.">Education and Culture</span>!}: ADD VARIABLE HERE
+#{!<span class="tooltip-text" title="Covers educational institutions, cultural institutions, propaganda, and the film/TV industry.">Education and Culture</span>!}: ADD VARIABLE HERE
 
-{!<span class="tooltip-text" title="Investments in healthcare, welfare programs, and public housing.">Healthcare and Social Services</span>!}: ADD VARIABLE HERE
+#{!<span class="tooltip-text" title="Investments in healthcare, welfare programs, and public housing.">Healthcare and Social Services</span>!}: ADD VARIABLE HERE
 
-{!<span class="tooltip-text" title="Production of consumer goods and retail services, aiming to improve the standard of living.">Light Industry, Consumer Goods, and Services</span>!}: ADD VARIABLE HERE
+#{!<span class="tooltip-text" title="Production of consumer goods and retail services, aiming to improve the standard of living.">Light Industry, Consumer Goods, and Services</span>!}: ADD VARIABLE HERE
 
-*/
 
 #(if the election were to be held now):
 

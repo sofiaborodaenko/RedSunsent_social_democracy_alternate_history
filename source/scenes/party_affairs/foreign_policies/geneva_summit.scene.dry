@@ -1,0 +1,62 @@
+title: Geneva Summit
+new-page: true
+is-card: true
+view-if: year == 1985
+tags: party_affairs
+
+American diplomats have liaised with ours to suggest a top level meeting in Geneva between you and Ronald Reagan, to discuss international relations and the Arms Race.
+
+- @attend
+- @dont_attend
+
+@attend
+title: Attend 
+subtitle: Such a meeting could lay the foundations for a serious dialogue in the future.
+
+- @implement_cultural_exchange
+- @implement_northern_pacific_air
+- @implement_both
+- @implement_neither
+
+@implement_cultural_exchange 
+title: Implement cultural exchange agreements
+subtitle: Signing these agreements will restart U.S-Soviet exchanges in sports and culture, in the media, education and the arts
+on-arrival: relations_with_US += 1, resources += 1
+
+The exchange introduces the West in a new light. Many, especially the youth, become enamoured with American ideas and culture. 
+
+@implement_northern_pacific_air
+title: Implement the Northern Pacific Air Safety accord
+subtitle: Signing this agreement will improve communications between U.S, Soviet, and Japanese air traffic control centers. 
+on-arrival: relations_with_US -= 1
+
+Pleased, the U.S restores landing rights for the Soviet airline, Aeroflot, in the United States, and allows American carriers to resume flights to Moscow. 
+
+@implement_both
+title: Implement both
+on-arrival: relations_with_US += 1
+
+@implement_neither
+title: Implement neither 
+on-arrival: relations_with_US -= 1
+
+@dont_attend
+title: Do Not Attend
+subtitle: Not attending this summit will put U.S-Soviet relations on ice.
+
+- @cont_with_moratorium
+- @stop_moratorium
+
+@cont_with_moratorium
+title: Continue with unilateral moratorium
+subtitle: “Continue reducing nuclear stockpile without US participation”
+on-arrival: relations_with_US -= 1; resources += 1
+
+Continuing without US participation has freed up some of the defense budget, though US relations are strained as the move is seen as global posturing
+
+@stop_moratorium
+title: Stop moratorium and increase stockpiles faster than the US
+subtitle: Cancel moratorium and start increasing nuclear stockpiles
+on-arrival: relations_with_US -= 2, resources -= 1
+
+Starting to increase nuclear stockpiles begins another arms race with the US and relations are strained. The defense budget also expands, which increases expenditures for stockpiles.

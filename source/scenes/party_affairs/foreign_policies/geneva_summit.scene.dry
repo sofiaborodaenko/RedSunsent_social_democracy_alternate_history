@@ -2,6 +2,7 @@ title: Geneva Summit
 new-page: true
 is-card: true
 view-if: year == 1985
+frequency: 500 #testing purposes
 tags: party_affairs
 
 = Geneva Summit

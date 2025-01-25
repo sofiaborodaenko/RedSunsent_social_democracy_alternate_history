@@ -14,7 +14,7 @@ if (Q.inflation) {
 
 [+ month : month +] [+ year +]
 
-Resources available: [+ resources +]
+Budget: [+ budget +]
 
 Popular Dissaproval: [+ dissent_percent : dissent +]
 

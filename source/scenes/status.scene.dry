@@ -27,9 +27,9 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 = Government
 
-President: [+ president +]
+//President: [+ president +]
 
-Chancellor: [+ chancellor +] ([+ chancellor_party +])
+//Chancellor: [+ chancellor +] ([+ chancellor_party +])
 
 Reichstag composition:
 
@@ -57,39 +57,39 @@ Inflation: [+ inflation_2 +]%
 
 [? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
 
-Next election: [+ next_election_month : month +] [+ next_election_year +]
+//Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 
 # = Public Opinion
 
 @politics
 
-= Inter-party Relations
+//= Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+//{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Democratic Party">DDP</span>!}: [+ ddp_relation : relationships +]
+//{!<span class="tooltip-text" title="German Democratic Party">DDP</span>!}: [+ ddp_relation : relationships +]
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+//{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
 
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
+//{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
+//{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
 
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+//{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
 
-= Internal Factions of the SPD
+= Internal Factions of the Politburo
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title=" ">Reformers</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class=" ">Moderates</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+{!<span class=" ">Reactionaries</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+//{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
+//[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
 
 @paramilitaries
@@ -108,10 +108,17 @@ if (Q.sa_strength) {
 }
 !}
 
-= Paramilitaries
+= International Relations
 
+US and Canada: 
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
+China: 
+
+Eastern Europe:
+
+Western Europe
+
+/* //{!<span class="tooltip-text" title=" ">US and Canada</span>!} Strength: [+ rb_strength_2 +] thousand
 
 Reichsbanner Militarization: [+ rb_militancy : militancy +]
 
@@ -139,8 +146,11 @@ Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
 [? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
+*/ 
+
 @polls
 
+/*
 = Budget Expense Categories
 
 {!<span class="tooltip-text" title="Covers military expenses, personnel costs, technology development, and infrastructure maintenance. Also includes veterans' benefits. (~15% of budget).">Defence and Miltary</span>!}: ADD VARIABLE HERE
@@ -162,6 +172,8 @@ Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 {!<span class="tooltip-text" title="Investments in healthcare, welfare programs, and public housing.">Healthcare and Social Services</span>!}: ADD VARIABLE HERE
 
 {!<span class="tooltip-text" title="Production of consumer goods and retail services, aiming to improve the standard of living.">Light Industry, Consumer Goods, and Services</span>!}: ADD VARIABLE HERE
+
+*/
 
 #(if the election were to be held now):
 

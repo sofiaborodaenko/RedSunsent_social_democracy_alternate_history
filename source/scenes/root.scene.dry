@@ -465,9 +465,6 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'sa_ban', 'sh_ban', 'papen_chancellor',
             'kpd_policy', 'kpd_ultimatum', 'popular_front_dispute',
             'high_inflation', 'banking_crisis'];
-# MY VARIABLES
-#// Relations with the US
-# Q.relations_with_US = 0
 
 Q.advisor_action_timer = 0;
 // party affairs timers

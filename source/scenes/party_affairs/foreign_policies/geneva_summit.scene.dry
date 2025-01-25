@@ -4,6 +4,8 @@ is-card: true
 view-if: year == 1985
 tags: party_affairs
 
+= Geneva Summit
+
 American diplomats have liaised with ours to suggest a top level meeting in Geneva between you and Ronald Reagan, to discuss international relations and the Arms Race.
 
 - @attend

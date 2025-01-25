@@ -40,6 +40,9 @@ Q.dues = 2;
 // MY VARIABLES
 // Relations with the US
 Q.relations_with_US = 0;
+Q.reformer_approval = 0;
+Q.moderate_approval = 0;
+Q.reactionary_approval = 0;
 
 // the state of the party
 // overall dissent reduces every increase in party support.

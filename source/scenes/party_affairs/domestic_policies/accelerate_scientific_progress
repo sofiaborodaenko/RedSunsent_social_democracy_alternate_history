@@ -1,0 +1,33 @@
+title: Accelerate Scientific-Technical Progress
+new-page: true
+is-card: true
+view-if: year == 1986
+tags: party_affairs 
+card-image: img/accelerate_tech_progress.jpg
+
+= Accelerate Scientific-Technical Progress
+
+Shall we invest money purchasing Western technology in order modernize aging industrial equipment within our factories?
+
+- @greatly_invest
+- @moderately_invest
+- @do_not_invest
+
+@greatly_invest
+title: Greatly invest money in modernizing equipment
+subtitle: Due to our ever burgeoning expenditures, we may have to heavily borrow money from Western Banks in order to finance this policy. This may put a strong burden on state resources, but may help us produce many more goods that are of better quality and use for our people
+on-arrival: budget -= 2; reformer_approval += 2; reactionary_approval -= 2
+
+Although we had to take out large loans from Western banks, at least many of our factories are now being stocked with the latest industrial technologies. Let’s hope that it will be put to good use.
+
+@moderately_invest
+title: Moderately invest money in modernizing equipment
+subtitle: Due to our ever burgeoning expenditures, we may have to borrow some money from Western Banks in order to finance this policy. This may put some burden on state resources, but is generally popular within the party and, given some time, may help us produce some more goods that are of better quality and use for our people
+on-arrival: budget -= 1; reformer_approval += 1; moderate_approval += 1; reactionary_approval -= 1
+
+Although we had to take out some loans from Western banks, at least some of our factories are now being stocked with the latest industrial technologies. Let’s hope that it will be put to good use.
+
+@do_not_invest
+title: Do not invest money in modernizing equipment
+subtitle: We decide to maintain the status quo and forego any investments in modernizing industrial equipment.
+on-arrival: reformer_approval -= 2; moderate-approval -= 1; reactionary_approval += 1

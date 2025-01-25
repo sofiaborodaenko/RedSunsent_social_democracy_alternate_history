@@ -83,9 +83,9 @@ Inflation: [+ inflation_2 +]%
 
 {!<span class="tooltip-text" title=" ">Reformers</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
-{!<span class=" ">Moderates</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title=" ">Moderates</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
 
-{!<span class=" ">Reactionaries</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+{!<span class="tooltip-text" title=" ">Reactionaries</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
 
 #{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
@@ -152,10 +152,11 @@ Western Europe
 = Dissent
 
 States to Watch:
-
+# update with policies when issues break out in satellite states, ex. Pope John Paul II in Poland, Singing Revolution in Baltics. List country in which disturbance occurred.
+# ex. when Pope John Paul II appears, add "Poland"
 	
 Popular Disapproval:
-
+# List policies population is unsatisfied with, ex. "alcohol restriction"
 
 
 #= Budget Expense Categories

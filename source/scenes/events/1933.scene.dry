@@ -2,7 +2,7 @@ title: 1933
 subtitle: The end of the crisis?
 tags: event
 priority: -3
-view-if: (year = 1933 and month >= 12) or year >= 1934
+view-if: (year = 1933 and month >= 12)
 max-visits: 1
 on-arrival: {!
 // Einigkeit - survive on easy without a civil war.

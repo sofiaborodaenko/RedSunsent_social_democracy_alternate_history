@@ -3,7 +3,7 @@ new-page: true
 is-pinned-card: true
 tags: advisor
 view-if: gorbacheva_adviser == 1
-card-image: mg/portraits/POL486/Raisa_Gorbacheva_Portrait.jpg
+card-image: img/portraits/POL486/Raisa_Gorbacheva_Portrait.jpg
 
 = Raisa Gorbacheva
 
@@ -17,6 +17,7 @@ Gorbachev’s wife and close confidant. Gorbachev trusted his wife the most as a
 @raise_funds
 title: Raise Funds for Domestic Medical Car
 subtitle: Improve Public Opinion of Gorbachev
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 # Reduce public dissent across all political factions by numerical factor of 3
 
 Everyone likes helping ill children 
@@ -24,12 +25,14 @@ Everyone likes helping ill children
 @new_appt
 title: New appointment
 subtitle: Recommend a cabinet member to Gorbachev
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 # Player adds another advisor
 # look at shuffle_leadership in party_affairs file 
 
 @foreign_relations
 title: Foreign Relations
 subtitle: Accompany Gorbachev on an overseas diplomacy trip
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 # Reduce foreign tensions by numerical value of 3. 
 
 Gorbachev’s public image is improved.
@@ -37,6 +40,7 @@ Gorbachev’s public image is improved.
 @walk_in_garden
 title: Walk in the garden
 subtitle: Put all cards in hand back into deck and obtain a new set of cards
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 # the put all cards back exists somewhere
 
 Nothing like a stern talking-to from your wife to see the world in a new light. 

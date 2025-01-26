@@ -1,0 +1,40 @@
+title: Raisa Gorbacheva
+new-page: true
+is-pinned: true
+tags: advisor
+view-if: gorbacheva_adviser == 1
+card-image: mg/portraits/POL486/Raisa_Gorbacheva_Portrait.jpg
+
+= Raisa Gorbacheva
+
+Gorbachev’s wife and close confidant. Gorbachev trusted his wife the most as an advisor, and both viewed each other as inseparable since becoming a couple. She was a philanthropist, outspoken advocate for women's rights, and known for her elegance and soft-spoken intellectualism. 
+
+- @raise_funds
+- @new_appt
+- @foreign_relations
+- @walk_in_garden
+
+@raise_funds
+title: Raise Funds for Domestic Medical Car
+subtitle: Improve Public Opinion of Gorbachev
+on-arrival: #Reduce public dissent across all political factions by numerical factor of 3
+
+Everyone likes helping ill children 
+
+@new_appt
+title: New appointment
+#look at shuffle_leadership in party_affairs file 
+
+@foreign_relations
+title: Foreign Relations
+subtitle: Accompany Gorbachev on an overseas diplomacy trip
+on-arrival: #Reduce foreign tensions by numerical value of 3. 
+
+Gorbachev’s public image is improved.
+
+@walk_in_garden
+title: Walk in the garden
+subtitle: Put all cards in hand back into deck and obtain a new set of cards
+#the put all cards back exists somewhere
+
+Nothing like a stern talking-to from your wife to see the world in a new light. 

@@ -41,10 +41,12 @@ Q.dues = 2;
 // Relations with the US
 Q.relations_with_US = 0;
 
+//politics in status 
 Q.reformer_approval = 0;
 Q.moderate_approval = 0;
 Q.reactionary_approval = 0;
 
+//dissent in status
 Q.nomenklatura = 0;
 Q.intelligentsia = 0;
 Q.peasants = 0;
@@ -53,6 +55,9 @@ Q.workers = 0;
 Q.unemployed = 0;
 Q.criminal_class = 0;
 Q.party_cadres = 0;
+
+//advisors
+Q.gorbacheva_adviser = 1
 
 //MY VARIABLES END
 

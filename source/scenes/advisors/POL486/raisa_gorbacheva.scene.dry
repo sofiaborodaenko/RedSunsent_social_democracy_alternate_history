@@ -17,6 +17,8 @@ Gorbachev’s wife and close confidant. Gorbachev trusted his wife the most as a
 @raise_funds
 title: Raise Funds for Domestic Medical Car
 subtitle: Improve Public Opinion of Gorbachev
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 6
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 # Reduce public dissent across all political factions by numerical factor of 3
 
@@ -25,6 +27,8 @@ Everyone likes helping ill children
 @new_appt
 title: New appointment
 subtitle: Recommend a cabinet member to Gorbachev
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 6
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 # Player adds another advisor
 # look at shuffle_leadership in party_affairs file 
@@ -32,6 +36,8 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 @foreign_relations
 title: Foreign Relations
 subtitle: Accompany Gorbachev on an overseas diplomacy trip
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 6
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 # Reduce foreign tensions by numerical value of 3. 
 
@@ -40,6 +46,8 @@ Gorbachev’s public image is improved.
 @walk_in_garden
 title: Walk in the garden
 subtitle: Put all cards in hand back into deck and obtain a new set of cards
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 6
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 # the put all cards back exists somewhere
 

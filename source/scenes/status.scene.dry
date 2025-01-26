@@ -171,9 +171,9 @@ Popular Disapproval:
 
 Workers: [+ workers +]
 
-{!<span class="tooltip-text" title="Administrators and Apparatchiks.">Nomenklatura</span>}: [+ nomenklatura +]
+{!<span class="tooltip-text" title="Administrators and Apparatchiks.">Nomenklatura</span>!}: [+ nomenklatura +]
 
-{!<span class="tooltip-text" title="Doctors, Lawyers and other professionals.">Intelligentsia</span>}: [+ intelligentsia +]
+{!<span class="tooltip-text" title="Doctors, Lawyers and other professionals.">Intelligentsia</span>!}: [+ intelligentsia +]
 
 Peasants: [+ peasants +]
 

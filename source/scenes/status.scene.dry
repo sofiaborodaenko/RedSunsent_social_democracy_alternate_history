@@ -167,6 +167,19 @@ States to Watch:
 Popular Disapproval:
 # List policies population is unsatisfied with, ex. "alcohol restriction"
 
+= Other demographic
+
+Workers: [+ workers +]
+
+{!<span class="tooltip-text" title="Administrators and Apparatchiks.">Nomenklatura</span>}: [+ nomenklatura +]
+
+{!<span class="tooltip-text" title="Doctors, Lawyers and other professionals.">Intelligentsia</span>}: [+ intelligentsia +]
+
+Peasants: [+ peasants +]
+
+Unemployed: [+ unemployed +]
+
+Orthodox: [+ orthodox +]
 
 #= Budget Expense Categories
 

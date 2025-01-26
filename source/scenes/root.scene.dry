@@ -45,6 +45,17 @@ Q.reformer_approval = 0;
 Q.moderate_approval = 0;
 Q.reactionary_approval = 0;
 
+Q.nomenklatura = 0;
+Q.intelligentsia = 0;
+Q.peasants = 0;
+Q.orthodox = 0;
+Q.workers = 0;
+Q.unemployed = 0;
+Q.criminal_class = 0;
+Q.party_cadres = 0;
+
+//MY VARIABLES END
+
 // the state of the party
 // overall dissent reduces every increase in party support.
 Q.dissent = 0.05;
@@ -224,7 +235,7 @@ Q.unemployed_qol = 100;
 Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
-Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
+Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics', 'nomenklatura', 'intelligentsia', 'peasants', 'orthodox'];
 Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // TODO: add 'sapd' later on

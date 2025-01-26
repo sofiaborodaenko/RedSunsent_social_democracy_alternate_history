@@ -24,19 +24,19 @@ Everyone likes helping ill children
 @new_appt
 title: New appointment
 subtitle: Recommend a cabinet member to Gorbachev
-#Player adds another advisor
-#look at shuffle_leadership in party_affairs file 
+# Player adds another advisor
+# look at shuffle_leadership in party_affairs file 
 
 @foreign_relations
 title: Foreign Relations
 subtitle: Accompany Gorbachev on an overseas diplomacy trip
-#on-arrival: Reduce foreign tensions by numerical value of 3. 
+# Reduce foreign tensions by numerical value of 3. 
 
 Gorbachev’s public image is improved.
 
 @walk_in_garden
 title: Walk in the garden
 subtitle: Put all cards in hand back into deck and obtain a new set of cards
-#the put all cards back exists somewhere
+# the put all cards back exists somewhere
 
 Nothing like a stern talking-to from your wife to see the world in a new light. 

@@ -11,7 +11,7 @@ go-to: start_menu_2
 @start_menu_2
 
 - @start: Start game
-- @election_simulation: Election simulation
+# - @election_simulation: Election simulation
 - @credits: Credits
 - @game_over.achievements
 
@@ -40,6 +40,7 @@ Q.dues = 2;
 // MY VARIABLES
 // Relations with the US
 Q.relations_with_US = 0;
+
 Q.reformer_approval = 0;
 Q.moderate_approval = 0;
 Q.reactionary_approval = 0;

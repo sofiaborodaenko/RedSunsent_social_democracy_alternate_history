@@ -29,5 +29,6 @@ Although we had to take out some loans from Western banks, at least some of our 
 
 @do_not_invest
 title: Do not invest money in modernizing equipment
-subtitle: We decide to maintain the status quo and forego any investments in modernizing industrial equipment.
 on-arrival: reformer_approval -= 2; moderate-approval -= 1; reactionary_approval += 1
+
+We decide to maintain the status quo and forego any investments in modernizing industrial equipment.

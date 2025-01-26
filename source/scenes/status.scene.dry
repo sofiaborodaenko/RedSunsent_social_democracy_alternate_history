@@ -87,11 +87,14 @@ Reformers: VARIABLE Moderates: VARIABLE Reactionaries: VARIABLE
 
 = Internal Factions of the Politburo
 
-{!<span class="tooltip-text" title=" ">Reformers</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title=" ">Reformers</span>!} Approval: [+ reformer_approval +]
+#[+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
-{!<span class="tooltip-text" title=" ">Moderates</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title=" ">Moderates</span>!} Approval: [+ moderate_approval +]
+#[+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
 
-{!<span class="tooltip-text" title=" ">Reactionaries</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+{!<span class="tooltip-text" title=" ">Reactionaries</span>!} Approval: [+ reactionary_approval +]
+#[+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
 
 #{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 

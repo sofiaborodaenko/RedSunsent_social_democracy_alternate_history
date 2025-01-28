@@ -1,8 +1,6 @@
 title: Fundraising
 new-page: true
-
-# changed it so it doesnt appear 
-view-if: fundraising_timer > 10 and (not historical_mode)
+view-if: fundraising_timer > 10 and (not historical_mode) # changed it so it doesnt appear 
 on-arrival: fundraising_timer = 6; month_actions += 1
 frequency: 300
 max-visits: 1

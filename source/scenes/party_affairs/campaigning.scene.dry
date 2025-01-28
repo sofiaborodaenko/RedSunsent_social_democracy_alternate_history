@@ -1,10 +1,10 @@
 title: Campaigning
 new-page: true
 on-arrival: month_actions += 1
-max-visits: 36
+max-visits: 0
 is-card: true
 card-image: img/flags.jpg
-frequency: 100
+frequency: 0
 tags: party_affairs
 
 = Campaigning

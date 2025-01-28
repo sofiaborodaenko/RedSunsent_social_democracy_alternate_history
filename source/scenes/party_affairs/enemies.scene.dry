@@ -1,6 +1,6 @@
 title: Choosing Our Enemies
 new-page: true
-view-if: year <= 1930 and enemies_timer > 20 # changed it so it doesnt appear 
+view-if: year <= 1930 and enemies_timer > 20 
 on-arrival: month_actions += 1; enemies_timer = 18
 max-visits: 3
 is-card: true

@@ -2,6 +2,7 @@ title: Geneva Summit (Foreign Policy)
 new-page: true
 is-card: true
 view-if: year == 1985
+on-arrival: month_actions += 1
 frequency: 500 #testing purposes
 tags: party_affairs
 

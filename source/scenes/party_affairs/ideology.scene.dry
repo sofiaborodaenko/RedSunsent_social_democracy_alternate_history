@@ -2,7 +2,9 @@ title: Questions of Ideology
 new-page: true
 is-card: true
 tags: party_affairs
-view-if: ideology_timer = 0
+
+# changed it so it doesnt appear 
+view-if: ideology_timer > 20
 on-arrival: month_actions += 1; old_ideology = ideology; ideology_timer = 18
 card-image: img/arbeiterbew.jpg
 max-visits: 3

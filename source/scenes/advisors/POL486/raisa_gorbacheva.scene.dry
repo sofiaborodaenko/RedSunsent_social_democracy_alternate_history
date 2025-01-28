@@ -46,10 +46,16 @@ Gorbachev’s public image is improved.
 
 @walk_in_garden
 title: Walk in the garden
-subtitle: Put all cards in hand back into deck and obtain a new set of cards
+subtitle: Removes all cards from the hand.
 choose-if: advisor_action_timer == 0
-on-arrival: advisor_action_timer = 6
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
-# the put all cards back exists somewhere
+on-arrival: {!
+Q.advisor_action_timer = 6;
+if (Q.difficulty >= 0) {
+    window.dendryUI.dendryEngine.state.currentHands['main'] = [];
+} else {
+    window.dendryUI.dendryEngine.state.currentHands['main.main_easy'] = [];
+}
+!}
 
 Nothing like a stern talking-to from your wife to see the world in a new light. 

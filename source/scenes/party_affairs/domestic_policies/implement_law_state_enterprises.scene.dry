@@ -1,0 +1,37 @@
+title: Implement the Law on State Enterprises (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1987 and year <= 1991
+on-arrival: month_actions += 1
+tags: party_affairs 
+card-image: img/POL486_img/law_state_enterprises.png
+
+= Implement the Law on State Enterprises
+
+The Soviet economy is stagnating under the weight of central planning. Productivity is low, innovation is stifled, and workers lack motivation. Gorbachev's reformist faction has proposed the **Law on State Enterprises**, which would grant state-owned enterprises greater autonomy, introduce self-financing, and allow limited market mechanisms. However, the Politburo is divided, and many fear the risks of decentralizing control. How will you proceed?
+
+- @full_implementation
+- @partial_implementation
+- @reject_law
+- @invest_worker_cooperatives
+
+@full_implementation
+title: Full Implementation
+
+We fully enact the Law on State Enterprises, granting enterprises maximum autonomy and encouraging market-oriented practices. This goes a long way in  modernizing the economy but destabilizes the centrally planned Communist system, alienating conservative factions in the poliburo. 
+
+@partial_implementation
+title: Partial Implementation
+
+We adopt a cautious approach, granting limited autonomy to enterprises while maintaining strong central oversight. This balances reform with stability but does not go far enough to address systemic issues in the economy. Some improvement, but discontent among public still high. However, the politburo is satisfied, for now. 
+
+@reject_law
+title: Reject the Law
+
+We reject the Law on State Enterprises, maintaining strict central planning and control over the economy. This preserves the status quo and politburos authority. However, stagnation continues and public discontent increases as they are frustrated by the lack of action.
+
+@invest_worker_cooperatives
+title: Invest in Worker Cooperatives
+
+We take a radical approach, transforming state enterprises into worker cooperatives. This empowers workers but alienates the Party and disrupts production.
+

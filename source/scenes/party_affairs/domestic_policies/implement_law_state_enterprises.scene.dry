@@ -1,7 +1,9 @@
 title: Implement the Law on State Enterprises (Domestic Policy)
 new-page: true
 is-card: true
-view-if: year >= 1987 and year <= 1991
+# (subject to annual re-evaluation)
+view-if: year >= 1987 and year <= 1991 
+
 on-arrival: month_actions += 1
 tags: party_affairs 
 card-image: img/POL486_img/law_state_enterprises.png

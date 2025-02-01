@@ -3,7 +3,6 @@ new-page: true
 is-card: true
 view-if: year == 1988
 # or Discontent in the Politburo has reached a tipping point where civil war or a coup is becoming imminent.
-
 on-arrival: month_actions += 1
 tags: party_affairs
 card-image: img/POL486_img/purge_the_party.avif

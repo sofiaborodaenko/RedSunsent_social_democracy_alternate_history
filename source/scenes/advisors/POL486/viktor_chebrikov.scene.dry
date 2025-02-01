@@ -33,7 +33,7 @@ title: Let’s go for a little walk
 view-if: budget > 3
 choose-if: viktor_chebrikov_timer == 0
 subtitle: Pass an additional policy-in the name of efficiency!
-on-arrival: add_new_deck = 1
+on-arrival: add_new_deck = 1; viktor_chebrikov_timer = 12
 unavailable-subtitle: [? if viktor_chebrikov_timer > 0 : [+ viktor_chebrikov_timer +] months before next advisor action. ?]
 
 #draw another card?
@@ -43,7 +43,7 @@ They must learn that things go better when they do not argue with you.
 title: Throw Cash at the Problem
 choose-if: viktor_chebrikov_timer == 0
 subtitle: Deliver a briefcase of bills to ease tensions
-on-arrival: budget -= 1
+on-arrival: budget -= 1; viktor_chebrikov_timer = 12
 unavailable-subtitle: [? if viktor_chebrikov_timer > 0 : [+ viktor_chebrikov_timer +] months before next advisor action. ?]
 
 Not so angry, now are they?
@@ -52,7 +52,7 @@ Not so angry, now are they?
 title: Overseas Trip 
 choose-if: viktor_chebrikov_timer == 0
 subtitle: Visit the leader of a chosen foreign country and reduce tensions
-on-arrival:
+on-arrival: viktor_chebrikov_timer = 12
 unavailable-subtitle: [? if viktor_chebrikov_timer > 0 : [+ viktor_chebrikov_timer +] months before next advisor action. ?]
 
 - @us_and_canada

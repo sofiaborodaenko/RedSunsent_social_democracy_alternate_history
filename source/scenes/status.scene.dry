@@ -125,11 +125,11 @@ if (Q.sa_strength) {
 
 US and Canada: [+ relations_with_US +]
 
-China: 
+China: [+ relations_china +]
 
-Eastern Europe:
+Eastern Europe: [+ relations_eastern_europe +]
 
-Western Europe:
+Western Europe: [+ relations_western_europe +]
 
 #{!<span class="tooltip-text" title=" ">US and Canada</span>!} Strength: [+ rb_strength_2 +] thousand
 

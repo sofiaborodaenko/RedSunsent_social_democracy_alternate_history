@@ -4,7 +4,7 @@ is-card: true
 view-if: year == 1986
 on-arrival: month_actions += 1
 tags: party_affairs 
-card-image: img/accelerate_tech_progress.jpg
+card-image: img/POL486_img/accelerate_tech_progress.jpg
 
 = Accelerate Scientific-Technical Progresss
 

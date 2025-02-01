@@ -1,0 +1,24 @@
+title: Free Economic Zones (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1986 and year <= 1991
+on-arrival: month_actions += 1
+tags: party_affairs 
+card-image: img/POL486_img/free_economic_zone.jpg
+
+= Free Economic Zones 
+
+A number of reform-minded Soviet bankers are becoming enamoured with the prospect of “free economic zones” in the Soviet Union. The idea is inspired in part by Chinese economic strategy, which they observed under the rule of Deng Xiaoping from 1978 onwards. Free economic zones stimulated growth in China by opening certain areas to direct foreign investment.
+Though free economic zones are proven to spark economic growth by incentivizing investment, concerns about their side effects are equally rampant. In China, the resultant rapid growth has given way to class inequality, inflation, and widespread discontent.
+Do we implement free economic zones in the Soviet Union?
+
+- @implement 
+- @dont_implement
+
+@implement 
+title: Implement free economic zones
+on-arrival: budget += 2; reformer_approval += 2; hardliners_approval -= 3
+
+@dont_implement
+title: Do not implement free economic zones
+on-arrival: reformer_approval -= 2; hardliners_approval += 2

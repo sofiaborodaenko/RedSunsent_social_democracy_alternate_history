@@ -21,21 +21,27 @@ meetings in the United Nations (Schmemann, 1982)
 
 @military_support_afghan
 title: Strengthen military support for Afghan communist allies
-view-if: budget > 2
+view-if: budget > 2 
+choose-if: advisor_action_timer == 0
 on-arrival: budget -= 1; andrei_gromyko_loyalty += 10; nuclear_crisis += 1; relations_communist_allies += 1; advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 
 Some Soviet politicians call for an immediate full retreat of Soviet troops in Afghanistan. But Gromyko insists the troops stay there.
 
 @summit_with_US
 title: Summit with the United States
 view-if: nuclear_crisis < 2
+choose-if: advisor_action_timer == 0
 on-arrival: relations_with_US += 1; nuclear_crisis -= 1; relations_communist_allies -= 1; advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 
 Through intense negotiations, both the Soviet and United States leaders agree to meet with each other in the upcoming summit.
 
 @nuclear_disarmament
 title: Nuclear Disarmament Proposal
 subtitle: Gromyko has been working hard to decrease risks of nuclear conflict between the Soviet Union and the United States for many years. 
+choose-if: advisor_action_timer == 0
 on-arrival: relations_with_US += 1; nuclear_crisis -= 1; advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 
 Gorbachev will be able to convince the West that the country is serious about denuclearization with this proposal.

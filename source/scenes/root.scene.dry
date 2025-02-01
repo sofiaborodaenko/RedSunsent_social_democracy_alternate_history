@@ -40,9 +40,10 @@ Q.dues = 2;
 // ************************MY VARIABLES************************
 
 // separatism variable 
+// As separatism increases, at every interval of 10 a satellite state/SSR will leave, 
+// the order of which states leave will be determined by the “Events” group
 Q.separatism = 10
-//As separatism increases, at every interval of 10 a satellite state/SSR will leave, 
-//the order of which states leave will be determined by the “Events” group
+
 
 // Relations with the US
 Q.relations_with_US = 0;

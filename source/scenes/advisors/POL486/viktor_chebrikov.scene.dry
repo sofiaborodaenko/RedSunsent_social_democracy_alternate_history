@@ -1,0 +1,85 @@
+title: Viktor Chebrikov
+new-page: true
+is-pinned-card: true
+tags: advisor
+# year >= 1982 and year <= 1988
+view-if: victor_chebrikov == 1 
+card-image: img/portraits/POL486/Viktor_Chebrikov.jpg
+
+= Viktor Chebrikov
+
+Striking fear into the hearts of dissidents, KGB head Viktor
+Chebrikov orchestrated the silent, unseen operations that kept the Soviet state secure.
+When a threat, foreign or domestic, appeared on the horizon, Chevrikov was call number one
+
+- @unfortunate_accident
+- @little_walk
+- @throw_cash
+- @overseas_trip
+- @root: Return to main
+
+@unfortunate_accident
+title: An Unfortunate Accident
+subtitle: Disappear an Opposition Leader
+# view-if: 1?
+choose-if: viktor_chebrikov_timer == 0
+on-arrival: reformer_approval += 3; moderate_approval += 3; hardliner_approval += 3; dissent_percent -= 1; viktor_chebrikov_timer = 12
+unavailable-subtitle: [? if viktor_chebrikov_timer > 0 : [+ viktor_chebrikov_timer +] months before next advisor action. ?]
+
+A tragic accident. It should remind all that accidents can happen to anyone, at any time.
+
+@little_walk
+title: Let’s go for a little walk
+view-if: budget > 3
+choose-if: viktor_chebrikov_timer == 0
+subtitle: Pass an additional policy-in the name of efficiency!
+on-arrival: add_new_deck = 1
+unavailable-subtitle: [? if viktor_chebrikov_timer > 0 : [+ viktor_chebrikov_timer +] months before next advisor action. ?]
+
+#draw another card?
+They must learn that things go better when they do not argue with you.
+
+@throw_cash
+title: Throw Cash at the Problem
+choose-if: viktor_chebrikov_timer == 0
+subtitle: Deliver a briefcase of bills to ease tensions
+on-arrival: budget -= 1
+unavailable-subtitle: [? if viktor_chebrikov_timer > 0 : [+ viktor_chebrikov_timer +] months before next advisor action. ?]
+
+Not so angry, now are they?
+
+@overseas_trip
+title: Overseas Trip 
+choose-if: viktor_chebrikov_timer == 0
+subtitle: Visit the leader of a chosen foreign country and reduce tensions
+on-arrival:
+unavailable-subtitle: [? if viktor_chebrikov_timer > 0 : [+ viktor_chebrikov_timer +] months before next advisor action. ?]
+
+- @us_and_canada
+- @china 
+- @eastern_europe 
+- @western_europe 
+
+@us_and_canada
+title: Visit the US and Canada 
+on-arrival: relations_with_US += 3
+
+Some matters are best handled face-to-face
+
+@china 
+title: Visit China 
+on-arrival: relations_china += 3
+
+Some matters are best handled face-to-face
+
+@eastern_europe 
+title: Visit Eastern Europe 
+on-arrival: relations_eastern_europe += 3
+
+Some matters are best handled face-to-face
+
+@western_europe
+title: Visit Western Europe
+on-arrival: relations_western_europe += 3 
+
+Some matters are best handled face-to-face

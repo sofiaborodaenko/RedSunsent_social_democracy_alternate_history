@@ -80,9 +80,13 @@ nuclear_crisis = 0;
 //advisors
 Q.gorbacheva_adviser = 1;
 Q.andrei_gromyko = 1; //set to 1 for testing purposes
+Q.victor_chebrikov = 1; //set to 1 for testing purposes
 
 //advisor loyalty 
 Q.andrei_gromyko_loyalty = 0;
+
+//potentially for viktor Chebrikov 
+Q.add_new_deck = 0;
 
 //************************MY VARIABLES END************************
 
@@ -502,7 +506,7 @@ Q.timers = ['military_spending', 'advisor_action', 'confronting_nazis', 'crisis_
             'shuffle_leadership', 'streetfighting', 'peoples_party',
             'party_disunity',
             // govt
-            'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
+            'viktor_chebrikov', 'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
             'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy',
             'police', 'prussian_affairs', 'shuffle_cabinet', 'social_welfare',
             'homosexual_rights', 'economic_policy', 'coalition_affairs',
@@ -519,6 +523,9 @@ Q.timers = ['military_spending', 'advisor_action', 'confronting_nazis', 'crisis_
 //********************MY TIMERS********************
 //domestic policy cards timers
 Q.military_spending_timer = 0;
+
+//advisor actions
+Q.viktor_chebrikov_timer = 0;
 
 //********************MY TIMERS********************
 

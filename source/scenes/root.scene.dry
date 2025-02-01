@@ -22,6 +22,7 @@ Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
 Q.year = 1985; 
+Q.month = 3;
 
 // how many actions have been taken this month?
 Q.month_actions = 0;

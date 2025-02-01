@@ -21,7 +21,7 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1986; //changed to 86 for test
+Q.year = 1985; 
 Q.month = 3;
 // how many actions have been taken this month?
 Q.month_actions = 0;
@@ -44,7 +44,7 @@ Q.relations_with_US = 0;
 //politics in status 
 Q.reformer_approval = 0;
 Q.moderate_approval = 0;
-Q.reactionary_approval = 0;
+Q.hardliners_approval = 0;
 
 //dissent in status
 Q.nomenklatura = 0;

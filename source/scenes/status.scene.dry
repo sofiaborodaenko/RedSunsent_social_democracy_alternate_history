@@ -16,7 +16,7 @@ if (Q.inflation) {
 
 Budget: [+ budget +]
 
-Popular Dissaproval: [+ dissent_percent : dissent +]
+Public Opinion: [+ dissent_percent : dissent +]
 
 Inflation: [+ inflation_2 +]%
 
@@ -29,15 +29,9 @@ Inflation: [+ inflation_2 +]%
 #[? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
 
-= Government
-
 #President: [+ president +]
 
 #Chancellor: [+ chancellor +] ([+ chancellor_party +])
-
-Politburo composition:
-
-Reformers: VARIABLE Moderates: VARIABLE Reactionaries: VARIABLE
 
 # 1928: 30, 1930: 25, 1932: 22
 #{!<span class="tooltip-text" title="Social Democratic Party of Germany">SPD</span>!}: [+ spd_r +]%
@@ -117,6 +111,12 @@ if (Q.sa_strength) {
 }
 !}
 
+= Government
+
+Politburo Composition:
+
+Reformers: VARIABLE Moderates: VARIABLE hardliners: VARIABLE
+
 = International Relations
 
 US and Canada: [+ relations_with_US +]
@@ -167,19 +167,19 @@ States to Watch:
 Popular Disapproval:
 # List policies population is unsatisfied with, ex. "alcohol restriction"
 
-= Other demographic
+# = Other demographic
 
-Workers: [+ workers +]
+# Workers: [+ workers +]
 
-{!<span class="tooltip-text" title="Administrators and Apparatchiks.">Nomenklatura</span>!}: [+ nomenklatura +]
+# {!<span class="tooltip-text" title="Administrators and Apparatchiks.">Nomenklatura</span>!}: [+ nomenklatura +]
 
-{!<span class="tooltip-text" title="Doctors, Lawyers and other professionals.">Intelligentsia</span>!}: [+ intelligentsia +]
+# {!<span class="tooltip-text" title="Doctors, Lawyers and other professionals.">Intelligentsia</span>!}: [+ intelligentsia +]
 
-Peasants: [+ peasants +]
+# Peasants: [+ peasants +]
 
-Unemployed: [+ unemployed +]
+# Unemployed: [+ unemployed +]
 
-Orthodox: [+ orthodox +]
+# Orthodox: [+ orthodox +]
 
 #= Budget Expense Categories
 

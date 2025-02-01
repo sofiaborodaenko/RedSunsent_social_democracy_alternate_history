@@ -2,6 +2,7 @@ title: Review Military Spending (Domestic Policy)
 new-page: true
 is-card: true
 # (subject to bi-yearly evaluation)
+# the card can be pulled/played again when a year passes
 view-if: year >= 1985 and year <= 1991
 
 on-arrival: month_actions += 1

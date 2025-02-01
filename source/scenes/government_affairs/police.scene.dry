@@ -3,7 +3,8 @@ new-page: true
 is-card: true
 tags: govt_affairs
 on-arrival: police_timer += 6; month_actions += 1
-view-if: year >= 1929
+view-if: year < 1985
+#view-if: year >= 1929
 card-image: img/portraits/SeveringCarl.jpg
 
 = Internal Security

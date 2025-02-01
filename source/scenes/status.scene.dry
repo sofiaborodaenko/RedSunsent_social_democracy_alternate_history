@@ -18,6 +18,10 @@ Budget: [+ budget +]
 
 Public Opinion: [+ dissent_percent : dissent +]
 
+Separtism: [+ separatism +]
+// As separatism increases, at every interval of 10 a satellite state/SSR will leave, 
+//the order of which states leave will be determined by the “Events” group
+
 Inflation: [+ inflation_2 +]%
 
 
@@ -80,7 +84,7 @@ Reformers: VARIABLE Moderates: VARIABLE hardliners: VARIABLE
 {!<span class="tooltip-text" title=" ">Moderates</span>!} Approval: [+ moderate_approval +]
 #[+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
 
-{!<span class="tooltip-text" title=" ">Reactionaries</span>!} Approval: [+ reactionary_approval +]
+{!<span class="tooltip-text" title=" ">Hardliners</span>!} Approval: [+ hardliners_approval +]
 #[+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
 
 #{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]

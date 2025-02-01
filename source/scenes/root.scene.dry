@@ -37,7 +37,13 @@ Q.resources = 5;
 // party dues
 Q.dues = 2;
 
-// MY VARIABLES
+// ************************MY VARIABLES************************
+
+// separatism variable 
+// As separatism increases, at every interval of 10 a satellite state/SSR will leave, 
+//the order of which states leave will be determined by the “Events” group
+Q.separatism = 10
+
 // Relations with the US
 Q.relations_with_US = 0;
 
@@ -59,7 +65,7 @@ Q.party_cadres = 0;
 //advisors
 Q.gorbacheva_adviser = 1
 
-//MY VARIABLES END
+//************************MY VARIABLES END************************
 
 // the state of the party
 // overall dissent reduces every increase in party support.

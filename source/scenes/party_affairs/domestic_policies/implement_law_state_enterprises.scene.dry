@@ -1,9 +1,7 @@
 title: Implement the Law on State Enterprises (Domestic Policy)
 new-page: true
 is-card: true
-# (subject to annual re-evaluation)
 view-if: year >= 1987 and year <= 1991 
-
 on-arrival: month_actions += 1
 tags: party_affairs 
 card-image: img/POL486_img/law_state_enterprises.png
@@ -19,21 +17,25 @@ The Soviet economy is stagnating under the weight of central planning. Productiv
 
 @full_implementation
 title: Full Implementation
+on-arrival: budget += 2; reformer_approval += 4; moderate_approval += 1; hardliner_approval -= 4
 
 We fully enact the Law on State Enterprises, granting enterprises maximum autonomy and encouraging market-oriented practices. This goes a long way in  modernizing the economy but destabilizes the centrally planned Communist system, alienating conservative factions in the poliburo. 
 
 @partial_implementation
 title: Partial Implementation
+on-arrival: budget += 1; reformer_approval += 2; moderate_approval += 1; hardliner_approval -= 2
 
 We adopt a cautious approach, granting limited autonomy to enterprises while maintaining strong central oversight. This balances reform with stability but does not go far enough to address systemic issues in the economy. Some improvement, but discontent among public still high. However, the politburo is satisfied, for now. 
 
 @reject_law
 title: Reject the Law
+on-arrival: budget -= 1; reformer_approval -= 4; hardliner_approval += 4
 
 We reject the Law on State Enterprises, maintaining strict central planning and control over the economy. This preserves the status quo and politburos authority. However, stagnation continues and public discontent increases as they are frustrated by the lack of action.
 
 @invest_worker_cooperatives
 title: Invest in Worker Cooperatives
+on-arrival: budget -= 2; reformer_approval += 1; moderate_approval -= 1; hardliner_approval -= 4
 
 We take a radical approach, transforming state enterprises into worker cooperatives. This empowers workers but alienates the Party and disrupts production.
 

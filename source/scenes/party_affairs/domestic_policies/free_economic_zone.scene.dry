@@ -17,8 +17,8 @@ Do we implement free economic zones in the Soviet Union?
 
 @implement 
 title: Implement free economic zones
-on-arrival: budget += 2; reformer_approval += 2; hardliners_approval -= 3
+on-arrival: budget += 2; reformer_approval += 2; hardliner_approval -= 3
 
 @dont_implement
 title: Do not implement free economic zones
-on-arrival: reformer_approval -= 2; hardliners_approval += 2
+on-arrival: reformer_approval -= 2; hardliner_approval += 2

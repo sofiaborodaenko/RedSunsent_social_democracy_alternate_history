@@ -20,14 +20,19 @@ Growing discontent and insubordination from within the politburo and central com
 @cleanse_the_party
 title: Cleanse the Party 
 subtitle: There will be no tolerance for insubordination too long have the politburo members and their apparatchiks been left to grow disobedient and complacent. Zero tolerance for any who do not tow the party line. Those who are of little concern will be reassigned and shuffled off, and those who constitute our main opposition will be stripped of their powers, imprisoned, or made to disappear if need be. The General Secretary Shall not be questioned!
-on-arrival: budget -= 2; reformer_approval += 3; moderate_approval -= 1; hardliners_approval -= 4
+on-arrival: budget -= 2; reformer_approval += 3; moderate_approval -= 1; hardliner_approval -= 4
 
 @put_kibosh_on_hardliners
 title: Put the Kibosh on the hardliners and their supporters who refuse to back down
 subtitle: A moderate crackdown on any significant dissenters should be enough we need not return to barbarism, a tactful and limited response will suffice in dealing with the more troublesome voices in the Politburo.
-on-arrival: budget -= 1; reformer_approval += 2; moderate_approval += 1; hardliners_approval -= 3
+on-arrival: budget -= 1; reformer_approval += 2; moderate_approval += 1; hardliner_approval -= 3
 
 @minimal_reassignments
 title: Minimal reassignments for those most obstinate
 subtitle: The days of Stalin are long gone and we will not mar our legacy by resorting to barbarism, or political purges, we must allow discourse and free ideas even if those ideas are ones we do not like, even if they may harm us and our message.
-on-arrival: budget += 1; reformer_approval -= 2; moderate_approval += 1; hardliners_approval += 2
+on-arrival: budget += 1; reformer_approval -= 2; moderate_approval += 1; hardliner_approval += 2
+
+@wont_purge_the_party
+title: We will not purge the party
+subtitle: The days of Stalin are long gone and we will not mar our legacy by resorting to barbarism, or political purges, we must allow discourse and free ideas even if those ideas are ones we do not like, even if they may harm us and our message.
+on-arrival: budget += 1; reformer_approval -= 2; moderate_approval += 1; hardliner_approval += 2

@@ -21,7 +21,7 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1988; //testing purge card
+Q.year = 1985;
 Q.month = 3;
 
 // how many actions have been taken this month?
@@ -46,8 +46,14 @@ Q.dues = 2;
 Q.separatism = 10
 
 
-// Relations with the US
+// international relations
 Q.relations_with_US = 0;
+Q.relations_china = 0;
+Q.relations_eastern_europe = 0;
+Q.relations_western_europe = 0;
+
+//communist allies?
+Q.relations_communist_allies = 0;
 
 //politics in status 
 Q.reformer_approval = 0;
@@ -68,8 +74,15 @@ Q.party_cadres = 0;
 Q.popular_approval = 0;
 Q.public_approval = 0;
 
+//crisis variables 
+nuclear_crisis = 0;
+
 //advisors
-Q.gorbacheva_adviser = 1
+Q.gorbacheva_adviser = 1;
+Q.andrei_gromyko = 0;
+
+//advisor loyalty 
+Q.andrei_gromyko_loyalty = 0;
 
 //************************MY VARIABLES END************************
 

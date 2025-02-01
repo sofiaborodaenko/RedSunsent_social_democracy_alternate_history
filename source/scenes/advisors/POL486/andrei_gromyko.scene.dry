@@ -1,0 +1,41 @@
+title: Andrei Gromyko
+new-page: true
+is-pinned-card: true
+tags: advisor
+view-if: gorbacheva_adviser == 1
+card-image: img/portraits/POL486/Adnrei_Gromyko.jpg
+
+= Andrei Gromyko
+
+Having served as the Minister of Foreign Affairs of the Soviet Union for many
+decades, Gromyko has proven to be trustworthy and competent by many Soviet leaders that
+he had served. He was born as a poor peasant in Belorussia, but had climbed up the ladder
+with sheer competence that were indispensable for decision makers in the country. The West
+described him as “Mr. Nyet” for throwing frequent veto cards during Security Council
+meetings in the United Nations (Schmemann, 1982)
+
+- @military_support_afghan
+- @summit_with_US
+- @nuclear_disarmament
+- @root: Return to main
+
+@military_support_afghan
+title: Strengthen military support for Afghan communist allies
+view-if: budget > 2
+on-arrival: budget -= 1; andrei_gromyko_loyalty += 10; nuclear_crisis += 1; relations_communist_allies += 1; advisor_action_timer = 6
+
+Some Soviet politicians call for an immediate full retreat of Soviet troops in Afghanistan. But Gromyko insists the troops stay there.
+
+@summit_with_US
+title: Summit with the United States
+view-if: nuclear_crisis < 2
+on-arrival: relations_with_US += 1; nuclear_crisis -= 1; relations_communist_allies -= 1; advisor_action_timer = 6
+
+Through intense negotiations, both the Soviet and United States leaders agree to meet with each other in the upcoming summit.
+
+@nuclear_disarmament
+title: Nuclear Disarmament Proposal
+subtitle: Gromyko has been working hard to decrease risks of nuclear conflict between the Soviet Union and the United States for many years. 
+on-arrival: relations_with_US += 1; nuclear_crisis -= 1; advisor_action_timer = 6
+
+Gorbachev will be able to convince the West that the country is serious about denuclearization with this proposal.

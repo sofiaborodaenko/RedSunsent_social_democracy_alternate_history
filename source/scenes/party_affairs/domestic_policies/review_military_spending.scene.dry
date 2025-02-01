@@ -1,11 +1,8 @@
 title: Review Military Spending (Domestic Policy)
 new-page: true
 is-card: true
-# (subject to bi-yearly evaluation)
-# the card can be pulled/played again when a year passes
 view-if: year >= 1985 and year <= 1991 and military_spending_timer == 0
-
-on-arrival: month_actions += 1
+on-arrival: month_actions += 1; military_spending_timer = 6
 tags: party_affairs 
 card-image: img/POL486_img/military_spendning.jpg
 
@@ -21,30 +18,30 @@ The military has long served as one of our largest expenditures and burden of st
 
 @greatly_increase
 title: Greatly increase military spending
-on-arrival: budget -= 2; reformer_approval -= 2; moderate_approval -= 1; hardliner_approval += 2; military_spending_timer = 6
+on-arrival: budget -= 2; reformer_approval -= 2; moderate_approval -= 1; hardliner_approval += 2
 
 We have come to the realization that greatly increasing the military’s budget is the best method for securing not only our national security, but also the fate of our country. Therefore, we will strongly double down on the arms race no matter how unpopular it may be with reformers within the politburo, and ensure that we will provide a robust fighting force to any defense initiative the West may throw at the Soviet Union.
 
 @moderately_increase
 title: Moderately increase military spending
-on-arrival: budget -= 1; reformer_approval -= 1; moderate_approval += 1; hardliner_approval += 1; military_spending_timer = 6
+on-arrival: budget -= 1; reformer_approval -= 1; moderate_approval += 1; hardliner_approval += 1
 
 We have chosen to continue prioritizing national defense and security in a moderate manner, somewhat increasing the military’s budget but in a way that is less intrusive to spending in other sectors and policies of the Soviet Union.
 
 @dont_change
 title: Do not change the military budget
-on-arrival: reformer_approval -= 1; hardliner_approval -= 1; military_spending_timer = 6
+on-arrival: reformer_approval -= 1; hardliner_approval -= 1
 
 We have chosen to maintain the status quo and forego any changes to the current military budget.
 
 @moderately_decrease
 title: Moderately decrease military spending
-on-arrival: budget += 1; reformer_approval += 1; moderate_approval += 1; hardliner_approval -= 1; military_spending_timer = 6
+on-arrival: budget += 1; reformer_approval += 1; moderate_approval += 1; hardliner_approval -= 1
 
 We have chosen to decrease military spending in a manner which does not compromise heavily on our national security and defense, but which also provides us with some extra cash towards investing in other sectors and policies of the Soviet Union.
 
 @greatly_decrease
 title: Greatly decrease military spending
-on-arrival: budget += 2; reformer_approval += 2; moderate_approval += 1; hardliner_approval -= 2; military_spending_timer = 6
+on-arrival: budget += 2; reformer_approval += 2; moderate_approval += 1; hardliner_approval -= 2
 
 We have chosen to strongly curb our overwhelming military expenditures. Although it is deeply unpopular with hardliners within the politburo, at least we now have significantly more resources to redirect towards other, more pressing sectors and policies within Soviet society

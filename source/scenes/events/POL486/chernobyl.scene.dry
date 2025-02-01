@@ -1,0 +1,38 @@
+title: Chernobyl
+new-page: true
+subtitle: If exposed, the public will be outraged due to the massive risk of health problems. 
+tags: event
+view-if: year == 1986 and month == 4
+max-visits: 1
+on-arrival: dissent_percent += (0.10*dissent_percent); budget -= 1
+face-image: img/POL486_img/chernobyl.png
+
+= Chernobyl
+
+Technicians at reactor unit 4 of the Chernobyl nuclear power station in the Ukrainian SSR attempted a poorly designed experiment. The resulting explosion has killed 49 people and released large amounts of radioactive material into the atmosphere. The full consequences of this disaster have yet to be felt.
+How do you respond to the disaster?
+
+- @dont_let_anyone_know
+- @release_min_info
+- @provide_housing
+
+@dont_let_anyone_know
+title: Evacuate Chernobyl and Pripyat immediately but don’t let anyone know what happened until it becomes necessary, it’s the Soviet way.
+subtitle: Due to the precarious position of reformists within the Politburo, we may have to go this route to prevent dissent from hardliners.
+on-arrival: budget -= 1; popular_approval -= 10; hardliner_approval += 10; reformer_approval -= 10
+
+Western observers have already been reporting on the incident, it won’t be long until it reaches the USSR. However, the hardline faction of the party is pleased. 
+
+@release_min_info
+title: Evacuate Chernobyl and Pripyat immediately and release minimum information about the disaster to the broader public
+subtitle: Although we can’t let anyone know too much, we should tell the public what happened. 
+on-arrival: budget -= 2; dissent_percent += 5
+
+We decide to schedule a television broadcast in two days to report the incident. Western observers have already been reporting on it, and it won’t be long until the news reaches the USSR. 
+
+@provide_housing
+title: Evacuate all cities surrounding the site and provide housing for the dislocated people and plan to visit the site in person while placing full blame on the technicians
+subtitle: We can boast about the state’s swift response in Pravda, leaving our opponents with no grounds for criticism. This will allow us to promote the principle of glasnost.
+on-arrival: budget -= 3; hardliner_approval -= 5; reformer_approval += 10; public_approval += 10
+
+An article in *Pravda* entitled “Gorbachev’s swift response to the chernobyl crisis” has propagandized the people in our favour.

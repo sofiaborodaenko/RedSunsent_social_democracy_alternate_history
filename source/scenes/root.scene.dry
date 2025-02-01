@@ -68,10 +68,6 @@ Q.party_cadres = 0;
 Q.popular_approval = 0;
 Q.public_approval = 0;
 
-//domestic policy cards timers
-Q.military_spending_timer = 0;
-
-
 //advisors
 Q.gorbacheva_adviser = 1
 
@@ -505,6 +501,13 @@ Q.timers = ['military_spending', advisor_action', 'confronting_nazis', 'crisis_p
             'sa_ban', 'sh_ban', 'papen_chancellor',
             'kpd_policy', 'kpd_ultimatum', 'popular_front_dispute',
             'high_inflation', 'banking_crisis'];
+
+
+//********************MY TIMERS********************
+//domestic policy cards timers
+Q.military_spending_timer = 0;
+
+//********************MY TIMERS********************
 
 
 Q.advisor_action_timer = 0;

@@ -4,7 +4,7 @@ is-card: true
 view-if: year >= 1985 and year <= 1991 and military_spending_timer == 0
 on-arrival: month_actions += 1; military_spending_timer = 6
 tags: party_affairs 
-card-image: img/POL486_img/military_spendning.jpg
+card-image: img/POL486_img/military_spedning.jpg
 
 = Review Military Spending
 

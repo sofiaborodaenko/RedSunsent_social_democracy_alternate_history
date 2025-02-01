@@ -66,18 +66,11 @@ Inflation: [+ inflation_2 +]%
 
 #= Inter-party Relations
 
+= Government
 
-#{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+Politburo Composition:
 
-#{!<span class="tooltip-text" title="German Democratic Party">DDP</span>!}: [+ ddp_relation : relationships +]
-
-#{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
-
-#{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
-
-#{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
-
-#{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+Reformers: VARIABLE Moderates: VARIABLE hardliners: VARIABLE
 
 = Internal Factions of the Politburo
 
@@ -95,6 +88,19 @@ Inflation: [+ inflation_2 +]%
 #[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
 
+#{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+
+#{!<span class="tooltip-text" title="German Democratic Party">DDP</span>!}: [+ ddp_relation : relationships +]
+
+#{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+
+#{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
+
+#{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
+
+#{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+
+
 @paramilitaries
 on-arrival: {!
 if (Q.rb_strength) {
@@ -110,12 +116,6 @@ if (Q.sa_strength) {
     Q.sa_strength_2 = Q.sa_strength.toFixed(1);
 }
 !}
-
-= Government
-
-Politburo Composition:
-
-Reformers: VARIABLE Moderates: VARIABLE hardliners: VARIABLE
 
 = International Relations
 

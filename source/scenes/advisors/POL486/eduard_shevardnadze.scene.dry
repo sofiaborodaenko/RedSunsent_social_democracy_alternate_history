@@ -20,7 +20,19 @@ Originally the party boss in Georgia, Shevardnadzee was chosen particularly due 
 title: Yes, Man 
 subtitle: Support Gorbachev on his next speech at the Kremlin
 choose-if: advisor_action_timer == 0
-on-arrival: advisor_action_timer = 6; [? if shevardnadze_homecoming == 1: reformer_approval += 2; moderate_approval += 2; hardliner_approval += 2 ?] [? if shevardnadze_homecoming == 0: reformer_approval += 1; moderate_approval += 1; hardliner_approval += 1 ?]
+on-arrival: {!
+Q.advisor_action_timer = 6;
+
+if (shevardnadze_homecoming == 1){
+    Q.reformer_approval += 2; 
+    Q.moderate_approval += 2; 
+    Q.hardliner_approval += 2; 
+} else{
+    Q.reformer_approval += 1; 
+    Q.moderate_approval += 1; 
+    Q.hardliner_approval += 1; 
+}
+!}
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 
 Shevardnadze always put Gorbachev on a pedestal, and he got to show his enthusiasm at the union’s latest conference.
@@ -39,25 +51,57 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 
 @visit_us_canada
 title: Visit the United States and Canada 
-on-arrival: [? if shevardnadze_homecoming == 1: relations_with_US += 2 ?] [? if shevardnadze_homecoming == 0: relations_with_US += 1 ?]
+on-arrival: {!
+
+if (shevardnadze_homecoming == 1) {
+    Q.relations_with_US += 2;
+} else {
+    Q.relations_with_US += 1;
+}
+
+!}
 
 A much needed diplomatic endeavor to ease the tensions of the Cold War
 
 @visit_eastern_eu
 title: Visit Eastern Europe 
-on-arrival: [? if shevardnadze_homecoming == 1: relations_with_US += 3 ?] [? if shevardnadze_homecoming == 0: relations_with_US += 1 ?]
+on-arrival: {!
+
+if (shevardnadze_homecoming == 1) {
+    Q.relations_with_US += 3;
+} else {
+    Q.relations_with_US += 1;
+}
+
+!}
 
 Ensuring the other republics of our support was much needed and long overdue.
 
 @visit_western_eu
 title: Visit Western Europe 
-on-arrival: [? if shevardnadze_homecoming == 1: relations_with_US += 2 ?] [? if shevardnadze_homecoming == 0: relations_with_US += 1 ?]
+on-arrival: {!
+
+if (shevardnadze_homecoming == 1) {
+    Q.relations_with_US += 2;
+} else {
+    Q.relations_with_US += 1;
+}
+
+!}
 
 Sharing the same continent means solidifying our responsibilities and our partnerships
 
 @visit_china
 title: Visit China 
-on-arrival: [? if shevardnadze_homecoming == 1: relations_with_US += 2 ?] [? if shevardnadze_homecoming == 0: relations_with_US += 1 ?]
+on-arrival: {!
+
+if (shevardnadze_homecoming == 1) {
+    Q.relations_with_US += 2;
+} else {
+    Q.relations_with_US += 1;
+}
+
+!}
 
 Even after the break in partnership, China continues to be an important ally in the communist world.
 

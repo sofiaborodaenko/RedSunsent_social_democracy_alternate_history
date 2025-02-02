@@ -72,6 +72,9 @@ Q.party_cadres = 0;
 
 Q.popular_approval = 0;
 
+//variables for popular dissaproval policies 
+Q.revive_andrapov_campaign = 0;
+
 //crisis variables 
 nuclear_crisis = 0;
 

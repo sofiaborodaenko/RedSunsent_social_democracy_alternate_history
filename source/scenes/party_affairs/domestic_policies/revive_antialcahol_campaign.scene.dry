@@ -29,7 +29,7 @@ We take a moderate position, institute severe police crackdowns on public drunke
 
 @do_not_revive
 title: Do not Revive the Campaign
-on-arrival: reformer_approval -= 2; hardliner_approval += 2; nomenklatura -= 1; intelligentsia -=2; peasants += 1; criminal_class += 1; orthodox -= 1; unemployed += 1; party_cadres -= 3
+on-arrival: revive_andrapov_campaign = 0; reformer_approval -= 2; hardliner_approval += 2; nomenklatura -= 1; intelligentsia -=2; peasants += 1; criminal_class += 1; orthodox -= 1; unemployed += 1; party_cadres -= 3
 
 We do not revive the Anti-Alcohol campaign. As such, disapproval among the Politburo increases as it does among citizens who see alcoholism as a problem. However, on a positive note, we suffer no budget shortfall.
 

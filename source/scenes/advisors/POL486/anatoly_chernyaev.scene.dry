@@ -26,7 +26,7 @@ The speech was well received by the people, espousing ideas of free discussion, 
 
 @foreign_relations
 title: Foreign Relations 
-subtext: Accompany Gorbachev on an overseas foreign policy diplomatic mission to integrate into Europe
+subtitle: Accompany Gorbachev on an overseas foreign policy diplomatic mission to integrate into Europe
 view-if: budget > 2
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 

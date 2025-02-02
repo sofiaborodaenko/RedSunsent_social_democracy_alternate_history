@@ -1,0 +1,125 @@
+title: Eduard Shevardnadze
+new-page: true
+is-pinned-card: true
+tags: advisor
+view-if: shevardnadze_adviser == 1
+card-image: img/portraits/POL486/eduard-shevardnadze.jpg
+
+= Eduard Shevardnadze
+
+Making up in character for what he lacks in experience, Eduard Shevardnadzee was chosen as the USSR’s minister of foreign affairs in 1985.
+Originally the party boss in Georgia, Shevardnadzee was chosen particularly due to sharing a rural , small-town background similar to Gorbachev.
+
+- @yes_man
+- @eastern_affability
+- @overtime
+- @homecoming
+- @root: Return to main
+
+@yes_man
+title: Yes, Man 
+subtitle: Support Gorbachev on his next speech at the Kremlin
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 6; [? if shevardnadze_homecoming == 1: reformer_approval += 2; moderate_approval += 2; hardliner_approval += 2 ?] [? if shevardnadze_homecoming == 0: reformer_approval += 1; moderate_approval += 1; hardliner_approval += 1 ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+
+Shevardnadze always put Gorbachev on a pedestal, and he got to show his enthusiasm at the union’s latest conference.
+
+@eastern_affability
+title: Easter Affability 
+subtitle: Go on a diplomatic mission at the General Secretary’s request.
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+
+- @visit_us_canada
+- @visit_eastern_eu
+- @visit_western_eu
+- @visit_china
+
+@visit_us_canada
+title: Visit the United States and Canada 
+on-arrival: [? if shevardnadze_homecoming == 1: relations_with_US += 2 ?] [? if shevardnadze_homecoming == 0: relations_with_US += 1 ?]
+
+A much needed diplomatic endeavor to ease the tensions of the Cold War
+
+@visit_eastern_eu
+title: Visit Eastern Europe 
+on-arrival: [? if shevardnadze_homecoming == 1: relations_with_US += 3 ?] [? if shevardnadze_homecoming == 0: relations_with_US += 1 ?]
+
+Ensuring the other republics of our support was much needed and long overdue.
+
+@visit_western_eu
+title: Visit Western Europe 
+on-arrival: [? if shevardnadze_homecoming == 1: relations_with_US += 2 ?] [? if shevardnadze_homecoming == 0: relations_with_US += 1 ?]
+
+Sharing the same continent means solidifying our responsibilities and our partnerships
+
+@visit_china
+title: Visit China 
+on-arrival: [? if shevardnadze_homecoming == 1: relations_with_US += 2 ?] [? if shevardnadze_homecoming == 0: relations_with_US += 1 ?]
+
+Even after the break in partnership, China continues to be an important ally in the communist world.
+
+@overtime
+title: Overtime 
+subtitle: Work in overnight in your office while Gorbachev focuses elsewhere
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: {!
+Q.advisor_action_timer = 6
+
+rand_int = Math.random(4);
+
+if (rand_int == 0) {
+    if (Q.shevardnadze_homecoming == 1) {
+        Q.relations_with_US += 4;
+    } else {
+        Q.relations_with_US += 3;
+    }
+} else if (rand_int == 1) {
+    if (Q.shevardnadze_homecoming == 1) {
+        Q.relations_china += 4;
+    } else {
+        Q.relations_china += 3;
+    }
+} else if (rand_int == 2) {
+    if (Q.shevardnadze_homecoming == 1) {
+        Q.relations_eastern_europe += 4;
+    } else {
+        Q.relations_eastern_europe += 3;
+    }
+} else {
+    if (Q.shevardnadze_homecoming == 1) {
+        Q.relations_western_europe += 4;
+    } else {
+        Q.relations_western_europe += 3;
+    }
+}
+
+!}
+
+Shervardnadze would toil away up to 16 hours a day in his office and sometimes sleep there overnight. This hard work pays off favorably on the international stage.
+
+@homecoming
+title: Homecoming 
+subtitle: Take a much-needed trip to Georgia
+view-if: year >= 1986 and year <= 1990
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 6; 
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+
+- @allow 
+- @dont_allow 
+
+@allow 
+title: Allow Shevardnadzee to take the trip
+on-arrival: shevardnadze_homecoming = 1
+
+# discard one card in hand 
+Even with a change of party positions, Shevardnadzee still feels as though Georgia lies within his responsibility. This trip of assurance, as well as some family time, boosts his motivation at work.
+
+@dont_allow 
+title: Do not allow Shevardnadzee to take the trip
+
+The party is facing turbulent times, and his absence can not be excused.

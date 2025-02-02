@@ -79,14 +79,18 @@ nuclear_crisis = 0;
 
 //advisors
 Q.gorbacheva_adviser = 1;
-Q.andrei_gromyko = 1; //set to 1 for testing purposes
-Q.victor_chebrikov = 1; //set to 1 for testing purposes
+Q.andrei_gromyko_advisor = 1; //set to 1 for testing purposes
+Q.victor_chebrikov_advisor = 1; //set to 1 for testing purposes
+Q.shevardnadze_adviser = 1;
 
 //advisor loyalty 
 Q.andrei_gromyko_loyalty = 0;
 
 //potentially for viktor Chebrikov 
 Q.add_new_deck = 0;
+
+//special variables for advisors
+Q.shevardnadze_homecoming = 0;
 
 //************************MY VARIABLES END************************
 

@@ -46,6 +46,26 @@ subtitle: Deliver a briefcase of bills to ease tensions
 on-arrival: budget -= 1; viktor_chebrikov_timer = 12
 unavailable-subtitle: [? if viktor_chebrikov_timer > 0 : [+ viktor_chebrikov_timer +] months before next advisor action. ?]
 
+- @ease_reformers
+- @ease_moderates
+- @ease_hardliners
+
+@ease_reformers 
+title: Ease tensions with the reformers 
+on-arrival: reformer_approval += 5;
+
+Not so angry, now are they?
+
+@ease_moderates
+title: Ease tensions with the moderates 
+on-arrival: moderate_approval += 5;
+
+Not so angry, now are they?
+
+@ease_hardliners 
+title: Ease tensions with the hardliners 
+on-arrival: hardliner_approval += 5;
+
 Not so angry, now are they?
 
 @overseas_trip

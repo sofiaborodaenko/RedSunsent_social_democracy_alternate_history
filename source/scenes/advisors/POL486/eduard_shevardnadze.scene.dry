@@ -132,7 +132,7 @@ if (rand_int == 0) {
     } else {
         Q.relations_eastern_europe += 3;
     }
-} else {
+} else if (rand_int == 3){
     if (Q.shevardnadze_homecoming == 1) {
         Q.relations_western_europe += 4;
     } else {

@@ -19,9 +19,8 @@ Gorbachev’s wife and close confidant. Gorbachev trusted his wife the most as a
 title: Raise Funds for Domestic Medical Car
 subtitle: Improve Public Opinion of Gorbachev
 choose-if: advisor_action_timer == 0
-on-arrival: advisor_action_timer = 6
+on-arrival: advisor_action_timer = 6; reformer_approval += 3; moderate_approval += 3; hardliner_approval += 3
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
-# Reduce public dissent across all political factions by numerical factor of 3
 
 Everyone likes helping ill children 
 

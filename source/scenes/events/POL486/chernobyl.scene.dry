@@ -4,7 +4,7 @@ subtitle: If exposed, the public will be outraged due to the massive risk of hea
 tags: event
 view-if: year == 1986 and month == 4
 max-visits: 1
-on-arrival: dissent_percent += (0.10*dissent_percent); budget -= 1
+on-arrival: popular_approval += (0.10*popular_approval); budget -= 1
 face-image: img/POL486_img/chernobyl.png
 
 = Chernobyl
@@ -26,13 +26,13 @@ Western observers have already been reporting on the incident, it won’t be lon
 @release_min_info
 title: Evacuate Chernobyl and Pripyat immediately and release minimum information about the disaster to the broader public
 subtitle: Although we can’t let anyone know too much, we should tell the public what happened. 
-on-arrival: budget -= 2; dissent_percent += 5
+on-arrival: budget -= 2; popular_approval += 5
 
 We decide to schedule a television broadcast in two days to report the incident. Western observers have already been reporting on it, and it won’t be long until the news reaches the USSR. 
 
 @provide_housing
 title: Evacuate all cities surrounding the site and provide housing for the dislocated people and plan to visit the site in person while placing full blame on the technicians
 subtitle: We can boast about the state’s swift response in Pravda, leaving our opponents with no grounds for criticism. This will allow us to promote the principle of glasnost.
-on-arrival: budget -= 3; hardliner_approval -= 5; reformer_approval += 10; public_approval += 10
+on-arrival: budget -= 3; hardliner_approval -= 5; reformer_approval += 10; popular_approval += 10
 
 An article in *Pravda* entitled “Gorbachev’s swift response to the chernobyl crisis” has propagandized the people in our favour.

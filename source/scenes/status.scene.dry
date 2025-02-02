@@ -16,7 +16,7 @@ if (Q.inflation) {
 
 Budget: [+ budget +]
 
-Public Opinion: [+ dissent_percent : dissent +]
+Popular Approval: [+ popular_approval : dissent +]
 
 Separtism: [+ separatism +]
 # As separatism increases, at every interval of 10 a satellite state/SSR will leave, 

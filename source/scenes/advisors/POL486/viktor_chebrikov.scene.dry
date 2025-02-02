@@ -23,7 +23,7 @@ title: An Unfortunate Accident
 subtitle: Disappear an Opposition Leader
 # view-if: 1?
 choose-if: viktor_chebrikov_timer == 0
-on-arrival: reformer_approval += 3; moderate_approval += 3; hardliner_approval += 3; dissent_percent -= 1; viktor_chebrikov_timer = 12
+on-arrival: reformer_approval += 3; moderate_approval += 3; hardliner_approval += 3; popular_approval -= 1; viktor_chebrikov_timer = 12
 unavailable-subtitle: [? if viktor_chebrikov_timer > 0 : [+ viktor_chebrikov_timer +] months before next advisor action. ?]
 
 A tragic accident. It should remind all that accidents can happen to anyone, at any time.

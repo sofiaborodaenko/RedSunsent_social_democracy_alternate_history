@@ -61,7 +61,6 @@ Q.moderate_approval = 0;
 Q.hardliner_approval = 0;
 
 //dissent in status
-Q.dissent_percent = 5;
 Q.nomenklatura = 0;
 Q.intelligentsia = 0;
 Q.peasants = 0;
@@ -72,7 +71,6 @@ Q.criminal_class = 0;
 Q.party_cadres = 0;
 
 Q.popular_approval = 0;
-Q.public_approval = 0;
 
 //crisis variables 
 nuclear_crisis = 0;
@@ -97,6 +95,7 @@ Q.shevardnadze_homecoming = 0;
 // the state of the party
 // overall dissent reduces every increase in party support.
 Q.dissent = 0.05;
+Q.dissent_percent = 5;
 
 
 // factions

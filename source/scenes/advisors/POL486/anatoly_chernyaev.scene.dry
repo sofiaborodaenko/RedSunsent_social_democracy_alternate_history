@@ -10,3 +10,42 @@ card-image: img/portraits/POL486/chernyaev.jpg
 Influential politician, serving as politburo foreign policy aide to Gorbachev. Gorbachev considered Chernyaev's ideas instrumental in shaping his
 foreign policy actions. He was also involved in global communist movements and was a key architect of the ‘new thinking’ in Soviet foreign policy. He was known for being very loyal to Gorbachev.
 
+- @write_speech
+- @foreign_relations 
+- @reform 
+- @negotiation 
+
+@write_speech
+title: Write a Speech 
+subtitle: Author a speech for Gorbachev on glasnost
+choose-if: advisor_action_timer == 0
+on-arrival: popular_approval += 2; advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+
+The speech was well received by the people, espousing ideas of free discussion, openness, and de-centralization as means to end the period of stagnation.
+
+@foreign_relations
+title: Foreign Relations 
+subtext: Accompany Gorbachev on an overseas foreign policy diplomatic mission to integrate into Europe
+view-if: budget > 2
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: relations_eastern_europe += 1; budget -= 1
+
+Relations between the Soviet Union and Eastern Europe have improved.
+
+@reform 
+title: Reform 
+subtitle: Offer Gorbachev policy ideas on reform
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: budget += 1
+
+@negotiation
+title: Negotiation 
+subtitle: Mediate discussions between reformers and reactionary party members.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: reformer_approval -= 1
+
+Through diplomacy, Gorbachev and Chernyaev manage to find common ground between opposing factions, temporarily stabilizing internal party tensions.

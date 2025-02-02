@@ -23,7 +23,7 @@ choose-if: advisor_action_timer == 0
 on-arrival: {!
 Q.advisor_action_timer = 6;
 
-if (shevardnadze_homecoming == 1){
+if (Q.shevardnadze_homecoming == 1){
     Q.reformer_approval += 2; 
     Q.moderate_approval += 2; 
     Q.hardliner_approval += 2; 
@@ -52,13 +52,12 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 @visit_us_canada
 title: Visit the United States and Canada 
 on-arrival: {!
-console.log("Before:", Q.relations_with_US);
-if (shevardnadze_homecoming == 1) {
+
+if (Q.shevardnadze_homecoming == 1) {
     Q.relations_with_US += 2;
 } else {
     Q.relations_with_US += 1;
 }
-console.log("After:", Q.relations_with_US);
 !}
 
 A much needed diplomatic endeavor to ease the tensions of the Cold War
@@ -67,7 +66,7 @@ A much needed diplomatic endeavor to ease the tensions of the Cold War
 title: Visit Eastern Europe 
 on-arrival: {!
 
-if (shevardnadze_homecoming == 1) {
+if (Q.shevardnadze_homecoming == 1) {
     Q.relations_with_US += 3;
 } else {
     Q.relations_with_US += 1;
@@ -81,7 +80,7 @@ Ensuring the other republics of our support was much needed and long overdue.
 title: Visit Western Europe 
 on-arrival: {!
 
-if (shevardnadze_homecoming == 1) {
+if (Q.shevardnadze_homecoming == 1) {
     Q.relations_with_US += 2;
 } else {
     Q.relations_with_US += 1;
@@ -95,7 +94,7 @@ Sharing the same continent means solidifying our responsibilities and our partne
 title: Visit China 
 on-arrival: {!
 
-if (shevardnadze_homecoming == 1) {
+if (Q.shevardnadze_homecoming == 1) {
     Q.relations_with_US += 2;
 } else {
     Q.relations_with_US += 1;

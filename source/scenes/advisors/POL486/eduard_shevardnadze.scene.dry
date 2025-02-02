@@ -38,7 +38,7 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 Shevardnadze always put Gorbachev on a pedestal, and he got to show his enthusiasm at the union’s latest conference.
 
 @eastern_affability
-title: Easter Affability 
+title: Eastern Affability 
 subtitle: Go on a diplomatic mission at the General Secretary’s request.
 choose-if: advisor_action_timer == 0
 on-arrival: advisor_action_timer = 6
@@ -52,13 +52,13 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 @visit_us_canada
 title: Visit the United States and Canada 
 on-arrival: {!
-
+console.log("Before:", Q.relations_with_US);
 if (shevardnadze_homecoming == 1) {
     Q.relations_with_US += 2;
 } else {
     Q.relations_with_US += 1;
 }
-
+console.log("After:", Q.relations_with_US);
 !}
 
 A much needed diplomatic endeavor to ease the tensions of the Cold War

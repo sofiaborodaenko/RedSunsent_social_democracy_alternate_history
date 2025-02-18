@@ -1,0 +1,40 @@
+title: Oil Shock (Foreign Policy)
+new-page: true
+is-card: true
+view-if: year == 1986
+on-arrival: month_actions += 1
+tags: govt_affairs
+
+= Oil Shock
+
+Oil prices plummet in due to decreased foreign demand and large supply build-up throughout the 1970s.  
+
+- @join_opec
+- @dont_join_opec
+
+@join_opec
+title: Join OPEC
+subtitle: Join OPEC to gain more importers of Soviet oil
+on-arrival: relations_with_US += 1; budget += 1
+
+This enhances your relations with other countries including the west as the USSR is seen as cooperative; and, it increases your output with OPEC importers. 
+
+@dont_join_opec
+title: Do not join OPEC
+subtitle: Not joining OPEC will hurt the economy further
+
+- @increase_oil_output
+- @decrease_oil_output
+
+@increase_oil_output
+title: Increase oil output 
+subtitle: Increase oil supply through the purchase of more drills
+on-arrival: budget -= 2
+
+Not joining OPEC and increasing oil output has further reduced prices and combined with lower demand incurs heavy losses on oil profits. Furthermore, the increased capital expenditures for increasing oil supply has also incurred heavy costs on the economy without much added benefit.
+
+@decrease_oil_output
+title: Decrease oil output
+subtitle: Decreasing oil output and reducing the number of drilling sites
+
+Decreasing oil output also decreases revenue, however, no additional expenditures are required and the closure of some drilling sites benefits the economy as expenditures decrease. 

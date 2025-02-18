@@ -81,7 +81,8 @@ Q.popular_approval = 50;
 Q.revive_andrapov_campaign = 0;
 
 //variables to activate other cards 
-Q.law_unearned_income = 0
+Q.law_unearned_income = 0;
+Q.fall_berlin_wall = 0;
 
 //crisis variables 
 nuclear_crisis = 0;
@@ -513,7 +514,7 @@ Q.n_advisors = 3;
 // timer - this decrements by 1 every turn, and is set to 5 whenever an advisor action is used, so that you can only use one advisor action every 5 months.
 // let's just put all of the timers here...
 // most party affairs and government affairs cards are on a timer.
-Q.timers = ['funding_shuttle_program_timer', 'military_spending', 'advisor_action', 'confronting_nazis', 'crisis_program',
+Q.timers = ['malta_summit_timer', 'funding_shuttle_program_timer', 'military_spending', 'advisor_action', 'confronting_nazis', 'crisis_program',
             'fundraising', 'ideology',
             'inter_party_relationships', 'international_relations',
             'iron_front', 'media', 'enemies',
@@ -539,6 +540,9 @@ Q.timers = ['funding_shuttle_program_timer', 'military_spending', 'advisor_actio
 //domestic policy cards timers
 Q.military_spending_timer = 0;
 Q.funding_shuttle_program_timer = 0;
+
+//foreign policy cards timers 
+Q.malta_summit_timer = 0;
 
 //advisor actions
 Q.viktor_chebrikov_timer = 0;

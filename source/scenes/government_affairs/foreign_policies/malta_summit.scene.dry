@@ -1,0 +1,43 @@
+title: Malta Summit (Foreign Policy)
+new-page: true
+is-card: true
+view-if: month >= 12 year >= 1989 and fall_berlin_wall == 1 and malta_summit_timer == 0
+on-arrival: month_actions += 1; malta_summit_timer = 1
+tags: govt_affairs
+
+= Malta Summit
+
+In response to the fall of the Berlin wall, President Bush requests a meeting with you to discuss Germany’s future.
+
+- @attend 
+- @decline_invitation
+
+@attend
+title: Attend
+
+President Bush pushes you to declare a stance on German reunification. He implies that NATO intends to lead the transformation, and the USSR’s refusal to cooperate will result in the cessation of American support for perestroika. 
+
+How will you respond?
+
+- @not_intervene
+- @threaten_crackdowns
+
+@not_intervene
+title: Imply that the Soviet Union will not intervene
+subtitle: Choosing passivity will preserve your domestic and international image. However, it may also enable NATO to take lead in German reunification, thereby expanding American influence into Europe
+on-arrival: relations_with_US += 1
+
+No official agreements are made. However, you and President Bush agree to be “willing collaborators” to maintain stability and peace in the changing region. Shortly after, Bush endorses Kohl’s ‘Ten-Point Program for German Unity.’ 
+
+@threaten_crackdowns
+title: Denounce reunification and threaten a crackdown if attempts are made
+subtitle: Choosing aggression will endanger the relationships fostered within the “common European home” and with the U.S. However, it signifies the Soviet Union’s intent to maintain status as a regional superpower
+on-arrival: relations_with_US -= 1
+
+No official agreements are made. President Bush rebukes his support for perestroika but does not disavow East-West relations entirely.
+
+@decline_invitation
+title: Decline the Invitation
+on-arrival: relations_with_US -= 1
+
+The U.S are upset by your absence, which they interpret as a sign that the Soviet Union will block reunification. Nonetheless, they continue to engage with us cautiously. Meanwhile, tensions between GDR and West Germany continue to bubble. 

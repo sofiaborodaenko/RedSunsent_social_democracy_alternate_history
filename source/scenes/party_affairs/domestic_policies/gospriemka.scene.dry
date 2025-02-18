@@ -1,0 +1,37 @@
+title: Implement Gospriemka (State Inspection Reform) (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1986 and year <= 1987
+on-arrival: month_actions += 1
+tags: party_affairs
+card-image: img/POL486_img/gospriemka.jpg
+
+= Implement Gospriemka (State Inspection Reform)
+
+For decades, Soviet factories have prioritized quantity over quality, producing vast amounts of poorly made goods that clog warehouses as consumers seek foreign imports. The Soviet economy, bound by rigid central planning, measures success by production quotas rather than consumer satisfaction. In response, General Secretary Mikhail Gorbachev introduces *Gospriemka*, a sweeping quality control reform that places state inspectors directly in enterprises to reject substandard products and enforce higher manufacturing standards.
+
+Gorbachev, drawing inspiration from Lenin’s Worker’s Inspection, believes this reform will improve Soviet industry and modernize socialism. However, hardliners warn that the sudden crackdown on defective goods will disrupt supply chains, create shortages, and anger factory managers. Reformists argue that without it, the Soviet economy will remain uncompetitive.
+
+How will you proceed?
+
+- @full_implementation
+- @controlled_rollout
+- @abandon_gospriemka
+
+@full_implementation
+title: Full Implementation
+on-arrival: budget -= 3; reformer_approval += 4; moderate_approval += 1; hardliner_approval -= 4
+
+We enforce *Gospriemka* rigorously, rejecting all substandard goods and ensuring strict adherence to quality standards. This is a bold step toward modernization but leads to severe shortages and industrial disruptions, hurting the economy.
+
+@controlled_rollout
+title: Controlled Rollout
+on-arrival: budget -= 2; reformer_approval += 2; moderate_approval += 2; hardliner_approval -= 2
+
+We phase in *Gospriemka* gradually, allowing enterprises time to adjust while maintaining some production flexibility. Production still falls and quality improvement is slowed, but this softens the economic impact.
+
+@abandon_gospriemka
+title: Abandon Gospriemka
+on-arrival: budget += 2; reformer_approval -= 3; hardliner_approval += 2
+
+We scrap *Gospriemka*, maintaining the current system of quantity-based production. This prevents supply chain disruptions but allows the production of poor-quality goods to continue, frustrating consumers.

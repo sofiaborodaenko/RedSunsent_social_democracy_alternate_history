@@ -1,0 +1,49 @@
+title: Review funding for the Buran space shuttle program (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1985 and year <= 1991 and funding_shuttle_program_timer == 0
+on-arrival: month_actions += 1; funding_shuttle_program_timer = 12
+tags: party_affairs
+card-image: img/POL486_img/space_shuttle.jpg
+
+= Review funding for the Buran space shuttle program
+
+For more than a decade, the Soviet Union has been working towards developing a capable space shuttle that rivals those seen in the United States. Although it puts a heavy strain on the Soviet budget, it is broadly supported amongst the politburo and cushions the Soviet economy with a million jobs. 
+
+Shall we continue funding the program, or redirect funds into other areas of our economy?
+
+- @greatly_increase_budget
+- @moderately_increase_budget 
+- @dont_change_budget
+- @moderately_reduce_budget
+- @greately_reduce_budget
+
+@greatly_increase_budget
+title: Greatly increase the budget towards the Buran Program
+on-arrival: budget -= 2; reformer_approval +=2; moderate_approval += 1; hardliner_approval += 2
+
+We decide to greatly increase spending towards the Buran Program. Although this will put a significant strain on our budget, it is quite popular with the politburo, and may ensure that the program is completed significantly faster and more successfully.
+
+@moderately_increase_budget
+title: Moderately increase the budget towards the Buran Program
+on-arrival: budget -= 1; reformer_approval += 1; moderate_approval += 1; hardliner_approval += 1
+
+We decide to somewhat increase spending towards the Buran Program. Although this will put an additional strain on our budget, it is somewhat popular with the politburo, and may ensure that the program is completed slightly faster and more successfully.
+
+@dont_change_budget
+title: Do not change the budget towards the Buran Program
+on-arrival: hardliner_approval -= 1
+
+We decide to maintain the status quo and keep the same budget towards the Buran Programme. Although no impact on the budget is made, it may alienate some hardliners who perhaps wanted to expand the budget further, viewing the program as potentially important towards the arms race with the West and expanding the nation’s military capabilities in space.
+
+@moderately_reduce_budget
+title: Moderately reduce the budget towards the Buran Program
+on-arrival: budget += 1; reformer_approval -= 1; moderate_approval -= 1; hardliner_approval -= 2
+
+We decide to somewhat reduce the budget towards the Buran Program. Although this is slightly unpopular with the politburo, at least some small portion of our budget is now freed up and may be used for some investment in other policies and sectors within the Soviet economy.
+
+@greately_reduce_budget
+title: Greatly reduce the budget towards the Buran Program
+on-arrival: budget += 2; reformer_approval -= 2; moderate_approval -= 1; hardliner_approval -= 3
+
+We decide to greatly reduce the budget towards the Buran Program. Although this is very unpopular with the politburo, at least a significant portion of our budget is now freed up and may be used for investment in other policies and sectors within the Soviet economy.

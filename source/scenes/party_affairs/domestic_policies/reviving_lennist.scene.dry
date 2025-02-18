@@ -1,0 +1,31 @@
+title: Reviving Leninist Cooperatives (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year == 1988
+on-arrival: month_actions += 1
+tags: party_affairs
+card-image: img/POL486_img/reviving_lennist.jpg
+
+= Reviving Leninist Cooperatives
+
+Going back to the start of the Union Lenin touted the effectiveness of cooperates as part of “the road to socialism” though largely defunct now given the nature of the shadow economy we are grappling perhaps we should attempt to chanel some of this entrepreneurial ingenuity into a project which might benefit the state.
+
+- @chinese_style_cooperatives
+- @state_and_cooperative
+- @no_cooperatives
+
+@chinese_style_cooperatives
+title: Implement Chinese style Cooperatives
+on-arrival: budget += 1; reformer_approval += 1; moderate_approval += 2; hardliner_approval -= 2
+
+The Chinese have been very successful, focusing on replicating their model we hope to achieve success.
+
+@state_and_cooperative
+title: State enterprise and Cooperatives under the same roof
+on-arrival: budget += 2; reformer_approval += 3; moderate_approval += 1; hardliner_approval -= 2
+
+We will place Cooperatives under the same regulations and controls as state enterprises in hopes to regulate them in the same way. This may be a risky gambit if we are not careful.
+
+@no_cooperatives
+title: No Cooperatives
+on-arrival: budget -= 2; reformer_approval -= 3; moderate_approval -= 2; hardliner_approval += 3

@@ -28,6 +28,6 @@ The hardliners are pleased with our decision. Economic acceleration must come in
 
 @repeal_law
 title: Repeal the Law on Unearned Income
-on-arrival: budget += 2; reformer_approval += 2 moderate_approval -= 2; hardliner_approval -= 5
+on-arrival: budget += 2; reformer_approval += 2; moderate_approval -= 2; hardliner_approval -= 5
 
 Repealing the Law on Unearned Income in favour of an evidently contradictory replacement is certainly a drastic development that is sure to anger the hardliners and many of the moderates, who criticize us for lacking direction. However, if acceleration is the name of the game, the trade-off may pay its dividends.

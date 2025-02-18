@@ -650,8 +650,7 @@ new-page: true
 
 This is a game of alternate history. While historical accuracy is a major concern, keep in mind that this is a *game*, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes.
 
-The mid-1980s present an unstable time for Soviet Communism. After 3 different leaders in the span of a few years in the early 1980s (Brezhnev,  Andropov, Chernenko), Gorbachev’s rise to power of the Soviet Union presents an opportunity for economic and political reform, and a revival of the Soviet Union’s power.
-The task of Red Sunset  is to modernize Soviet Communism for the globalizing world, by playing as Mikhail Gorbachev, and keeping him in power. With increasing demands for prosperity, consumer goods, relations with the West, and more, it is YOUR job to keep Soviet Communism alive.
+For more information on the politics and government of the Soviet Union, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 - @1928_main: Begin 
 
 @1928_main
@@ -661,8 +660,7 @@ go-to: main if difficulty >= 0
 
 = 1985
 
-It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
+The mid-1980s present an unstable time for Soviet Communism. After 3 different leaders in the span of a few years in the early 1980s (Brezhnev,  Andropov, Chernenko), Gorbachev’s rise to power of the Soviet Union presents an opportunity for economic and political reform, and a revival of the Soviet Union’s power.
 
-Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a socialist majority.
-
+The task of Red Sunset  is to modernize Soviet Communism for the globalizing world, by playing as Mikhail Gorbachev, and keeping him in power. With increasing demands for prosperity, consumer goods, relations with the West, and more, it is YOUR job to keep Soviet Communism alive.
 

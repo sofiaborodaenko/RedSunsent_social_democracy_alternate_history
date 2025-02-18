@@ -1,0 +1,33 @@
+title: Law on Individual Labor Activity (Domestic Policy)
+new-page: true
+is-card: true
+view-if: month >= 11 and year >= 1986 and year <= 1991 and law_unearned_income == 1
+on-arrival: month_actions += 1
+tags: party_affairs
+card-image: img/POL486_img/individual_labour.jpg
+
+= Law on Individual Labor Activity
+
+The Law on Individual Labor Activity is currently being deliberated by the Politburo as an option to encourage small businesses and tradesmen. While this option presents the potential for economic acceleration, there are two cautionary points to consider. First, vocal hardliners in the Politburo deeply oppose the encouragement of private tradesmen. Second, the Law on Unearned Income, passed into effect earlier in this sequence, targets corruption in a way that punishes private trade, rendering the new law an apparent contradiction. A number of options are at our disposal.
+
+- @approve_law
+- @reject_law
+- @repeal_law
+
+@approve_law
+title: Approve the Law on Individual Labor Activity
+on-arrival: reformer_approval += 1; moderate_approval -= 3
+
+While the hardliners disapprove of our decision, the Law on Individual Labor Activity is passed as a means of encouraging economic acceleration in the private sector. Maybe the contradictory terms won’t present as big a dilemma as many seem to think...
+
+@reject_law
+title: Reject the Law on Individual Labor Activity
+on-arrival: reformer_approval -= 1; hardliner_approval += 2
+
+The hardliners are pleased with our decision. Economic acceleration must come in a different way.
+
+@repeal_law
+title: Repeal the Law on Unearned Income
+on-arrival: budget += 2; reformer_approval += 2 moderate_approval -= 2; hardliner_approval -= 5
+
+Repealing the Law on Unearned Income in favour of an evidently contradictory replacement is certainly a drastic development that is sure to anger the hardliners and many of the moderates, who criticize us for lacking direction. However, if acceleration is the name of the game, the trade-off may pay its dividends.

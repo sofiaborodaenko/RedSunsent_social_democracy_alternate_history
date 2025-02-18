@@ -60,6 +60,11 @@ Q.reformer_approval = 0;
 Q.moderate_approval = 0;
 Q.hardliner_approval = 0;
 
+// politburo composition
+Q.reformers_composition = 8;
+Q.moderates_composition = 11;
+Q.hardliners_composition = 6;
+
 //dissent in status
 Q.nomenklatura = 0;
 Q.intelligentsia = 0;

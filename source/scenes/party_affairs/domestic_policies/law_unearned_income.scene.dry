@@ -1,0 +1,28 @@
+title: Law on Unearned Income (Domestic Policy)
+new-page: true
+is-card: true
+view-if: month >= 5 and year >= 1986 and year <= 1991
+on-arrival: month_actions += 1
+tags: party_affairs
+card-image: img/POL486_img/unearned_income.webp
+
+= Law on Unearned Income
+
+For decades, the Soviet Union has been embroiled in the existence of a “shadow economy” which provides unearned incomes that the state cannot easily monitor and control. Hardliners within the politburo are pushing us to stamp out such “illegal” incomes, arguing that it will lower corruption within the economy. Reformers, however, believe that implementing such a law is a mere distraction towards other, more transformative economic policies, and potentially hurts small private tradesmen and entrepreneurs who may benefit from informal exchanges and salaries the most, and who may play pivotal roles in stimulating economic growth within the nation.
+
+How should we proceed?
+
+- @implement_law
+- @dont_implement_law
+
+@implement_law
+title: Implement the law on unearned income
+on-arrival: budget -= 2; reformer_approval -= 2; moderate_approval += 1; hardliner_approval += 2; law_unearned_income = 1
+
+To much fanfare from hardliners, we decide to prioritize lowering corruption within the Soviet economy, hence implementing the law. Although this is unpopular with reformers, and also negatively affects small tradespeople and the potential economic growth they may bring, perhaps down the road such a law, and the lowering of corruption within the economy it brings, may serve its own benefit towards the state.
+
+@dont_implement_law
+title: Do not implement the law on unearned income
+on-arrival: budget += 1; reformer_approval += 2; hardliner_approval -= 2
+
+Much to the dismay of hardliners within the politburo, we decide to forgo the law on unearned income. Reformers are satisfied, and so are small tradespeople. Riding off the back of such satisfaction, such tradespeople provide a small boost to the economy.

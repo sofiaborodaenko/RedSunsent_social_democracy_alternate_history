@@ -80,6 +80,9 @@ Q.popular_approval = 50;
 //variables for popular dissaproval policies 
 Q.revive_andrapov_campaign = 0;
 
+//variables to activate other cards 
+Q.law_unearned_income = 0
+
 //crisis variables 
 nuclear_crisis = 0;
 

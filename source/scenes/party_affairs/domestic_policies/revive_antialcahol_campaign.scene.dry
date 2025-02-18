@@ -8,7 +8,7 @@ card-image: img/POL486_img/anti-alcahol_campaign.webp
 
 = Do We Revive Andropov's Anti-Alcohol Campaign?
 
-Growing popularity for the prohibition of alcohol has been indicated in recent surveys, especially among women, and we have been advised to enact a revival of the Andropov era anti-drunkenness campaign. This is due to increasing mortality related to excess drinking as well as the hefty costs associated with alcoholism (ie, lack of worker productivity, higher criminality, domestic violence, etc.) (Zubok 23).
+Growing popularity for the prohibition of alcohol has been indicated in recent surveys, especially among women, and we have been advised to enact a revival of the Andropov era anti-drunkenness campaign. This is due to increasing mortality related to excess drinking as well as the hefty costs associated with alcoholism (ie, lack of worker productivity, higher criminality, domestic violence, etc.).
 
 - @harsh_crackdowns
 - @partial_crackdown
@@ -17,25 +17,25 @@ Growing popularity for the prohibition of alcohol has been indicated in recent s
 
 @harsh_crackdowns
 title: Institute Harsh Crackdowns
-on-arrival: budget -= 3; reformer_approval += 2; moderate_approval += 1; hardliner_approval -= 2; nomenklatura += 2; intelligentsia += 3; orthodox += 2; unemployed -= 3; criminal_class -= 3; party_cadres += 1
+on-arrival: budget -= 3; reformer_approval += 2; moderate_approval += 1; hardliner_approval -= 2; nomenklatura += 2
 
-We experience a dip in popularity across the board (in Politburo and among the general public) and the economy will suffer with less money coming in from liquor sales, which account for one third of the GDP (Zubok 23). Though drunkenness, and costs associated with it, will decrease, this will not be enough to offset the damage done to the budget and Gorbachev's popularity (Zubok 24).
+We experience a dip in popularity across the board (in Politburo and among the general public) and the economy will suffer with less money coming in from liquor sales, which account for one third of the GDP. Though drunkenness, and costs associated with it, will decrease, this will not be enough to offset the damage done to the budget and Gorbachev's popularity.
 
 @partial_crackdown
 title: A Partial Crackdown
-on-arrival: budget -= 2; reformer_approval += 1; moderate_approval += 2; hardliner_approval -= 1; nomenklatura += 1; intelligentsia += 2; peasants -= 2; criminal_class -= 2; orthodox += 1; unemployed -= 2
+on-arrival: budget -= 2; reformer_approval += 1; moderate_approval += 2; hardliner_approval -= 1
 
-We take a moderate position, institute severe police crackdowns on public drunkenness and increase punishment for crimes committed while drunk. This will boost Gorbachev's support within the party, but only mildly (Zubok 23). Additionally, income from alcohol sales decrease slightly as less people are day drinking.
+We take a moderate position, institute severe police crackdowns on public drunkenness and increase punishment for crimes committed while drunk. This will boost Gorbachev's support within the party, but only mildly. Additionally, income from alcohol sales decrease slightly as less people are day drinking.
 
 @do_not_revive
 title: Do not Revive the Campaign
-on-arrival: revive_andrapov_campaign = 0; reformer_approval -= 2; hardliner_approval += 2; nomenklatura -= 1; intelligentsia -=2; peasants += 1; criminal_class += 1; orthodox -= 1; unemployed += 1; party_cadres -= 3
+on-arrival: revive_andrapov_campaign = 0; reformer_approval -= 2; hardliner_approval += 2
 
 We do not revive the Anti-Alcohol campaign. As such, disapproval among the Politburo increases as it does among citizens who see alcoholism as a problem. However, on a positive note, we suffer no budget shortfall.
 
 @provide_more_funding
 title: Provide More Funding to the Alcohol Industry.
-on-arrival: budget += 3; reformer_approval -= 3; moderate_approval -= 1; hardliner_approval -= 1; nomenklatura -= 3; intelligentsia -= 4; peasants += 4; criminal_class += 3; orthodox -= 3; unemployed += 2; party_cadres -= 5
+on-arrival: budget += 3; reformer_approval -= 3; moderate_approval -= 1; hardliner_approval -= 1
 
 To a great degree of controversy, we decide that the revenue from the alcohol tax is too enticing to pass up. We invest further into the alcohol industry by subsidizing vineyards and
 distilleries, aiming to maximize the returns on an already substantive industry. While our budget increases, drunkenness and the problems associated with it worsen.

@@ -75,7 +75,7 @@ Q.unemployed = 0;
 Q.criminal_class = 0;
 Q.party_cadres = 0;
 
-Q.popular_approval = 0;
+Q.popular_approval = 50;
 
 //variables for popular dissaproval policies 
 Q.revive_andrapov_campaign = 0;

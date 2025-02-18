@@ -3,8 +3,7 @@ new-page: true
 is-card: true
 view-if: year == 1985
 on-arrival: month_actions += 1
-frequency: 500 #testing purposes
-tags: party_affairs
+tags: govt_affairs
 
 = Geneva Summit
 
@@ -38,7 +37,7 @@ Pleased, the U.S restores landing rights for the Soviet airline, Aeroflot, in th
 
 @implement_both
 title: Implement both
-on-arrival: relations_with_US += 1
+on-arrival: relations_with_US += 1; hardliner_approval -= 5
 
 @implement_neither
 title: Implement neither 

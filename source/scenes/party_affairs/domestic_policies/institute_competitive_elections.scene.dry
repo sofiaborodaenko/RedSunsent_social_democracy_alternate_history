@@ -1,0 +1,44 @@
+title: Institute Competitive Elections (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year == 1988
+on-arrival: month_actions += 1
+tags: party_affairs 
+card-image: img/POL486_img/competitive_elections.jpg
+
+= Institute Competitive Elections
+
+For decades, the Communist Party has maintained absolute control over Soviet politics through one-party elections. However, General Secretary Mikhail Gorbachev, pressured by reformers and personal conviction, believes that electoral reform is necessary to modernize the USSR and preserve socialism. In a bold move, he tries to implement competitive elections for the newly created Congress of People's Deputies, a legislative body with the power to change the constitution, appoint the government, and elect the Supreme Soviet.
+
+Gorbachev's reform is meant to revitalize socialism and decentralize power, but comes with serious risks. For the first time, opposition figures and reformists would be able to openly challenge Communist Party rule. Hardliners in the Politburo warn that this could destabilize the Soviet system, embolden nationalist movements, and lead to a loss of control. Reformists, however, see this as the only way to save the USSR from economic stagnation.
+
+How will you proceed?
+
+- @full_implementation 
+- @controlled_elections
+- @undermine_elections
+- @delay_elections
+
+@full_implementation
+title: Full Implementation
+on-arrival: budget -= 2; reformer_approval += 4; moderate_approval += 1; hardliner_approval -= 4
+
+We allow truly competitive elections, permitting opposition figures and non-Party candidates to run. This is a major step toward democracy but severely weakens Party control, emboldening regional nationalists and reformists.
+
+@controlled_elections
+title: Controlled Elections 
+on-arrival: budget -= 1; reformer_approval += 2; moderate_approval += 2; hardliner_approval -= 2
+
+We introduce multi-candidate elections but restrict candidacy to Communist Party members and loyal figures. This gives the appearance of democracy while maintaining stability.
+
+@undermine_elections
+title: Undermine Elections 
+on-arrival: budget -= 1; reformer_approval -= 2; hardliner_approval += 2
+
+We allow elections but manipulate the process, ensuring that Communist Party candidates dominate the results. This preserves Party authority but discredits reforms and increases public cynicism.
+
+@delay_elections
+title: Delay Elections 
+on-arrival: budget += 1; reformer_approval -= 3; hardliner_approval += 4
+
+We postpone competitive elections indefinitely, citing instability and the need for further preparation. This maintains order but alienates reformists and sparks protests.

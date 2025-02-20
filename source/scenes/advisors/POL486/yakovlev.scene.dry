@@ -1,0 +1,51 @@
+title: Alexander Yakovlev
+new-page: true
+is-pinned-card: true
+tags: advisor
+view-if: alexander_yakovlev == 1
+card-image: img/portraits/POL486/yakovlev.jpg
+
+= Alexander Yakovlev
+
+While not as famous as Gorbachev, Alexander Yakovlev was a prominent Soviet
+politician who worked hard with Gorbachev to bring reform to Soviet society. His ideological
+contribution to perestroika made him be known as the “architect” of perestroika. He was also
+called the “father” of glasnost by removing censorship throughout the country. While studying in the United States in the University of Columbia, he was inspired by
+Franklin D. Roosevelt’s New Deal policy. He wanted to save Soviet’s communism with
+perestroika the same way the New Deal saved America’s capitalism. In 1983,
+Yakovlev, who was the Soviet ambassador to Canada at the time, won the heart of Gorbachev,
+who was visiting Canada as a rising Politburo member. Back in Moscow, under
+Gorbachev’s leadership, Yakovlev played a key role in, not just in domestic policies, but also
+foreign policies of Soviet Union.
+
+- @non-intervention 
+- @secret_protocol
+- @glasnost_initiation 
+- @root: Return to main
+
+@non-intervention
+title: Eastern Europe Non-Intervention
+subtitle: Yakovlev openly disagreed with Soviet interventions in the Soviet Union's allies in Eastern Europe, which were struggling with social unrest
+choose-if: advisor_action_timer == 0
+on-arrival: relations_eastern_europe -= (0.10*relations_eastern_europe); hardliner_approval -= (0.10*hardliner_approval); relations_with_US += (0.10*relations_with_US); relations_western_europe += (0.10*relations_western_europe); separatism += 2; reformer_approval += (0.10*reformer_approval); advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+
+@secret_protocol
+title: The Secret Protocol
+subtitle: Assign Yakovlev to unveil the 1939 Nazi Germany and Soviet Union’s secret pact to the public
+# view-if: 
+choose-if: advisor_action_timer == 0
+on-arrival: hardliner_approval -= (0.05*hardliner_approval); reformer_approval += (0.05*reformer_approval); advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+
+Stalinists felt attacked by the announcement.
+
+@glasnost_initiation
+title: Glasnost Initiation
+subtitle: Censorship that had existed for decades will be lifted in all forms of media. The public will now be allowed to criticize the government and the party
+# view-if: 
+choose-if: advisor_action_timer == 0
+on-arrival: hardliner_approval -= (0.10*hardliner_approval); popular_approval += (0.15*popular_approval); reformer_approval -= (0.10*reformer_approval); separatism += 3; advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+
+Yakovlev, in a speech, insisted that perestroika would fail without the implementation of glasnost.

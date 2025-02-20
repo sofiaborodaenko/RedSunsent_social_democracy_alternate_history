@@ -97,6 +97,7 @@ Q.victor_chebrikov_advisor = 1; //set to 1 for testing purposes
 Q.shevardnadze_adviser = 1;
 Q.chernyaev_adviser = 1;
 Q.sergey_akhromeyev = 1;
+Q.alexander_yakovlev = 1;
 
 //advisor loyalty 
 Q.andrei_gromyko_loyalty = 0;

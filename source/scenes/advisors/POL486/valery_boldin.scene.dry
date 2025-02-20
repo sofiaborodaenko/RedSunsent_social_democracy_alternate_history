@@ -1,0 +1,66 @@
+title: Valery Boldin
+new-page: true
+is-pinned-card: true
+tags: advisor
+view-if: valery_boldin == 1
+card-image:
+
+= Valery Boldin
+
+Boldin was a Pravda journalist at the start of Gorbachev’s rule and
+Presidential Chief by the end of it. What also raised eyebrows was his secretive
+mannerisms, where he would only speak in whispers to others or , more often, not speak
+at all. Nonetheless, Boldin was one of Gorbachev’s closest aides to the very end.
+
+- @set_agenda
+- @recording_tape
+- @closer_enemies
+- @root: Return to main
+
+@set_agenda
+title: Set the Agenda
+subtitle: Decide what the next Politburo Meeting will be about
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: {!
+Q.advisor_action_timer = 6;
+if (Q.difficulty >= 0) {
+    window.dendryUI.dendryEngine.state.currentHands['main'] = [];
+} else {
+    window.dendryUI.dendryEngine.state.currentHands['main.main_easy'] = [];
+}
+!}
+
+Even through the ranks, Boldin was entrusted to set the topics of discussion for each CPSU meetings from the very start of his ascension in the government.
+
+@recording_tape
+title: Recording Tape
+subtitle: Revise the conversations that Boldin has recorded
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+#re-add 2 of the cards played back into your hand 
+
+Boldin recorded all his conversations to see if any important problems (or troubling committee member) needed fixing.
+
+@closer_enemies
+title: Closer Enemies
+subtitle: Transfer info from the party which least likes Gorbachev
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: {!
+
+Q.advisor_action_timer = 6;
+
+lowest_approval = Math.min(num1, num2, num3);
+
+if (Q.reformer_approval == lowest_approval){
+    Q.reformer_approval += 2;
+} else if (Q.hardliner_approval == lowest_approval){
+    Q.hardliner_approval += 2;
+} else {
+    Q.moderate_approval += 2;
+}
+
+!}
+
+Boldin had up-to-date rumors and news from all factions and relevant members in the party

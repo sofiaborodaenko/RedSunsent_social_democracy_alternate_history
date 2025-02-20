@@ -16,8 +16,6 @@ if (Q.year == Q.year_keep_track) {
     Q.year_keep_track = 0;
 }
 
-console.log(Q.popular_approval)
-
 !}
 max-cards: 3
 

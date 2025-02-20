@@ -95,6 +95,9 @@ if (Q.dissent < 0) {
     Q.dissent = 0.95;
 }
 
+
+console.log(Q.popular_approval)
+
 // 1. update dates
 if (Q.month_actions >= 1) {
     Q.time += 1;

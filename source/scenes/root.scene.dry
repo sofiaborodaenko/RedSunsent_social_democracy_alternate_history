@@ -645,8 +645,10 @@ Q.radbruch_advisor = 0; // Gustav Radbruch
 Q.stampfer_advisor = 0; // Friedrich Stampfer
 !}
 
+
 set-bg: img/test_bg2.jpg
 new-page: true
+
 
 > *"Perestroika is an urgent necessity arising from the profound processes of development in our socialist society. This society is ripe for change. It has long been yearning for it. Any delay in beginning perestroika could have led to an exacerbated internal situation in the near future, which, to put it bluntly, would have been fraught with serious social, economic, and political crises."*
 

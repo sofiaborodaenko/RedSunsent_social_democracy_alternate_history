@@ -80,6 +80,9 @@ Q.popular_approval = 50;
 //variables for popular dissaproval policies 
 Q.revive_andrapov_campaign = 0;
 
+//states to watch variables 
+Q.eastern_block = 0;
+
 //variables to activate other cards 
 Q.law_unearned_income = 0;
 Q.fall_berlin_wall = 0;
@@ -93,6 +96,7 @@ Q.andrei_gromyko_advisor = 1; //set to 1 for testing purposes
 Q.victor_chebrikov_advisor = 1; //set to 1 for testing purposes
 Q.shevardnadze_adviser = 1;
 Q.chernyaev_adviser = 1;
+Q.sergey_akhromeyev = 1;
 
 //advisor loyalty 
 Q.andrei_gromyko_loyalty = 0;
@@ -102,6 +106,9 @@ Q.add_new_deck = 0;
 
 //special variables for advisors
 Q.shevardnadze_homecoming = 0;
+
+//variable to increase popular approval based on sergey akhramov 
+Q.year_keep_track = 0
 
 //************************MY VARIABLES END************************
 
@@ -514,7 +521,7 @@ Q.n_advisors = 3;
 // timer - this decrements by 1 every turn, and is set to 5 whenever an advisor action is used, so that you can only use one advisor action every 5 months.
 // let's just put all of the timers here...
 // most party affairs and government affairs cards are on a timer.
-Q.timers = ['malta_summit_timer', 'funding_shuttle_program_timer', 'military_spending', 'advisor_action', 'confronting_nazis', 'crisis_program',
+Q.timers = ['malta_summit', 'funding_shuttle_program', 'military_spending', 'advisor_action', 'confronting_nazis', 'crisis_program',
             'fundraising', 'ideology',
             'inter_party_relationships', 'international_relations',
             'iron_front', 'media', 'enemies',
@@ -522,7 +529,7 @@ Q.timers = ['malta_summit_timer', 'funding_shuttle_program_timer', 'military_spe
             'shuffle_leadership', 'streetfighting', 'peoples_party',
             'party_disunity',
             // govt
-            'viktor_chebrikov', 'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
+            'advisor_action_year', 'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
             'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy',
             'police', 'prussian_affairs', 'shuffle_cabinet', 'social_welfare',
             'homosexual_rights', 'economic_policy', 'coalition_affairs',
@@ -545,7 +552,7 @@ Q.funding_shuttle_program_timer = 0;
 Q.malta_summit_timer = 0;
 
 //advisor actions
-Q.viktor_chebrikov_timer = 0;
+Q.advisor_action_year_timer = 0;
 
 //********************MY TIMERS********************
 

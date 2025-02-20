@@ -9,6 +9,13 @@ if (Q.advisor_action_timer <= 0) {
 } else {
     Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' months.';
 }
+
+//if player chose choice four for sergey akhramov 
+if (Q.year == Q.year_keep_track) {
+    Q.popular_approval += 3;
+    Q.year_keep_track = 0;
+}
+
 !}
 max-cards: 3
 

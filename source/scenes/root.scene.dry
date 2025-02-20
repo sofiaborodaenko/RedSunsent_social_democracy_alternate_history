@@ -98,6 +98,7 @@ Q.shevardnadze_adviser = 1;
 Q.chernyaev_adviser = 1;
 Q.sergey_akhromeyev = 1;
 Q.alexander_yakovlev = 1;
+Q.vadim_medvedev = 1;
 
 //advisor loyalty 
 Q.andrei_gromyko_loyalty = 0;

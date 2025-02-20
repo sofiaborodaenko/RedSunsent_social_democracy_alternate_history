@@ -1,0 +1,56 @@
+title: Vadim Medvedev
+new-page: true
+is-pinned-card: true
+tags: advisor
+view-if: vadim_medvedev == 1
+# year between 1988-1991
+card-image: img/portraits/POL486/medvedev.jpg
+
+= Vadim Medvedev 
+
+Vadim Medvedev held a doctorate in economics and generally advised Gorbachev on ideology. He played a key role in attempting to reconcile
+Marxist-Leninist principles with elements of social democracy and bourgeois
+democracy while defending perestroika amid growing political and economic
+crises.
+
+- @new_thinking
+- @defend_changes
+- @diplomacy
+- @election_strategy
+- @root: Return to main
+
+@new_thinking
+title: New Thinking
+subtitle: Support the development of Gorbachev’s evolving ideological framework
+choose-if: advisor_action_year_timer == 0
+on-arrival: reformer_approval += 2; popular_approval -= 2; advisor_action_year_timer = 12
+unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]
+
+Medvedev struggled to provide ideological coherence.
+
+@defend_changes
+title: Defend economic changes
+subtitle: Justify perestroika’s market-oriented reforms
+view-if: budget > 3
+choose-if: advisor_action_year_timer == 0
+on-arrival: advisor_action_year_timer = 12; budget += 1
+unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]
+
+@diplomacy
+title: Diplomacy
+subtitle: Visit the people of border regions to calm separatist movements and manage nationalist tensions
+choose-if: advisor_action_year_timer == 0
+on-arrival: relations_eastern_europe += 3; budget -= 1; advisor_action_year_timer = 12
+unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]
+
+Direct engagement is essential for maintaining control.
+
+@election_strategy
+title: Election Strategy
+subtitle: Shape the CPSU’s electoral platform for the 1989 Congress of People’s Deputies
+choose-if: advisor_action_year_timer == 0
+view-if: year == 1989
+on-arrival: popular_approval -= 3; advisor_action_year_timer = 12
+unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]
+
+Medvedev has perplexed his fellow party members. 

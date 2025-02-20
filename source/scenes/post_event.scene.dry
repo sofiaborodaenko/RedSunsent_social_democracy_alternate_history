@@ -96,8 +96,6 @@ if (Q.dissent < 0) {
 }
 
 
-console.log(Q.popular_approval)
-
 // 1. update dates
 if (Q.month_actions >= 1) {
     Q.time += 1;

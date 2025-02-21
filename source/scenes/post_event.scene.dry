@@ -118,20 +118,21 @@ if (Q.month_actions >= 1) {
     // TESTING MY CODE
     let reformer_array = [];
 
-for (let advisor of Q.reformer_advisors) {
-    console.log(Q[advisor + '_advisor']);
+    for (let advisor of Q.reformer_advisors) {
+        console.log(Q[advisor + '_advisor']);
 
-    if (Q[advisor + '_advisor'] == 1) {
-        if (!reformer_array.includes(advisor)) {  // Ensure no duplicates
-            reformer_array.push(advisor);
+        if (Q[advisor + '_advisor'] == 1) {
+            if (!reformer_array.includes(advisor)) {  // Ensure no duplicates
+                reformer_array.push(advisor);
+            }
+        } else {
+            // Remove advisor from the array if they are present
+            reformer_array = reformer_array.filter(item => item !== advisor);
         }
-    } else {
-        // Remove advisor from the array if they are present
-        reformer_array = reformer_array.filter(item => item !== advisor);
-    }
 
-    Q.reformers_composition = reformer_array.length;
-}
+        Q.reformers_composition = reformer_array.length;
+    }
+    
     // append to historical party support records
     var party_support_results = {'date': new Date(Q.year, Q.month - 1)};
     for (var party of Q.parties) {

@@ -36,6 +36,7 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 - @add_chebrikov 
 - @add_shevardnadze
 - @add_medvedev
+- @root: Return to main
 
 @add_chebrikov
 title: Add Viktor Chebrikov as an advisor 

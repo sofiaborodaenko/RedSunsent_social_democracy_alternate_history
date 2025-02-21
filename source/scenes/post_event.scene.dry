@@ -306,62 +306,56 @@ if (Q.month_actions >= 1) {
             Q.new_middle_nsdap += 2/12;
         }
     }
+}
 
-    // MY CHANGES 
-    if (Q.chebrikov_add == 0) {
-        if (Q.year >= 1982 && Q.year <= 1985){ //should be 1988
-            Q.victor_chebrikov_advisor = 1;
-            //Q.add_chebrikov = 1;
-        } else {
-            Q.victor_chebrikov_advisor = 0;
-            //Q.add_chebrikov = 0;
-        }
-    } else {
+// MY CHANGES 
+if (Q.chebrikov_add == 0) {
+    if (Q.year >= 1982 && Q.year <= 1985){ //should be 1988
         Q.victor_chebrikov_advisor = 1;
-    }
-
-    if (Q.shevardnadze_add == 0) {
-        if (Q.year >= 1985 && Q.year <= 1990){
-            Q.shevardnadze_advisor = 1;
-            //Q.add_shevardnadze = 1;
-        } else {
-            Q.shevardnadze_advisor = 0;
-            //Q.add_shevardnadze = 0;
-        }
     } else {
+        Q.victor_chebrikov_advisor = 0;
+    }
+} else {
+    Q.victor_chebrikov_advisor = 1;
+}
+
+if (Q.shevardnadze_add == 0) {
+    if (Q.year >= 1985 && Q.year <= 1990){
         Q.shevardnadze_advisor = 1;
-    }
-
-    if (Q.medvedev_add == 0) {
-        if (Q.year >= 1988 && Q.year <= 1991){
-            Q.vadim_medvedev_advisor = 1;
-            //Q.add_medvedev = 1;
-        } else {
-            Q.vadim_medvedev_advisor = 0;
-            //Q.add_medvedev = 0;
-        }
     } else {
-        Q.vadim_medvedev_advisor = 1;
+        Q.shevardnadze_advisor = 0;
     }
+} else {
+    Q.shevardnadze_advisor = 1;
+}
+
+if (Q.medvedev_add == 0) {
+    if (Q.year >= 1988 && Q.year <= 1991){
+        Q.vadim_medvedev_advisor = 1;
+    } else {
+        Q.vadim_medvedev_advisor = 0;
+    }
+} else {
+    Q.vadim_medvedev_advisor = 1;
 }
 
 // TESTING MY CODE
-    let reformer_array = [];
+let reformer_array = [];
 
-    for (let advisor of Q.reformer_advisors) {
-        console.log(Q[advisor + '_advisor']);
+for (let advisor of Q.reformer_advisors) {
+    console.log(Q[advisor + '_advisor']);
 
-        if (Q[advisor + '_advisor'] == 1) {
-            if (!reformer_array.includes(advisor)) {  // Ensure no duplicates
-                reformer_array.push(advisor);
-            }
-        } else {
-            // Remove advisor from the array if they are present
-            reformer_array = reformer_array.filter(item => item !== advisor);
+    if (Q[advisor + '_advisor'] == 1) {
+        if (!reformer_array.includes(advisor)) {  // Ensure no duplicates
+            reformer_array.push(advisor);
         }
-
-        Q.reformers_composition = reformer_array.length;
+    } else {
+        // Remove advisor from the array if they are present
+        reformer_array = reformer_array.filter(item => item !== advisor);
     }
+
+    Q.reformers_composition = reformer_array.length;
+}
 
 Q.has_event = 0;
 // check if there are any cards in #event, and then go to main if not.

@@ -327,7 +327,7 @@ if (Q.month_actions >= 1) {
 
     if (Q.add_shevardnadze == 0) {
         if (Q.year >= 1985 && Q.year <= 1986){ //should be 1990
-            Q.shevardr = 1;
+            Q.shevardnadze_advisor = 1;
             //Q.add_shevardnadze = 1;
         } else {
             Q.shevardnadze_advisor = 0;

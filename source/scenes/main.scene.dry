@@ -22,7 +22,7 @@ console.log(Q.popular_approval);
 
 
 !}
-max-cards: max_cards
+max-cards: Q.max_cards
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 

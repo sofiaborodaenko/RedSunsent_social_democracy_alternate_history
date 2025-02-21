@@ -22,14 +22,7 @@ title: Set the Agenda
 subtitle: Decide what the next Politburo Meeting will be about
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
-on-arrival: {!
-Q.advisor_action_timer = 6;
-if (Q.difficulty >= 0) {
-    window.dendryUI.dendryEngine.state.currentHands['main'] = [];
-} else {
-    window.dendryUI.dendryEngine.state.currentHands['main.main_easy'] = [];
-}
-!}
+on-arrival: max_cards += 1; advisor_action_timer = 6
 
 Even through the ranks, Boldin was entrusted to set the topics of discussion for each CPSU meetings from the very start of his ascension in the government.
 

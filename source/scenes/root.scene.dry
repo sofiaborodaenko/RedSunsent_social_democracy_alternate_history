@@ -40,6 +40,9 @@ Q.dues = 2;
 
 // ************************MY VARIABLES************************
 
+//max cards
+Q.max_cards = 3;
+
 // separatism variable 
 // As separatism increases, at every interval of 10 a satellite state/SSR will leave, 
 // the order of which states leave will be determined by the “Events” group

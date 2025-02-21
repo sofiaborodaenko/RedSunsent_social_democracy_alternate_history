@@ -2,7 +2,7 @@ title: Alexander Yakovlev
 new-page: true
 is-pinned-card: true
 tags: advisor
-view-if: alexander_yakovlev == 1
+view-if: alexander_yakovlev_advisor == 1
 card-image: img/portraits/POL486/yakovlev.jpg
 
 = Alexander Yakovlev

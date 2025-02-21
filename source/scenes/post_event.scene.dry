@@ -305,6 +305,24 @@ if (Q.month_actions >= 1) {
             Q.new_middle_nsdap += 2/12;
         }
     }
+
+    /////////////MY CHANGES 
+    if (Q.year >= 1982 and year <= 1988){
+        Q.victor_chebrikov_advisor = 1;
+    } else {
+        Q.victor_chebrikov_advisor = 0;
+    }
+    if (Q.year >= 1985 and year <= 1990){
+        Q.shevardnadze_advisor = 1;
+    } else {
+        Q.shevardnadze_advisor = 0;
+    }
+    if (Q.year >= 1988 and year <= 1991){
+        Q.vadim_medvedev_advisor = 1;
+    } else {
+        Q.vadim_medvedev_advisor = 0;
+    }
+
 }
 Q.has_event = 0;
 // check if there are any cards in #event, and then go to main if not.

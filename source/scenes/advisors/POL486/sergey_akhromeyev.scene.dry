@@ -2,7 +2,7 @@ title: Sergey Akhromeyev
 new-page: true
 is-pinned-card: true
 tags: advisor
-view-if: sergey_akhromeyev == 1
+view-if: sergey_akhromeyev_advisor == 1
 card-image: img/portraits/POL486/Sergey_Akhromeyev_1.jpg
 
 = Sergey Akhromeyev

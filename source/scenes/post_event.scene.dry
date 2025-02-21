@@ -114,24 +114,6 @@ if (Q.month_actions >= 1) {
             Q[timer+'_timer'] -= 1;
         }
     }
-
-    // TESTING MY CODE
-    let reformer_array = [];
-
-    for (let advisor of Q.reformer_advisors) {
-        console.log(Q[advisor + '_advisor']);
-
-        if (Q[advisor + '_advisor'] == 1) {
-            if (!reformer_array.includes(advisor)) {  // Ensure no duplicates
-                reformer_array.push(advisor);
-            }
-        } else {
-            // Remove advisor from the array if they are present
-            reformer_array = reformer_array.filter(item => item !== advisor);
-        }
-
-        Q.reformers_composition = reformer_array.length;
-    }
     
     // append to historical party support records
     var party_support_results = {'date': new Date(Q.year, Q.month - 1)};
@@ -327,7 +309,7 @@ if (Q.month_actions >= 1) {
 
     // MY CHANGES 
     if (Q.add_chebrikov == 0) {
-        if (Q.year >= 1982 && Q.year <= 1988){
+        if (Q.year >= 1982 && Q.year <= 1985){ //should be 1988
             Q.victor_chebrikov_advisor = 1;
             //Q.add_chebrikov = 1;
         } else {
@@ -356,6 +338,25 @@ if (Q.month_actions >= 1) {
         }
     }
 }
+
+// TESTING MY CODE
+    let reformer_array = [];
+
+    for (let advisor of Q.reformer_advisors) {
+        console.log(Q[advisor + '_advisor']);
+
+        if (Q[advisor + '_advisor'] == 1) {
+            if (!reformer_array.includes(advisor)) {  // Ensure no duplicates
+                reformer_array.push(advisor);
+            }
+        } else {
+            // Remove advisor from the array if they are present
+            reformer_array = reformer_array.filter(item => item !== advisor);
+        }
+
+        Q.reformers_composition = reformer_array.length;
+    }
+
 Q.has_event = 0;
 // check if there are any cards in #event, and then go to main if not.
 var scene = this.game.scenes['post_event.events_choice'];

@@ -116,11 +116,19 @@ if (Q.month_actions >= 1) {
     }
 
     // TESTING MY CODE
-    //for (advisor of Q.reformer_advisors) {
-    //    if (Q[advisor+'_advisor'] == 1){
-    //        Q.reformers_composition += 1;
-    //    }
-    //}
+    reformer_array = [];
+
+    for (advisor of Q.reformer_advisors) {
+        console.log(Q[advisor+'_advisor']);
+
+        if (Q[advisor+'_advisor'] == 1){
+            reformer_array.push(Q[advisor+'_advisor'])
+            Q.reformers_composition = reformer_array.length;
+        } else if (Q[advisor+'_advisor'] == 1 && reformer_array.includes(Q[advisor+'_advisor'])){
+            reformer_array.pop(Q[advisor+'_advisor']);
+            Q.reformers_composition = reformer_array.length;
+        }
+    }
 
     // append to historical party support records
     var party_support_results = {'date': new Date(Q.year, Q.month - 1)};

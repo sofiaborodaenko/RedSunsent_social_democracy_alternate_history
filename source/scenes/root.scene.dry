@@ -40,7 +40,7 @@ Q.dues = 2;
 
 // ************************MY VARIABLES************************
 
-//max cards
+// max cards
 Q.max_cards = 3;
 
 // separatism variable 
@@ -64,9 +64,13 @@ Q.moderate_approval = 0;
 Q.hardliner_approval = 0;
 
 // politburo composition
-Q.reformers_composition = 8;
-Q.moderates_composition = 11;
-Q.hardliners_composition = 6;
+Q.reformers_composition = 0;
+Q.moderates_composition = 0;
+Q.hardliners_composition = 0;
+
+Q.reformer_advisors = ['shevardnadze', 'victor_chebrikov'];
+Q.moderate_advisors = ['alexander_yakovlev'];
+Q.hardliner_advisors = ['andrei_gromyko'];
 
 //dissent in status
 Q.nomenklatura = 0;

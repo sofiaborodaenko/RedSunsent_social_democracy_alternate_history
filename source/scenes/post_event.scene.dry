@@ -316,6 +316,8 @@ if (Q.month_actions >= 1) {
             Q.victor_chebrikov_advisor = 0;
             //Q.add_chebrikov = 0;
         }
+    } else {
+        Q.victor_chebrikov_advisor = 1;
     }
 
     if (Q.shevardnadze_add == 0) {
@@ -326,6 +328,8 @@ if (Q.month_actions >= 1) {
             Q.shevardnadze_advisor = 0;
             //Q.add_shevardnadze = 0;
         }
+    } else {
+        Q.shevardnadze_advisor = 1;
     }
 
     if (Q.medvedev_add == 0) {
@@ -336,6 +340,8 @@ if (Q.month_actions >= 1) {
             Q.vadim_medvedev_advisor = 0;
             //Q.add_medvedev = 0;
         }
+    } else {
+        Q.vadim_medvedev_advisor = 1;
     }
 }
 
@@ -345,7 +351,7 @@ if (Q.month_actions >= 1) {
     for (let advisor of Q.reformer_advisors) {
         console.log(Q[advisor + '_advisor']);
 
-        if (Q[advisor + '_advisor'] == 1 || Q[advisor + '_add'] == 1) {
+        if (Q[advisor + '_advisor'] == 1) {
             if (!reformer_array.includes(advisor)) {  // Ensure no duplicates
                 reformer_array.push(advisor);
             }

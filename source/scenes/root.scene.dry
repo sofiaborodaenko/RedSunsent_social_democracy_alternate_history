@@ -94,7 +94,7 @@ Q.fall_berlin_wall = 0;
 nuclear_crisis = 0;
 
 //advisors
-Q.gorbacheva_adviser = 1;
+Q.gorbacheva_advisor = 1;
 Q.andrei_gromyko_advisor = 1; //set to 1 for testing purposes
 Q.victor_chebrikov_advisor = 0; //set to 1 for testing purposes
 Q.shevardnadze_advisor = 0;

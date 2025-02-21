@@ -2,7 +2,7 @@ title: Raisa Gorbacheva
 new-page: true
 is-pinned-card: true
 tags: advisor
-view-if: gorbacheva_adviser == 1
+view-if: gorbacheva_advisor == 1
 card-image: img/portraits/POL486/Raisa_Gorbacheva_Portrait.jpg
 
 = Raisa Gorbacheva

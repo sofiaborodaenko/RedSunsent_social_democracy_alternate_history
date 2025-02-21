@@ -40,18 +40,18 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 
 @add_chebrikov
 title: Add Viktor Chebrikov as an advisor 
-view-if: add_chebrikov == 0 and victor_chebrikov_advisor == 0
-on-arrival: add_chebrikov = 1
+view-if: chebrikov_add == 0 and victor_chebrikov_advisor == 0
+on-arrival: chebrikov_add = 1
 
 @add_shevardnadze
 title: Add Eduard Shevardnadze as an advisor 
-view-if: add_shevardnadze == 0 and shevardnadze_advisor == 0
-on-arrival: add_shevardnadze = 1
+view-if: shevardnadze_add == 0 and shevardnadze_advisor == 0
+on-arrival: shevardnadze_add = 1
 
 @add_medvedev
 title: Add Vadim Medvedev as an advisor 
-view-if: add_medvedev == 0 and vadim_medvedev_advisor == 0
-on-arrival: add_medvedev = 1
+view-if: medvedev_add == 0 and vadim_medvedev_advisor == 0
+on-arrival: medvedev_add = 1
 
 @foreign_relations
 title: Foreign Relations

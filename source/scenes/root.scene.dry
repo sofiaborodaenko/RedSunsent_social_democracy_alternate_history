@@ -72,15 +72,6 @@ Q.reformer_advisors = ['shevardnadze', 'victor_chebrikov'];
 Q.moderate_advisors = ['alexander_yakovlev'];
 Q.hardliner_advisors = ['andrei_gromyko'];
 
-//dissent in status
-Q.nomenklatura = 0;
-Q.intelligentsia = 0;
-Q.peasants = 0;
-Q.orthodox = 0;
-Q.workers = 0;
-Q.unemployed = 0;
-Q.criminal_class = 0;
-Q.party_cadres = 0;
 
 Q.popular_approval = 50;
 
@@ -109,9 +100,9 @@ Q.vadim_medvedev_advisor = 0;
 Q.valery_boldin_advisor = 1;
 
 //bypass some advisor date restrictions if they choose to select them 
-Q.add_chebrikov = 0;
-Q.add_shevardnadze = 0;
-Q.add_medvedev = 0;
+Q.chebrikov_add = 0;
+Q.shevardnadze_add = 0;
+Q.medvedev_add = 0;
 
 //advisor loyalty 
 Q.andrei_gromyko_loyalty = 0;

@@ -308,7 +308,7 @@ if (Q.month_actions >= 1) {
     }
 
     // MY CHANGES 
-    if (Q.add_chebrikov == 0) {
+    if (Q.chebrikov_add == 0) {
         if (Q.year >= 1982 && Q.year <= 1985){ //should be 1988
             Q.victor_chebrikov_advisor = 1;
             //Q.add_chebrikov = 1;
@@ -318,7 +318,7 @@ if (Q.month_actions >= 1) {
         }
     }
 
-    if (Q.add_shevardnadze == 0) {
+    if (Q.shevardnadze_add == 0) {
         if (Q.year >= 1985 && Q.year <= 1990){
             Q.shevardnadze_advisor = 1;
             //Q.add_shevardnadze = 1;
@@ -328,7 +328,7 @@ if (Q.month_actions >= 1) {
         }
     }
 
-    if (Q.add_medvedev == 0) {
+    if (Q.medvedev_add == 0) {
         if (Q.year >= 1988 && Q.year <= 1991){
             Q.vadim_medvedev_advisor = 1;
             //Q.add_medvedev = 1;
@@ -345,7 +345,7 @@ if (Q.month_actions >= 1) {
     for (let advisor of Q.reformer_advisors) {
         console.log(Q[advisor + '_advisor']);
 
-        if (Q[advisor + '_advisor'] == 1) {
+        if (Q[advisor + '_advisor'] == 1 or Q[advisor + '_add'] == 1) {
             if (!reformer_array.includes(advisor)) {  // Ensure no duplicates
                 reformer_array.push(advisor);
             }

@@ -16,9 +16,9 @@ if (Q.year == Q.year_keep_track) {
     Q.year_keep_track = 0;
 }
 
-console.log(Q.year);
-console.log(Q.year_keep_track);
-console.log(Q.popular_approval);
+//console.log(Q.year);
+//console.log(Q.year_keep_track);
+//console.log(Q.popular_approval);
 
 
 !}

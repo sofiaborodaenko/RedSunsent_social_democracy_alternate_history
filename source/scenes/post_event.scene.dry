@@ -318,30 +318,30 @@ if (Q.month_actions >= 1) {
     if (Q.add_chebrikov == 0) {
         if (Q.year >= 1982 && Q.year <= 1988){
             Q.victor_chebrikov_advisor = 1;
-            Q.add_chebrikov = 1;
+            //Q.add_chebrikov = 1;
         } else {
             Q.victor_chebrikov_advisor = 0;
-            Q.add_chebrikov = 0;
+            //Q.add_chebrikov = 0;
         }
     }
 
     if (Q.add_shevardnadze == 0) {
         if (Q.year >= 1985 && Q.year <= 1986){ //should be 1990
-            Q.shevardnadze_advisor = 1;
-            Q.add_shevardnadze = 1;
+            Q.shevardr = 1;
+            //Q.add_shevardnadze = 1;
         } else {
             Q.shevardnadze_advisor = 0;
-            Q.add_shevardnadze = 0;
+            //Q.add_shevardnadze = 0;
         }
     }
 
     if (Q.add_medvedev == 0) {
         if (Q.year >= 1988 && Q.year <= 1991){
             Q.vadim_medvedev_advisor = 1;
-            Q.add_medvedev = 1;
+            //Q.add_medvedev = 1;
         } else {
             Q.vadim_medvedev_advisor = 0;
-            Q.add_medvedev = 0;
+            //Q.add_medvedev = 0;
         }
     }
 }

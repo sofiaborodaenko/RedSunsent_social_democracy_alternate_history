@@ -3,7 +3,7 @@ new-page: true
 is-pinned-card: true
 tags: advisor
 # year >= 1982 and year <= 1988
-view-if: victor_chebrikov_advisor == 1 and add_chebrikov == 1
+view-if: victor_chebrikov_advisor == 1 or add_chebrikov == 1
 card-image: img/portraits/POL486/Viktor_Chebrikov.jpg
 
 = Viktor Chebrikov

@@ -307,19 +307,19 @@ if (Q.month_actions >= 1) {
     }
 
     // MY CHANGES 
-    if (Q.year >= 1982 and Q.year <= 1988){
+    if (Q.year >= 1982 && Q.year <= 1988){
         Q.victor_chebrikov_advisor = 1;
     } else {
         Q.victor_chebrikov_advisor = 0;
     }
 
-    if (Q.year >= 1985 and Q.year <= 1990){
+    if (Q.year >= 1985 && Q.year <= 1990){
         Q.shevardnadze_advisor = 1;
     } else {
         Q.shevardnadze_advisor = 0;
     }
 
-    if (Q.year >= 1988 and Q.year <= 1991){
+    if (Q.year >= 1988 && Q.year <= 1991){
         Q.vadim_medvedev_advisor = 1;
     } else {
         Q.vadim_medvedev_advisor = 0;

@@ -306,7 +306,7 @@ if (Q.month_actions >= 1) {
         }
     }
 
-    ////////////////////////// MY CHANGES 
+    // MY CHANGES 
     if (Q.year >= 1982 and Q.year <= 1988){
         Q.victor_chebrikov_advisor = 1;
     } else {

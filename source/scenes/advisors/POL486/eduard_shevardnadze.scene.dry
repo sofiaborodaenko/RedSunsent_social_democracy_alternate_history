@@ -2,7 +2,8 @@ title: Eduard Shevardnadze
 new-page: true
 is-pinned-card: true
 tags: advisor
-view-if: shevardnadze_advisor == 1 # or shevardnadze_add == 1
+view-if: shevardnadze_advisor == 1 
+# or shevardnadze_add == 1
 card-image: img/portraits/POL486/eduard-shevardnadze.jpg
 
 = Eduard Shevardnadze

@@ -2,7 +2,8 @@ title: Vadim Medvedev
 new-page: true
 is-pinned-card: true
 tags: advisor
-view-if: vadim_medvedev_advisor == 1 # or medvedev_add == 1
+view-if: vadim_medvedev_advisor == 1 
+# or medvedev_add == 1
 # year between 1988-1991
 card-image: img/portraits/POL486/medvedev.jpg
 

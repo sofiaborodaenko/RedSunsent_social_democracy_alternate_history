@@ -33,6 +33,22 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 # Player adds another advisor
 # look at shuffle_leadership in party_affairs file 
 
+- @add_chebrikov 
+- @add_shevardnadze
+- @add_medvedev
+
+@add_chebrikov
+title: Add Viktor Chebrikov as an advisor 
+on-arrival: add_chebrikov = 1
+
+@add_shevardnadze
+title: Add Eduard Shevardnadze as an advisor 
+on-arrival: add_shevardnadze = 1
+
+@add_medvedev
+title: Add Vadim Medvedev as an advisor 
+on-arrival: add_medvedev = 1
+
 @foreign_relations
 title: Foreign Relations
 subtitle: Accompany Gorbachev on an overseas diplomacy trip

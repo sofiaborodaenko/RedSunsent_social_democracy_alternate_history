@@ -104,6 +104,11 @@ Q.alexander_yakovlev_advisor = 1;
 Q.vadim_medvedev_advisor = 0;
 Q.valery_boldin = 1;
 
+//bypass some advisor date restrictions if they choose to select them 
+Q.add_chebrikov = 0;
+Q.add_shevardnadze = 0;
+Q.add_medvedev = 0;
+
 //advisor loyalty 
 Q.andrei_gromyko_loyalty = 0;
 

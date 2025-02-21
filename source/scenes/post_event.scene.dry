@@ -116,11 +116,11 @@ if (Q.month_actions >= 1) {
     }
 
     // TESTING MY CODE
-    for (advisor of Q.reformer_advisors) {
-        if (Q[advisor+'_advisor'] == 1){
-            Q.reformers_composition += 1;
-        }
-    }
+    //for (advisor of Q.reformer_advisors) {
+    //    if (Q[advisor+'_advisor'] == 1){
+    //        Q.reformers_composition += 1;
+    //    }
+    //}
 
     // append to historical party support records
     var party_support_results = {'date': new Date(Q.year, Q.month - 1)};

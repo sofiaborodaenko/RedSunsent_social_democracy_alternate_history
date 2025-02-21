@@ -345,7 +345,7 @@ if (Q.month_actions >= 1) {
     for (let advisor of Q.reformer_advisors) {
         console.log(Q[advisor + '_advisor']);
 
-        if (Q[advisor + '_advisor'] == 1 or Q[advisor + '_add'] == 1) {
+        if (Q[advisor + '_advisor'] == 1 || Q[advisor + '_add'] == 1) {
             if (!reformer_array.includes(advisor)) {  // Ensure no duplicates
                 reformer_array.push(advisor);
             }

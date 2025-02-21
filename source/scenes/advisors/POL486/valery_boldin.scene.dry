@@ -2,7 +2,7 @@ title: Valery Boldin
 new-page: true
 is-pinned-card: true
 tags: advisor
-view-if: valery_boldin == 1
+view-if: valery_boldin_advisor == 1
 card-image:
 
 = Valery Boldin

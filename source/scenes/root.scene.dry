@@ -102,11 +102,11 @@ Q.gorbacheva_advisor = 1;
 Q.andrei_gromyko_advisor = 1; //set to 1 for testing purposes
 Q.victor_chebrikov_advisor = 0; //set to 1 for testing purposes
 Q.shevardnadze_advisor = 0;
-Q.chernyaev_adviser = 1;
+Q.chernyaev_advisor = 1;
 Q.sergey_akhromeyev_advisor = 1;
 Q.alexander_yakovlev_advisor = 1;
 Q.vadim_medvedev_advisor = 0;
-Q.valery_boldin = 1;
+Q.valery_boldin_advisor = 1;
 
 //bypass some advisor date restrictions if they choose to select them 
 Q.add_chebrikov = 0;

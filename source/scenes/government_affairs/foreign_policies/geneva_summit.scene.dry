@@ -37,7 +37,7 @@ Pleased, the U.S restores landing rights for the Soviet airline, Aeroflot, in th
 
 @implement_both
 title: Implement both
-on-arrival: relations_with_US += 1; hardliner_approval -= 5
+on-arrival: relations_with_US += 1; hardliner_approval -= 1
 
 @implement_neither
 title: Implement neither 

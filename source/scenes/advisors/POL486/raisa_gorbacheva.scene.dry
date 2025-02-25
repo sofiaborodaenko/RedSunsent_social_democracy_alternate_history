@@ -30,8 +30,6 @@ subtitle: Recommend a cabinet member to Gorbachev
 choose-if: advisor_action_timer == 0
 on-arrival: advisor_action_timer = 6
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
-# Player adds another advisor
-# look at shuffle_leadership in party_affairs file 
 
 - @add_chebrikov 
 - @add_shevardnadze

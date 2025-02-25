@@ -389,7 +389,7 @@ for (let advisor of Q.hardliner_advisors) {
     Q.hardliners_composition = hardliner_array.length;
 }
 
-
+console.log(window.dendryUI.dendryEngine.state.currentHands['main'])
 
 Q.has_event = 0;
 // check if there are any cards in #event, and then go to main if not.

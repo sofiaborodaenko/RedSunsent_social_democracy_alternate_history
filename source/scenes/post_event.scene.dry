@@ -310,7 +310,7 @@ if (Q.month_actions >= 1) {
 
 // MY CHANGES 
 if (Q.chebrikov_add == 0) {
-    if (Q.year >= 1982 && Q.year <= 1985){ //should be 1988
+    if (Q.year >= 1982 && Q.year <= 1988){ //should be 1988
         Q.victor_chebrikov_advisor = 1;
     } else {
         Q.victor_chebrikov_advisor = 0;

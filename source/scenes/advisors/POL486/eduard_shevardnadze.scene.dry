@@ -158,7 +158,12 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 
 @allow 
 title: Allow Shevardnadzee to take the trip
-on-arrival: shevardnadze_homecoming = 1
+on-arrival: {!
+Q.shevardnadze_homecoming = 1;
+if (window.dendryUI.dendryEngine.state.currentHands['main'] != []) {
+    window.dendryUI.dendryEngine.state.currentHands['main'].pop();
+}
+!}
 
 # discard one card in hand 
 Even with a change of party positions, Shevardnadzee still feels as though Georgia lies within his responsibility. This trip of assurance, as well as some family time, boosts his motivation at work.

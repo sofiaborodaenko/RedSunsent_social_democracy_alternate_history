@@ -23,6 +23,7 @@ subtitle: Decide what the next Politburo Meeting will be about
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 on-arrival: max_cards += 1; advisor_action_timer = 6
+# add another card to deck
 
 Even through the ranks, Boldin was entrusted to set the topics of discussion for each CPSU meetings from the very start of his ascension in the government.
 
@@ -31,7 +32,9 @@ title: Recording Tape
 subtitle: Revise the conversations that Boldin has recorded
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: advisor_action_timer = 6; military_spending_timer = 0; funding_shuttle_program_timer = 0; malta_summit_timer = 0
 #re-add 2 of the cards played back into your hand 
+# instead resets all of the cards timers so more cards are available?
 
 Boldin recorded all his conversations to see if any important problems (or troubling committee member) needed fixing.
 

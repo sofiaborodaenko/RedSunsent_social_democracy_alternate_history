@@ -2,9 +2,7 @@ title: Viktor Chebrikov
 new-page: true
 is-pinned-card: true
 tags: advisor
-# year >= 1982 and year <= 1988
-view-if: victor_chebrikov_advisor == 1 
-# or chebrikov_add == 1
+view-if: victor_chebrikov_advisor == 1
 card-image: img/portraits/POL486/Viktor_Chebrikov.jpg
 
 = Viktor Chebrikov
@@ -22,7 +20,6 @@ When a threat, foreign or domestic, appeared on the horizon, Chevrikov was call 
 @unfortunate_accident
 title: An Unfortunate Accident
 subtitle: Disappear an Opposition Leader
-# view-if: 1?
 choose-if: advisor_action_year_timer == 0
 on-arrival: reformer_approval += 3; moderate_approval += 3; hardliner_approval += 3; popular_approval -= 1; advisor_action_year_timer = 12
 unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]

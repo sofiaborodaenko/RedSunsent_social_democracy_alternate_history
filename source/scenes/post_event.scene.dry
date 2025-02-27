@@ -91,7 +91,7 @@ console.log('new dissent: ' + Q.dissent);
 
 
 Q.played_cards.push(this.state.lastPlayedCard);
-Q.played_cards_images(this.state.lastPlayedCard.cardImage);
+Q.played_cards_images.push(this.state.lastPlayedCard.cardImage);
 
 console.log("Played Cards: ", Q.played_cards)
 

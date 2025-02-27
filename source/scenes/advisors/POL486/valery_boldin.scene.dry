@@ -42,7 +42,6 @@ on-arrival: {!
         if (this.state.currentHands['main'].length < 3) {
             this.state.currentHands['main'].push(card);
         }
-
             // reset the timer...
         if (Q[card.id + "_timer"]) {
             Q[card.id + "_timer"] = 0;

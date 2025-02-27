@@ -40,6 +40,9 @@ Q.dues = 2;
 
 // ************************MY VARIABLES************************
 
+//keeps track of all the cards played
+Q.played_cards = [];
+
 // max cards
 Q.max_cards = 3;
 

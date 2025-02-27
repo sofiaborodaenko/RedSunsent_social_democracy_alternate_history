@@ -16,7 +16,7 @@
     // Add your custom code here.
   };
 
-  var TITLE = "Social Democracy: An Alternate History" + '_' + "Autumn Chen";
+  var TITLE = "Red Sunset" + '_' + "POL486";
 
   // the url is a link to game.json
   // test url: https://aucchen.github.io/social_democracy_mods/v0.1.json
@@ -231,7 +231,7 @@
 
   window.onload = function() {
     window.dendryUI.loadSettings({show_portraits: false});
-    window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
+    window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 or 12 months.";
   };
 
 }());

@@ -89,7 +89,10 @@ var total_dissent = Q.left_strength*Q.left_dissent + Q.center_strength*Q.center_
 //Q.dissent_percent = Q.dissent*100;
 console.log('new dissent: ' + Q.dissent);
 
-console.log(this.state.lastPlayedCard)
+const played_cards = []
+played_cards.push(this.state.lastPlayedCard)
+
+console.log(played_cards)
 
 if (Q.dissent < 0) {
     Q.dissent = 0;

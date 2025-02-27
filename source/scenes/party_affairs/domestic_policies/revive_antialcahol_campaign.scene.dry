@@ -5,7 +5,6 @@ view-if: year >= 1985 and year <= 1988
 on-arrival: month_actions += 1
 tags: party_affairs
 card-image: img/POL486_img/anti-alcahol_campaign.webp
-max-visits: 500 #testing
 
 = Do We Revive Andropov's Anti-Alcohol Campaign?
 

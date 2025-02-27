@@ -94,6 +94,7 @@ Q.played_cards.push(this.state.lastPlayedCard);
 Q.played_cards_images.push(this.state.lastPlayedCard.cardImage);
 
 console.log("Played Cards: ", Q.played_cards)
+console.log(this.game.scenes[id])
 
 if (Q.dissent < 0) {
     Q.dissent = 0;

@@ -31,10 +31,11 @@ title: Let’s go for a little walk
 view-if: budget > 3
 choose-if: advisor_action_year_timer == 0
 subtitle: Pass an additional policy-in the name of efficiency!
-on-arrival: add_new_deck = 1; advisor_action_year_timer = 12
+on-arrival: add_new_deck = 1; advisor_action_year_timer = 12; military_spending_timer = 0; funding_shuttle_program_timer = 0; malta_summit_timer = 0
 unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]
-
 #draw another card?
+# instead resets all the card timers so more cards are available
+
 They must learn that things go better when they do not argue with you.
 
 @throw_cash

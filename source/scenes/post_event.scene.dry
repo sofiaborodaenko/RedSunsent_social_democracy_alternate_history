@@ -91,8 +91,9 @@ console.log('new dissent: ' + Q.dissent);
 
 
 Q.played_cards.push(this.state.lastPlayedCard);
+Q.played_cards_images(this.state.lastPlayedCard.cardImage);
 
-console.log("Played Cards: " + Q.played_cards)
+console.log("Played Cards: ", Q.played_cards)
 
 if (Q.dissent < 0) {
     Q.dissent = 0;

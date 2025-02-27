@@ -32,9 +32,16 @@ title: Recording Tape
 subtitle: Revise the conversations that Boldin has recorded
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
-on-arrival: advisor_action_timer = 6; military_spending_timer = 0; funding_shuttle_program_timer = 0; malta_summit_timer = 0
-#re-add 2 of the cards played back into your hand 
-# instead resets all of the cards timers so more cards are available?
+on-arrival: {!
+    Q.advisor_action_timer = 6; 
+
+    // return card to hand
+    var card = Q.played_cards.push();
+    card.image = Q.played_cards_images.push();
+    if (this.state.currentHands['main'].length < 3) {
+        this.state.currentHands['main'].push(card);
+    }
+!}
 
 Boldin recorded all his conversations to see if any important problems (or troubling committee member) needed fixing.
 

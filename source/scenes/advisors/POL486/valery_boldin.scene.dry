@@ -36,10 +36,21 @@ on-arrival: {!
     Q.advisor_action_timer = 6; 
 
     // return card to hand
-    var card = Q.played_cards.push();
-    card.image = Q.played_cards_images.push();
-    if (this.state.currentHands['main'].length < 3) {
-        this.state.currentHands['main'].push(card);
+    if (Q.played_cards.len != 0) {
+        var card = Q.played_cards.push();
+        card.image = Q.played_cards_images.push();
+        if (this.state.currentHands['main'].length < 3) {
+            this.state.currentHands['main'].push(card);
+        }
+
+            // reset the timer...
+        if (Q[card.id + "_timer"]) {
+            Q[card.id + "_timer"] = 0;
+        }
+        // reduce visit count
+        if (this.state.visits[card.id]) {
+            this.state.visits[card.id] -= 1;
+        }
     }
 !}
 

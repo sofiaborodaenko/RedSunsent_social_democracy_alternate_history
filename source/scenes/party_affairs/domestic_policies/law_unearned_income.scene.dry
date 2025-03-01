@@ -1,8 +1,8 @@
 title: Law on Unearned Income (Domestic Policy)
 new-page: true
 is-card: true
-view-if: ((month >= 5 and year == 1986) or year >=1987) and year <= 1991 and law_unearned_income == 0
-on-arrival: month_actions += 1
+view-if: ((month >= 5 and year == 1986) or year >=1987) and year <= 1991 and law_unearned_income == 0 and law_unearned_income_timer == 0
+on-arrival: month_actions += 1; law_unearned_income_timer = 3
 tags: party_affairs
 card-image: img/POL486_img/unearned_income.webp
 

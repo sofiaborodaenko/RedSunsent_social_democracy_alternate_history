@@ -38,13 +38,12 @@ on-arrival: {!
 
 Q.advisor_action_timer = 6;
 
-for (timer if Q.timers){
+for (timer of Q.timers) {
     if (Q[timer+'_timer'] && Q[timer+'_timer'] > 0) {
-            Q[timer+'_timer'] = 0
+            Q[timer+'_timer'] = 0;
         }
 
 }
-
 !}
 
 They must learn that things go better when they do not argue with you.

@@ -1,8 +1,8 @@
 title: Accelerate Scientific-Technical Progress (Domestic Policy)
 new-page: true
 is-card: true
-view-if: year == 1986
-on-arrival: month_actions += 1
+view-if: year == 1986 and accelerate_scientific_progress_timer == 0
+on-arrival: month_actions += 1; accelerate_scientific_progress_timer = 3
 tags: party_affairs 
 card-image: img/POL486_img/accelerate_tech_progress.jpg
 

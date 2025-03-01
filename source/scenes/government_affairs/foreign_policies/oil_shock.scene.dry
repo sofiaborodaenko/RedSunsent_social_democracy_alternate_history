@@ -1,8 +1,8 @@
 title: Oil Shock (Foreign Policy)
 new-page: true
 is-card: true
-view-if: year == 1986
-on-arrival: month_actions += 1
+view-if: year == 1986 and oil_shock_timer == 0
+on-arrival: month_actions += 1; oil_shock_timer = 3
 tags: govt_affairs
 
 = Oil Shock

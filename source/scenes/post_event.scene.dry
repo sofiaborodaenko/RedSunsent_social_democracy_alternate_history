@@ -346,56 +346,6 @@ if (Q.medvedev_add == 0) {
     Q.vadim_medvedev_advisor = 1;
 }
 
-// TESTING MY CODE
-let reformer_array = [];
-let moderate_array = [];
-let hardliner_array = [];
-
-for (let advisor of Q.reformer_advisors) {
-    console.log(Q[advisor + '_advisor']);
-
-    if (Q[advisor + '_advisor'] == 1) {
-        if (!reformer_array.includes(advisor)) {  // Ensure no duplicates
-            reformer_array.push(advisor);
-        }
-    } else {
-        // Remove advisor from the array if they are present
-        reformer_array = reformer_array.filter(item => item !== advisor);
-    }
-
-    Q.reformers_composition = reformer_array.length;
-}
-
-for (let advisor of Q.moderate_advisors) {
-    console.log(Q[advisor + '_advisor']);
-
-    if (Q[advisor + '_advisor'] == 1) {
-        if (!moderate_array.includes(advisor)) {  // Ensure no duplicates
-            moderate_array.push(advisor);
-        }
-    } else {
-        // Remove advisor from the array if they are present
-        moderate_array = moderate_array.filter(item => item !== advisor);
-    }
-
-    Q.moderates_composition = moderate_array.length;
-}
-
-for (let advisor of Q.hardliner_advisors) {
-    console.log(Q[advisor + '_advisor']);
-
-    if (Q[advisor + '_advisor'] == 1) {
-        if (!hardliner_array.includes(advisor)) {  // Ensure no duplicates
-            hardliner_array.push(advisor);
-        }
-    } else {
-        // Remove advisor from the array if they are present
-        hardliner_array = hardliner_array.filter(item => item !== advisor);
-    }
-
-    Q.hardliners_composition = hardliner_array.length;
-}
-
 console.log(window.dendryUI.dendryEngine.state.currentHands['main'])
 
 Q.has_event = 0;

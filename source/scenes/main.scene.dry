@@ -23,7 +23,6 @@ if (Q.year == Q.year_keep_track) {
 
 !}
 max-cards: 3
-# max_cards
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 

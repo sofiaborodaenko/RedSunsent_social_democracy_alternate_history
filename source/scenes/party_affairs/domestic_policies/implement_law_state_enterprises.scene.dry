@@ -14,6 +14,7 @@ The Soviet economy is stagnating under the weight of central planning. Productiv
 - @partial_implementation
 - @reject_law
 - @invest_worker_cooperatives
+- @easy_discard
 
 @full_implementation
 title: Full Implementation

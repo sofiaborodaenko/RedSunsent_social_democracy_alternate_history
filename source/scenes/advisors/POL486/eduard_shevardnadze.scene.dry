@@ -107,7 +107,7 @@ Even after the break in partnership, China continues to be an important ally in 
 
 @overtime
 title: Overtime 
-subtitle: Work in overnight in your office while Gorbachev focuses elsewhere
+subtitle: Work overnight in your office while Gorbachev focuses elsewhere
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 on-arrival: {!

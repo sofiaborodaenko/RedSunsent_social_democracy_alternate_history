@@ -35,4 +35,4 @@ title: Evacuate all cities surrounding the site and provide housing for the disl
 subtitle: We can boast about the state’s swift response in Pravda, leaving our opponents with no grounds for criticism. This will allow us to promote the principle of glasnost.
 on-arrival: budget -= 3; hardliner_approval -= 5; reformer_approval += 10; popular_approval += 10
 
-An article in *Pravda* entitled “Gorbachev’s swift response to the chernobyl crisis” has propagandized the people in our favour.
+An article in *Pravda* entitled “Gorbachev’s swift response to the Chernobyl crisis” has propagandized the people in our favour.

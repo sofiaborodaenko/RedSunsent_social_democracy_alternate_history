@@ -13,6 +13,7 @@ The Law on Individual Labor Activity is currently being deliberated by the Polit
 - @approve_law
 - @reject_law
 - @repeal_law
+- @easy_discard
 
 @approve_law
 title: Approve the Law on Individual Labor Activity

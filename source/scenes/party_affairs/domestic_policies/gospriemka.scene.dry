@@ -1,8 +1,8 @@
 title: Implement Gospriemka (State Inspection Reform) (Domestic Policy)
 new-page: true
 is-card: true
-view-if: year >= 1986 and year <= 1987
-on-arrival: month_actions += 1
+view-if: year >= 1986 and year <= 1987 and gospriemka_timer == 0
+on-arrival: month_actions += 1; gospriemka_timer = 12
 tags: party_affairs
 card-image: img/POL486_img/gospriemka.jpg
 
@@ -17,16 +17,17 @@ How will you proceed?
 - @full_implementation
 - @controlled_rollout
 - @abandon_gospriemka
+- @easy_discard
 
 @full_implementation
 title: Full Implementation
-on-arrival: budget -= 3; reformer_approval += 4; moderate_approval += 1; hardliner_approval -= 4
+on-arrival: budget -= 3; reformer_approval += 4; moderate_approval += 1; hardliner_approval -= 4; popular_approval -= 3
 
 We enforce *Gospriemka* rigorously, rejecting all substandard goods and ensuring strict adherence to quality standards. This is a bold step toward modernization but leads to severe shortages and industrial disruptions, hurting the economy.
 
 @controlled_rollout
 title: Controlled Rollout
-on-arrival: budget -= 2; reformer_approval += 2; moderate_approval += 2; hardliner_approval -= 2
+on-arrival: budget -= 2; reformer_approval += 2; moderate_approval += 2; hardliner_approval -= 2; popular_approval -= 1
 
 We phase in *Gospriemka* gradually, allowing enterprises time to adjust while maintaining some production flexibility. Production still falls and quality improvement is slowed, but this softens the economic impact.
 

@@ -1,8 +1,8 @@
 title: Free Economic Zones (Domestic Policy)
 new-page: true
 is-card: true
-view-if: year >= 1986 and year <= 1991
-on-arrival: month_actions += 1
+view-if: year >= 1986 and year <= 1991 and free_economic_zones == 0
+on-arrival: month_actions += 1; free_economic_zones = 12
 tags: party_affairs 
 card-image: img/POL486_img/free_economic_zone.jpg
 
@@ -14,6 +14,7 @@ Do we implement free economic zones in the Soviet Union?
 
 - @implement 
 - @dont_implement
+- @easy_discard
 
 @implement 
 title: Implement free economic zones

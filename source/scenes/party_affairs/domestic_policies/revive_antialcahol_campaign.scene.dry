@@ -14,16 +14,17 @@ Growing popularity for the prohibition of alcohol has been indicated in recent s
 - @partial_crackdown
 - @do_not_revive
 - @provide_more_funding
+- @easy_discard
 
 @harsh_crackdowns
 title: Institute Harsh Crackdowns
-on-arrival: budget -= 3; reformer_approval += 2; moderate_approval += 1; hardliner_approval -= 2; popular_approval -= 4
+on-arrival: budget -= 3; reformer_approval += 2; moderate_approval += 1; hardliner_approval -= 2; popular_approval -= 4; separatism += 2
 
 We experience a dip in popularity across the board (in Politburo and among the general public) and the economy will suffer with less money coming in from liquor sales, which account for one third of the GDP. Though drunkenness, and costs associated with it, will decrease, this will not be enough to offset the damage done to the budget and Gorbachev's popularity.
 
 @partial_crackdown
 title: A Partial Crackdown
-on-arrival: budget -= 2; reformer_approval += 1; moderate_approval += 2; hardliner_approval -= 1; popular_approval -= 2
+on-arrival: budget -= 2; reformer_approval += 1; moderate_approval += 2; hardliner_approval -= 1; popular_approval -= 2; separatism += 1
 
 We take a moderate position, institute severe police crackdowns on public drunkenness and increase punishment for crimes committed while drunk. This will boost Gorbachev's support within the party, but only mildly. Additionally, income from alcohol sales decrease slightly as less people are day drinking.
 
@@ -35,7 +36,7 @@ We do not revive the Anti-Alcohol campaign. As such, disapproval among the Polit
 
 @provide_more_funding
 title: Provide More Funding to the Alcohol Industry.
-on-arrival: budget += 3; reformer_approval -= 3; moderate_approval -= 1; hardliner_approval -= 1; popular_approval += 2
+on-arrival: budget += 3; reformer_approval -= 3; moderate_approval -= 1; hardliner_approval -= 1; popular_approval += 2; separatism -= 1
 
 To a great degree of controversy, we decide that the revenue from the alcohol tax is too enticing to pass up. We invest further into the alcohol industry by subsidizing vineyards and
 distilleries, aiming to maximize the returns on an already substantive industry. While our budget increases, drunkenness and the problems associated with it worsen.

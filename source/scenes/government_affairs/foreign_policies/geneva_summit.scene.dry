@@ -11,6 +11,7 @@ American diplomats have liaised with ours to suggest a top level meeting in Gene
 
 - @attend
 - @dont_attend
+- @easy_discard
 
 @attend
 title: Attend 
@@ -31,13 +32,13 @@ The exchange introduces the West in a new light. Many, especially the youth, bec
 @implement_northern_pacific_air
 title: Implement the Northern Pacific Air Safety accord
 subtitle: Signing this agreement will improve communications between U.S, Soviet, and Japanese air traffic control centers. 
-on-arrival: relations_with_US -= 1
+on-arrival: relations_with_US += 1
 
 Pleased, the U.S restores landing rights for the Soviet airline, Aeroflot, in the United States, and allows American carriers to resume flights to Moscow. 
 
 @implement_both
 title: Implement both
-on-arrival: relations_with_US += 1; hardliner_approval -= 1
+on-arrival: relations_with_US += 2; hardliner_approval -= 1
 
 @implement_neither
 title: Implement neither 

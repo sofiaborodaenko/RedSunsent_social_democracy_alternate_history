@@ -162,17 +162,17 @@ Non-Aligned Movement:
 #[? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
 
-# @polls
+@polls
 
-# = Dissent
+= Dissent
 
-# States to Watch:
+States to Watch:
 # update with policies when issues break out in satellite states, ex. Pope John Paul II in Poland, Singing Revolution in Baltics. List country in which disturbance occurred.
 # ex. when Pope John Paul II appears, add "Poland"
-# [? if eastern_block == 1: Eastern Bloc ?]
+[? if eastern_block == 1: Eastern Bloc ?]
 
 	
-# Popular Disapproval:
+Popular Disapproval:
 # List policies population is unsatisfied with, ex. "alcohol restriction"
 
 # = Other demographic

@@ -1,7 +1,7 @@
 title: Geneva Summit (Foreign Policy)
 new-page: true
 is-card: true
-view-if: year == 1985
+view-if: year == 1985 and geneva_summit == 0
 on-arrival: month_actions += 1
 tags: govt_affairs
 
@@ -16,6 +16,7 @@ American diplomats have liaised with ours to suggest a top level meeting in Gene
 @attend
 title: Attend 
 subtitle: Such a meeting could lay the foundations for a serious dialogue in the future.
+on-arrival: geneva_summit = 1
 
 - @implement_cultural_exchange
 - @implement_northern_pacific_air
@@ -47,6 +48,7 @@ on-arrival: relations_with_US -= 1
 @dont_attend
 title: Do Not Attend
 subtitle: Not attending this summit will put U.S-Soviet relations on ice.
+on-arrival: geneva_summit = 1
 
 - @cont_with_moratorium
 - @stop_moratorium

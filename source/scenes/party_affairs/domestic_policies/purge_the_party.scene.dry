@@ -1,7 +1,7 @@
 title: Purge the Party (Domestic Policy)
 new-page: true
 is-card: true
-view-if: year == 1988 purge_the_party_timer == 0
+view-if: year == 1988 and purge_the_party_timer == 0
 # or Discontent in the Politburo has reached a tipping point where civil war or a coup is becoming imminent.
 on-arrival: month_actions += 1; purge_the_party_timer = 3
 tags: party_affairs

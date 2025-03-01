@@ -14,6 +14,8 @@ if (Q.difficulty >= 0) {
     this.state.currentHands['main.main_easy'].push(card);
 }
 // reset the timer...
+console.log(card.id);
+
 if (Q[card.id + "_timer"]) {
     Q[card.id + "_timer"] = 0;
 }

@@ -162,7 +162,7 @@ Non-Aligned Movement:
 #[? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
 
-@polls
+# @polls
 
 # = Dissent
 

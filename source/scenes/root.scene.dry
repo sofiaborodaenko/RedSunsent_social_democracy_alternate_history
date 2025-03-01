@@ -542,7 +542,7 @@ Q.timers = ['free_economic_zone', 'gospriemka', 'malta_summit', 'review_funding_
             'shuffle_leadership', 'streetfighting', 'peoples_party',
             'party_disunity',
             // govt
-            'advisor_action_year', 'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
+            'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
             'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy',
             'police', 'prussian_affairs', 'shuffle_cabinet', 'social_welfare',
             'homosexual_rights', 'economic_policy', 'coalition_affairs',
@@ -567,7 +567,7 @@ Q.free_economic_zone_timer = 0;
 Q.malta_summit_timer = 0;
 
 //advisor actions
-Q.advisor_action_year_timer = 0;
+//Q.advisor_action_year_timer = 0;
 
 //********************MY TIMERS********************
 

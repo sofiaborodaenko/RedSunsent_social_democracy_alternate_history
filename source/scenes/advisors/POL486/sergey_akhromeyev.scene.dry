@@ -19,18 +19,18 @@ The face of Soviet Military Might, Akhromeyev oversaw much of the invasion of Af
 title: Ramp Up the War in Afghanistan
 subtitle: Deploy additional troops to display strength both at home and abroad
 view-if: budget > 2
-choose-if: advisor_action_year_timer == 0
-on-arrival: hardliner_approval += 1; reformer_approval -= 1; advisor_action_year_timer = 12
-unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0
+on-arrival: hardliner_approval += 1; reformer_approval -= 1; advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 
 Accomplishing War Goals by Any Means
 
 @weapons_development
 title: Weapons Development
 subtitle: Direct and fund the development of a new mid-range missile platform
-choose-if: advisor_action_year_timer == 0
-on-arrival: hardliner_approval += 2; relations_eastern_europe -= 1; relations_western_europe -= 1; relations_with_US -= 1; advisor_action_year_timer = 12
-unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0
+on-arrival: hardliner_approval += 2; relations_eastern_europe -= 1; relations_western_europe -= 1; relations_with_US -= 1; advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 
 The American’s should tread carefully in their proxy conflicts
 
@@ -38,18 +38,18 @@ The American’s should tread carefully in their proxy conflicts
 title: Intermediate-Range Nuclear Forces Treaty
 subtitle: Ease Global Tensions via Arms Control Treaty
 view-if: year == 1987
-choose-if: advisor_action_year_timer == 0
-on-arrival: popular_approval -= 2; relations_china += 2; relations_eastern_europe += 2; relations_western_europe += 2; relations_with_US += 2; hardliner_approval -= 1; advisor_action_year_timer = 12
-unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0
+on-arrival: popular_approval -= 2; relations_china += 2; relations_eastern_europe += 2; relations_western_europe += 2; relations_with_US += 2; hardliner_approval -= 1; advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 
 We can all take a breath
 
 @eastern_block_dissent
 title: Tighten Control on Eastern Bloc Dissent
 subtitle: Quell Protests in the Eastern Bloc
-choose-if: advisor_action_year_timer == 0
-on-arrival: reformer_approval -= 2; hardliner_approval += 1; eastern_block = 1; popular_approval -= 1; year_keep_track = year + 1
-unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0
+on-arrival: reformer_approval -= 2; hardliner_approval += 1; eastern_block = 1; popular_approval -= 1; year_keep_track = year + 1; advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 
 
 No More Protesters

@@ -20,19 +20,19 @@ When a threat, foreign or domestic, appeared on the horizon, Chevrikov was call 
 @unfortunate_accident
 title: An Unfortunate Accident
 subtitle: Disappear an Opposition Leader
-choose-if: advisor_action_year_timer == 0
-on-arrival: reformer_approval += 3; moderate_approval += 3; hardliner_approval += 3; popular_approval -= 1; advisor_action_year_timer = 12
-unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0
+on-arrival: reformer_approval += 3; moderate_approval += 3; hardliner_approval += 3; popular_approval -= 1; advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 
 A tragic accident. It should remind all that accidents can happen to anyone, at any time.
 
 @little_walk
 title: Let’s go for a little walk
 view-if: budget > 3
-choose-if: advisor_action_year_timer == 0
+choose-if: advisor_action_timer == 0
 subtitle: Pass an additional policy-in the name of efficiency!
-on-arrival: add_new_deck = 1; advisor_action_year_timer = 12; military_spending_timer = 0; funding_shuttle_program_timer = 0; malta_summit_timer = 0
-unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]
+on-arrival: add_new_deck = 1; advisor_action_timer = 6; military_spending_timer = 0; funding_shuttle_program_timer = 0; malta_summit_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 #draw another card?
 # instead resets all the card timers so more cards are available
 
@@ -40,10 +40,10 @@ They must learn that things go better when they do not argue with you.
 
 @throw_cash
 title: Throw Cash at the Problem
-choose-if: advisor_action_year_timer == 0
+choose-if: advisor_action_timer == 0
 subtitle: Deliver a briefcase of bills to ease tensions
-on-arrival: budget -= 1; advisor_action_year_timer = 12
-unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]
+on-arrival: budget -= 1; advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 
 - @ease_reformers
 - @ease_moderates
@@ -69,10 +69,10 @@ Not so angry, now are they?
 
 @overseas_trip
 title: Overseas Trip 
-choose-if: advisor_action_year_timer == 0
+choose-if: advisor_action_timer == 0
 subtitle: Visit the leader of a chosen foreign country and reduce tensions
-on-arrival: advisor_action_year_timer = 12
-unavailable-subtitle: [? if advisor_action_year_timer > 0 : [+ advisor_action_year_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 
 - @us_and_canada
 - @china 

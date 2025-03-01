@@ -131,6 +131,8 @@ Eastern Europe: [+ relations_eastern_europe +]
 
 Western Europe: [+ relations_western_europe +]
 
+Non-Aligned Movement: 
+
 #{!<span class="tooltip-text" title=" ">US and Canada</span>!} Strength: [+ rb_strength_2 +] thousand
 
 #Reichsbanner Militarization: [+ rb_militancy : militancy +]
@@ -162,15 +164,15 @@ Western Europe: [+ relations_western_europe +]
 
 @polls
 
-= Dissent
+# = Dissent
 
-States to Watch:
+# States to Watch:
 # update with policies when issues break out in satellite states, ex. Pope John Paul II in Poland, Singing Revolution in Baltics. List country in which disturbance occurred.
 # ex. when Pope John Paul II appears, add "Poland"
-[? if eastern_block == 1: Eastern Bloc ?]
+# [? if eastern_block == 1: Eastern Bloc ?]
 
 	
-Popular Disapproval:
+# Popular Disapproval:
 # List policies population is unsatisfied with, ex. "alcohol restriction"
 
 # = Other demographic

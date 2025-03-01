@@ -43,7 +43,7 @@ Stalinists felt attacked by the announcement.
 @glasnost_initiation
 title: Glasnost Initiation
 subtitle: Censorship that had existed for decades will be lifted in all forms of media. The public will now be allowed to criticize the government and the party
-# view-if: 
+# view-if: MAN NEEDS TO RESPOND 
 choose-if: advisor_action_timer == 0
 on-arrival: hardliner_approval -= (0.10*hardliner_approval); popular_approval += (0.15*popular_approval); reformer_approval -= (0.10*reformer_approval); separatism += 3; advisor_action_timer = 6
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 

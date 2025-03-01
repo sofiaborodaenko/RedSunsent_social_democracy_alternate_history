@@ -31,10 +31,21 @@ title: Let’s go for a little walk
 view-if: budget > 3
 choose-if: advisor_action_timer == 0
 subtitle: Pass an additional policy-in the name of efficiency!
-on-arrival: add_new_deck = 1; advisor_action_timer = 6; military_spending_timer = 0; funding_shuttle_program_timer = 0; malta_summit_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 #draw another card?
-# instead resets all the card timers so more cards are available
+# instead resets all the card timers so more cards are available FOR NOW
+on-arrival: {!
+
+Q.advisor_action_timer = 6;
+
+for (timer if Q.timers){
+    if (Q[timer+'_timer'] && Q[timer+'_timer'] > 0) {
+            Q[timer+'_timer'] = 0
+        }
+
+}
+
+!}
 
 They must learn that things go better when they do not argue with you.
 

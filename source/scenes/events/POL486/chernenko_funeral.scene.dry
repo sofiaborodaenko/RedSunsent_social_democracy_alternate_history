@@ -2,7 +2,7 @@ title: Chernenko’s Funeral
 new-page: true
 subtitle: This will be the first time you address the Soviet people as General Secretary. 
 tags: event
-view-if: year == 1985 and month == 3
+view-if: began == 1
 # should be month == 3
 max-visits: 1
 on-arrival: budget = 1; began = 0

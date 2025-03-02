@@ -1,0 +1,40 @@
+title: Chernenko’s Funeral
+new-page: true
+subtitle: This will be the first time you address the Soviet people as General Secretary. 
+tags: event
+view-if: year == 1985 and month == 3
+max-visits: 1
+on-arrival: budget = 1
+face-image: img/POL486_img/chernenko_funeral.jpg
+
+= Chernenko’s Funeral
+
+You are to deliver Chernenko’s funeral address atop of Lenin’s Mausoleum. The crowd will be enthralled by seeing a lively, well spoken leader for the first time in decades. The funeral will provide an exceptional opportunity to meet and discuss with other world leaders. 
+
+What do you emphasize in your address?
+
+- @cont_policy
+- @peace_ending_arms_race
+- @socialism 
+
+@cont_policy
+title: Emphasize continuing Chernenko’s foreign policy and the goal of terminating the arms race. Emphasize the party’s continued commitment to peaceful coexistence and proving socialism’s superiority through economic means.
+subtitle: We must do everything in our power to preserve peace but we must also remain steadfast in our commitment to building socialism.
+on-arrival: popular_approval += 5; relations_china += 2; relations_eastern_europe += 2; relations_western_europe += 2; relations_with_US += 2
+
+The Soviet people honouring the memory of Chernenko.
+
+@peace_ending_arms_race
+title: Emphasize only the commitment to peace and ending the arms race.
+subtitle: This may upset our partners in Eastern Europe and cause increased dissent at home, but our foreign visitors will be pleased. 
+on-arrival: popular_approval += 3; relations_eastern_europe -= 1; relations_western_europe += 1; relations_with_US += 1
+
+This has improved relations with Western leaders. Margaret Thatcher, François Mitterrand, and Helmut Kohl are among the visiting leaders excited to negotiate peace and cooperation agreements.
+
+@socialism
+title: Emphasize only the Party’s commitment to socialism.
+subtitle: This may upset our foreign visitors, but our Eastern neighbours will be pleased. 
+on-arrival: popular_approval += 2; relations_eastern_europe += 1; relations_western_europe -= 1; relations_with_US += 1
+
+This has soured our relations with the visiting western leaders. However, the leaders in our Eastern satellite states are very pleased by our commitment to opposing the West and continuing to prioritize building socialism. 
+

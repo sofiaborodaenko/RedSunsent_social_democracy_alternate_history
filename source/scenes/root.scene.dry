@@ -48,6 +48,8 @@ Q.played_cards_images = [];
 // max cards
 Q.max_cards = 3;
 
+Q.began = 0;
+
 // separatism variable 
 // As separatism increases, at every interval of 10 a satellite state/SSR will leave, 
 // the order of which states leave will be determined by the “Events” group

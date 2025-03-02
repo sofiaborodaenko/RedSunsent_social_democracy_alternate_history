@@ -2,6 +2,8 @@ title: Next month
 set-bg: img/test_bg2.jpg
 is-hand: true
 on-arrival: {!
+Q.began = 1;
+
 if (Q.advisor_action_timer <= 0) {
     Q.pinnedCardsDescription = 'Advisors - an action is available.';
 } else if (Q.advisor_action_timer == 1) {
@@ -22,8 +24,7 @@ if (Q.year == Q.year_keep_track) {
 
 
 !}
-max-cards: 3
-go-to: chernenko_funeral if began == 0
+max-cards: 3 
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 

@@ -48,7 +48,7 @@ Q.played_cards_images = [];
 // max cards
 Q.max_cards = 3;
 
-Q.began = 0;
+Q.began = 1;
 
 // separatism variable 
 // As separatism increases, at every interval of 10 a satellite state/SSR will leave, 
@@ -697,7 +697,6 @@ The “Library” tab on the top left of the page will give you access to inform
 audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_zurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3
 new-page: true
 go-to: main if difficulty >= 0
-on-arrival: began = 1;
 
 = 1985
 

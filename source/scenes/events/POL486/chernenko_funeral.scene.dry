@@ -5,7 +5,7 @@ tags: event
 view-if: began == 1
 # should be month == 3
 max-visits: 1
-on-arrival: budget = 1; began = 5
+on-arrival: budget = 1; began = 0
 face-image: img/POL486_img/chernenko_funeral.jpg
 
 = Chernenko’s Funeral

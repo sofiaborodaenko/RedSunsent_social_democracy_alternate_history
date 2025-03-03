@@ -20,7 +20,7 @@ foreign policy actions. He was also involved in global communist movements and w
 title: Write a Speech 
 subtitle: Author a speech for Gorbachev on glasnost
 choose-if: advisor_action_timer == 0
-on-arrival: popular_approval += 2; advisor_action_timer = 6
+on-arrival: popular_approval += 2; advisor_action_timer = 6; reformer_approval += 2; moderate_approval += 1
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 
 The speech was well received by the people, espousing ideas of free discussion, openness, and de-centralization as means to end the period of stagnation.

@@ -55,7 +55,7 @@ on-arrival: medvedev_add = 1
 title: Foreign Relations
 subtitle: Accompany Gorbachev on an overseas diplomacy trip
 choose-if: advisor_action_timer == 0
-on-arrival: advisor_action_timer = 6; popular_approval += 10; relations_china -= 3; relations_eastern_europe -= 3; relations_western_europe -= 3; relations_with_US -= 3
+on-arrival: advisor_action_timer = 6; popular_approval += (popular_approval * 0.20); relations_china -= 3; relations_eastern_europe -= 3; relations_western_europe -= 3; relations_with_US -= 3
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 
 Gorbachev’s public image is improved.

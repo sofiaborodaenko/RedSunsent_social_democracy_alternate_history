@@ -23,7 +23,7 @@ meetings in the United Nations (Schmemann, 1982)
 title: Strengthen military support for Afghan communist allies
 view-if: budget > 2 
 choose-if: advisor_action_timer == 0
-on-arrival: budget -= 1; andrei_gromyko_loyalty += 10; nuclear_crisis += 1; relations_communist_allies += 1; advisor_action_timer = 6
+on-arrival: budget -= 1; andrei_gromyko_loyalty += 10; nuclear_crisis += 1; relations_communist_allies += 1; advisor_action_timer = 6; relations_with_US -= 3
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 
 Some Soviet politicians call for an immediate full retreat of Soviet troops in Afghanistan. But Gromyko insists the troops stay there.

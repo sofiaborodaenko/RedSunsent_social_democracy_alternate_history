@@ -63,6 +63,64 @@ max-cards: 4
 - #advisor
 - @shuffle_leadership_pinned
 
+@main_five
+set-bg: img/test_bg2.jpg
+is-hand: true
+on-arrival: {!
+
+if (Q.advisor_action_timer <= 0) {
+    Q.pinnedCardsDescription = 'Advisors - an action is available.';
+} else if (Q.advisor_action_timer == 1) {
+    Q.pinnedCardsDescription = 'Advisors - next action available in 1 month.';
+} else {
+    Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' months.';
+}
+
+//if player chose choice four for sergey akhramov 
+if (Q.year == Q.year_keep_track) {
+    Q.popular_approval += 3;
+    Q.year_keep_track = 0;
+}
+
+!}
+max-cards: 5
+
+#Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
+
+- @party
+- @govt
+- #advisor
+- @shuffle_leadership_pinned
+
+@main_six
+set-bg: img/test_bg2.jpg
+is-hand: true
+on-arrival: {!
+
+if (Q.advisor_action_timer <= 0) {
+    Q.pinnedCardsDescription = 'Advisors - an action is available.';
+} else if (Q.advisor_action_timer == 1) {
+    Q.pinnedCardsDescription = 'Advisors - next action available in 1 month.';
+} else {
+    Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' months.';
+}
+
+//if player chose choice four for sergey akhramov 
+if (Q.year == Q.year_keep_track) {
+    Q.popular_approval += 3;
+    Q.year_keep_track = 0;
+}
+
+!}
+max-cards: 6
+
+#Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
+
+- @party
+- @govt
+- #advisor
+- @shuffle_leadership_pinned
+
 
 
 @party

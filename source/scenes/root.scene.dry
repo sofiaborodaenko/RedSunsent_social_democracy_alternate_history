@@ -117,7 +117,7 @@ Q.medvedev_add = 0;
 Q.andrei_gromyko_loyalty = 0;
 
 //potentially for viktor Chebrikov 
-Q.add_new_deck = 0;
+//Q.add_new_deck = 0;
 
 //for valery boldin to add one more card holder
 Q.add_new_deck = 0

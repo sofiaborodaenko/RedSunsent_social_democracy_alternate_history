@@ -20,11 +20,11 @@ at all. Nonetheless, Boldin was one of Gorbachev’s closest aides to the very e
 @set_agenda
 title: Set the Agenda
 subtitle: Decide what the next Politburo Meeting will be about
-view-if: add_new_deck == 0
+view-if: add_new_deck < 3
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
-on-arrival: max_cards += 1; advisor_action_timer = 6; add_new_deck = 1
-go-to: main.main_four
+on-arrival: advisor_action_timer = 6; add_new_deck += 1
+go-to: main.main_four if add_new_deck == 1; main.main_five if add_new_deck == 2; main.main_six if add_new_deck == 3
 # add another card to deck
 
 Even through the ranks, Boldin was entrusted to set the topics of discussion for each CPSU meetings from the very start of his ascension in the government.

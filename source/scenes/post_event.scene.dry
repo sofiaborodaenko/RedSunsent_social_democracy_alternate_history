@@ -371,7 +371,7 @@ if (this.ui && this.ui.show_portraits) {
 if (typeof window !== "undefined" && window.generateBar) {
 }
 !}
-go-to: events_choice if has_event = 1; main if has_event = 0 and difficulty >= 0; chernenko_funeral if began == 1
+go-to: events_choice if has_event = 1; main if has_event = 0 and add_new_deck == 0; chernenko_funeral if began == 1; main.main_four if has_event == 0 and add_new_deck == 1
 
 = [+ month : month +] [+ year +]
 

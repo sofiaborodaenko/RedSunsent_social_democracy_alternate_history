@@ -12,7 +12,8 @@ if (Q.difficulty >= 0) {
     this.state.currentHands['main'].push(card);
 } else {
     if (add_new_deck == 1) {
-        this.state.currentHands['main.main_four'].push(card);
+        console.log(this.state.currentHands['main.main_four'])
+        //this.state.currentHands['main.main_four'].push(card);
     } else if (add_new_deck == 2){
         this.state.currentHands['main.main_five'].push(card);
     } else if (add_new_deck == 3){

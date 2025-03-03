@@ -11,7 +11,15 @@ card.image = card.cardImage;
 if (Q.difficulty >= 0) {
     this.state.currentHands['main'].push(card);
 } else {
-    this.state.currentHands['main.main_easy'].push(card);
+    if (add_new_deck == 1) {
+        this.state.currentHands['main.main_four'].push(card);
+    } else if (add_new_deck == 2){
+        this.state.currentHands['main.main_five'].push(card);
+    } else if (add_new_deck == 3){
+        this.state.currentHands['main.main_six'].push(card);
+    } else {
+        this.state.currentHands['main.main_easy'].push(card);
+    }
 }
 // reset the timer...
 console.log(card.id);

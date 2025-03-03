@@ -119,6 +119,9 @@ Q.andrei_gromyko_loyalty = 0;
 //potentially for viktor Chebrikov 
 Q.add_new_deck = 0;
 
+//for valery boldin to add one more card holder
+Q.add_new_deck = 0
+
 //special variables for advisors
 Q.shevardnadze_homecoming = 0;
 

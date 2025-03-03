@@ -34,6 +34,30 @@ max-cards: 3
 - #advisor
 - @shuffle_leadership_pinned
 
+@main_four
+set-bg: img/test_bg2.jpg
+is-hand: true
+on-arrival: {!
+
+if (Q.advisor_action_timer <= 0) {
+    Q.pinnedCardsDescription = 'Advisors - an action is available.';
+} else if (Q.advisor_action_timer == 1) {
+    Q.pinnedCardsDescription = 'Advisors - next action available in 1 month.';
+} else {
+    Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' months.';
+}
+!}
+max-cards: 4
+
+#Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
+
+- @party
+- @govt
+- #advisor
+- @shuffle_leadership_pinned
+
+
+
 @party
 title: Domestic Policies
 card-image: img/Vorwaerts_nr_1.png

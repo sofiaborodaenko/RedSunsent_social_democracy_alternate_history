@@ -559,7 +559,7 @@ Q.specials = ['law_unearned_income', 'geneva_summit'];
 
 
 //********************MY TIMERS********************
-//variables to activate other cards 
+//variables to activate other cards (for boldin's return last played card)
 Q.law_unearned_income_special = 0;
 Q.fall_berlin_wall = 0;
 Q.geneva_summit_special = 0;

@@ -92,7 +92,8 @@ console.log('new dissent: ' + Q.dissent);
 var card = this.state.lastPlayedCard;
 Q.played_cards.push(card);
 
-//console.log("Played Cards: ", Q.played_cards)
+console.log("Played Cards: ", Q.played_cards);
+console.log("array", Q.played_cards);
 //console.log(this.game.scenes[id])
 
 if (Q.dissent < 0) {

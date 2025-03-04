@@ -22,22 +22,22 @@ What do you emphasize in your address?
 
 @cont_policy
 title: Emphasize continuing Chernenko’s foreign policy and the goal of terminating the arms race. Emphasize the party’s continued commitment to peaceful coexistence and proving socialism’s superiority through economic means.
-subtitle: We must do everything in our power to preserve peace but we must also remain steadfast in our commitment to building socialism.
-on-arrival: popular_approval += 5; relations_china += 2; relations_eastern_europe += 2; relations_western_europe += 2; relations_with_US += 2
+subtitle: We must do everything in our power to preserve peace but we must also remain steadfast in our commitment to building socialism. (Effect: improves relations with moderates, improves relations with the US and Western Europe, increases popular approval by a small amount)
+on-arrival: popular_approval += 1; moderate_approval += 5; relations_western_europe += 2; relations_with_US += 2
 
-The Soviet people honouring the memory of Chernenko.
+The Soviet people honour the memory of Chernenko. Not much reaction ensues, as the speech is predictable and consistent with your predecessors.  
 
 @peace_ending_arms_race
 title: Emphasize only the commitment to peace and ending the arms race.
-subtitle: This may upset our partners in Eastern Europe and cause increased dissent at home, but our foreign visitors will be pleased. 
-on-arrival: popular_approval += 3; relations_eastern_europe -= 1; relations_western_europe += 1; relations_with_US += 1
+subtitle: This may upset our partners in Eastern Europe and cause increased dissent at home, but our foreign visitors will be pleased. (Effect: improves relations with reformers, improves, worsens relations with hardliners, improves relations with the US and Western Europe, decreases popular approval by a small amount)
+on-arrival: reformer_approval += 5; hardliner_approval -= 5; relations_with_US += 5; relations_western_europe += 5; relations_eastern_europe -= 5; popular_approval -= 2
 
-This has improved relations with Western leaders. Margaret Thatcher, François Mitterrand, and Helmut Kohl are among the visiting leaders excited to negotiate peace and cooperation agreements.
+This has improved relations with Western leaders. British leader Margaret Thatcher, French leader François Mitterrand, and West-German leader Helmut Kohl are among the visiting leaders excited to negotiate peace and cooperation agreements.
 
 @socialism
 title: Emphasize only the Party’s commitment to socialism.
-subtitle: This may upset our foreign visitors, but our Eastern neighbours will be pleased. 
-on-arrival: popular_approval += 2; relations_eastern_europe += 1; relations_western_europe -= 1; relations_with_US += 1
+subtitle: This may upset our foreign visitors, but our Eastern neighbours will be pleased. (Effect: worsens relations with moderates, worsens relations with the US and Western Europe, increases popular approval by a small amount, improves relations with Eastern Europe)
+on-arrival: reformer_approval -= 5; moderate_approval -= 2; hardliner_approval += 5; relations_with_US -= 5; relations_western_europe -= 5; relations_eastern_europe += 5
 
 This has soured our relations with the visiting western leaders. However, the leaders in our Eastern satellite states are very pleased by our commitment to opposing the West and continuing to prioritize building socialism. 
 

@@ -1,5 +1,7 @@
 # Social Democracy: An Alternate History
 
+Link to the game: https://sofiaborodaenko.github.io/RedSunsent_social_democracy_alternate_history/
+
 ## Included Libraries
 
 [jquery v1.11.1](https://releases.jquery.com/)

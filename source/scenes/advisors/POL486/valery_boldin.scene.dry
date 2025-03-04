@@ -34,8 +34,36 @@ title: Recording Tape
 subtitle: Revise the conversations that Boldin has recorded
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
-on-arrival: advisor_action_timer = 6
 # return last played card to hand
+on-arrival: {!
+Q.advisor_action_timer = 6;
+
+var card = this.state.lastPlayedCard;
+card.image = card.cardImage;
+
+if (Q.add_new_deck == 0) {
+    this.state.currentHands['main'].push(card);
+} else if (Q.add_new_deck == 1) {
+    this.state.currentHands['main.main_four'].push(card);
+} else if (Q.add_new_deck == 2){
+    this.state.currentHands['main.main_five'].push(card);
+} else if (Q.add_new_deck == 3){
+    this.state.currentHands['main.main_six'].push(card);
+} else {
+    this.state.currentHands['main.main_easy'].push(card);
+}
+
+// reset the timer...
+if (Q[card.id + "_timer"]) {
+    Q[card.id + "_timer"] = 0;
+}
+// reduce visit count
+if (this.state.visits[card.id]) {
+    this.state.visits[card.id] -= 1;
+}
+
+
+!}
 
 Boldin recorded all his conversations to see if any important problems (or troubling committee member) needed fixing.
 

@@ -24,8 +24,6 @@ if (Q.add_new_deck == 0) {
 }
 
 // reset the timer...
-console.log(card.id);
-
 if (Q[card.id + "_timer"]) {
     Q[card.id + "_timer"] = 0;
 }

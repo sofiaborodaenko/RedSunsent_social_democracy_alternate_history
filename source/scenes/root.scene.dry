@@ -89,11 +89,6 @@ Q.revive_andrapov_campaign = 0;
 //states to watch variables 
 Q.eastern_block = 0;
 
-//variables to activate other cards 
-Q.law_unearned_income = 0;
-Q.fall_berlin_wall = 0;
-Q.geneva_summit = 0;
-
 //crisis variables 
 nuclear_crisis = 0;
 
@@ -560,8 +555,15 @@ Q.timers = ['law_unearned_income', 'reviving_lennist', 'purge_the_party', 'law_i
             'kpd_policy', 'kpd_ultimatum', 'popular_front_dispute',
             'high_inflation', 'banking_crisis'];
 
+Q.specials = ['law_unearned_income', 'geneva_summit'];
+
 
 //********************MY TIMERS********************
+//variables to activate other cards 
+Q.law_unearned_income_special = 0;
+Q.fall_berlin_wall = 0;
+Q.geneva_summit_special = 0;
+
 //domestic policy cards timers
 Q.review_military_spending_timer = 0;
 Q.review_funding_shuttle_program_timer = 0;

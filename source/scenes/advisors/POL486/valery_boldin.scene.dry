@@ -62,6 +62,11 @@ if (this.state.visits[card.id]) {
     this.state.visits[card.id] -= 1;
 }
 
+//if the card was a special card that dissapears after a certain choices
+if (Q[card.id + "_special"]){
+    Q[card.id + "_special"] = 0;
+}
+
 
 !}
 

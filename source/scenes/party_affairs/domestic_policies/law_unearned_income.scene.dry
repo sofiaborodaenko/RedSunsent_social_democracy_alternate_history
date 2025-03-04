@@ -1,7 +1,7 @@
 title: Law on Unearned Income (Domestic Policy)
 new-page: true
 is-card: true
-view-if: ((month >= 5 and year == 1986) or year >=1987) and year <= 1991 and law_unearned_income == 0 and law_unearned_income_timer == 0
+view-if: ((month >= 5 and year == 1986) or year >=1987) and year <= 1991 and law_unearned_income_special == 0 and law_unearned_income_timer == 0
 on-arrival: month_actions += 1; law_unearned_income_timer = 3
 tags: party_affairs
 card-image: img/POL486_img/unearned_income.webp
@@ -18,7 +18,7 @@ How should we proceed?
 
 @implement_law
 title: Implement the law on unearned income
-on-arrival: budget -= 2; reformer_approval -= 2; moderate_approval += 1; hardliner_approval += 2; law_unearned_income = 1
+on-arrival: budget -= 2; reformer_approval -= 2; moderate_approval += 1; hardliner_approval += 2; law_unearned_income_special = 1
 
 To much fanfare from hardliners, we decide to prioritize lowering corruption within the Soviet economy, hence implementing the law. Although this is unpopular with reformers, and also negatively affects small tradespeople and the potential economic growth they may bring, perhaps down the road such a law, and the lowering of corruption within the economy it brings, may serve its own benefit towards the state.
 

@@ -34,7 +34,7 @@ title: Recording Tape
 subtitle: Revise the conversations that Boldin has recorded
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
-# return one last played card to hand
+# return two last played card to hand, although not the exact last 2 played cards due to the filtering system of no duplicates, maybe fix/change?
 on-arrival: {!
 Q.advisor_action_timer = 6;
 

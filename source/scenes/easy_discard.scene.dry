@@ -11,26 +11,25 @@ card.image = card.cardImage;
 
 console.log("currentHands object:", this.state.currentHands);
 
-//if (Q.add_new_deck == 0) {
-    
-console.log("printing main", this.state.currentHands['main'])
-this.state.currentHands['main'].push(card);
+if (Q.add_new_deck == 0) {
 
-//} else {
-//    if (Q.add_new_deck == 1) {
-//        console.log("printing main.main_four", this.state.currentHands['main.main_four'])
-//        //this.state.currentHands['main.main_four'].push(card);
-//    } else if (Q.add_new_deck == 2){
-//        console.log("printing main.main_five", this.state.currentHands['main.main_five'])
-//        this.state.currentHands['main.main_five'].push(card);
-//    } else if (Q.add_new_deck == 3){
-//        console.log("printing main.main_six", this.state.currentHands['main.main_six'])
-//        this.state.currentHands['main.main_six'].push(card);
-//    } else {
-//        console.log("printing main.main_easy", this.state.currentHands['main.main_easy'])
-//        this.state.currentHands['main.main_easy'].push(card);
-//    }
-//}
+    console.log("printing main", this.state.currentHands['main'])
+    this.state.currentHands['main'].push(card);
+
+} else if (Q.add_new_deck == 1) {
+    console.log("printing main.main_four", this.state.currentHands['main.main_four'])
+    this.state.currentHands['main.main_four'].push(card);
+} else if (Q.add_new_deck == 2){
+    console.log("printing main.main_five", this.state.currentHands['main.main_five'])
+    this.state.currentHands['main.main_five'].push(card);
+} else if (Q.add_new_deck == 3){
+    console.log("printing main.main_six", this.state.currentHands['main.main_six'])
+    this.state.currentHands['main.main_six'].push(card);
+} else {
+    console.log("printing main.main_easy", this.state.currentHands['main.main_easy'])
+    this.state.currentHands['main.main_easy'].push(card);
+}
+
 // reset the timer...
 console.log(card.id);
 

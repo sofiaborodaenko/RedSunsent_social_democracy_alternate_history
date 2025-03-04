@@ -534,7 +534,7 @@ Q.n_advisors = 3;
 // timer - this decrements by 1 every turn, and is set to 5 whenever an advisor action is used, so that you can only use one advisor action every 5 months.
 // let's just put all of the timers here...
 // most party affairs and government affairs cards are on a timer.
-Q.timers = ['law_unearned_income', 'reviving_lennist', 'purge_the_party', 'law_individual_labor', 'institute_competitive_elections', 'implement_law_state_enterprises', 'accelerate_scientific_progress', 'free_economic_zone', 'gospriemka', 'oil_shock', 'malta_summit', 'review_funding_shuttle_program', 'review_military_spending', 'advisor_action', 'confronting_nazis', 'crisis_program',
+Q.timers = ['support_sandinistas', 'law_unearned_income', 'reviving_lennist', 'purge_the_party', 'law_individual_labor', 'institute_competitive_elections', 'implement_law_state_enterprises', 'accelerate_scientific_progress', 'free_economic_zone', 'gospriemka', 'oil_shock', 'malta_summit', 'review_funding_shuttle_program', 'review_military_spending', 'advisor_action', 'confronting_nazis', 'crisis_program',
             'fundraising', 'ideology',
             'inter_party_relationships', 'international_relations',
             'iron_front', 'media', 'enemies',
@@ -580,6 +580,7 @@ Q.law_unearned_income_timer = 0;
 //foreign policy cards timers 
 Q.malta_summit_timer = 0;
 Q.oil_shock_timer = 0;
+Q.support_sandinistas_timer = 0;
 
 //advisor actions
 //Q.advisor_action_year_timer = 0;

@@ -1,0 +1,28 @@
+title: Support for Sandinistas in Nicaragua (Foreign Policy)
+new-page: true
+is-card: true
+view-if: year == 1986 and support_sandinistas_timer == 0 and geneva_summit_special == 2
+on-arrival: month_actions += 1; support_sandinistas_timer = 3
+tags: govt_affairs
+card-image: img/POL486_img/support_sandinistas.jpg 
+
+=  Support for Sandinistas in Nicaragua
+
+Nicaragua is engaged in a civil conflict; and, the communist Sandinistas require our support.
+
+- @send_arms_money
+- @dont_send_arms_money
+
+@send_arms_money
+title: Send Arms and Money to Nicaragua
+subtitle: Because of the choice not to attend the Geneva conference, you wish to increase support for communist allies around the world
+on-arrival: hardliner_approval += 1; relations_with_US -= 1; budget -= 1
+
+This enhances your relations with other countries including the West as the USSR is seen as cooperative; and, it increases your output with OPEC importers. 
+
+@dont_send_arms_money
+title: Do not Send Arms and Money to Nicaragua
+subtitle: Choose to not intervene in the conflict and refuse any arms and economic support.
+on-arrival: hardliner_approval -= 1; relations_with_US += 1
+
+You have maintained neutrality in the conflict, however the hardliners at home are upset with your decision not to back your fellow communist revolutionaries abroad.

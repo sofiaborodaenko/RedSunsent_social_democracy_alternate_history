@@ -48,7 +48,7 @@ on-arrival: relations_with_US -= 1
 @dont_attend
 title: Do Not Attend
 subtitle: Not attending this summit will put U.S-Soviet relations on ice.
-on-arrival: geneva_summit = 1
+on-arrival: geneva_summit = 1; geneva_summit_special = 2
 
 - @cont_with_moratorium
 - @stop_moratorium

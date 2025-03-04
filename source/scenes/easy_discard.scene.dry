@@ -8,6 +8,9 @@ if (Q.month_actions > 0) {
 // return card to hand
 var card = this.state.lastPlayedCard;
 card.image = card.cardImage;
+
+console.log("currentHands object:", this.state.currentHands);
+
 if (Q.add_new_deck == 0) {
     console.log("printing main", this.state.currentHands['main'])
     this.state.currentHands['main'].push(card);

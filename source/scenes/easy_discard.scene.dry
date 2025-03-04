@@ -8,17 +8,17 @@ if (Q.month_actions > 0) {
 // return card to hand
 var card = this.state.lastPlayedCard;
 card.image = card.cardImage;
-if (Q.difficulty >= 0) {
+if (Q.add_new_deck == 0) {
     console.log("printing main", this.state.currentHands['main'])
     this.state.currentHands['main'].push(card);
 } else {
-    if (add_new_deck == 1) {
+    if (Q.add_new_deck == 1) {
         console.log("printing main.main_four", this.state.currentHands['main.main_four'])
         //this.state.currentHands['main.main_four'].push(card);
-    } else if (add_new_deck == 2){
+    } else if (Q.add_new_deck == 2){
         console.log("printing main.main_five", this.state.currentHands['main.main_five'])
         this.state.currentHands['main.main_five'].push(card);
-    } else if (add_new_deck == 3){
+    } else if (Q.add_new_deck == 3){
         console.log("printing main.main_six", this.state.currentHands['main.main_six'])
         this.state.currentHands['main.main_six'].push(card);
     } else {

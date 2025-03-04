@@ -83,17 +83,31 @@ if (Q.add_new_deck == 0) {
 }
 
 // reset the timer...
-if (Q[card.id + "_timer"]) {
-    Q[card.id + "_timer"] = 0;
+if (Q[card1.id + "_timer"]) {
+    Q[card1.id + "_timer"] = 0;
 }
+
+if (card2 !== undefined && Q[card2.id + "_timer"]) {
+    Q[card2.id + "_timer"] = 0;
+}
+
 // reduce visit count
-if (this.state.visits[card.id]) {
-    this.state.visits[card.id] -= 1;
+if (this.state.visits[card1.id]) {
+    this.state.visits[card1.id] -= 1;
+}
+
+// reduce visit count
+if (this.state.visits[card2.id] && card2 !== undefined) {
+    this.state.visits[card2.id] -= 1;
 }
 
 //if the card was a special card that dissapears after a certain choices
-if (Q[card.id + "_special"]){
-    Q[card.id + "_special"] = 0;
+if (Q[card1.id + "_special"]){
+    Q[card1.id + "_special"] = 0;
+}
+
+if (card2 !== undefined && Q[card2.id + "_special"]) {
+    Q[card2.id + "_special"] = 0;
 }
 
 

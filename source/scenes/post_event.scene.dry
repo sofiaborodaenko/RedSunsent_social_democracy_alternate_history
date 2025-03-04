@@ -92,6 +92,9 @@ console.log('new dissent: ' + Q.dissent);
 var card = this.state.lastPlayedCard;
 Q.played_cards.push(card);
 
+const seen = new Set();
+Q.played_cards = played_cards.filter(item => !seen.has(item) && seen.add(item));
+
 console.log("Played Cards: ", Q.played_cards);
 console.log("array", Q.played_cards);
 //console.log(this.game.scenes[id])

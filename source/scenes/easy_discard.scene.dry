@@ -22,7 +22,7 @@ if (Q.difficulty >= 0) {
         console.log("printing main.main_six", this.state.currentHands['main.main_six'])
         this.state.currentHands['main.main_six'].push(card);
     } else {
-        console.log("printing main.main_easy, this.state.currentHands['main.main_easy'])
+        console.log("printing main.main_easy", this.state.currentHands['main.main_easy'])
         this.state.currentHands['main.main_easy'].push(card);
     }
 }

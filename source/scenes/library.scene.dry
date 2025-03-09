@@ -96,6 +96,7 @@ SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in g
 [? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
 @terms
+go-to: menu
 
 @cabinet
 go-to: menu
@@ -138,6 +139,7 @@ go-to: menu
 
 
 @sov_ssr
+go-to: menu
 The **Russian Soviet Federative Socialist Republic** occupies mainly the northern and central parts of the USSR. It constitutes the largest republic in the USSR, containing 74% of the area and over 50% of the population. It is also one of the most industrialized Union Republics in the USSR. The Russian Soviet Federative Socialist Republic is also the home of national minorities such as like Circassians, Bashkirs, Buryat-Mongolians, Kalmyks, and Chechens.
 
 The **Ukrainian Soviet Socialist Republic** is located in the southwest of the USSR. Ukraine is mainly inhabited by Ukrainians. Russians, Jews, and Poles also share the land of Ukraine. Until 1939, Western Ukraine was under Polish control. During the Nazi invasion of Poland, the USSR took control over Western Ukraine, and incorporated it into the Ukrainian Soviet Socialist Republic.
@@ -203,6 +205,7 @@ Current relations: [+ nsdap_relation : relationships +]
 **Other parties** - there is a multitude of small, mostly conservative parties, such as the Economic Party of the German Middle Class, the Farmer's Party, the Agricultural League, and others. Their political position usually lies between the DVP and DNVP. 
 
 @organization
+go-to: menu
 
 = Resistance Groups
 
@@ -222,8 +225,7 @@ In the 1970s, Soviet dissidents made rare attempts to form independent labor uni
 
 
 @factions
-go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
-
+go-to: menu
 **Internal factions of the SPD**
 
 Overall dissent: [+ dissent_percent : dissent +]

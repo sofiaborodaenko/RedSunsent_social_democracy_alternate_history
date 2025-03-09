@@ -92,8 +92,8 @@ console.log('new dissent: ' + Q.dissent);
 var card = this.state.lastPlayedCard;
 Q.played_cards.push(card);
 
-const seen = new Set();
-Q.played_cards = Q.played_cards.filter(item => !seen.has(item) && seen.add(item));
+//const seen = new Set();
+//Q.played_cards = Q.played_cards.filter(item => !seen.has(item) && seen.add(item));
 
 console.log("Played Cards: ", Q.played_cards);
 console.log("array", Q.played_cards);
@@ -357,6 +357,7 @@ var scene = this.game.scenes['post_event.events_choice'];
 var choices = this._compileChoices(scene);
 if (choices && choices[0].title != "Continue...") {
     Q.has_event = 1;
+    Q.event_happened = 1;
 } else {
     has_event = 0;
 }

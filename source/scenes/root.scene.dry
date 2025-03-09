@@ -40,6 +40,10 @@ Q.dues = 2;
 
 // ************************MY VARIABLES************************
 
+//tracks if an event happened to remove the duplicate
+Q.event_happened = 0;
+
+
 //keeps track of all the cards played
 Q.played_cards = [];
 //keeps track of the card images

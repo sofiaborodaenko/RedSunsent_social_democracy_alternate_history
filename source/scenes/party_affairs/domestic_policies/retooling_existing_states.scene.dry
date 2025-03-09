@@ -17,15 +17,18 @@ The proposal of a 200 billion ruble state investment throughout the next 5 years
 
 @5_year_plan
 title: 200 billion: A new 5 year plan
-subtitle: — any less and we risk these reforms lacking the requisite funding only giving detractors and hardliners more ammunition we must be commited to our reforms if we are to see any success from the.
 on-arrival: budget -= 3; reformer_approval += 3; moderate_approval -= 2; hardliner_approval -= 4
+
+— any less and we risk these reforms lacking the requisite funding only giving detractors and hardliners more ammunition we must be commited to our reforms if we are to see any success from the.
 
 @compromise
 title: 100 billion; a compromise
-subtitle: Concerns regarding the great expense of these reforms are not unfounded while we must borrow money now for the good of our future we should not be too hasty. 100 billion will provide more than enough of an investment to invigorate our industrial capacity without placing us in an overlycompromised positon.
 on-arrival: budget -= 2; reformer_approval += 1; moderate_approval += 2; hardliner_approval -= 2
+
+Concerns regarding the great expense of these reforms are not unfounded while we must borrow money now for the good of our future we should not be too hasty. 100 billion will provide more than enough of an investment to invigorate our industrial capacity without placing us in an overlycompromised positon.
 
 @risk_future
 title: We must risk the future of the Union on such a brazen gamble
-subtitle: This investment and its nebulous notions of acceleration are far to risky of a proposition at this time would be far better served in implementing our reforms in a slow and deliberate manner rather than gamble our futures on hundreds of billions of rubles and the word of economists like Ryzhkov.
 on-arrival: reformer_approval -= 2; moderate_approval -= 1; hardliner_approval += 3
+
+This investment and its nebulous notions of acceleration are far to risky of a proposition at this time would be far better served in implementing our reforms in a slow and deliberate manner rather than gamble our futures on hundreds of billions of rubles and the word of economists like Ryzhkov.

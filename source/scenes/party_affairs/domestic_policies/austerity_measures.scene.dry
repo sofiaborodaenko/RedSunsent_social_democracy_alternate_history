@@ -1,0 +1,42 @@
+title: Institute Austerity Measures (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year == 1989 and austerity_measures_timer == 0
+on-arrival: month_actions += 1; austerity_measures_timer = 3
+tags: party_affairs
+card-image: img/POL486_img/austerity_measures.jpg
+
+= Institute Austerity Measures
+
+These past years have proven difficult for state revenues, with budgetary deficits only expected to grow. Our most recent forecasts, in fact, predict that the budget deficit will rise to 120 billion rubles by the end of 1989- one third of our total budget! This has caused some members of the politburo- particularly moderates and hardliners- to call for the institution of austerity measures, in an attempt to cut spending and hopefully retract the deficit. Reform-minded members within the politburo, however, argue that such austerity measures will hurt economic reforms and progress, as it aims to cut spending on various long term projects, as well as various other newly established enterprises recently invested into.
+
+How shall we proceed?
+
+- @harsh_measures
+- @implement_mild_measures
+- @no_measures
+- @long_term_projects
+
+@harsh_measures
+title: Implement harsh austerity measures
+on-arrival: budget += 2; reformer_approval -= 2; moderate_approval += 1; hardliner_approval += 2
+
+Given the very dire situation with our state budgets, we decided that it is in our best interest to respond as forcefully as possible to any projects and enterprises that put strains on the budget. Hence, we will implement harsh austerity measures which will hopefully, in time, balance the state budget and bring our deficits under control.
+
+@implement_mild_measures
+title: Implement mild austerity measures
+on-arrival: budget += 1; reformer_approval -= 1; moderate_approval += 1; hardliner_approval += 1
+
+Although our budgetary situation may be bad, we have come to the decision that implementing austerity measures too harshly, and in a way that will more or less entirely strangle many of our enterprises and long term projects, is not in the best interest of the Soviet Union. Hence, we have decided to reach a compromise, implementing some austerity measures to try and balance the budget, but not in a way that completely chokes enterprises, and projects within the country.
+
+@no_measures
+title: Implement no austerity measures
+on-arrival: reformer_approval += 1; moderate_approval -= 1; hardliner_approval -= 1
+
+We decide that it is in the best interest of the country to not implement any austerity measures, despite the state of our budget. We still have faith in the process of Perestroika, and we are willing to hold on to funding long term projects and various enterprises which would have otherwise been hurt by austerity.
+
+@long_term_projects
+title: Provide more funding to long term projects and enterprises
+on-arrival: budget -= 1; reformer_approval += 2; moderate_approval -= 1; hardliner_approval -= 2
+
+We decide that it is in the best interest of the country to not only avoid the implementation of austerity measures, but actively fund long term projects and enterprises more than before! We have full confidence in economic reform, and we believe that investment into the economy- not austerity- is the way to ensure economic prosperity.

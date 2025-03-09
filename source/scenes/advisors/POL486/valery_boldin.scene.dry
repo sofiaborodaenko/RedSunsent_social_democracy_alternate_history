@@ -53,6 +53,7 @@ if (Q.played_cards.length > 0) {
     card1 = Q.played_cards.pop();
     card1.image = card1.cardImage;
     console.log("Card1 id", card1.id)
+    console.log("played cards array length", Q.played_cards.length)
 }
 
 if (Q.played_cards.length > 0) {

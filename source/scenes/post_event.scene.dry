@@ -90,6 +90,7 @@ var total_dissent = Q.left_strength*Q.left_dissent + Q.center_strength*Q.center_
 console.log('new dissent: ' + Q.dissent);
 
 var card = this.state.lastPlayedCard;
+console.print(card)
 Q.played_cards.push(card);
 
 const seen = new Set();

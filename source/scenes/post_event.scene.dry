@@ -381,6 +381,11 @@ go-to: events_choice if has_event = 1; main if has_event = 0 and add_new_deck ==
 = [+ month : month +] [+ year +]
 
 @events_choice
+on-arrival: {!
+
+Q.played_cards.pop()
+
+!}
 
 - #event
 

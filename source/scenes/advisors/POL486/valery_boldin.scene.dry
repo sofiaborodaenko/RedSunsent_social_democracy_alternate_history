@@ -49,6 +49,7 @@ var card1 = Q.played_cards.pop();
 card1.image = card1.cardImage;
 
 var card2;
+console.log(played_cards.length)
 
 if (Q.played_cards.length != 0) {
     card2 = Q.played_cards.pop();

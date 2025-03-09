@@ -52,12 +52,13 @@ var card2, card1;
 if (Q.played_cards.length > 0) {
     card1 = Q.played_cards.pop();
     card1.image = card1.cardImage;
-    console.log("Card id", card1.id)
+    console.log("Card1 id", card1.id)
 }
 
 if (Q.played_cards.length > 0) {
     card2 = Q.played_cards.pop();
     card2.image = card2.cardImage;
+    console.log("Card2 id", card1.id)
 }
 
 if (card1) {

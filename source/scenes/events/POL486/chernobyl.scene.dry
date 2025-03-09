@@ -4,7 +4,7 @@ subtitle: If exposed, the public will be outraged due to the massive risk of hea
 tags: event
 view-if: year == 1986 and month == 4
 max-visits: 1
-on-arrival: popular_approval += (0.10*popular_approval); budget -= 1
+on-arrival: popular_approval += (0.10*popular_approval); budget -= 1; chernobyl_played = 1;
 face-image: img/POL486_img/chernobyl.png
 
 = Chernobyl

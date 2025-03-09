@@ -123,6 +123,9 @@ Q.shevardnadze_homecoming = 0;
 //variable to increase popular approval based on sergey akhramov 
 Q.year_keep_track = 0
 
+// for domestic card ramification 
+Q.chernobyl_played = 0;
+
 //************************MY VARIABLES END************************
 
 // the state of the party

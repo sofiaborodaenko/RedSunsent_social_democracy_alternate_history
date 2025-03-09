@@ -1,0 +1,28 @@
+title: Ramifications in light of “I Cannot Forsake My Principles” (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year == 1986 and ramifications_in_light_timer == 0 and chernobyl_played == 1
+on-arrival: month_actions += 1; ramifications_in_light_timer = 3
+tags: party_affairs
+card-image: img/POL486_img/ramification.jpg
+
+= Ramifications in light of “I Cannot Forsake My Principles”
+
+The response to the Chernobyl nuclear disaster has sparked new considerations about transparency within the Politburo. Reformers have become particularly empathetic to glasnost, a philosophy rooted in openness and transparency within government institutions. While this represents an apparent contradiction to the Soviet tradition that strategically limited openness - anticipating the consequences of dissent - a transition in this respect is an obvious step towards anti-corruption and political liberalization. If endorsed, this will be a seismic shift in the operation of our government. 
+
+What will we choose?
+
+- @begin_glasnost
+- @dont_glasnost
+
+@begin_glasnost
+title: Begin implementing *glasnost*.
+on-arrival: reformer_approval += 4; moderate_approval -= 2; hardliner_approval -= 4
+
+If we desire reform, accountability to the public is our duty.
+
+@dont_glasnost
+title: Do not implement *glasnost*.
+on-arrival: reformer_approval -= 4; moderate_approval += 2; hardliner_approval += 4
+
+For better or for worse, we stick to our tradition - no matter how reprehensible it may be.

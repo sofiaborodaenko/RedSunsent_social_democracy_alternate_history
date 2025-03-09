@@ -350,6 +350,7 @@ if (Q.medvedev_add == 0) {
 }
 
 console.log(window.dendryUI.dendryEngine.state.currentHands['main'])
+console.log("played cards array length", Q.played_cards.length)
 
 Q.has_event = 0;
 // check if there are any cards in #event, and then go to main if not.

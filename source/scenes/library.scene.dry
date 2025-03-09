@@ -5,19 +5,18 @@ go-to: menu
 
 = The Library
 
-Herein contains relevant information about the government and politics of the German republic.
-
+Herein is relevant information regarding the government, politics and organizations of the Soviet Union.
 @menu
 
-- @government: Germany's system of government
-- @weimar_timeline: Timeline of the Weimar Republic before 1928
-- @curr_gov: Current government details
-- @demographics: Demographics
-- @parties: Parties
-- @public_opinion: Public opinion (and projected election results)
-- @paramilitaries: Paramilitary groups
-- @factions: Internal factions
-- @figures: Figures and charts
+- @government: Soviet System of Government
+- @soviet_timeline: Timeline of Soviet Leaders
+- @curr_gov: Current Government Details
+- @terms: Political Terms
+- @demographics: Religious Groups
+- @relations: International Relations
+- @sov_ssr: Soviet SSRs
+- @organization: Organizations
+- @factions: Soviet Satellite States
 - @backSpecialScene: Exit library.
 
 @government
@@ -31,7 +30,7 @@ The President is elected by a national direct vote, in two rounds. The second ro
 
 Germany is divided into a number of states, each of which have their own governments with some responsibilities. By far the largest and most important state is Prussia.
 
-@weimar_timeline
+@soviet_timeline
 go-to: menu
 
 = Timeline of the SPD and the Republic (until 1928)
@@ -96,6 +95,8 @@ SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in g
 
 [? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
+@terms
+
 @cabinet
 go-to: menu
 
@@ -136,72 +137,38 @@ go-to: menu
 **Jews** account for between 0.5% to 1% of the population, and tend to support liberal parties, mostly the DDP, although substantial numbers support the SPD or KPD.
 
 
-@public_opinion
-on-arrival: {!
-Q.pro_republic = Math.round(Q.pro_republic);
-Q.nationalism = Math.round(Q.nationalism);
-Q.socialism = Math.round(Q.socialism);
-!}
-view-if: (not historical_mode) or game_over
-go-to: election_algorithm
-set-jump: election_projections
+@sov_ssr
+The **Russian Soviet Federative Socialist Republic** occupies mainly the northern and central parts of the USSR. It constitutes the largest republic in the USSR, containing 74% of the area and over 50% of the population. It is also one of the most industrialized Union Republics in the USSR. The Russian Soviet Federative Socialist Republic is also the home of national minorities such as like Circassians, Bashkirs, Buryat-Mongolians, Kalmyks, and Chechens.
 
-**Public Opinion**
+The **Ukrainian Soviet Socialist Republic** is located in the southwest of the USSR. Ukraine is mainly inhabited by Ukrainians. Russians, Jews, and Poles also share the land of Ukraine. Until 1939, Western Ukraine was under Polish control. During the Nazi invasion of Poland, the USSR took control over Western Ukraine, and incorporated it into the Ukrainian Soviet Socialist Republic.
 
-#Support for Socialism: [+ socialism +]%
+The **Byelorussian Soviet Socialist Republic** is situated on the western border of the USSR. While the majority are Byelorussian, other nationalities such as Jews, Russians, and Poles also inhabit Byelorussia. During the early years of the Byelorussian Soviet Socialist Republic, Western Byelorussia was under Polish control. Western Byelorussia joined the Byelorussian Soviet Socialist Republic during the invasion of Poland in 1939.
 
-#Support for Nationalism: [+ nationalism +]%
+The **Azerbaijan Soviet Socialist Republic** is in the eastern part of Transcaucasia on the border with Iran. Azerbaijanians constituted over 60% of the population with minorities such as Armenians, Russians, Kurds, Tats, Talyshi, and Georgians. The Azerbaijan Soviet Socialist Republic joined the USSR as a part of the Transcaucasian Federation. The Nakhichevan Autonomous Soviet Socialist Republic, an enclave region, and Nagorno-Karabakh Autonomous Region, despite being inhabited by Armenians, are both affiliated with theAzerbaijan Soviet Socialist Republic.
 
-Support for the Republic: [+ pro_republic +]%
+The **Georgian Soviet Socialist Republic** is situated in the western part of Transcaucasia on the border with Turkey. Two-thirds of the population of the Georgian Soviet Socialist Republic is Georgian, with other nationalities including Abkhazians, Adjarians, Ossetians, Russians, Armenians, Azerbaijanians, Greeks, and Jews. The Georgian Soviet Socialist Republic joined the USSR as a part of the Transcaucasian Federation. The Abkhazian and Adjar Autonomous Soviet Socialist Republics and the South Ossetian Autonomous Region were formed within the Georgian Soviet Socialist Republic.
 
+The **Armenian Soviet Socialist Republic** is located on the highlands of the Caucasian Range, between the USSR, Turkey, and Iran. Armenians constitute 80% of the population of the Armenian Soviet Socialist Republic with minorities such as Azerbaijanians, Kurds, Russians, Georgians, Persians, and Turks. The Armenian Soviet Socialist Republic joined the USSR as a part of the Transcaucasian Federation.
 
-@election_projections
-view-if: (not historical_mode) or game_over
-go-to: menu
+The **Turkman Soviet Socialist Republic** is situated on the border of Iran and Afghanistan in Central Asia. Turkmenians, Russians, Uzbeks, Kazakhs, Belujians, and Persians inhabit the Turman Soviet Socialist Republic.
 
-**Projected election results** (if the election were to be held now):
+The **Uzbek Soviet Socialist Republic** is in the middle of Soviet Central Asia. Uzbeks composite 75% of the population with minorities of Kara-Kalpaks, Russians, Tajiks, and Kazakhs. Kara-Kalpak Autonomous Soviet Socialist Republic is affiliated with the Uzbek Soviet Socialist Republic.
 
-# 1928: 30, 1930: 25, 1932: 22
-SPD: [+ spd_votes +]%
+The **Tajik Soviet Socialist Republic** is located on the border of Afghanistan and western China. The major inhabitants of Tajikistan are Tajiks, about 75% of the population, with minorities such as Uzbeks, in the northwest of the Republic, Kirghizians, and Russians. Affiliated to the Tajik Republic is the Gorno-Badakhshan Autonomous Region, inhabited by Kirghizians and Tajiks.
 
-[? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
+The **Kazakh Soviet Socialist Republic** is the frontier region between the USSR and western China. 60% of the population in Kazakhstan are Kazakhs with minorities including Russians, Ukrainians, Kirghiz, Uzebks, Kara-Kalpaks, Dungans, and Uigurs.
 
-# 1928: 15, 1930: 15, 1932: 
-Z + BVP: [+ z_votes +]%
+The **Kirghiz Soviet Socialist Republic** is in the east of Soviet Central Asia on the Sino-Soviet border. Kirghiz constitutes two-thirds of the population in Kirghizia while minorities like Russians, Ukrainians, Uzbeks, Uigurs, and Dungans, where the latter are people of Mohammedan-Chinese origin.
 
-# 1928: 10, 1930: 13
-KPD: [+ kpd_votes +]%
+The **Moldavian Soviet Socialist Republic** is located on the frontier of Romania. Moldavians were Romanianized historically and were initially an Autonomous Soviet Socialist Republic. After the USSR restored control over Moldavia from Romania during World War II, it formed a Soviet Socialist Republic. About 70% of the population of the Republic are Moldavians with nationalities such as Russians, Ukrainians, and Jews.
 
-# 1928: 5, 1930: 4 (as DstP)
-DDP: [+ ddp_votes +]%
+The **Lithuanian Soviet Socialist Republic** is one of the Baltic Union Republics. Lithuania was separated from Soviet Russia for over 20 years before the USSR took control in 1940. It is inhabited by Lithuanians, who constitute 85% of the population, Russians, Jews, Poles and Byelorussians. A resistance guerrilla against Soviet rule called Forest Brothers remained influential in Lithuania until it abated in 1954. Lithuanians compose 85% of the population with minorities including Russians, Jews, Poles, and Byelorussians.
 
-# 1928: 9, 1930: 5
-DVP: [+ dvp_votes +]%
+The **Latvian Soviet Socialist Republic** is one of the Baltic Union Republics. Latvia was separated from Russia during World War I. However, the USSR took over in 1940. A resistance guerrilla against Soviet rule called Forest Brothers remained influential in Latvia until it abated in 1954. Letts constitute 59% of the population in Latvia while Latgalians, people kindred to the Letts, compose 16% of the population. Other nationalities include Russians, Jews, Poles, Byelorussians, and Lithuanians.
 
-# 1928: 14, 1930: 7
-DNVP: [+ dnvp_votes +]%
+The **Estonian Soviet Socialist Republic** is one of the Baltic Union Republics. It was a part of Russia until it gained independence in 1919, although the USSR re-gained control of Estonia in 1940. A resistance guerrilla movement against Soviet rule called Forest Brothers remained influential in Estonia until it abated in 1954. The majority of the population in Estonia are Estonians, who constitute 88% of the population, with Russians in minority status.
 
-# 1928: 3, 1930: 18
-NSDAP: [+ nsdap_votes +]%
-
-# 1928: 9, 1930: 10
-Others: [+ other_votes +]%
-
-**Detailed results for each demographic**
-
-Workers: SPD: [+ workers_spd_normalized +]%, Z: [+ workers_z_normalized +]%, KPD: [+ workers_kpd_normalized +]%, DDP: [+ workers_ddp_normalized +]%, DVP: [+ workers_dvp_normalized +]%; DNVP: [+ workers_dnvp_normalized +]%, NSDAP: [+ workers_nsdap_normalized +]%, Others: [+ workers_other_normalized +]% [? if sapd_formed: SAPD: [+ workers_sapd_normalized +]% ?]
-
-New Middle Class: SPD: [+ new_middle_spd_normalized +]%, Z: [+ new_middle_z_normalized +]%, KPD: [+ new_middle_kpd_normalized +]%, DDP: [+ new_middle_ddp_normalized +]%, DVP: [+ new_middle_dvp_normalized +]%; DNVP: [+ new_middle_dnvp_normalized +]%, NSDAP: [+ new_middle_nsdap_normalized +]%, Others: [+ new_middle_other_normalized +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_normalized +]% ?]
-
-Old Middle Class: SPD: [+ old_middle_spd_normalized +]%, Z: [+ old_middle_z_normalized +]%, KPD: [+ old_middle_kpd_normalized +]%, DDP: [+ old_middle_ddp_normalized +]%, DVP: [+ old_middle_dvp_normalized +]%; DNVP: [+ old_middle_dnvp_normalized +]%, NSDAP: [+ old_middle_nsdap_normalized +]%, Others: [+ old_middle_other_normalized +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_normalized +]% ?]
-
-Rural: SPD: [+ rural_spd_normalized +]%, Z: [+ rural_z_normalized +]%, KPD: [+ rural_kpd_normalized +]%, DDP: [+ rural_ddp_normalized +]%, DVP: [+ rural_dvp_normalized +]%; DNVP: [+ rural_dnvp_normalized +]%, NSDAP: [+ rural_nsdap_normalized +]%, Others: [+ rural_other_normalized +]% [? if sapd_formed: SAPD: [+ rural_sapd_normalized +]% ?]
-
-Unemployed: SPD: [+ unemployed_spd_normalized +]%, Z: [+ unemployed_z_normalized +]%, KPD: [+ unemployed_kpd_normalized +]%, DDP: [+ unemployed_ddp_normalized +]%, DVP: [+ unemployed_dvp_normalized +]%; DNVP: [+ unemployed_dnvp_normalized +]%, NSDAP: [+ unemployed_nsdap_normalized +]%, Others: [+ unemployed_other_normalized +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_normalized +]% ?]
-
-Catholics: SPD: [+ catholics_spd_normalized +]%, Z: [+ catholics_z_normalized +]%, KPD: [+ catholics_kpd_normalized +]%, DDP: [+ catholics_ddp_normalized +]%, DVP: [+ catholics_dvp_normalized +]%; DNVP: [+ catholics_dnvp_normalized +]%, NSDAP: [+ catholics_nsdap_normalized +]%, Others: [+ catholics_other_normalized +]% [? if sapd_formed: SAPD: [+ catholics_sapd_normalized +]% ?]
-
-@parties
+@relations
 go-to: menu
 
 **SPD** - *Sozialdemokratische Partei Deutschlands* (Social Democratic Party of Germany) - this is us. We are a socialist and democratic party of the working class. We are the heirs of the legacy of Marx and Engels, Lassalle and Bebel. We are the foremost defenders of the Republic. The modern SPD was formed from a merger of the "Majority" SPD, which supported the Great War, and the "Independent" SPD or USPD, which opposed the war.
@@ -235,50 +202,23 @@ Current relations: [+ nsdap_relation : relationships +]
 
 **Other parties** - there is a multitude of small, mostly conservative parties, such as the Economic Party of the German Middle Class, the Farmer's Party, the Agricultural League, and others. Their political position usually lies between the DVP and DNVP. 
 
-@paramilitaries
-on-arrival: {!
-Q.rb_strength = Math.round(Q.rb_strength);
-Q.sh_strength = Math.round(Q.sh_strength);
-Q.sa_strength = Math.round(Q.sa_strength); 
-!}
-go-to: menu
+@organization
 
-**Paramilitary groups:**
+= Resistance Groups
 
-**Reichsbanner Schwarz-Rot-Gold**: The Reichsbanner is an organization affiliated with all of the democratic parties - the SPD, Z, and DDP, but primarily with the SPD. Historically, this has been an unarmed organization.
+**Ukrainian Insurgent Army (UPA)**
+The UPA was a Ukrainian nationalist guerrilla army formed during World War II, aiming to establish an independent Ukraine free from foreign rule. It carried out a fierce insurgency in Western Ukraine through the 1940s, attacking Soviet security forces and officials via ambushes and sabotage. Soviet authorities responded with brutal counterinsurgency campaigns. By the mid-1950s the UPA’s armed resistance was crushed, but its ideals survived despite decades of Soviet repression and propaganda.
 
-Strength: [+ rb_strength +] thousand
+**Forest Brothers (Baltic Partisans)**
+The “Forest Brothers” were bands of Lithuanian, Latvian, and Estonian partisans who waged a guerrilla war against Soviet occupation from 1944 into the mid-1950s. Operating from forest hideouts, they launched hit-and-run attacks on Soviet officials, soldiers, and local collaborators in an effort to restore the Baltic nations’ independence. This armed resistance persisted until around 1956, when superior Soviet security forces (the KGB and Red Army) infiltrated the movement and effectively suppressed it. Though defeated militarily, the Forest Brothers became a powerful symbol of national resistance and unity against Soviet domination in the Baltics.
 
-Militarization: [+ rb_militancy : militancy +]
+= Labor Unions:
 
-**Rotfrontkämpferbund (RFB)**: The "Red Front Fighter's League" is associated with the KPD.
+**All-Union Central Council of Trade Unions (VTsSPS)**
+The All-Union Central Council of Trade Unions was the official trade-union federation of the USSR, overseeing all legal labor organizations from 1918 to 1990. In practice, it was an arm of the Soviet state: unions were integrated into the Communist Party apparatus and did not independently advocate for workers. Nearly the entire workforce was enrolled in state unions, which focused on minor workplace welfare issues rather than collective bargaining or strikes. As a result, this “union” served to control and mobilize workers in line with party policies, rather than to defend labor rights against the government.
 
-Strength: [+ rfb_strength +] thousand
-
-Militarization: [+ rfb_militancy : militancy +]
-
-**Der Stahlhelm**: A right-wing nationalist organization of primarily Great War veterans, descended from the *Freikorps* that emerged after the war. Associated with the DNVP.
-
-Strength: [+ sh_strength +] thousand
-
-Militarization: [+ sh_militancy : militancy +]
-
-**Sturmabteilung (SA)**: This is the nazi paramilitary group.
-
-Strength: [+ sa_strength +] thousand
-
-Militarization: [+ sa_militancy : militancy +]
-
-**Official military/paramilitary groups:**
-
-**Reichswehr**: [+ reichswehr_strength +] thousand troops. This is Germany's military.
-
-Loyalty: [+ reichswehr_loyalty : loyalty +]
-
-**Prussian police**: [+ prussian_police_strength +] thousand members.
-
-Loyalty: [+ prussian_police_loyalty : loyalty +]
-
+**Free Trade Union Association (SMOT)**
+In the 1970s, Soviet dissidents made rare attempts to form independent labor unions outside the state system. On 2 January 1978, activist Vladimir Klebanov founded the “Association of Free Trade Union of Workers of the Soviet Union,” gathering workers to defend their workplace rights. Soviet authorities reacted swiftly – within weeks the new union’s leaders were arrested or confined to psychiatric hospitals, crushing the organization before it could grow.
 
 
 @factions

@@ -92,8 +92,8 @@ console.log('new dissent: ' + Q.dissent);
 var card = this.state.lastPlayedCard;
 Q.played_cards.push(card);
 
-const seen = new Set();
-Q.played_cards = Q.played_cards.filter(item => !seen.has(item) && seen.add(item));
+//const seen = new Set();
+//Q.played_cards = Q.played_cards.filter(item => !seen.has(item) && seen.add(item));
 
 console.log("Played Cards: ", Q.played_cards);
 console.log("array", Q.played_cards);
@@ -350,7 +350,7 @@ if (Q.medvedev_add == 0) {
 }
 
 console.log(window.dendryUI.dendryEngine.state.currentHands['main'])
-console.log("played cards array length", Q.played_cards.length)
+//console.log("played cards array length", Q.played_cards.length)
 
 Q.has_event = 0;
 // check if there are any cards in #event, and then go to main if not.

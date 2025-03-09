@@ -29,7 +29,7 @@ The Soviet people honour the memory of Chernenko. Not much reaction ensues, as t
 
 @peace_ending_arms_race
 title: Emphasize only the commitment to peace and ending the arms race.
-subtitle: This may upset our partners in Eastern Europe and cause increased dissent at home, but our foreign visitors will be pleased. (Effect: improves relations with reformers, improves, worsens relations with hardliners, improves relations with the US and Western Europe, decreases popular approval by a small amount)
+subtitle: This may upset our partners in Eastern Europe and cause increased dissent at home, but our foreign visitors will be pleased. (Effect: improves relations with reformers, worsens relations with hardliners, improves relations with the US and Western Europe, decreases popular approval by a small amount)
 on-arrival: reformer_approval += 5; hardliner_approval -= 5; relations_with_US += 5; relations_western_europe += 5; relations_eastern_europe -= 5; popular_approval -= 2
 
 This has improved relations with Western leaders. British leader Margaret Thatcher, French leader François Mitterrand, and West-German leader Helmut Kohl are among the visiting leaders excited to negotiate peace and cooperation agreements.

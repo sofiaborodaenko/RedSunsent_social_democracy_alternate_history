@@ -45,12 +45,13 @@ Q.advisor_action_timer = 6;
 //    Q.event_happened = 0;
 //}
 
-
+console.log("Before popping:", Q.played_cards);
 
 var card2, card1;
 
 if (Q.played_cards.length > 0) {
     card1 = Q.played_cards.pop();
+    console.log("After popping card1:", Q.played_cards, "Popped card1:", card1);
     card1.image = card1.cardImage;
     console.log("Card1 id", card1.id)
     console.log("played cards array length", Q.played_cards.length)

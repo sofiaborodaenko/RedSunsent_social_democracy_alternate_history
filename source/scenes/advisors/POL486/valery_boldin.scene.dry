@@ -40,10 +40,10 @@ Q.advisor_action_timer = 6;
 
 //var card = this.state.lastPlayedCard;
 
-if (Q.event_happened == 1){
-    Q.played_cards.pop();
-    Q.event_happened = 0;
-}
+//if (Q.event_happened == 1){
+//    Q.played_cards.pop();
+//    Q.event_happened = 0;
+//}
 
 var card1 = Q.played_cards.pop();
 card1.image = card1.cardImage;

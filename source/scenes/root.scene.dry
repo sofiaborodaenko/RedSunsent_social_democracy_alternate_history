@@ -537,7 +537,7 @@ Q.n_advisors = 3;
 // timer - this decrements by 1 every turn, and is set to 5 whenever an advisor action is used, so that you can only use one advisor action every 5 months.
 // let's just put all of the timers here...
 // most party affairs and government affairs cards are on a timer.
-Q.timers = ['austerity_measures', 'retooling_existing_states', 'support_sandinistas', 'law_unearned_income', 'reviving_lennist', 'purge_the_party', 'law_individual_labor', 'institute_competitive_elections', 'implement_law_state_enterprises', 'accelerate_scientific_progress', 'free_economic_zone', 'gospriemka', 'oil_shock', 'malta_summit', 'review_funding_shuttle_program', 'review_military_spending', 'advisor_action', 'confronting_nazis', 'crisis_program',
+Q.timers = ['begin_uskoreniye', 'austerity_measures', 'retooling_existing_states', 'support_sandinistas', 'law_unearned_income', 'reviving_lennist', 'purge_the_party', 'law_individual_labor', 'institute_competitive_elections', 'implement_law_state_enterprises', 'accelerate_scientific_progress', 'free_economic_zone', 'gospriemka', 'oil_shock', 'malta_summit', 'review_funding_shuttle_program', 'review_military_spending', 'advisor_action', 'confronting_nazis', 'crisis_program',
             'fundraising', 'ideology',
             'inter_party_relationships', 'international_relations',
             'iron_front', 'media', 'enemies',
@@ -581,6 +581,7 @@ Q.reviving_lennist_timer = 0;
 Q.law_unearned_income_timer = 0;
 Q.retooling_existing_states_timer = 0;
 Q.austerity_measures_timer = 0;
+Q.begin_uskoreniye_timer = 0;
 
 //foreign policy cards timers 
 Q.malta_summit_timer = 0;

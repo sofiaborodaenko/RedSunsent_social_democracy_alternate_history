@@ -1,0 +1,39 @@
+title: Begin Uskoreniye – The Acceleration Campaign (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year == 1986 and begin_uskoreniye_timer == 0
+on-arrival: month_actions += 1; begin_uskoreniye_timer = 3
+tags: party_affairs
+card-image: img/POL486_img/begin_uskoreniye.jpg
+
+= Begin Uskoreniye – The Acceleration Campaign
+
+The Soviet economy is fragile—growth has slowed, productivity is stagnant, and inefficiencies in central planning are dragging the USSR further behind the West. In response, Mikhail Gorbachev launches his ambitious *Uskoreniye (Acceleration)* campaign, a sweeping initiative aimed at modernizing the country’s domestic industry and increasing output, something he looks to achieve via massive state investment.
+
+Reformers argue that rapid investment in heavy industry, automation, and energy will reinvigorate the economy and once and for all prove that central planning can still deliver results. Some in the Politburo, however, are more skeptical and warn that without deeper reforms, this approach could fuel inflation and expose weaknesses in the planned economy. That being said, they also believe that strengthening heavy industry aligns with socialist principles—but maintain their concerns around economic destabilization.
+
+Should *Uskoreniye* be implemented?
+
+- @full_scale
+- @target_tech_investment
+- @maintain_economy
+
+@full_scale 
+title: Full-Scale Industrial Acceleration
+on-arrival: budget -= 4; reformer_approval += 4; moderate_approval += 2
+
+We direct massive investment into heavy industry, specifically coal, steel, and machine-building. This boosts short term production but worsens inefficiencies and inflation.
+
+@target_tech_investment
+title: Targeted Technological Investment
+on-arrival: budget -= 3; reformer_approval += 3; moderate_approval += 3; hardliner_approval += 1
+
+We focus our investment mainly on automation, microelectronics, and cybernetics. This strengthens the long-term economy but disrupts traditional industry.
+
+@maintain_economy
+title: Maintain the Planned Economy
+on-arrival: reformer_approval -= 3; moderate_approval -= 1; hardliner_approval += 2
+
+We reject drastic economic shifts, keeping the existing system intact and preserving stability.
+
+The economy avoids immediate shocks, but stagnation worsens.

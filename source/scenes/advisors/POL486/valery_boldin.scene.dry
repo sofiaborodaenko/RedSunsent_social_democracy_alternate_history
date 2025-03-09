@@ -52,6 +52,7 @@ var card2, card1;
 if (Q.played_cards.length > 0) {
     card1 = Q.played_cards.pop();
     card1.image = card1.cardImage;
+    console.long("Card id", card1.id)
 }
 
 if (Q.played_cards.length > 0) {

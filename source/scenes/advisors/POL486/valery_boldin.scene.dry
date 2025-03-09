@@ -45,13 +45,16 @@ Q.advisor_action_timer = 6;
 //    Q.event_happened = 0;
 //}
 
-var card1 = Q.played_cards.pop();
-card1.image = card1.cardImage;
 
-var card2;
-console.log(played_cards.length)
 
-if (Q.played_cards.length != 0) {
+var card2, card1;
+
+if (Q.played_cards.length > 0) {
+    card1 = Q.played_cards.pop();
+    card1.image = card1.cardImage;
+}
+
+if (Q.played_cards.length > 0) {
     card2 = Q.played_cards.pop();
     card2.image = card2.cardImage;
 }
@@ -59,60 +62,60 @@ if (Q.played_cards.length != 0) {
 if (Q.add_new_deck == 0) {
     this.state.currentHands['main'].push(card1);
 
-    if (card2 !== undefined) {
+    if (card2) {
         this.state.currentHands['main'].push(card2);
     }
 } else if (Q.add_new_deck == 1) {
     this.state.currentHands['main.main_four'].push(card1);
 
-    if (card2 !== undefined) {
+    if (card2) {
         this.state.currentHands['main.main_four'].push(card2);
     }
 } else if (Q.add_new_deck == 2){
     this.state.currentHands['main.main_five'].push(card1);
 
-    if (card2 !== undefined) {
+    if (card2) {
         this.state.currentHands['main.main_five'].push(card2);
     }
 } else if (Q.add_new_deck == 3){
     this.state.currentHands['main.main_six'].push(card1);
 
-    if (card2 !== undefined) {
+    if (card2) {
         this.state.currentHands['main.main_six'].push(card2);
     }
 } else {
     this.state.currentHands['main.main_easy'].push(card1);
 
-    if (card2 !== undefined) {
+    if (card2) {
         this.state.currentHands['main.main_easy'].push(card2);
     }
 }
 
 // reset the timer...
-if (Q[card1.id + "_timer"]) {
+if (Q[card1.id + "_timer"] && card1) {
     Q[card1.id + "_timer"] = 0;
 }
 
-if (card2 !== undefined && Q[card2.id + "_timer"]) {
+if (card2 && Q[card2.id + "_timer"]) {
     Q[card2.id + "_timer"] = 0;
 }
 
 // reduce visit count
-if (this.state.visits[card1.id]) {
+if (this.state.visits[card1.id] && card1) {
     this.state.visits[card1.id] -= 1;
 }
 
 // reduce visit count
-if (this.state.visits[card2.id] && card2 !== undefined) {
+if (this.state.visits[card2.id] && card2) {
     this.state.visits[card2.id] -= 1;
 }
 
 //if the card was a special card that dissapears after a certain choices
-if (Q[card1.id + "_special"]){
+if (Q[card1.id + "_special"] && card1){
     Q[card1.id + "_special"] = 0;
 }
 
-if (card2 !== undefined && Q[card2.id + "_special"]) {
+if (card2 && Q[card2.id + "_special"]) {
     Q[card2.id + "_special"] = 0;
 }
 

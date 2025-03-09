@@ -59,64 +59,67 @@ if (Q.played_cards.length > 0) {
     card2.image = card2.cardImage;
 }
 
-if (Q.add_new_deck == 0) {
-    this.state.currentHands['main'].push(card1);
+if (card1) {
 
-    if (card2) {
-        this.state.currentHands['main'].push(card2);
+    if (Q.add_new_deck == 0) {
+        this.state.currentHands['main'].push(card1);
+
+        if (card2) {
+            this.state.currentHands['main'].push(card2);
+        }
+    } else if (Q.add_new_deck == 1) {
+        this.state.currentHands['main.main_four'].push(card1);
+
+        if (card2) {
+            this.state.currentHands['main.main_four'].push(card2);
+        }
+    } else if (Q.add_new_deck == 2){
+        this.state.currentHands['main.main_five'].push(card1);
+
+        if (card2) {
+            this.state.currentHands['main.main_five'].push(card2);
+        }
+    } else if (Q.add_new_deck == 3){
+        this.state.currentHands['main.main_six'].push(card1);
+
+        if (card2) {
+            this.state.currentHands['main.main_six'].push(card2);
+        }
+    } else {
+        this.state.currentHands['main.main_easy'].push(card1);
+
+        if (card2) {
+            this.state.currentHands['main.main_easy'].push(card2);
+        }
     }
-} else if (Q.add_new_deck == 1) {
-    this.state.currentHands['main.main_four'].push(card1);
 
-    if (card2) {
-        this.state.currentHands['main.main_four'].push(card2);
+    // reset the timer...
+    if (Q[card1.id + "_timer"] && card1) {
+        Q[card1.id + "_timer"] = 0;
     }
-} else if (Q.add_new_deck == 2){
-    this.state.currentHands['main.main_five'].push(card1);
 
-    if (card2) {
-        this.state.currentHands['main.main_five'].push(card2);
+    if (card2 && Q[card2.id + "_timer"]) {
+        Q[card2.id + "_timer"] = 0;
     }
-} else if (Q.add_new_deck == 3){
-    this.state.currentHands['main.main_six'].push(card1);
 
-    if (card2) {
-        this.state.currentHands['main.main_six'].push(card2);
+    // reduce visit count
+    if (this.state.visits[card1.id] && card1) {
+        this.state.visits[card1.id] -= 1;
     }
-} else {
-    this.state.currentHands['main.main_easy'].push(card1);
 
-    if (card2) {
-        this.state.currentHands['main.main_easy'].push(card2);
+    // reduce visit count
+    if (this.state.visits[card2.id] && card2) {
+        this.state.visits[card2.id] -= 1;
     }
-}
 
-// reset the timer...
-if (Q[card1.id + "_timer"] && card1) {
-    Q[card1.id + "_timer"] = 0;
-}
+    //if the card was a special card that dissapears after a certain choices
+    if (Q[card1.id + "_special"] && card1){
+        Q[card1.id + "_special"] = 0;
+    }
 
-if (card2 && Q[card2.id + "_timer"]) {
-    Q[card2.id + "_timer"] = 0;
-}
-
-// reduce visit count
-if (this.state.visits[card1.id] && card1) {
-    this.state.visits[card1.id] -= 1;
-}
-
-// reduce visit count
-if (this.state.visits[card2.id] && card2) {
-    this.state.visits[card2.id] -= 1;
-}
-
-//if the card was a special card that dissapears after a certain choices
-if (Q[card1.id + "_special"] && card1){
-    Q[card1.id + "_special"] = 0;
-}
-
-if (card2 && Q[card2.id + "_special"]) {
-    Q[card2.id + "_special"] = 0;
+    if (card2 && Q[card2.id + "_special"]) {
+        Q[card2.id + "_special"] = 0;
+    }
 }
 
 

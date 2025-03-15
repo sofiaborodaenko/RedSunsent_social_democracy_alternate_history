@@ -120,7 +120,6 @@ You've removed Alexander Yakovlev.
 
 @add_main 
 title: Add any 2 advisors 
-on-arrival: reshuffle = 0
 
 = Add any 2 advisors 
 
@@ -137,87 +136,88 @@ on-arrival: reshuffle = 0
 
 @add_chernyaev
 title: Add Chernyaev to your advisors 
-view-if: chernyaev_advisor == 0 and reshuffle < 2
-on-arrival: chernyaev_advisor = 1; reshuffle += 1
-go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+view-if: chernyaev_advisor == 0 and reshuffle_add < 2
+on-arrival: chernyaev_advisor = 1; reshuffle_add += 1
+go-to: add_main if reshuffle_add < 2; finished_changing if reshuffle_add == 2
 
 You've added Chernyaev. 
 
 @add_gromyko
 title: Add Andrei Gromyko to your advisors 
-view-if: andrei_gromyko_advisor == 0 and reshuffle < 2
-on-arrival: andrei_gromyko_advisor = 1; reshuffle += 1
-go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+view-if: andrei_gromyko_advisor == 0 and reshuffle_add < 2
+on-arrival: andrei_gromyko_advisor = 1; reshuffle_add += 1
+go-to: add_main if reshuffle_add < 2; finished_changing if reshuffle_add == 2
 
 You've added Andrei Gromyko. 
 
 @add_abalkin
 title: Add Leonid Abalkin to your advisors 
-view-if: leonid_abalkin_advisor == 0 and reshuffle < 2
-on-arrival: leonid_abalkin_advisor = 1; reshuffle += 1
-go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+view-if: leonid_abalkin_advisor == 0 and reshuffle_add < 2
+on-arrival: leonid_abalkin_advisor = 1; reshuffle_add += 1
+go-to: add_main if reshuffle_add < 2; finished_changing if reshuffle_add == 2
 
 You've added Leonid Abalkin. 
 
 @add_medvedev
 title: Add Vadim Medvedev to your advisors 
-view-if: vadim_medvedev_advisor == 0 and reshuffle < 2
-on-arrival: vadim_medvedev_advisor = 1; reshuffle += 1
-go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+view-if: vadim_medvedev_advisor == 0 and reshuffle_add < 2
+on-arrival: vadim_medvedev_advisor = 1; reshuffle_add += 1
+go-to: add_main if reshuffle_add < 2; finished_changing if reshuffle_add == 2
 
 You've added Vadim Medvedev. 
 
 @add_ryzhkov
 title: Add Nikolai Ryzhkov to your advisors 
-view-if: nikolai_ryzhkov_advisor == 0 and reshuffle < 2
-on-arrival: nikolai_ryzhkov_advisor = 1; reshuffle += 1
-go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+view-if: nikolai_ryzhkov_advisor == 0 and reshuffle_add < 2
+on-arrival: nikolai_ryzhkov_advisor = 1; reshuffle_add += 1
+go-to: add_main if reshuffle_add < 2; finished_changing if reshuffle_add == 2
 
 You've added Nikolai Ryzhkov. 
 
 @add_akhroemov
 title: Add Sergey Akhroemov to your advisors 
-view-if: sergey_akhromeyev_advisor == 0 and reshuffle < 2
-on-arrival: sergey_akhromeyev_advisor = 1; reshuffle += 1
-go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+view-if: sergey_akhromeyev_advisor == 0 and reshuffle_add < 2
+on-arrival: sergey_akhromeyev_advisor = 1; reshuffle_add += 1
+go-to: add_main if reshuffle_add < 2; finished_changing if reshuffle_add == 2
 
 You've added Sergey Akhroemov. 
 
 @add_boldin
 title: Add Velery Boldin to your advisors 
-view-if: valery_boldin_advisor == 0 and reshuffle < 2
-on-arrival: valery_boldin_advisor = 1; reshuffle += 1
-go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+view-if: valery_boldin_advisor == 0 and reshuffle_add < 2
+on-arrival: valery_boldin_advisor = 1; reshuffle_add += 1
+go-to: add_main if reshuffle_add < 2; finished_changing if reshuffle_add == 2
 
 You've added Valery Boldin. 
 
 @add_chebrikov
 title: Add Victor Chebrikov to your advisors 
-view-if: victor_chebrikov == 0 and reshuffle < 2
-on-arrival: victor_chebrikov = 1; reshuffle += 1
-go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+view-if: victor_chebrikov == 0 and reshuffle_add < 2
+on-arrival: victor_chebrikov = 1; reshuffle_add += 1
+go-to: add_main if reshuffle_add < 2; finished_changing if reshuffle_add == 2
 
 You've added Victor Chebrikov. 
 
 @add_kryuchkov
 title: Add Vladimir Kryuchkov to your advisors 
-view-if: valdimir_kryuchkov_advisor == 0 and reshuffle < 2
-on-arrival: valdimir_kryuchkov_advisor = 1; reshuffle += 1
-go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+view-if: valdimir_kryuchkov_advisor == 0 and reshuffle_add < 2
+on-arrival: valdimir_kryuchkov_advisor = 1; reshuffle_add += 1
+go-to: add_main if reshuffle_add < 2; finished_changing if reshuffle_add == 2
 
 You've added Vladimir Kryuchkov. 
 
 @add_yakovlev
 title: Add Alexander Yakovlev to your advisors 
-view-if: alexander_yakovlev_advisor == 0 and reshuffle < 2
-on-arrival: alexander_yakovlev_advisor = 1; reshuffle += 1
-go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+view-if: alexander_yakovlev_advisor == 0 and reshuffle_add < 2
+on-arrival: alexander_yakovlev_advisor = 1; reshuffle_add += 1
+go-to: add_main if reshuffle_add < 2; finished_changing if reshuffle_add == 2
 
 You've added Alexander Yakovlev. 
 
 @finished_changing
 title: Finished Reshuffling
 go-to: root 
+on-arrival: reshuffle = 0; reshuffle_add = 0
 
 A new country calls for new advisors.
 

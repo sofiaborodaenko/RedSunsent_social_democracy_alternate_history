@@ -119,6 +119,7 @@ Q.abalkin_add = 0;
 
 // for georgy when shuffling advisors 
 Q.reshuffle = 0;
+Q.reshuffle_add = 0;
 
 //advisor loyalty 
 Q.andrei_gromyko_loyalty = 0;

@@ -216,6 +216,7 @@ go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
 You've added Alexander Yakovlev. 
 
 @finished_changing
+title: Finished Reshuffling
 go-to: root 
 
 A new country calls for new advisors.

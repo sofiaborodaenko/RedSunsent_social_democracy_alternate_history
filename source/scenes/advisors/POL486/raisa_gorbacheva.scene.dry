@@ -58,7 +58,7 @@ title: Add Nikolai Ryzhkov as an advisor
 view-if:  nikolai_ryzhkov_advisor == 0
 on-arrival: nikolai_ryzhkov_advisor = 1
 
-@abalkin_add
+@add_abalkin
 title: Add Leonid Abalkin as an advisor
 view-if: leonid_abalkin_advisor == 0 and abalkin_add == 0
 on-arrival: abalkin_add = 1

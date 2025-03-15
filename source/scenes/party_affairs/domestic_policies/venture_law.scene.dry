@@ -1,0 +1,41 @@
+title: Joint Venture Law (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1987 and  year <= 1991 and venture_law_timer == 0
+on-arrival: month_actions += 1; venture_law_timer = 12
+tags: party_affairs
+card-image: img/POL486_img/venture_law.jpg
+
+= Joint Venture Law
+
+
+In line with Perestroika reforms, the Soviet government has begun experimenting with foreign investment in the state-controlled economy so as to bolster production and productivity. The Joint Venture Law, aiding in this endeavor, permits foreign companies to partner with Soviet enterprises, giving them access to Western capital and managerial expertise. If implemented, this will mean that foreign firms can acquire majority stakes in certain industries/enterprises.
+
+Proponents argue this will modernize the Soviet economy. Hardliners, however, fear it will lead to the erosion of socialist economic control and foreign exploitation.
+
+Do we proceed with the Joint Venture Law?
+
+- @implement_with_majority
+- @implent_with_minor
+- @reject_law
+- @easy_discard
+
+@implement_with_majority
+title: Implement the Joint Venture Law with Majority Foreign Ownership
+on-arrival: budget += 3; reformer_approval += 3; moderate_approval += 1; hardliner_approval -= 4; popular_approval += 1; separatism += 1
+
+We take bold steps toward economic openness, allowing foreign firms to own a majority stake in joint ventures. This greatly encourages foreign investment and technological advancement, but alienates hardliners.
+
+@implent_with_minor
+title: Implement the Joint Venture Law with Foreign Minority Ownership
+on-arrival: budget += 1; reformer_approval += 2; hardliner_approval -= 2; moderate_approval += 2;
+
+We cautiously move forward with limited foreign investment, keeping Soviet enterprises in control while benefiting from Western capital and technology. However, investment is lower than expected, as foreign firms are weary of Soviet restriction and bureaucratic red tape.
+
+@reject_law
+title: Reject the Joint Venture Law
+on-arrival: budget -= 2; reformer_approval -= 3; hardliner_approval += 3; popular_approval -= 1; separatism -= 1
+
+Fearing the influence of foreign capitalists, we reject the Joint Venture Law, maintaining state and domestic control over all industries. Hardliners praise this decision, but we miss an opportunity for economic revitalization.
+
+

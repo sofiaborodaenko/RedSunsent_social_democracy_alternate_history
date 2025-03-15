@@ -1,0 +1,46 @@
+title: Law on Freedom of Conscience and Religious Organizations (Domestic Policy)
+new-page: true
+is-card: true
+view-if: freedom_religion_special == 0
+on-arrival: month_actions += 1; freedom_religion_special = 1
+tags: party_affairs
+card-image: img/POL486_img/freedom_religion.jpg
+
+= Law on Freedom of Conscience and Religious Organizations
+
+For decades, the Soviet Union has maintained a strict policy of state atheism, suppressing religious institutions’ freedom of speech to enforce this. However, amid increasing public demand for religious freedom and international pressure for human rights reforms, a new law has been proposed that would legalize religious organizations and allow public worship.
+
+Supporters argue that this reform is beneficial as it improves relations with the West and creates opportunities to work alongside religious groups to solve social issues. Hardliners, however, fear that such a move will undermine Communist ideology and embolden nationalist movements, hence weakening state authority.
+
+Should we proceed with the Law on Freedom of Conscience and Religious Organizations?
+
+- @full_implementation
+- @implement_restricted
+- @delay_reform
+- @reject_law 
+- @easy_discard
+
+@full_implementation
+title: Fully Implement the Law
+on-arrival: reformer_approval += 3; moderate_approval += 1; hardliner_approval -= 4; popular_approval += 3; separatism += 2
+
+We legalize religious organizations and remove state control over religious affairs. This is a historic step toward liberalization. However, nationalist and opposition groups across the various republics are emboldened as a key avenue through which they can exhibit their national identity is no longer stifled.
+
+@implement_restricted
+title: Implement a Restricted Version of the Law
+on-arrival: reformer_approval += 1; moderate_approval += 3; hardliner_approval -= 2; popular_approval += 1; separatism += 1
+
+We allow limited religious freedom but heavily monitor theological organizations. In practice, this means that the Communist Party retains control over appointments to positions of religious
+authority and the sorts of political activism religious groups may engage in. This reassures moderates and hardliners while allowing for some social liberalization.
+
+@delay_reform
+title: Delay Religious Reform
+on-arrival: reformer_approval -= 2; moderate_approval += 1; hardliner_approval += 3; popular_approval -= 1
+
+Fearing political instability, we postpone religious freedom reforms, citing the need for further study and stability. This keeps the hardliners content, but not without protest from reformers and religious groups.
+
+@reject_law
+title: Reject the Law and Maintain State Atheism
+on-arrival: reformer_approval -= 4; moderate_approval -= 2; hardliner_approval += 4; popular_approval -=3; separatism -=1
+
+We maintain strict controls on religion, keeping the Soviet Union an officially atheist state. Religious institutions remain illegal or heavily restricted, pleasing hardliners, but increasing domestic unrest as people’s appetite for more freedom goes unsatiated.

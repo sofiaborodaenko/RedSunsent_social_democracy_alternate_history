@@ -571,7 +571,7 @@ Q.timers = ['centralisation', 'venture_law', 'begin_uskoreniye', 'austerity_meas
             'kpd_policy', 'kpd_ultimatum', 'popular_front_dispute',
             'high_inflation', 'banking_crisis'];
 
-Q.specials = ['law_unearned_income', 'geneva_summit'];
+Q.specials = ['500_days_plan', 'freedom_religion', 'geneva_summit', 'law_unearned_income', 'geneva_summit'];
 
 
 //********************MY TIMERS********************

@@ -1,0 +1,42 @@
+title: The Centralisation of Authority (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1987 and year <= 1989 and centralisation_timer == 0
+on-arrival: month_actions += 1; centralisation_timer = 12
+tags: party_affairs
+card-image: img/POL486_img/centralisation.jpg
+
+= The Centralisation of Authority
+
+If the USSR is to be truly reformed, we must overhaul the governmental system. An expansion upon the Leninist notion of a Congress of people's deputies is on the table, though many remain sceptical of the potential for implementing such a system. Yakovlev and Chernyaev favour a robust presidential system which would endow us with strong powers whilst creating a democratic system. Medvedev has proposed a Majoritarian Parliamentary system. We reside at an impasse, radical reform? European and Anglo parliamentarianism? American presidentialism?
+
+- @power_to_soviet
+- @robust_system
+- @anglo_euro
+- @ends_now
+- @easy_discard
+
+@power_to_soviet
+title: Power to the Soviets Power to the People!
+on-arrival: reformer_approval += 4; moderate_approval -= 1; hardliner_approval -= 4; popular_approval += 2; separatism += 3
+
+Truly breathtaking in its ambition: and daring in its aims, we shall return Russian socialism to square one, a total rerouting of our great experiment and embracement of democracy. A 2,250-member strong Congress of People's Deputies will lead our glorious nation into the next decade and shape this great nation for centuries to come.
+
+@robust_system
+title: A Robust Presidential System
+on-arrival: reformer_approval += 2; moderate_approval += 2; hardliner_approval -= 2; popular_approval += 1; separatism += 1
+
+Presidentialisation is clearly the most sensible choice, concentrating power in the executive branch whilst allowing for democratisation.
+
+@anglo_euro
+title: Anglo/Euro Parliamentarianism
+on-arrival: reformer_approval += 2; moderate_approval += 2; hardliner_approval -= 3; popular_approval += 2; separatism += 2
+
+Anglo/Euro style Parliamentary Majoritarianism is a strong step to reform whether by first past the post or proportional representation, we will make strides to true democracy without endangering our hold on power too significantly, while it will require acclimatisation from some of your
+
+@ends_now
+title: This Nonsense Ends Now!
+on-arrival: reformer_approval -= 3; hardliner_approval += 3; popular_approval -= 2; separatism -= 2
+
+This is no time for reforms, our flagging economic conditions and the overall tenor of the USSR is indicative of troubles ahead if we go now to radical or even more moderate options of governmental reforms, we place our already precarious seat of power at risk of being toppled, we may yet dream of democracy one day but that.
+

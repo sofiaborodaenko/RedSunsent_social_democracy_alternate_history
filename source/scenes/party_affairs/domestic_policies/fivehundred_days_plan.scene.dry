@@ -1,8 +1,8 @@
 title: The 500 Days Plan (Domestic Policy)
 new-page: true
 is-card: true
-view-if: year == 1990 and 500_days_plan_special == 0
-on-arrival: month_actions += 1; 500_days_plan_special = 1
+view-if: year == 1990 and fivehundred_days_plan_special == 0
+on-arrival: month_actions += 1; fivehundred_days_plan_special = 1
 tags: party_affairs
 card-image: img/POL486_img/500_plan.jpg
 

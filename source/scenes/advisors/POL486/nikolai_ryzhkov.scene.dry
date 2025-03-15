@@ -1,0 +1,41 @@
+title: Nikolai Ryzhkov
+new-page: true
+is-pinned-card: true
+tags: advisor
+view-if: nikolai_ryzhkov_advisor == 1
+card-image: img/portraits/POL486/Nikolay_Ryzhkov.jpg
+
+= Nikolai Ryzhkov
+
+Having been appointed by Gorbachev as the Chairman of the Council of Ministers, Nikolai Ryzhkov held the second-most powerful position in the Soviet Union since 1985 until 1991. He and Gorbachev both knew that a reform was necessary for the old and inefficient economic structure of the country when they were both working under Andropov, the former General Secretary of the Communist party of Soviet Union. Under Gorbachev’s leadership, Ryzhkov worked towards bringing a western-style market economy into the country.
+
+- @boost_to_cause
+- @slow_down
+- @relief_efforts
+
+@boost_to_cause
+title: A boost to the cause
+subtitle: Ryzhkov speaks at the Communist Party congress to assert the necessity of an economic reform.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: hardliner_approval += 1; moderate_approval += 1; reformer_approval += 2; advisor_action_timer = 6
+
+The leadership gains more support for its economic reforms from the convinced party members.
+
+@slow_down
+title: Slow down, slow down!
+subtitle: In contrast to Gorbachev’s approach, Ryzhkov prioritized a less radical approach to economic reform.
+view-if: inflation > 10
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: inflation -= (0.02*inflation); popular_approval += (0.01*popular_approval); reformer_approval -= (0.01*reformer_approval); advisor_action_timer = 6
+
+The introduction of heavy government regulations halts the transfer of market control from the government to the private sector.
+
+@relief_efforts
+title: Relief efforts
+subtitle: Ryzhkov will be dispatched to oversee the rescue efforts in areas impacted by disaster.
+view-if: chernobyl_played == 1
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: popular_approval += (0.05*popular_approval); separatism -= 2; advisor_action_timer = 6

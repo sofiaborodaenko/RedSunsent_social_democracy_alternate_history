@@ -106,6 +106,7 @@ Q.sergey_akhromeyev_advisor = 1;
 Q.alexander_yakovlev_advisor = 1;
 Q.vadim_medvedev_advisor = 0;
 Q.valery_boldin_advisor = 1;
+Q.nikolai_ryzhkov_advisor = 0;
 
 //bypass some advisor date restrictions if they choose to select them 
 Q.chebrikov_add = 0;

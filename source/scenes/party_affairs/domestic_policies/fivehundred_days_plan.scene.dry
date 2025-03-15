@@ -26,6 +26,7 @@ We decide to take a gamble with the plan and implement it. While it will prove t
 @dont_implement
 title: Do not implement the 500 days plan
 on-arrival: reformer_approval -= 3; moderate_approval += 1; hardliner_approval += 3;
+
 We decide to forgo any risks with such a plan and not implement it. While this is sure to deeply upset reformers, hardliners, and to some extent moderates, will think that it is a good decision. We will have to go back to the drawing boards to create new economic reforms that are more sensible than the 500 day plan.
 
 @transform_1000

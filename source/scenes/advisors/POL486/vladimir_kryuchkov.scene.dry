@@ -1,0 +1,49 @@
+title: Vladimir Kryuchkov
+new-page: true
+is-pinned-card: true
+tags: advisor
+view-if: valdimir_kryuchkov_advisor == 1
+card-image: img/portraits/POL486/Vladimir_Kryuchkov.jpg
+
+= Vladimir Kryuchkov
+
+A shadowy figure known for running the KGB’s covert intelligence operations wing, Kryuchkov later rose to the role of Chairman of the Committee for State Security. His global ties and covert action prowess made him a formidable actor, not a man you wish to be on the wrong side of.
+
+- @eliminate_voices
+- @neutralize_hardliners
+- @strengthen_security
+- @root: Return to main
+
+@eliminate_voices
+title: Eliminate Problematic Voices
+subtitle: Protests are growing in the Eastern Bloc - Time to Quiet Them Down
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: advisor_action_timer = 6; separatism -= 3; reformer_approval -= 2
+
+Just like that, the student organisers went home
+
+@neutralize_hardliners
+title: Neutralize Hardline Opposition
+subtitle: Curry favor with conservative hardliners, making it easier for Gorbachev to push through political and economic reforms.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: advisor_action_timer = 6; hardliner_approval += 3;
+
+Kryuchkov, despite being a hardliner himself, is loyal to Gorbachev, at least for now.
+
+@strengthen_security
+title: Strengthen Internal Security
+subtitle: Kryuchkov’s control over the KGB can help maintain order so Gorbachev can focus on his reforms without fearing immediate threats to his leadership. For now.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: {!
+Q.reformer_approval += 1;
+Q.moderate_approval += 1;
+Q.hardliner_approval += 1;
+
+// draw/play another card
+
+!}
+
+Eliminate Distractions

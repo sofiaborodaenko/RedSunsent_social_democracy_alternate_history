@@ -18,6 +18,8 @@ One of Gorbachev’s closest aides before and after the collapse, Georgy Shakhna
 @reshuffle_advisors
 title: Reshuffle advisors
 subtitle: Replace your advisors.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 go-to: rm_main
 
 - @rm_main
@@ -240,6 +242,7 @@ title: Finished Reshuffling
 
 @go_home
 title: Finished Shuffling Advisors 
+on-arrival: advisor_action_timer = 6
 go-to: root 
 
 A new country calls for new advisors.

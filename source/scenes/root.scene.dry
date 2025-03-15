@@ -580,6 +580,7 @@ Q.law_unearned_income_special = 0;
 Q.fall_berlin_wall = 0;
 Q.geneva_summit_special = 0;
 Q.freedom_religion_special = 0;
+Q.500_days_plan_special = 0;
 
 //domestic policy cards timers
 Q.review_military_spending_timer = 0;

@@ -1,0 +1,35 @@
+title: The 500 Days Plan (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year == 1990 and 500_days_plan_special == 0
+on-arrival: month_actions += 1; 500_days_plan_special = 1
+tags: party_affairs
+card-image: img/POL486_img/500_plan.jpg
+
+= The 500 Days Plan
+
+The last several years have proven difficult for Perestroika, with the politburo becoming increasingly doubtful of its viability, and whether economic reforms towards the Soviet Union will even ever succeed. The 500 Day Plan is designed to put Perestroika back on track, serving as the ultimate economic reform- the complete transforming of the Soviet economy from a command based, to a market based one in just 500 days. Being especially popular with reformers, if the plan works, our chief economist Grigory Yavlinsky tells us that it has the potential to fix many of the economic woes currently being faced by our people; a scarcity of consumer goods, food etc. However, if it fails, it could truly bury any hope that Perestroika can ever succeed, something that hardliners like Nikolai Ryzhkov are already certain of happening.
+ 
+How shall we proceed?
+
+- @implement_plan
+- @dont_implement
+- @transform_1000
+- @easy_discard
+
+@implement_plan
+title: Implement the 500 days plan
+on-arrival: reformer_approval += 3; moderate_approval -= 2; hardliner_approval -= 3; popular_approval -= 1; separatism += 2
+
+We decide to take a gamble with the plan and implement it. While it will prove to be a deeply unpopular decision with hardliners and moderates, reformers are sure to be delighted with this decision. Hopefully, the plan itself will be carried out smoothly, and will start to reflect greater prosperity for the Soviet economy 500 days from now.
+
+@dont_implement
+title: Do not implement the 500 days plan
+on-arrival: reformer_approval -= 3; moderate_approval += 1; hardliner_approval += 3;
+We decide to forgo any risks with such a plan and not implement it. While this is sure to deeply upset reformers, hardliners, and to some extent moderates, will think that it is a good decision. We will have to go back to the drawing boards to create new economic reforms that are more sensible than the 500 day plan.
+
+@transform_1000
+title: Transform it into the 1000 days plan
+on-arrival: reformer_approval += 1; moderate_approval += 2; hardliner_approval -= 2; popular_approval += 1; separatism += 1
+
+We decide that the fundamental nature such a plan offers- to fundamentally alter the economy of the Soviet Union towards a market based system- is reasonable and sensible for the country, however the timeline of such a plan is not. Therefore, we propose to give the plan more time to carry itself out, and therefore double the period for which it will do so. We hope that by doing this, the economic shock that will likely result from the plan will be dampened, and the nation will have more time to transition smoothly into a market based economy. While reformers may somewhat disagree with this extended timeline, it likely proves popular amongst moderates. Hardliners, however, still view the plan with hostility, however given the new timeline, a little less so.

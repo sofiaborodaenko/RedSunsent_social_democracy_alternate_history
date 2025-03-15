@@ -109,12 +109,16 @@ Q.valery_boldin_advisor = 1;
 Q.nikolai_ryzhkov_advisor = 0;
 Q.leonid_abalkin_advisor = 0;
 Q.valdimir_kryuchkov_advisor = 0;
+Q.georgy_shakhnazarov_advisor = 0;
 
 //bypass some advisor date restrictions if they choose to select them 
 Q.chebrikov_add = 0;
 Q.shevardnadze_add = 0;
 Q.medvedev_add = 0;
 Q.abalkin_add = 0;
+
+// for georgy when shuffling advisors 
+Q.reshuffle = 0;
 
 //advisor loyalty 
 Q.andrei_gromyko_loyalty = 0;

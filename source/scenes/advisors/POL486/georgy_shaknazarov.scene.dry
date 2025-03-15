@@ -1,0 +1,239 @@
+title: Georgy Shakhnazarov
+new-page: true
+is-pinned-card: true
+tags: advisor
+view-if: georgy_shakhnazarov_advisor == 1
+card-image: img/portraits/POL486/goergy.jpg
+
+= Georgy Shakhnazarov
+
+One of Gorbachev’s closest aides before and after the collapse, Georgy Shakhnazarov had his niche in political reform and Soviet Law. Shakhanazarov had a great role in shaping Perestroika and the democratic election system that the USSR chose to adopt in its later years.
+
+- @reshuffle_advisors
+- @standby
+- @election_system
+- @finished_changing
+
+@reshuffle_advisors
+title: Reshuffle advisors
+subtitle: Replace your advisors.
+go-to: rm_main
+
+- @rm_main
+- @add_main
+
+@rm_main 
+title: Remove any 2 advisors 
+
+= Remove any 2 advisors 
+
+- @remove_chernyaev 
+- @remove_gromyko
+- @remove_abalkin 
+- @remove_medvedev
+- @remove_ryzhkov 
+- @remove_akhroemov 
+- @remove_boldin 
+- @remove_chebrikov 
+- @remove_kryuchkov
+- @remove_yakovlev
+
+@remove_chernyaev
+title: Remove Chernyaev from your advisors 
+view-if: chernyaev_advisor == 1 and reshuffle < 2
+on-arrival: chernyaev_advisor = 0; reshuffle += 1
+go-to: rm_main if reshuffle < 2; add_main if reshuffle == 2
+
+You've removed Chernyaev. 
+
+@remove_gromyko
+title: Remove Andrei Gromyko from your advisors 
+view-if: andrei_gromyko_advisor == 1 and reshuffle < 2
+on-arrival: andrei_gromyko_advisor = 0; reshuffle += 1
+go-to: rm_main if reshuffle < 2; add_main if reshuffle == 2
+
+You've removed Andrei Gromyko. 
+
+@remove_abalkin
+title: Remove Leonid Abalkin from your advisors 
+view-if: leonid_abalkin_advisor == 1 and reshuffle < 2
+on-arrival: leonid_abalkin_advisor = 0; reshuffle += 1
+go-to: rm_main if reshuffle < 2; add_main if reshuffle == 2
+
+You've removed Leonid Abalkin. 
+
+@remove_medvedev
+title: Remove Vadim Medvedev from your advisors 
+view-if: vadim_medvedev_advisor == 1 and reshuffle < 2
+on-arrival: vadim_medvedev_advisor = 0; reshuffle += 1
+go-to: rm_main if reshuffle < 2; add_main if reshuffle == 2
+
+You've removed Vadim Medvedev. 
+
+@remove_ryzhkov
+title: Remove Nikolai Ryzhkov from your advisors 
+view-if: nikolai_ryzhkov_advisor == 1 and reshuffle < 2
+on-arrival: nikolai_ryzhkov_advisor = 0; reshuffle += 1
+go-to: rm_main if reshuffle < 2; add_main if reshuffle == 2
+
+You've removed Nikolai Ryzhkov. 
+
+@remove_akhroemov
+title: Remove Sergey Akhroemov from your advisors 
+view-if: sergey_akhromeyev_advisor == 1 and reshuffle < 2
+on-arrival: sergey_akhromeyev_advisor = 0; reshuffle += 1
+go-to: rm_main if reshuffle < 2; add_main if reshuffle == 2
+
+You've removed Sergey Akhroemov. 
+
+@remove_boldin
+title: Remove Velery Boldin from your advisors 
+view-if: valery_boldin_advisor == 1 and reshuffle < 2
+on-arrival: valery_boldin_advisor = 0; reshuffle += 1
+go-to: rm_main if reshuffle < 2; add_main if reshuffle == 2
+
+You've removed Valery Boldin. 
+
+@remove_chebrikov
+title: Remove Victor Chebrikov from your advisors 
+view-if: victor_chebrikov == 1 and reshuffle < 2
+on-arrival: victor_chebrikov = 0; reshuffle += 1
+go-to: rm_main if reshuffle < 2; add_main if reshuffle == 2
+
+You've removed Victor Chebrikov. 
+
+@remove_kryuchkov
+title: Remove Vladimir Kryuchkov from your advisors 
+view-if: valdimir_kryuchkov_advisor == 1 and reshuffle < 2
+on-arrival: valdimir_kryuchkov_advisor = 0; reshuffle += 1
+go-to: rm_main if reshuffle < 2; add_main if reshuffle == 2
+
+You've removed Vladimir Kryuchkov. 
+
+@remove_yakovlev
+title: Remove Alexander Yakovlev from your advisors 
+view-if: alexander_yakovlev_advisor == 1 and reshuffle < 2
+on-arrival: alexander_yakovlev_advisor = 0; reshuffle += 1
+go-to: rm_main if reshuffle < 2; add_main if reshuffle == 2
+
+You've removed Alexander Yakovlev. 
+
+@add_main 
+title: Add any 2 advisors 
+on-arrival: reshuffle = 0
+
+= Add any 2 advisors 
+
+- @add_chernyaev 
+- @add_gromyko
+- @add_abalkin 
+- @add_medvedev
+- @add_ryzhkov 
+- @add_akhroemov 
+- @add_boldin 
+- @add_chebrikov 
+- @add_kryuchkov
+- @add_yakovlev
+
+@add_chernyaev
+title: Add Chernyaev to your advisors 
+view-if: chernyaev_advisor == 0 and reshuffle < 2
+on-arrival: chernyaev_advisor = 1; reshuffle += 1
+go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+
+You've added Chernyaev. 
+
+@add_gromyko
+title: Add Andrei Gromyko to your advisors 
+view-if: andrei_gromyko_advisor == 0 and reshuffle < 2
+on-arrival: andrei_gromyko_advisor = 1; reshuffle += 1
+go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+
+You've added Andrei Gromyko. 
+
+@add_abalkin
+title: Add Leonid Abalkin to your advisors 
+view-if: leonid_abalkin_advisor == 0 and reshuffle < 2
+on-arrival: leonid_abalkin_advisor = 1; reshuffle += 1
+go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+
+You've added Leonid Abalkin. 
+
+@add_medvedev
+title: Add Vadim Medvedev to your advisors 
+view-if: vadim_medvedev_advisor == 0 and reshuffle < 2
+on-arrival: vadim_medvedev_advisor = 1; reshuffle += 1
+go-to: add_main if reshuffle < 2; add_finished_changingmain if reshuffle == 2
+
+You've added Vadim Medvedev. 
+
+@add_ryzhkov
+title: Add Nikolai Ryzhkov to your advisors 
+view-if: nikolai_ryzhkov_advisor == 0 and reshuffle < 2
+on-arrival: nikolai_ryzhkov_advisor = 1; reshuffle += 1
+go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+
+You've added Nikolai Ryzhkov. 
+
+@add_akhroemov
+title: Add Sergey Akhroemov to your advisors 
+view-if: sergey_akhromeyev_advisor == 0 and reshuffle < 2
+on-arrival: sergey_akhromeyev_advisor = 1; reshuffle += 1
+go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+
+You've added Sergey Akhroemov. 
+
+@add_boldin
+title: Add Velery Boldin to your advisors 
+view-if: valery_boldin_advisor == 0 and reshuffle < 2
+on-arrival: valery_boldin_advisor = 1; reshuffle += 1
+go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+
+You've added Valery Boldin. 
+
+@add_chebrikov
+title: Add Victor Chebrikov to your advisors 
+view-if: victor_chebrikov == 0 and reshuffle < 2
+on-arrival: victor_chebrikov = 1; reshuffle += 1
+go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+
+You've added Victor Chebrikov. 
+
+@add_kryuchkov
+title: Add Vladimir Kryuchkov to your advisors 
+view-if: valdimir_kryuchkov_advisor == 0 and reshuffle < 2
+on-arrival: valdimir_kryuchkov_advisor = 1; reshuffle += 1
+go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+
+You've added Vladimir Kryuchkov. 
+
+@add_yakovlev
+title: Add Alexander Yakovlev to your advisors 
+view-if: alexander_yakovlev_advisor == 0 and reshuffle < 2
+on-arrival: alexander_yakovlev_advisor = 1; reshuffle += 1
+go-to: add_main if reshuffle < 2; finished_changing if reshuffle == 2
+
+You've added Alexander Yakovlev. 
+
+@finished_changing
+go-to: root 
+
+A new country calls for new advisors.
+
+@standby
+title: Standby
+subtitle: With another uprising emerging in one of the republics, choose a pacifist approach instead of intervening.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: advisor_action_timer = 6; popular_approval += (0.15*popular_approval); relations_western_europe += 1; relations_with_US += 1; moderate_approval -= 2; hardliner_approval -= 2
+
+What is considered a win for the people is a loss in the government’s control
+
+@election_system
+title: Elections system
+subtitle: Call an election for the general populace to vote in members of the politburo.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: advisor_action_timer = 6; popular_approval += (0.1 * popular_approval); reformer_approval += 1; hardliner_approval -= 2
+
+A step towards democracy is a step away from what kept the hardliners in power.

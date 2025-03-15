@@ -37,6 +37,7 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 - @add_ryzhkov
 - @add_abalkin
 - @add_kryuchkov
+- @add_georgy
 - @root: Return to main
 
 @add_chebrikov
@@ -68,6 +69,11 @@ on-arrival: abalkin_add = 1
 title: Add Valdimir Kryuchkov as an advisor 
 view-if: valdimir_kryuchkov_advisor == 0
 on-arrival: valdimir_kryuchkov_advisor = 1
+
+@add_georgy
+title: Add Georgy Shaknazarov as an advisor 
+view-if: georgy_shakhnazarov_advisor == 0
+on-arrival: georgy_shakhnazarov_advisor = 1
 
 @foreign_relations
 title: Foreign Relations

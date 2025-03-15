@@ -216,6 +216,11 @@ You've added Alexander Yakovlev.
 
 @finished_changing
 title: Finished Reshuffling
+
+- @go_home
+
+@go_home
+title: Finished Shuffling Advisors 
 go-to: root 
 on-arrival: reshuffle = 0; reshuffle_add = 0
 

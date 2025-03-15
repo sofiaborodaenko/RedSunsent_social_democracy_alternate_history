@@ -349,6 +349,16 @@ if (Q.medvedev_add == 0) {
     Q.vadim_medvedev_advisor = 1;
 }
 
+if (Q.abalkin_add == 0) {
+    if (Q.year >= 1989 && Q.year <= 1991){
+        Q.leonid_abalkin_advisor = 1;
+    } else {
+        Q.leonid_abalkin_advisor = 0;
+    }
+} else {
+    Q.leonid_abalkin_advisor = 1;
+}
+
 console.log(window.dendryUI.dendryEngine.state.currentHands['main'])
 //console.log("played cards array length", Q.played_cards.length)
 

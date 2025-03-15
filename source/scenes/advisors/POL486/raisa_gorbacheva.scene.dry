@@ -35,6 +35,7 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 - @add_shevardnadze
 - @add_medvedev
 - @add_ryzhkov
+- @add_abalkin
 - @root: Return to main
 
 @add_chebrikov
@@ -56,6 +57,11 @@ on-arrival: medvedev_add = 1
 title: Add Nikolai Ryzhkov as an advisor 
 view-if:  nikolai_ryzhkov_advisor == 0
 on-arrival: nikolai_ryzhkov_advisor = 1
+
+@abalkin_add
+title: Add Leonid Abalkin as an advisor
+view-if: leonid_abalkin_advisor == 0 and abalkin_add == 0
+on-arrival: abalkin_add = 1
 
 @foreign_relations
 title: Foreign Relations

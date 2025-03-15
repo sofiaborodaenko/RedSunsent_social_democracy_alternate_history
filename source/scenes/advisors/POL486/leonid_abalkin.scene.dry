@@ -1,0 +1,42 @@
+title: Leonid Abalkin
+new-page: true
+is-pinned-card: true
+tags: advisor
+view-if: leonid_abalkin_advisor == 1
+card-image: img/portraits/POL486/leonid_abalkin.jpg
+
+= Leonid Abalkin
+
+An advocate of cautious economic reform, Abalkin was one of Gorbachev’s most trusted advisors, driven by a strategic push for market-based policies. As the Soviet Union approached its final years, he spearheaded critical economic strategies, determined to reshape the nation’s economic future.
+
+- @market_reforms
+- @price_debate
+- @economic_stable
+- @root: Return to main
+
+@market_reforms
+title: Gradual market reforms 
+subtitle: Implement a phased transition to a mixed economy 
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: budget -= 1; reformer_approval -= 1; advisor_action_timer = 6
+
+Careful planning might ensure stability, but can it keep pace with an impending crisis?
+
+@price_debate
+title: Price controls debate 
+subtitle: Resist full-scale price deregulation 
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: advisor_action_timer = 6; hardliner_approval += 2
+
+Prices remain under control, but shortages persist. Can state intervention prevent total collapse? 
+
+@economic_stable
+title: Emergency economic stabilization
+subtitle: Recommend temporary measures to control inflation and manage shortages.  
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: budget -= 2; popular_approval += 1; moderate_approval += 2; advisor_action_timer = 6
+
+The immediate crisis is contained, but for how long? 

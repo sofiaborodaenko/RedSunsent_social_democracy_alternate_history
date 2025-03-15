@@ -4,6 +4,7 @@ is-pinned-card: true
 tags: advisor
 view-if: georgy_shakhnazarov_advisor == 1
 card-image: img/portraits/POL486/goergy.jpg
+on-arrival: reshuffle = 0; reshuffle_add = 0
 
 = Georgy Shakhnazarov
 
@@ -222,7 +223,6 @@ title: Finished Reshuffling
 @go_home
 title: Finished Shuffling Advisors 
 go-to: root 
-on-arrival: reshuffle = 0; reshuffle_add = 0
 
 A new country calls for new advisors.
 

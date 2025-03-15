@@ -38,6 +38,7 @@ title: Remove any 2 advisors
 - @remove_chebrikov 
 - @remove_kryuchkov
 - @remove_yakovlev
+- @remove_shevardnadze
 
 @remove_chernyaev
 title: Remove Chernyaev from your advisors 
@@ -119,6 +120,14 @@ go-to: rm_main if reshuffle < 2; add_main if reshuffle == 2
 
 You've removed Alexander Yakovlev. 
 
+@remove_shevardnadze
+title: Remove Eduard Shevardnadze from your advisors 
+view-if: shevardnadze_advisor == 1 and reshuffle < 2
+on-arrival: shevardnadze_advisor = 0; reshuffle += 1
+go-to: rm_main if reshuffle < 2; add_main if reshuffle == 2
+
+You've removed Eduard Shevardnadze. 
+
 @add_main 
 title: Add any 2 advisors 
 
@@ -134,6 +143,7 @@ title: Add any 2 advisors
 - @add_chebrikov 
 - @add_kryuchkov
 - @add_yakovlev
+- @add_shevardnadze
 
 @add_chernyaev
 title: Add Chernyaev to your advisors 
@@ -214,6 +224,14 @@ on-arrival: alexander_yakovlev_advisor = 1; reshuffle_add += 1
 go-to: add_main if reshuffle_add < 2; finished_changing if reshuffle_add == 2
 
 You've added Alexander Yakovlev. 
+
+@add_shevardnadze
+title: Add Eduard Shevardnadze to your advisors 
+view-if: shevardnadze_advisor == 0 and reshuffle_add < 2
+on-arrival: shevardnadze_advisor = 1; reshuffle_add += 1
+go-to: add_main if reshuffle_add < 2; finished_changing if reshuffle_add == 2
+
+You've added Eduard Shevardnadze. 
 
 @finished_changing
 title: Finished Reshuffling

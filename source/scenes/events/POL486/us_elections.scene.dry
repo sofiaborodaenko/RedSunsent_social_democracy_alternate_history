@@ -20,7 +20,7 @@ on-arrival: relations_with_US += 1
 @ignore_development
 title: Ignore this development 
 subtitle: This may upset our relations with the US (Worsens relations with the US, improves relations with hardliners, worsens relations with reformers)
-on-arrival: reformer_approval += 5; hardliner_approval -== 3; moderate_approval += 1; relations_with_US -= 3
+on-arrival: reformer_approval += 5; hardliner_approval -= 3; moderate_approval += 1; relations_with_US -= 3
 
 @pledge_relations
 title: Pledge to build relations with the US and end the Cold War 

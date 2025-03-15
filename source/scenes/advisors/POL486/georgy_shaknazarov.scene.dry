@@ -163,7 +163,7 @@ You've added Leonid Abalkin.
 title: Add Vadim Medvedev to your advisors 
 view-if: vadim_medvedev_advisor == 0 and reshuffle < 2
 on-arrival: vadim_medvedev_advisor = 1; reshuffle += 1
-go-to: add_main if reshuffle < 2; add_finished_changingmain if reshuffle == 2
+go-to: add_main if reshuffle < 2; add_finished_changing if reshuffle == 2
 
 You've added Vadim Medvedev. 
 

@@ -34,6 +34,7 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 - @add_chebrikov 
 - @add_shevardnadze
 - @add_medvedev
+- @add_ryzhkov
 - @root: Return to main
 
 @add_chebrikov
@@ -50,6 +51,11 @@ on-arrival: shevardnadze_add = 1
 title: Add Vadim Medvedev as an advisor 
 view-if: medvedev_add == 0 and vadim_medvedev_advisor == 0
 on-arrival: medvedev_add = 1
+
+@add_ryzhkov
+title: Add Nikolai Ryzhkov as an advisor 
+view-if:  nikolai_ryzhkov_advisor == 0
+on-arrival: nikolai_ryzhkov_advisor = 1
 
 @foreign_relations
 title: Foreign Relations

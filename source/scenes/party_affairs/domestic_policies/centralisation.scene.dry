@@ -32,11 +32,10 @@ Presidentialisation is clearly the most sensible choice, concentrating power in 
 title: Anglo/Euro Parliamentarianism
 on-arrival: reformer_approval += 2; moderate_approval += 2; hardliner_approval -= 3; popular_approval += 2; separatism += 2
 
-Anglo/Euro style Parliamentary Majoritarianism is a strong step to reform whether by first past the post or proportional representation, we will make strides to true democracy without endangering our hold on power too significantly, while it will require acclimatisation from some of your
+Anglo/Euro style Parliamentary Majoritarianism is a strong step to reform whether by first past the post or proportional representation. Moving toward such a system allows us to make strides toward true democracy without endangering our hold on power too significantly.
 
 @ends_now
-title: This Nonsense Ends Now!
+title: No Room for Reform.
 on-arrival: reformer_approval -= 3; hardliner_approval += 3; popular_approval -= 2; separatism -= 2
 
-This is no time for reforms, our flagging economic conditions and the overall tenor of the USSR is indicative of troubles ahead if we go now to radical or even more moderate options of governmental reforms, we place our already precarious seat of power at risk of being toppled, we may yet dream of democracy one day but that.
-
+This is no time for reforms, our flagging economic conditions and the overall tenor of the USSR is indicative of troubles ahead. If we go down the radical route now, or even entertain more moderate options, our already precarious seat of power is at severe risk of being completely toppled.

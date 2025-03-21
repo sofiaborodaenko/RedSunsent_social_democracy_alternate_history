@@ -15,17 +15,28 @@ The results are in! Republican candidate George H. W. Bush has been elected as t
 
 @congrats
 title: Congratulate the new president (maintains relations with the US)
+subtitle: This is the safest option, we won’t hurt our relationships with any faction at home and will maintain our relations abroad.
 on-arrival: relations_with_US += 1
+
+The following message has been sent to the new American President: 
+
+“Dear Mr. Bush: Accept my congratulations on your election as president of the United States of America. I would like to express the hope that your efforts in this high post will serve the cause of further development of stable and predictable relations between the U.S.S.R. and the U.S.A. and a healthier international situation.”
 
 @ignore_development
 title: Ignore this development 
 subtitle: This may upset our relations with the US (Worsens relations with the US, improves relations with hardliners, worsens relations with reformers)
 on-arrival: reformer_approval += 5; hardliner_approval -= 3; moderate_approval += 1; relations_with_US -= 3
 
+No telegram was sent to the new President, this may hurt our ability to hold a summit with the US in the near future.
+
 @pledge_relations
 title: Pledge to build relations with the US and end the Cold War 
 subtitle: This may upset the hardliners within the CPSU
 unavailable-subtitle: We do not have the necessary relationship with the US for this to come off as sincere
 on-arrival: reformer_approval += 5; hardliner_approval -= 3; moderate_approval += 1; relations_with_US += 3
+
+The following telegram has been sent to the new American President: 
+
+“Dear Mr. Bush: Accept my congratulations on your election as president of the United States of America. I would like to express the hope that your efforts in this high post will serve the cause of further development of stable and predictable relations between the U.S.S.R. and the U.S.A. and a healthier international situation. For its part, the Soviet Union is prepared to continue and deepen mutually beneficial Soviet-American cooperation in the widest possible range of issues. Expansion of the constructive interaction between the U.S.S.R. and the U.S.A. would answer the interests both of our peoples and of the whole international community.”
 
 The White House has responded favourably to your pledge. This may open the door to talks in the near future. The hardliners, however, grumble at your capitulation to US capitalism.

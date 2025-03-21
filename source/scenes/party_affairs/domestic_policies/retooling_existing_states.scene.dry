@@ -1,4 +1,4 @@
-title: Re Tooling of Existing State Entities (Domestic Policy)
+title: Retooling of Existing State Entities (Domestic Policy)
 new-page: true
 is-card: true
 view-if: year == 1986 and retooling_existing_states_timer == 0
@@ -6,7 +6,7 @@ on-arrival: month_actions += 1; retooling_existing_states_timer = 3
 tags: party_affairs
 card-image: img/POL486_img/retooling_existing_states.jpg
 
-= Re Tooling of Existing State Entities
+= Retooling of Existing State Entities
 
 The proposal of a 200 billion ruble state investment throughout the next 5 years is independent to reinvigorate the economy. We expect that within the next five years that this retooling will allow us to match the needs of our consumers and also improve our export capacity. While some nay-sayers suggest there is nowhere to draw these many billions from.
 

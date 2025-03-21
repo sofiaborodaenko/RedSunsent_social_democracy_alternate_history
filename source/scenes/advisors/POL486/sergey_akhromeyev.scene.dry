@@ -48,8 +48,7 @@ We can all take a breath
 title: Tighten Control on Eastern Bloc Dissent
 subtitle: Quell Protests in the Eastern Bloc
 choose-if: advisor_action_timer == 0
-on-arrival: reformer_approval -= 2; hardliner_approval += 1; eastern_block = 1; popular_approval -= 1; year_keep_track = year + 1; advisor_action_timer = 6
+on-arrival: reformer_approval -= 2; hardliner_approval += 1; eastern_block = 1; popular_approval -= 1; year_keep_track = year + 1; advisor_action_timer = 6; separatism -= 5; relations_eastern_europe -= 2
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-
 
 No More Protesters

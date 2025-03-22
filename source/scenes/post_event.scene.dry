@@ -319,6 +319,8 @@ if (Q.month_actions >= 1) {
 }
 
 // MY CHANGES 
+Q.separatism = Math.max(0, Q.separatism) //makes sure separatism isnt below 0
+
 if (Q.chebrikov_add == 0) {
     if (Q.year >= 1982 && Q.year <= 1988){ //should be 1988
         Q.victor_chebrikov_advisor = 1;

@@ -4,7 +4,7 @@ is-card: true
 view-if: year == 1985 and geneva_summit_special == 0
 on-arrival: month_actions += 1
 tags: govt_affairs
-card-image: img/POL486_img/placeholder.png
+card-image: img/POL486_img/geneva_summit.jpg
 
 = Geneva Summit
 

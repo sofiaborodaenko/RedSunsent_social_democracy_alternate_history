@@ -1,6 +1,7 @@
 title: Party Disunity (Domestic Policy)
 new-page: true
 is-card: true
+view-if:
 on-arrival: month_actions += 1
 tags: party_affairs
 card-image: img/POL486_img/party_disunity.jpg
@@ -23,7 +24,7 @@ There is no single correct way we can go about this. A number of options are at 
 of different ends. What will we choose?
 
 - @bolster_loyalty_media
-- @purge_the_party
+- @purge_the_party_disunity
 - @concessions_to_hardliners
 - @do_nothing_disunity
 - @easy_discard
@@ -35,7 +36,7 @@ on-arrival: reformer_approval += 2; hardliner_approval -= 3
 
 We have bolstered the loyalty of state-controlled media by removing hardline sympathizers wherever they exist and encouraging the promotion of reform, ensuring the media acts as a mouthpiece for what is good and right. We hope that this will hinder support for the hardline movement.
 
-@purge_the_party
+@purge_the_party_disunity
 title: Purge the Party
 subtitle: Remove hardline members of the Party.
 on-arrival: reformer_approval += 3; moderate_approval -= 1; hardliner_approval -= 5; popular_approval -= 2

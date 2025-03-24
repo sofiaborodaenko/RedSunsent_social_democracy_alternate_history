@@ -1,7 +1,7 @@
 title: Respond to the Anti-Nuclear Movement (Domestic Policy)
 new-page: true
 is-card: true
-view-if: year >= 1989 and year <= 1990 and respond_anti_nuclear_movement_special == 0;
+view-if: year >= 1989 and year <= 1990 and respond_anti_nuclear_movement_special == 0
 on-arrival: month_actions += 1; respond_anti_nuclear_movement_special = 1
 tags: party_affairs
 card-image: img/POL486_img/anit_nuclear.png

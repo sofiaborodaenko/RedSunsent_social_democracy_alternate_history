@@ -1,0 +1,57 @@
+title: Party Disunity (Domestic Policy)
+new-page: true
+is-card: true
+# The republics have begun to declare independence; Hardliner approval falls below x
+view-if: 
+on-arrival: month_actions += 1
+tags: party_affairs
+card-image: img/POL486_img/party_disunity.jpg
+
+= Party Disunity
+
+Our policies to this point have demonstrated a clear aim towards social and economic
+liberalisation, much to the dismay of our Party’s hardliners. They claim that clinging to glasnost and
+perestroika as doctrines steers the USSR in a direction antithetical to its essence. Moreover, they fear that
+the decentralisation of power over the republics will weaken the Union in insurmountable ways.
+
+While many of the Politburo’s reformers are keen to dismiss the hardliner’s anxieties as nothing to worry
+about, others have expressed wariness at the thought of having a faction as apprehensive about the
+direction of the Union as the hardliners are. The latter recommend taking the threat of such an ideologized
+departure seriously, as tensions could boil over in a way that threatens the Party’s governing ability. Many
+fear totalitarianism if the hardliners get their way.
+
+There is no single correct way we can go about this. A number of options are at our disposal, to a number
+of different ends. What will we choose?
+
+- @bolster_loyalty_media
+- @purge_the_party
+- @concessions_to_hardliners
+- @do_nothing
+- @easy_discard
+
+@bolster_loyalty_media
+title: Bolster the loyalty of state-controlled media
+subtitle: Ensuring the media is a mouthpiece for reform could lessen the extent of hardline beliefs, possibly hindering the movement’s leverage.
+on-arrival: reformer_approval += 2; hardliner_approval -= 3
+
+We have bolstered the loyalty of state-controlled media by removing hardline sympathizers wherever they exist and encouraging the promotion of reform, ensuring the media acts as a mouthpiece for what is good and right. We hope that this will hinder support for the hardline movement.
+
+@purge_the_party
+title: Purge the Party
+subtitle: Remove hardline members of the Party.
+on-arrival: reformer_approval += 3; moderate_approval -= 1; hardliner_approval -= 5; popular_approval -= 2
+
+We have purged our hardline members. Hardline sympathizers question why a leadership so committed to liberalisation would take such a harsh stance on dissent. May we fare well with what is to come…
+
+@concessions_to_hardliners
+title: Give concessions to the hardliners
+subtitle: Giving concessions to the hardliners involves a scaling-back or easing of perestroika and glasnost and a commitment to defend our military expenditures. A directional change, but perhaps a necessary one?
+on-arrival: reformer_approval -= 4; moderate_approval -= 1; hardliner_approval += 3; popular_approval -= 2; separatism -= 2
+
+We have given concessions to the hardliners. Party unity has increased, but at what cost?
+
+@do_nothing
+title: Do nothing
+on-arrival: moderate_approval -= 2; popular_approval -= 1; separatism -= 1
+
+Who said anything about a threat, anyways? Dissent is part of democracy - if we can’t accept it, we will go nowhere.

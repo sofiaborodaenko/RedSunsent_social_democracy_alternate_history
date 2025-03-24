@@ -1,0 +1,49 @@
+title: Baltic Cultural Autonomy Proposal (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1989 and year <= 1991 and baltic_autonomy_proposal_special == 0
+on-arrival: month_actions += 1; baltic_autonomy_proposal_special = 1
+tags: party_affairs
+card-image: img/POL486_img/Baltic_states.jpg
+
+= Baltic Cultural Autonomy Proposal
+
+Tension is rising in the Baltics. What initially began as a movement in furtherance of cultural revival has
+sharpened into a full display of political defiance, with nations like Estonia, Latvia, and Lithuania
+increasingly asserting their constitutional right to self determination. Many political leaders there are even
+toying around with the idea of succession. It appears as if decades of language suppression, Russification
+and censorship of nationalist dissidents have pushed them to a breaking point.
+
+In response, a group of Communist Party reformers have suggested we recognize the republics as
+“culturally sovereign entities” within the USSR as a way to turn down the temperature and let them buy
+back into the Soviet project. This would entail grating official status to their languages and symbols all
+the while ceding partial governing control over matters like education to local authorities. Full
+independence, however, remains off the table.
+
+Proponents believe this move could deescalate the crisis and preserve unity within the
+USSR. Critics, however, argue that it will embolden separatists and further destabilize the union.
+
+What should we do?
+
+- @recognize_sovereignty
+- @local_autonomy_not_formal
+- @reject_proposal
+- @easy_discard
+
+@recognize_sovereignty
+title: Officially Recognize Cultural Sovereignty
+on-arrival: budget -= 1; reformer_approval += 3; moderate_approval += 2; hardliner_approval -= 3; popular_approval += 1; separatism += 2
+
+We formally acknowledge the Baltic countries as distinct nations with cultural sovereignty inside the USSR, a move viewed as a soft recognition of their right to succeed. Reformers and separatists laud it as bold but necessary. Hardliners, however, call it a betrayal.
+
+@local_autonomy_not_formal
+title: Offer Heightened Local Autonomy Without Formal Recognition
+on-arrival: reformer_approval += 2; moderate_approval += 2; hardliner_approval -= 2; separatism += 3
+
+We give Baltic authorities increased power over several new policy portfolios (ie, education, language, budgeting) without formally labeling them as culturally sovereign. The move is viewed as an attempt to contain burgeoning nationalist movements, and only mildly satisfies separatists and reformers. Hardliners, however, remain discontent.
+
+@reject_proposal
+title: Reject the Proposal and Affirm Policy of Unity
+on-arrival: budget -= 2; reformer_approval -= 3; moderate_approval -= 1; hardliner_approval += 3; popular_approval += 3; popular_approval -= 2; separatism += 4
+
+We reject all Baltic calls for cultural sovereignty, instead opting to affirm the indivisibility of the USSR. Party leadership is subsequently directed to denounce Blatic protests as “nationalist provocations” and crackdowns ensue. This satisfies hardliners, but puts off more reform minded individuals. Separatists, however, are further galvanized.

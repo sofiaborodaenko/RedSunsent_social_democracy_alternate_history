@@ -571,7 +571,7 @@ Q.timers = ['funding_gosteleradio', 'centralisation', 'venture_law', 'begin_usko
             'kpd_policy', 'kpd_ultimatum', 'popular_front_dispute',
             'high_inflation', 'banking_crisis'];
 
-Q.specials = ['fivehundred_days_plan', 'freedom_religion', 'geneva_summit', 'law_unearned_income', 'geneva_summit'];
+Q.specials = ['baltic_autonomy_proposal', 'fivehundred_days_plan', 'freedom_religion', 'geneva_summit', 'law_unearned_income', 'geneva_summit'];
 
 
 //********************MY TIMERS********************
@@ -581,6 +581,7 @@ Q.fall_berlin_wall = 0;
 Q.geneva_summit_special = 0;
 Q.freedom_religion_special = 0;
 Q.fivehundred_days_plan_special = 0;
+Q.baltic_autonomy_proposal_special = 0;
 
 //domestic policy cards timers
 Q.review_military_spending_timer = 0;

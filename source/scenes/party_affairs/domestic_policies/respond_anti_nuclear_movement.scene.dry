@@ -1,0 +1,44 @@
+title: Respond to the Anti-Nuclear Movement (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1989 and year <= 1990 and respond_anti_nuclear_movement_special == 0;
+on-arrival: month_actions += 1; respond_anti_nuclear_movement_special = 1
+tags: party_affairs
+card-image: img/POL486_img/anit_nuclear.png
+
+= Respond to the Anti-Nuclear Movement
+
+In the wake of Chernobyl, a flurry of environmental protests have erupted across the Union.
+In the republics of Ukraine, Belarus and the Baltics, for instance, grassroots movements are calling for a
+moratorium on nuclear plant construction and full transparency with regard to radiation levels and safety
+standards.
+
+These protests, which were once fringe, are becoming mainstream. Scientists, students, and even local
+communist officials are speaking out. Many within the party insist that the Union must remain committed
+to nuclear development, but others warn that ignoring the protests is dangerous and only allows for public
+concern to fester.
+
+What shall be done?
+
+- @suspend_new_projects
+- @implement_regional_moratoriums
+- @ignore_protests_and_reaffirm
+- @easy_discard
+
+@suspend_new_projects
+title: Suspend All New Nuclear Projects
+on-arrival: reformer_approval += 3; moderate_approval += 2; hardliner_approval -= 3; popular_approval += 2; budget -= 3; separatism += 2
+
+We announce a nationwide suspension of all future nuclear plant construction and begin to formulate new safety reviews for existing ones. Reformers praise the decision as being a moment of self reflection, but hardliners and energy officials warn of imminent regional energy shortages and missed economic benefits.
+
+@implement_regional_moratoriums
+title: Implement Regional Moratoriums
+on-arrival: reformer_approval += 2; moderate_approval += 3; hardliner_approval -= 1; popular_approval += 1; budget -= 2; separatism += 1
+
+We leave the issue to individual republics and allow those who wish to suspend construction and nuclear activity to do so locally. This eases social tension in high risk areas, but hardliners shun the idea of decentralizing energy policy.
+
+@ignore_protests_and_reaffirm
+title: Ignore Protests and Reaffirm Nuclear Development Program
+on-arrival: reformer_approval -= 2; moderate_approval -= 1; hardliner_approval += 3; popular_approval -= 2; budget += 3; separatism += 3
+
+We publicly and assertively reaffirm our commitment to developing nuclear power, citing its pivotal role in Soviet modernization. Environmental groups denounce the decision and protests intensify, especially in Minsk and Lviv.

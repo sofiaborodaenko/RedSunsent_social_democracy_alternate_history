@@ -1,7 +1,7 @@
 title: Party Disunity (Domestic Policy)
 new-page: true
 is-card: true
-view-if: # The republics have begun to declare independence; Hardliner approval falls below x
+# view-if: The republics have begun to declare independence; Hardliner approval falls below x
 on-arrival: month_actions += 1
 tags: party_affairs
 card-image: img/POL486_img/party_disunity.jpg

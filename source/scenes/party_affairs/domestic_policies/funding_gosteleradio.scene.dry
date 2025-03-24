@@ -1,0 +1,33 @@
+title: Funding Gosteleradio (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1986 and year <= 1990 and funding_gosteleradio_timer == 0
+on-arrival: month_actions += 1; funding_gosteleradio_timer = 12
+tags: party_affairs
+card-image: img/POL486_img/gosteleradio.png
+
+= Funding Gosteleradio
+
+A part of implementing openness through glasnost is the revitalization of state-controlled media to reflect values of social liberalization. Our state committee on television and radio, Gosteleradio, is integral to this pursuit. Increasing its funding will contribute to its transformation away from an authoritarian mouthpiece and towards a forum for ideologized discussion. It is up to us to determine if this is a worthy use of our budget resources.
+
+- @increase_funding
+- @keep_same
+- @decrease_funding
+- @easy_discard
+
+@increase_funding
+title: Increase funding towards Gosteleradio
+on-arrival: budget -= 2; reformer_approval += 2; moderate_approval -= 1; hardliner_approval -= 2; popular_approval -= 1
+
+We have increased funding towards Gosteleradio. This may be a faulty use of our limited resources, but it will ensure an increase in the vibrancy of national discussion.
+
+@keep_same
+title: Keep funding the same
+
+We have kept funding the same. Either it is a worthless expenditure, or not something we can pursue at this time.
+
+@decrease_funding
+title: Decrease funding towards Gosteleradio
+on-arrival:budget += 2; reformer_approval -= 2
+
+Our overall economic situation warrants a diversion away from state media funding. This will undoubtedly ruffle some feathers among reformers, considering the media’s importance in advancing glasnost as a movement.

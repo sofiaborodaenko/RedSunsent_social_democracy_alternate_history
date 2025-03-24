@@ -1,7 +1,6 @@
 title: Party Disunity (Domestic Policy)
 new-page: true
 is-card: true
-view-if:
 on-arrival: month_actions += 1
 tags: party_affairs
 card-image: img/POL486_img/party_disunity.jpg

@@ -550,7 +550,7 @@ Q.n_advisors = 3;
 // timer - this decrements by 1 every turn, and is set to 5 whenever an advisor action is used, so that you can only use one advisor action every 5 months.
 // let's just put all of the timers here...
 // most party affairs and government affairs cards are on a timer.
-Q.timers = ['exiled_dissidents_come_home', 'funding_gosteleradio', 'centralisation', 'venture_law', 'begin_uskoreniye', 'austerity_measures', 'retooling_existing_states', 'support_sandinistas', 'law_unearned_income', 'reviving_lennist', 'purge_the_party', 'law_individual_labor', 'institute_competitive_elections', 'implement_law_state_enterprises', 'accelerate_scientific_progress', 'free_economic_zone', 'gospriemka', 'oil_shock', 'malta_summit', 'review_funding_shuttle_program', 'review_military_spending', 'advisor_action', 'confronting_nazis', 'crisis_program',
+Q.timers = ['acknowledge_katyn_massacre', 'exiled_dissidents_come_home', 'funding_gosteleradio', 'centralisation', 'venture_law', 'begin_uskoreniye', 'austerity_measures', 'retooling_existing_states', 'support_sandinistas', 'law_unearned_income', 'reviving_lennist', 'purge_the_party', 'law_individual_labor', 'institute_competitive_elections', 'implement_law_state_enterprises', 'accelerate_scientific_progress', 'free_economic_zone', 'gospriemka', 'oil_shock', 'malta_summit', 'review_funding_shuttle_program', 'review_military_spending', 'advisor_action', 'confronting_nazis', 'crisis_program',
             'fundraising', 'ideology',
             'inter_party_relationships', 'international_relations',
             'iron_front', 'media', 'enemies',
@@ -571,7 +571,7 @@ Q.timers = ['exiled_dissidents_come_home', 'funding_gosteleradio', 'centralisati
             'kpd_policy', 'kpd_ultimatum', 'popular_front_dispute',
             'high_inflation', 'banking_crisis'];
 
-Q.specials = ['respond_anti_nuclear_movement', 'exiled_dissidents_come_home', 
+Q.specials = ['acknowledge_katyn_massacre', 'respond_anti_nuclear_movement', 'exiled_dissidents_come_home', 
               'baltic_autonomy_proposal', 'fivehundred_days_plan', 'freedom_religion', 
               'geneva_summit', 'law_unearned_income', 'geneva_summit'];
 
@@ -587,6 +587,7 @@ Q.fivehundred_days_plan_special = 0;
 Q.baltic_autonomy_proposal_special = 0;
 Q.exiled_dissidents_come_home_special = 0;
 Q.respond_anti_nuclear_movement_special = 0;
+Q.acknowledge_katyn_massacre_special = 0;
 
 //domestic policy cards timers
 Q.review_military_spending_timer = 0;
@@ -607,6 +608,7 @@ Q.venture_law_timer = 0;
 Q.centralisation_timer = 0;
 Q.funding_gosteleradio_timer = 0;
 Q.exiled_dissidents_come_home_timer = 0;
+Q.acknowledge_katyn_massacre_timer = 0;
 
 //foreign policy cards timers 
 Q.malta_summit_timer = 0;

@@ -1,0 +1,42 @@
+title: Acknowledgement of the Katyn Massacre (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1985 and year <= 1990 and acknowledge_katyn_massacre_special == 0 and acknowledge_katyn_massacre_timer == 0
+on-arrival: month_actions += 1; respond_anti_nuclear_movement_special = 1; acknowledge_katyn_massacre_timer = 24;
+tags: party_affairs
+card-image: img/POL486_img/katyn_massacre.jpg
+
+= Acknowledgement of the Katyn Massacre
+
+The Katyn Massacre during WW2 tragically led to the death of the NKVD. For decades, the Soviet Union blamed Nazi Germany for the killings.
+20,000 Poles at the hands of
+
+Now, under Perestroika and Glasnost, there is growing pressure domestically and internationally to
+acknowledge the truth. Reformers see such a step as a necessary move toward historical reconciliation
+and transparency in line with broader Glasnost initiatives. Hardliners, however, warn that reopening old
+wounds could embolden nationalist movements within the USSR.
+
+How shall we proceed?
+
+- @acknowledge_it
+- @do_not_acknowledge_it
+- @minimal_acknowledgement
+- @easy_discard
+
+@acknowledge_it
+title: Acknowledge it
+on-arrival: reformer_approval += 3; moderate_approval += 1; hardliner_approval -= 3; popular_approval += 3; budget -= 1; separatism -= 3
+
+In being true to the reforms we espouse we must acknowledge and apologise for the actions of the NKVD under the Stalinist regime and seek to make amends with the victims of these terrible crimes.
+
+@do_not_acknowledge_it
+title: Do not Acknowledge it
+on-arrival: reformer_approval -= 3; hardliner_approval += 3; popular_approval -= 2; separatism += 2
+
+Acknowledging the Katyn Massacre would do nothing but provoke the Poles and other nationalist movements within the USSR. This is the last thing we need and taking this step does nothing but weaken the state’s position.
+
+@minimal_acknowledgement
+title: Minimal Acknowledgement
+on-arrival: reformer_approval += 1; moderate_approval += 2; hardliner_approval -= 2; popular_approval += 1; separatism -= 1
+
+We minimally acknowledgement of the killings while still shying away from the term genocide. We also take pains to distance the party as it stands from any association with the party at that time and shy away from any direct responsibility. This balancing of the situation will likely avoid ruffling any significant feathers whilst placating nationalists and progressives.

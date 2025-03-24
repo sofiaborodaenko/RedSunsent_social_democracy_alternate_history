@@ -25,7 +25,7 @@ of different ends. What will we choose?
 - @bolster_loyalty_media
 - @purge_the_party
 - @concessions_to_hardliners
-- @do_nothing
+- @do_nothing_disunity
 - @easy_discard
 
 @bolster_loyalty_media
@@ -49,7 +49,7 @@ on-arrival: reformer_approval -= 4; moderate_approval -= 1; hardliner_approval +
 
 We have given concessions to the hardliners. Party unity has increased, but at what cost?
 
-@do_nothing
+@do_nothing_disunity
 title: Do nothing
 on-arrival: moderate_approval -= 2; popular_approval -= 1; separatism -= 1
 

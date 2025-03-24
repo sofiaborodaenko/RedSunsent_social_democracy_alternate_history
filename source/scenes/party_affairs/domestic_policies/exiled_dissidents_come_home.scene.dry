@@ -1,0 +1,44 @@
+title: Allow Exiled Dissidents to Come Home (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1985 and year <= 1990 and exiled_dissidents_come_home_timer == 0 and exiled_dissidents_come_home_special == 0
+on-arrival: month_actions += 1; exiled_dissidents_come_home_timer = 12; exiled_dissidents_come_home_special = 1
+tags: party_affairs
+card-image: img/POL486_img/exiled_dissidents.jpg
+
+= Allow Exiled Dissidents to Come Home
+
+For decades, the Soviet Union has maintained a policy of exiling high profile critics of the regime, up to
+and including intellectuals, writers, religious activists and scientists. Some big names include Aleksandr
+Solzehnitsyn, who was expelled in 1974 after exposing the gulag system, and biologist Vladimir
+Bukovsky who condemned the USSR’s use of psychiatric abuse. Now, under the banner of Glasnost,
+many within the party are reviving calls to allow them to return home.
+
+Letting them back would please ideological reformers as well as send a powerful message to the liberal
+west that they take their stated policy of openness seriously. Hardliners, however, warn of old wounds
+being reopened and the possibility of social unrest.
+
+Do we bring them home?
+
+- @full_return_no_restrictions
+- @permit_return_conditions
+- @maintain_exile
+- @easy_discard
+
+@full_return_no_restrictions
+title: Full Return Without Restrictions
+on-arrival: budget += 2; reformer_approval += 4; moderate_approval += 2; hardliner_approval -= 4; popular_approval += 3; separatism += 2
+
+We permit exiles to return home without placing restrictions on their ability to criticize the regime. Reformers praise the move as being a major step toward cultivating openness. Dissidents and hardliners, however, waste no time criticizing it as being needlessly divisive.
+
+@permit_return_conditions
+title: Permit Return, but With Political Conditions
+on-arrival: reformer_approval += 2; moderate_approval += 3; hardliner_approval -= 2; popular_approval += 2; separatism += 1
+
+We allow a curated list of dissidents to come home, on the condition that they will not engage in public political activity. Such is a compromise that mildly annoys reform minded politicians as well as the public, who were hoping for more. That said, something is better than nothing.
+
+@maintain_exile
+title: Maintain Policy of Exile
+on-arrival: budget += 1; reformer_approval -= 4; moderate_approval -= 2; hardliner_approval += 3; popular_approval -= 1
+
+We keep prominent exiles at bay and bar their return home. Reformers denounce the move as a betrayal of Glasnost and the state’s human rights record remains sour and unchanged. However, hardliners praise the decision as needed to cultivate unity.

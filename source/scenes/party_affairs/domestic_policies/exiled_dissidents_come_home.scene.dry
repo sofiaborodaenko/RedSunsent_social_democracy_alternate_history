@@ -4,7 +4,7 @@ is-card: true
 view-if: year >= 1985 and year <= 1990 and exiled_dissidents_come_home_timer == 0 and exiled_dissidents_come_home_special == 0
 on-arrival: month_actions += 1; exiled_dissidents_come_home_timer = 12; exiled_dissidents_come_home_special = 1
 tags: party_affairs
-card-image: img/POL486_img/exiled_dissidents.jpg
+card-image: img/POL486_img/exiled_dissidents.png
 
 = Allow Exiled Dissidents to Come Home
 

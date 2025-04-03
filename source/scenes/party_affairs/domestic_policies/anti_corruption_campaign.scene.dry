@@ -1,0 +1,65 @@
+title: The Anti-Corruption Campaign (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year == 1985 and anti_corruption_campaign_special == 0
+on-arrival: month_actions += 1; anti_corruption_campaign_special = 1
+tags: party_affairs
+card-image: img/POL486_img/anti_corruption.jpg
+
+= The Anti-Corruption Campaign
+
+The Soviet anti-corruption campaign was launched in 1982 under then-General Secretary
+Yuri Andropov, whose rise to power coincided with the identification of corruption as one of the central
+threats to the Soviet political system. Among the campaign’s leading causes was a realization that
+increased discipline at all levels of Soviet society could be an asset both towards economic resurgence as
+well as popular support. By increasing the penalties of corruption at all levels of government, Andropov’s
+tenure saw the removal of some officials, and the public arrests of others. Following Andropov,
+Konstantin Chernenko’s reign saw a public commitment to the cause, albeit with some partiality towards
+Chernenko’s closest officials.
+
+As expected, the Kremlin’s stance on corruption has been popular with the public. The mobilisation of the
+KGB against corrupt officials has increased public trust in the government, with many seeing the
+increased discipline as a means of increasing the Politburo’s capacity to handle problems.
+
+We have options with regards to this policy. It is widely expected that, as an understudy of Andropov,
+General Secretary Mikhail Gorbachev will not only assume Andropov’s stance on corruption, but
+reinvigorate it. In line with the Politburo’s expectation that Gorbachev will continue Andropov’s reforms
+with a certain zeal, any reservations on the anti-corruption campaign would be surprising.
+
+What will we do?
+
+- @reinvigorate_campaign
+- @maintain_campaign
+- @scale_back
+- @abolish_campaign
+- @easy_discard
+
+@reinvigorate_campaign
+title: Reinvigorate the campaign
+on-arrival: budget -= 1; reformer_approval += 4; moderate_approval += 2; hardliner_approval -= 4; popular_approval += 3; separatism += 1
+
+The reinvigoration of the campaign will see harsher mandates against corruption than ever before. For most, the adjustment is expected, and welcome.
+
+@maintain_campaign
+title: Maintain the campaign
+on-arrival: reformer_approval += 2; hardliner_approval -= 2; popular_approval += 1
+
+While slightly underwhelming, the existing measures have been beneficial so far. Though
+many among the reformers expected Gorbachev’s commitment to a harsher mandate, the continuation of a
+positive campaign is an undoubtedly safe decision.
+
+@scale_back
+title: Scale-back the campaign
+on-arrival: budget += 1; reformer_approval -= 3; moderate_approval -= 1; hardliner_approval += 2; popular_approval -= 2; separatism -= 1
+
+All but the hardliners are displeased with our decision. This is unwelcome and
+unexpected, in spite of the immediate increase in state funds accumulated by divesting from the campaign.
+Our reputation must hang on other actions.
+
+@abolish_campaign
+title: Abolish the campaign
+on-arrival: budget += 2; reformer_approval -= 4; moderate_approval -= 2; hardliner_approval += 4; popular_approval -= 4; separatism -= 2
+
+While the reformers are left with hanging heads trying to figure just where it all went
+wrong, the public wonders what this signals for the Kremlin’s inner operations. Trust built back by
+Andropov is replaced with skepticism, for now.

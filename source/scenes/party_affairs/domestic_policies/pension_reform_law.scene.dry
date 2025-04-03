@@ -1,0 +1,57 @@
+Pension Reform Law (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1985 and year <= 1988 and pension_reform_law_special == 0
+on-arrival: month_actions += 1; pension_reform_law_special = 1
+tags: party_affairs
+card-image: img/POL486_img/pension_reform.png
+
+= Pension Reform Law
+
+The Soviet pension system is buckling, now consuming an enormous share of the annual
+budget. Payouts are low, but rising life expectancy, economic contraction and inflation are making even
+these modest benefits hard to sustain.
+
+The current system is unviable and in need of swift change so as to avoid social unrest. Reformers suggest
+raising the retirement age . Hardliners, however warn that any amendment to the status quo is both
+political suicide and a betryal of socialist principles.
+
+What shall be done?
+
+- @raise_retirement_age
+- @tie_with_inflation
+- @keep_as_is
+- @expand_benefits
+- @easy_discard
+
+@raise_retirement_age
+title: Raise Retirement Age by Two Years
+on-arrival: reformer_approval += 2; moderate_approval += 1; hardliner_approval -= 4; popular_approval -= 4; budget += 4
+
+We raise the retirement age by two years, increasing it from 60-62 for men and 55-57 for women. 
+Though controversial, and deeply unpopular among the general populace and hardliners, the move significantly reduces the strain on the Soviet budget and signals long term reform.
+
+@tie_with_inflation
+title: Tie Pension Payments to Inflation
+on-arrival: reformer_approval -= 2; moderate_approval -= 1; hardliner_approval += 2; popular_approval += 4; budget -= 3
+
+We maintain current retirement age but adjust monthly payments depending on the rate
+of inflation at the time. Pensioners see immediate relief and are thrilled at the move, as are hardliners.
+Economists, however, warn of heightened fiscal pressure.
+
+@keep_as_is
+title: Keep the System As-Is
+on-arrival: reformer_approval -= 3; moderate_approval -= 2; hardliner_approval += 2; popular_approval -= 3; budget -= 2
+
+We preserve the status quo and no changes are made. This saves us political backlash in
+the short term, but discontent among pensioners who are struggling and economists begging for reform
+rises.
+
+@expand_benefits
+title: Expand Pension Benefits
+on-arrival: reformer_approval -= 3; moderate_approval -= 2; hardliner_approval += 1; popular_approval += 4; budget -= 4
+
+We, boldly, raise pension payouts and increase eligibility in rural areas. The move is very
+popular, but inflation sours and economists’ plea for reform reaches a new high.
+
+

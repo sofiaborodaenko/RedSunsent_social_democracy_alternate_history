@@ -1,0 +1,40 @@
+title: Yeltsin Attempts Suicide 
+subtitle: Boris Yeltsin, the First Secretary at the time, attempted suicide.
+new-page: true
+tags: event
+view-if: year == 1987 and month == 11
+max-visits: 1
+face-image: img/POL486_img/yeltsin.jpg 
+
+= Yeltsin Attempts Suicide 
+
+On November 9, 1987, Boris Yeltsin attempted suicide after Gorbachev, who had increasingly sidelined Yeltsin due to his outspoken criticism of the slow pace of perestroika and glasnost, publicly humiliated Yeltsin. A few days prior, Yeltsin had been removed from his position and this demotion deeply affected him both politically and emotionally. According to some reports, Yeltsin was found in his apartment with self-inflicted injuries and was taken to the hospital, though Soviet authorities kept details of the incident secret at the time.
+
+How should you handle/address the aftermath of this issue?
+
+- @downplay_incident
+- @discredit_yeltsin
+- @reconcile_yeltsin
+
+@downplay_incident
+title: Downplay the incident
+subtitle: Control the media in order to maintain stability and decrease chances of infighting by exerting tight control over media coverage to reinforce party discipline.
+on-arrival: reformer_approval -= 1; hardliner_approval += 1
+
+Due to the lack of media coverage of Yeltsin’s suicide attempt, the majority of the public remains unaware of this incident and major backlash was avoided. 
+
+@discredit_yeltsin
+title: Use this incident as a chance to discredit Yeltsin
+subtitle: Frame Yeltsin as unfit for leadership and weaken his political credibility through the use of state-controlled media. 
+on-arrival: reformer_approval -= 2; hardliner_approval += 2
+
+Yelsin’s credibility and influence has decreased significantly. However, this may damage our public image and increase infighting. 
+
+@reconcile_yeltsin
+title: Reconcile with Yeltsin
+subtitle: Offer Yeltsin a meaningful, but less influential position to keep him in check.
+on-arrival: reformer_approval += 2; hardliner_approval -= 2
+
+Even though Yeltsin is still a government official, his new position does not afford him the same influence and credibility his old position did so his criticism of perestroika and glasnost may not have as large of an impact as they did before.
+
+

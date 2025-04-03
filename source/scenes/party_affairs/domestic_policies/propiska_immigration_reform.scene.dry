@@ -1,0 +1,55 @@
+title: Propiska/Internal Immigration Reform (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1985 and year <= 1991 and propiska_immigration_reform_special == 0
+on-arrival: month_actions += 1; propiska_immigration_reform_special = 1
+tags: party_affairs
+card-image: img/POL486_img/immigration_reform.jpg
+
+= Propiska/Internal Immigration Reform
+
+As things stand, the Soviet Union’s internal passport system (propiska) strictly regulates
+where citizens can live and work. Moving to major cities requires official approval, for instance, a policy
+which limits labour mobility. The aim is to keep places like Moscow, Leningrad and other urban centres
+from overcrowding.
+
+Now, as we aim to jumpstart economic development and liberalization, reformers argue that this system is
+in dire need of reworking. They say that workers should be free to relocate for jobs, allowing key
+industries to fill vacancies with ease. Hardliners, on the other hand,warn that chaotic migration will lead
+to housing shortages, crime, and urban instability.
+
+What is to be done about the propiska system?
+
+- @abolish_system
+- @allow_in_select_republics
+- @maintain_system
+- @loosen_restrictions
+- @easy_discard
+
+@abolish_system
+title: Abolish the Propiska System
+on-arrival: reformer_approval += 3; moderate_approval += 1; hardliner_approval -= 3; popular_approval += 3; budget -= 2; separatism += 1
+
+We dismantle the internal passport system and allow full freedom of movement across the USSR. Reformers hail it as a needed move toward economic development and liberalization, but cities quickly overcrowd, straining social services and housing.
+
+@allow_in_select_republics
+title: Allow Migration Reform in Select Republics
+on-arrival: reformer_approval += 2; moderate_approval += 2; hardliner_approval -= 2; popular_approval += 1; budget -= 1
+
+We begin slowly, lifting migration control in low population regions such as Siberia. This helps them avoid immediate urban overcrowding, but does little to appease reformers pushing for more freedom of movement.
+
+@maintain_system
+title: Maintain the Propiska System
+on-arrival: reformer_approval -= 3; hardliner_approval += 3; popular_approval -= 2
+
+We reaffirm the necessity of the internal passport system and the population stability it
+brings. This pleases hardliners, but reformers criticize the system as a relic of burdensome Stalinist
+bureaucracies.
+
+@loosen_restrictions
+title: Loosen Propiska Restrictions for Key Industries
+on-arrival: reformer_approval += 2; moderate_approval += 2; hardliner_approval -= 1; popular_approval += 2; budget += 2
+
+We ease restrictions on internal movement, allowing migration only for workers in key
+industries like construction and energy. This helps bolster critical sectors while keeping urban
+populations under control.

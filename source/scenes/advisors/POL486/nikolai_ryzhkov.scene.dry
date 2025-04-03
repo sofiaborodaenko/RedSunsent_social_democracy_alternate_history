@@ -29,7 +29,7 @@ subtitle: In contrast to Gorbachev’s approach, Ryzhkov prioritized a less radi
 view-if: inflation > 10
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
-on-arrival: inflation -= (0.02*inflation); popular_approval += 1; reformer_approval -= 1; advisor_action_timer = 6
+on-arrival: inflation -= 2; popular_approval += 1; reformer_approval -= 1; advisor_action_timer = 6
 
 The introduction of heavy government regulations halts the transfer of market control from the government to the private sector.
 

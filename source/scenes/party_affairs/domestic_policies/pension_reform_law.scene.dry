@@ -1,4 +1,4 @@
-Pension Reform Law (Domestic Policy)
+title: Pension Reform Law (Domestic Policy)
 new-page: true
 is-card: true
 view-if: year >= 1985 and year <= 1988 and pension_reform_law_special == 0

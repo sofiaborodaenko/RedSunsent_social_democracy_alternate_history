@@ -1,0 +1,36 @@
+title: Coup
+new-page: true
+tags: event
+view-if: year == 1991
+max-visits: 1
+face-image: img/POL486_img/coup.jpeg
+
+= Coup
+
+Failed attempt by the communist party leaders to take over Gorbachev. The leaders did not agree with the reforms that Gorbachev was putting through as well as the loss of control over countries. The Coup only lasted two days.
+
+- @support_reform
+- @communist_support
+- @come_to_agreement
+
+@support_reform
+title: Let's support the Reforms
+subtitle: Supporting the current government 
+on-arrival: reformer_approval += 1; hardliner_approval -= 1
+
+Support Gorbachev with the reforms and go against the communist party ultimately leading to the end of the coup.
+
+@communist_support
+title: Communist support 
+subtitle: Put forth a state of emergency  
+on-arrival: reformer_approval -= 1; hardliner_approval += 2
+
+Disagree with the reforms and support the communist leaders and put forth a state of emergency. Citizens will be in conflict with soldiers. 
+
+@come_to_agreement
+title: Let's come to an agreement
+subtitle: Come to an agreement with the reformers and hardliners to stop the coup
+on-arrival: reformer_approval += 2; hardliner_approval += 2
+
+Negotiate a deal with the communist leaders 
+

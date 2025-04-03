@@ -1,0 +1,52 @@
+title: “I Cannot Forsake My Principles”
+subtitle: Nina Andreyeva, a school teacher, has authored a letter railing against glasnost and perestroika 
+new-page: true
+tags: event
+view-if: year == 1987 and month == 11
+on-arrival: reformer_approval -= 2; moderate_approval -= 1
+max-visits: 1
+face-image: img/POL486_img/forsake_principles.jpg
+
+= “I Cannot Forsake My Principles”
+
+*“It seems to me that the question of the role and position of socialist ideology is extremely acute today….This has a particularly painful effect on young people….As Mikhail Gorbachev said at the CPSU Central Committee February plenum, "our actions in the spiritual sphere—and maybe primarily and precisely there—must be guided by our Marxist-Leninist principles. Principles, comrades, must not be compromised on any pretext whatever. This is what we stand for now, and this is what we will continue to stand for. Principles were not given to us as a gift, we have fought for them at crucial turning points in the fatherland's history.”*
+ 
+An essay titled “I Cannot Forsake My Principles”, supposedly written by school teacher Nina Andreyeva, was published in *Sovetskaya Rossiya*. The essay rails against *Glasnost* and *Perestroika*, stating that these policies go against everything the Soviet people stand for and calls for a return to centering the class-struggle in public debate. 
+
+- @denounce_letter
+- @discuss_with_politburo
+- @thoughtful_response
+- @ignore_letter
+
+@denounce_letter
+title: Openly denounce the letter immediately
+choose-if: reformer_approval > 7
+subtitle: This will show our commitment to perestroika and glasnost. We will not capitulate to the hardliners.
+unavailable-subtitle: Your relations with the reformist faction aren’t good enough.
+on-arrival: reformer_approval += 3; moderate_approval -= 1; hardliner_approval -= 3
+
+A denouncement of Stalinism and hardline Communism has been published in *Pravda*, let's hope this will stop the hardliners and provide fuel to continue on the path towards freedom of speech. 
+
+@discuss_with_politburo
+title:  A response can wait; we first need to discuss the incident with the rest of the Politburo. We should try to convince the majority to denounce the letter and commit to reform. If they agree, we’ll publish a response.
+choose-if: hardliner_approval > 7
+subtitle: This may harm our relations with reformist intellectuals, but it’s clear that we can’t upset the hardliners any further. We must first convince them of our correctness.
+unavailable-subtitle: Your relations with the hardliner faction aren’t good enough. 
+on-arrival: popular_approval += 4; reformer_approval += 2; moderate_approval += 2; hardliner_approval -= 1
+
+After a discussion, a denouncement of Stalinism and hardline Communism has been published in *Pravda*. You were able to persuade the majority of the Politburo to denounce the letter and pledge their commitment to *perestroika* and *glasnost*. A portion of the public is relieved that the party does not intend to reverse its liberalizing reforms. 
+
+@thoughtful_response
+title: A response can wait; we first need to discuss the incident with the rest of the Politburo. We can convince the majority to take the critiques in the letter seriously and write a thoughtfully worded response assessing how we can implement policies that do not trample on the basic principles of socialism. If they agree, we’ll publish a response. 
+choose-if: reformer_approval > 7
+subtitle: This may harm our relations with the reformist faction, but it’s clear that we can’t abandon the principles on which the Soviet state was founded. 
+unavailable-subtitle: Your relations with the reformist faction aren’t good enough.
+
+After a discussion, a response accepting the basic criticisms of Andreyeva’s letter has been published in *Pravda*. You were able to persuade the majority of the Politburo to accept that *perestroika* and *glasnost* could not go as far as to denounce the basic principles of socialism. A portion of the public is relieved that the party does not intend to return to capitalism.
+
+@ignore_letter
+title: Ignore the letter, we must continue with *glasnost* and promote free discussion and debate of which the letter is a part. 
+subtitle: In order to continue on the path to socialism, we must not further alienate passionate soviet citizens.
+on-arrival: reformer_approval -= 3; moderate_approval -= 2; hardliner_approval += 4
+
+Ignoring the letter did not lead to the desired outcome. Many newspapers and popular journals refuse to publish subversive materials under the assumption that Andreyeva’s letter represents the party line. However, this has made it clear the Party’s power over society remains strong. 

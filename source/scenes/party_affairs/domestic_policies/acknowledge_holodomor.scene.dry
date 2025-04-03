@@ -1,0 +1,53 @@
+title: Acknowledgement of the Holodomor (Domestic Policy)
+new-page: true
+is-card: true
+view-if: year >= 1985 and year <= 1990 and acknowledge_holodomor_special == 0
+on-arrival: month_actions += 1; acknowledge_holodomor_special = 1
+tags: party_affairs
+card-image: img/POL486_img/holodomor.jpg 
+
+= Acknowledgement of the Holodomor
+
+The acknowledgement of the Holodomor would be an important step in the rectification of
+past horrors, in addition to being ideological consistent with our reforms and the progressive tone of the
+Gorbachev regime. The famine of 1932-33, which devastated Ukraine and led to the deaths of millions,
+has long been denied or downplayed within the Soviet state.
+
+Now, with rising Ukrainian nationalist sentiment, we are considering making a public apology for actions
+conducted by early USSR leadership so as to quell internal division. Also, some view it as simply the
+right thing to do.
+
+While controversial and potentially destabilising, the idea of making such acknowledgements have caused
+much debate in how we should best proceed.
+
+- @day_of_remembrance
+- @remembrance_no_acknowledgment
+- @no_acknowledgment 
+- @deny_deny_deny
+- @easy_discard
+
+@day_of_remembrance
+title: A Day of Remembrance and Acknowledgement of the Genocide
+on-arrival: reformer_approval += 3; hardliner_approval -= 3; popular_approval += 3; budget -= 1; separatism -= 3
+
+We shall acknowledge the Holodomor as a genocide and host a national day of remembrance for its victims in light of the suffering of the Ukrainian people and Kulaks.
+
+@remembrance_no_acknowledgment 
+title: A Day of Remembrance, No Acknowledgement of the Genocide
+on-arrival: reformer_approval += 2; moderate_approval += 1; hardliner_approval -= 2; popular_approval += 3; budget -= 1; separatism -= 2
+
+Recognize the horrors of the Holodomor and schedule an annual day of remembrance.
+That said, acknowledging it as anymore than a terrible part of the broader purges would be politically
+dangerous, and we stop short of labeling it as a “genocide.” Nationalist factions within the USSR and Ukraine would likely cling to such a victory.
+
+@no_acknowledgment
+title: No Acknowledgement of the Genocide
+on-arrival: reformer_approval  -= 3; moderate_approval += 1; hardliner_approval += 2; popular_approval -= 2; separatism += 3
+
+The acknowledgement of any kind of genocide in Ukraine would undermine Soviet unity and give cause to the nationalists. We mustn't give fuel to the fires of these dangerous ideologies. Though naysayers may suggest that not acknowledging its occurrence is just as inflammatory we will not gamble upon such things
+
+@deny_deny_deny
+title: DENY! DENY! DENY!
+on-arrival: reformer_approval -= 4; moderate_approval -= 2; hardliner_approval += 4; popular_approval -= 3; separatism += 4
+
+Any mentions of the ‘so called’ Holodomor “genocide” is anti-Soviet imperialist western separatist destabilising fascist propaganda. Any public acknowledgement of the “genocide” will be met with harsh prison sentences. We defeated nazism once, and we shall again!

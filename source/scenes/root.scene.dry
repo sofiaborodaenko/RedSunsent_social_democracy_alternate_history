@@ -571,7 +571,8 @@ Q.timers = ['party_disunity_card', 'acknowledge_katyn_massacre', 'exiled_disside
             'kpd_policy', 'kpd_ultimatum', 'popular_front_dispute',
             'high_inflation', 'banking_crisis'];
 
-Q.specials = ['acknowledge_katyn_massacre', 'respond_anti_nuclear_movement', 'exiled_dissidents_come_home', 
+Q.specials = ['acknowledge_holodomor_special', 'acknowledge_katyn_massacre', 'respond_anti_nuclear_movement', 
+              'exiled_dissidents_come_home', 
               'baltic_autonomy_proposal', 'fivehundred_days_plan', 'freedom_religion', 
               'geneva_summit', 'law_unearned_income', 'geneva_summit'];
 

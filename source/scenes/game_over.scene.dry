@@ -294,280 +294,373 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
 
-[? if game_achievement_eiserne_front : **Eiserne Front** - form the Iron Front. ?]
+[? if game_achievement_dont_listen_to_wife: **You Never Listen to Your Wife!** - Finish the game without ever consulting Raisa Gorbacheva ?]
 
-[? if game_achievement_civil_war : **Bürgerkrieg** - enter a long civil war. ?]
+[? if game_achievement_go_alone: **Go it Alone** - Never take any advisor actions ?]
 
-[? if game_achievement_einigkeit : **Einigkeit** - reach the end of 1933 without a civil war on easy. ?]
+[? if game_achievement_world_communism: **World Communism** - End the game with high relations with China ?]
 
-[? if game_achievement_einigkeit_und_recht : **Einigkeit und Recht** - reach the end of 1933 without a civil war on normal. ?]
+[? if game_achievement_your_way: **Do It Your Way** - End the game with all Warsaw Pact states and SSRs having separated ?]
 
-[? if game_achievement_einigkeit_und_recht_und_freiheit : **Einigkeit und Recht und Freiheit** - reach the end of 1933 without a civil war on hard. ?]
+[? if game_achievement_unlce_tito: **Uncle Tito** - End the game with Yugoslavia in the Warsaw Pact ?]
 
-[? if game_achievement_schwarz_rot_gold : **Schwarz-Rot-Gold** - reach the end of 1933 without a civil war on historical mode. ?]
+[? if game_achievement_its_eighties: **It's The 80's, Man** - End the game with high support from reformers ?]
 
-[? if game_achievement_victory_for_the_republic: **Sieg für die Republik** - win the civil war. ?]
+[? if game_achievement_reject_modernity: **Reject Modernity, Embrace Tradition** -End the game with high support from the hardliners ?]
 
-[? if game_achievement_bollwerk_der_demokratie: **Bollwerk der Demokratie** - Resist the Prussian Coup and win. ?]
+[? if game_achievement_fell_out_window: **He Just Fell Out of a Window** - Disappear an opposition leader using Chebrikov more than once ?]
 
-[? if game_achievement_red_tzar_of_prussia : **Roter Zar von Preußen** - Otto Braun is President, Chancellor, and Minister-President. ?]
+[? if game_achievement_shrewd_economist: **Shrewd Economist** - Keep inflation below 5% for the entire game ?]
 
-[? if game_achievement_einheitsfront: **Einheitsfront** - Form a government consisting of the SPD and KPD. ?]
+[? if game_achievement_money_matters: **Money Matters** - Keep budget above zero for the entire game ?]
 
-[? if game_achievement_einheitsfront_2: **Sieg für die Einheitsfront** - Form a Left Front that survives the KPD demands. ?]
+[? if game_achievement_had_it: **I've Had It** - Lose your role as General Secretary of the Soviet Union ?]
 
-[? if game_achievement_volksfront: **Volksfront** - Form a government consisting of the SPD, KPD, Z, and DDP. ?]
+[? if game_achievement_wolf_in_shadows: **Wolf in the Shadows** - Lose your role as General Secretary to Boris Yeltsin ?]
 
-[? if game_achievement_grosse_volksfront: **Große Volksfront** - With Joos leading the Center Party and the Conciliators leading the KPD, form a government consisting of the SPD, KPD, Z, and DDP. ?]
+[? if game_achievement_buy_buy_buy: **Buy, Buy, Buy!** - Keep the Soviet Union together, but transition to a market economy ?]
 
-[? if game_achievement_volksfront_2: **Sieg für die Volksfront** - Form a Popular Front that survives the KPD demands. ?]
+[? if game_achievement_golf_tango_oscar: **Golf Tango Foxtrot Oscar** - Leave Afghanistan as soon as possible ?]
 
-[? if game_achievement_constitutional_coalition: **Verfassungskoalition** - form a "constitutional coalition". ?]
+[? if game_achievement_till_last_breath: **Till Our Last Breath** - Stay involved in Afghanistan until the end of the game ?]
 
-[? if game_achievement_weimar_coalition: **Weimarer Koalition** - form a Weimar coalition. ?]
 
-[? if game_achievement_majority_party: **Mehrheitspartei** - form an SPD-only majority government. ?]
+#[? if game_achievement_eiserne_front : **Eiserne Front** - form the Iron Front. ?]
 
-[? if game_achievement_minderheitsregierung: **Minderheitsregierung** - form an SPD minority government. ?]
+#[? if game_achievement_civil_war : **Bürgerkrieg** - enter a long civil war. ?]
 
-[? if game_achievement_volkspartei: **Volkspartei** - the SPD is a People's Party. ?]
+#[? if game_achievement_einigkeit : **Einigkeit** - reach the end of 1933 without a civil war on easy. ?]
 
-[? if game_achievement_sohn_seiner_klasse: **Sohn seiner Klasse** - Ernst Thälmann is either president or chancellor. ?]
+#[? if game_achievement_einigkeit_und_recht : **Einigkeit und Recht** - reach the end of 1933 without a civil war on normal. ?]
 
-[? if game_achievement_versohnler: **Versöhnler** - the Conciliators lead the KPD. ?]
+#[? if game_achievement_einigkeit_und_recht_und_freiheit : **Einigkeit und Recht und Freiheit** - reach the end of 1933 without a civil war on hard. ?]
 
-[? if game_achievement_deport_hitler : **Der österreichische Gefreiter** - deported Hitler ?]
+#[? if game_achievement_schwarz_rot_gold : **Schwarz-Rot-Gold** - reach the end of 1933 without a civil war on historical mode. ?]
 
-[? if game_achievement_wirtschaftspolitik: **Wirtschaftspolitik** - enact an economic plan. ?]
+#[? if game_achievement_victory_for_the_republic: **Sieg für die Republik** - win the civil war. ?]
 
-[? if game_achievement_wirtschaftswunder: **Wirtschaftswunder** - In 1933, have unemployment less than 10%, inflation below 5%, and a budget surplus. ?]
+#[? if game_achievement_bollwerk_der_demokratie: **Bollwerk der Demokratie** - Resist the Prussian Coup and win. ?]
 
-[? if game_achievement_wirtschaftsexperiment: **Wirtschaftsexperiment** - enact two different economic plans. ?]
+#[? if game_achievement_red_tzar_of_prussia : **Roter Zar von Preußen** - Otto Braun is President, Chancellor, and Minister-President. ?]
 
-[? if game_achievement_freie_marktwirtschaft: **Freie Marktwirtschaft** - survive to 1933 without adopting an economic plan. ?]
+#[? if game_achievement_einheitsfront: **Einheitsfront** - Form a government consisting of the SPD and KPD. ?]
 
-[? if game_achievement_equality: **Gleichheit** - pass reforms for women's rights. ?]
+#[? if game_achievement_einheitsfront_2: **Sieg für die Einheitsfront** - Form a Left Front that survives the KPD demands. ?]
 
-[? if game_achievement_hirschfeld: **Hirschfeld** - pass reforms for homosexual rights. ?]
+#[? if game_achievement_volksfront: **Volksfront** - Form a government consisting of the SPD, KPD, Z, and DDP. ?]
 
-[? if game_achievement_women_reichsbanner: **Mädchen in Uniform** - a woman's place is in the Reichsbanner. ?]
+#[? if game_achievement_grosse_volksfront: **Große Volksfront** - With Joos leading the Center Party and the Conciliators leading the KPD, form a government consisting of the SPD, KPD, Z, and DDP. ?]
 
-[? if game_achievement_bruder_zur_sonne: **Brüder, zur Sonne, zur Freiheit** - reduce unemployment, pause reparations, increase women's rights, elect Otto Braun president, and deport Hitler in one playthrough on at least normal difficulty. ?]
+#[? if game_achievement_volksfront_2: **Sieg für die Volksfront** - Form a Popular Front that survives the KPD demands. ?]
 
-[? if game_achievement_die_rote_fahne: **Die Rote Fahne** - join the KPD in their May Day march. ?]
+#[? if game_achievement_constitutional_coalition: **Verfassungskoalition** - form a "constitutional coalition". ?]
 
-[? if game_achievement_panik_im_mittelstand: **Panik im Mittelstand** - SPD new middle class support is at least 50%. ?]
+#[? if game_achievement_weimar_coalition: **Weimarer Koalition** - form a Weimar coalition. ?]
 
-[? if game_achievement_bauernrevolution: **Bauernrevolution** - SPD rural support is at least 50%. ?]
+#[? if game_achievement_majority_party: **Mehrheitspartei** - form an SPD-only majority government. ?]
 
-[? if game_achievement_katholischer_sozialismus: **Katholischer Sozialismus** - SPD Catholic support is at least 50%. ?]
+#[? if game_achievement_minderheitsregierung: **Minderheitsregierung** - form an SPD minority government. ?]
 
-[? if game_achievement_klassenkampf: **Klassenkampf** - SPD worker support is at least 80%, while middle-class and rural supports are less than 20%. ?]
+#[? if game_achievement_volkspartei: **Volkspartei** - the SPD is a People's Party. ?]
 
-[? if game_achievement_raterepublik: **Räterepublik** - begin the transformation to a socialist economy. ?]
+#[? if game_achievement_sohn_seiner_klasse: **Sohn seiner Klasse** - Ernst Thälmann is either president or chancellor. ?]
 
-[? if game_achievement_polykrise: **Polykrise** - survive a capital strike and a fascist coup. ?]
+#[? if game_achievement_versohnler: **Versöhnler** - the Conciliators lead the KPD. ?]
 
-[? if game_achievement_syndikalismus: **Syndikalismus** - support factory takeovers by the workers. ?]
+#[? if game_achievement_deport_hitler : **Der österreichische Gefreiter** - deported Hitler ?]
 
-[? if game_achievement_drei_pfeile: **Drei Pfeile** - defeat a coup without a civil war. ?]
+#[? if game_achievement_wirtschaftspolitik: **Wirtschaftspolitik** - enact an economic plan. ?]
 
-[? if game_achievement_ausnahmezustand: **Ausnahmezustand** - use emergency powers to cancel elections. ?]
+#[? if game_achievement_wirtschaftswunder: **Wirtschaftswunder** - In 1933, have unemployment less than 10%, inflation below 5%, and a budget surplus. ?]
 
-[? if game_achievement_eu: **Vereinigte Staaten von Europa** - form a "European Union". ?]
+#[? if game_achievement_wirtschaftsexperiment: **Wirtschaftsexperiment** - enact two different economic plans. ?]
 
-[? if game_achievement_heidelberger_programm: **Heidelberger Programm** - achieve the goals of the SPD's Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a European Union. ?]
+#[? if game_achievement_freie_marktwirtschaft: **Freie Marktwirtschaft** - survive to 1933 without adopting an economic plan. ?]
 
-[? if game_achievement_verfassungsreform: **Verfassungsreform** - pass a constitutional amendment. ?]
+#[? if game_achievement_equality: **Gleichheit** - pass reforms for women's rights. ?]
 
-[? if game_achievement_stolperstein: **Stolperstein** - we lost, but history might memorialize us... ?]
+#[? if game_achievement_hirschfeld: **Hirschfeld** - pass reforms for homosexual rights. ?]
+
+#[? if game_achievement_women_reichsbanner: **Mädchen in Uniform** - a woman's place is in the Reichsbanner. ?]
+
+#[? if game_achievement_bruder_zur_sonne: **Brüder, zur Sonne, zur Freiheit** - reduce unemployment, pause reparations, increase women's rights, elect Otto Braun president, and deport Hitler in one playthrough on at least normal difficulty. ?]
+
+#[? if game_achievement_die_rote_fahne: **Die Rote Fahne** - join the KPD in their May Day march. ?]
+
+#[? if game_achievement_panik_im_mittelstand: **Panik im Mittelstand** - SPD new middle class support is at least 50%. ?]
+
+#[? if game_achievement_bauernrevolution: **Bauernrevolution** - SPD rural support is at least 50%. ?]
+
+#[? if game_achievement_katholischer_sozialismus: **Katholischer Sozialismus** - SPD Catholic support is at least 50%. ?]
+
+#[? if game_achievement_klassenkampf: **Klassenkampf** - SPD worker support is at least 80%, while middle-class and rural supports are less than 20%. ?]
+
+#[? if game_achievement_raterepublik: **Räterepublik** - begin the transformation to a socialist economy. ?]
+
+#[? if game_achievement_polykrise: **Polykrise** - survive a capital strike and a fascist coup. ?]
+
+#[? if game_achievement_syndikalismus: **Syndikalismus** - support factory takeovers by the workers. ?]
+
+#[? if game_achievement_drei_pfeile: **Drei Pfeile** - defeat a coup without a civil war. ?]
+
+#[? if game_achievement_ausnahmezustand: **Ausnahmezustand** - use emergency powers to cancel elections. ?]
+
+#[? if game_achievement_eu: **Vereinigte Staaten von Europa** - form a "European Union". ?]
+
+#[? if game_achievement_heidelberger_programm: **Heidelberger Programm** - achieve the goals of the SPD's Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a European Union. ?]
+
+#[? if game_achievement_verfassungsreform: **Verfassungsreform** - pass a constitutional amendment. ?]
+
+#[? if game_achievement_stolperstein: **Stolperstein** - we lost, but history might memorialize us... ?]
 
 
 
 = Completed Achievements Overall
 
-[? if achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
+[? if achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members ?]
 
-[? if achievement_eiserne_front : **Eiserne Front** - form the Iron Front. ?]
+[? if achievement_dont_listen_to_wife: **You Never Listen to Your Wife!** - Finish the game without ever consulting Raisa Gorbacheva ?]
 
-[? if achievement_civil_war : **Bürgerkrieg** - enter a long civil war. ?]
+[? if achievement_go_alone: **Go it Alone** - Never take any advisor actions ?]
 
-[? if achievement_einigkeit : **Einigkeit** - reach the end of 1933 without a civil war on easy. ?]
+[? if achievement_world_communism: **World Communism** - End the game with high relations with China ?]
 
-[? if achievement_einigkeit_und_recht : **Einigkeit und Recht** - reach the end of 1933 without a civil war on normal. ?]
+[? if achievement_your_way: **Do It Your Way** - End the game with all Warsaw Pact states and SSRs having separated ?]
 
-[? if achievement_einigkeit_und_recht_und_freiheit : **Einigkeit und Recht und Freiheit** - reach the end of 1933 without a civil war on hard. ?]
+[? if achievement_unlce_tito: **Uncle Tito** - End the game with Yugoslavia in the Warsaw Pact ?]
 
-[? if achievement_schwarz_rot_gold : **Schwarz-Rot-Gold** - reach the end of 1933 without a civil war on historical mode. ?]
+[? if achievement_its_eighties: **It's The 80's, Man** - End the game with high support from reformers ?]
 
-[? if achievement_victory_for_the_republic: **Sieg für die Republik** - win the civil war. ?]
+[? if achievement_reject_modernity: **Reject Modernity, Embrace Tradition** -End the game with high support from the hardliners ?]
 
-[? if achievement_bollwerk_der_demokratie: **Bollwerk der Demokratie** - Resist the Prussian Coup and win. ?]
+[? if achievement_fell_out_window: **He Just Fell Out of a Window** - Disappear an opposition leader using Chebrikov more than once ?]
 
-[? if achievement_red_tzar_of_prussia : **Roter Zar von Preußen** - Otto Braun is President, Chancellor, and Minister-President. ?]
+[? if achievement_shrewd_economist: **Shrewd Economist** - Keep inflation below 5% for the entire game ?]
 
-[? if achievement_einheitsfront: **Einheitsfront** - Form a government consisting of the SPD and KPD. ?]
+[? if achievement_money_matters: **Money Matters** - Keep budget above zero for the entire game ?]
 
-[? if achievement_einheitsfront_2: **Sieg für die Einheitsfront** - Form a Left Front that survives the KPD demands. ?]
+[? if achievement_had_it: **I've Had It** - Lose your role as General Secretary of the Soviet Union ?]
 
-[? if achievement_volksfront: **Volksfront** - Form a government consisting of the SPD, KPD, Z, and DDP. ?]
+[? if achievement_wolf_in_shadows: **Wolf in the Shadows** - Lose your role as General Secretary to Boris Yeltsin ?]
 
-[? if achievement_grosse_volksfront: **Große Volksfront** - With Joos leading the Center Party and the Conciliators leading the KPD, form a government consisting of the SPD, KPD, Z, and DDP. ?]
+[? if achievement_buy_buy_buy: **Buy, Buy, Buy!** - Keep the Soviet Union together, but transition to a market economy ?]
 
-[? if achievement_volksfront_2: **Sieg für die Volksfront** - Form a Popular Front that survives the KPD demands. ?]
+[? if achievement_golf_tango_oscar: **Golf Tango Foxtrot Oscar** - Leave Afghanistan as soon as possible ?]
 
-[? if achievement_constitutional_coalition: **Verfassungskoalition** - form a "constitutional coalition". ?]
+[? if achievement_till_last_breath: **Till Our Last Breath** - Stay involved in Afghanistan until the end of the game ?]
 
-[? if achievement_weimar_coalition: **Weimarer Koalition** - form a Weimar coalition. ?]
 
-[? if achievement_majority_party: **Mehrheitspartei** - form an SPD-only majority government. ?]
+#[? if achievement_eiserne_front : **Eiserne Front** - form the Iron Front. ?]
 
-[? if achievement_minderheitsregierung: **Minderheitsregierung** - form an SPD minority government. ?]
+#[? if achievement_civil_war : **Bürgerkrieg** - enter a long civil war. ?]
 
-[? if achievement_volkspartei: **Volkspartei** - the SPD is a People's Party. ?]
+#[? if achievement_einigkeit : **Einigkeit** - reach the end of 1933 without a civil war on easy. ?]
 
-[? if achievement_sohn_seiner_klasse: **Sohn seiner Klasse** - Ernst Thälmann is either president or chancellor. ?]
+#[? if achievement_einigkeit_und_recht : **Einigkeit und Recht** - reach the end of 1933 without a civil war on normal. ?]
 
-[? if achievement_versohnler: **Versöhnler** - the Conciliators lead the KPD. ?]
+#[? if achievement_einigkeit_und_recht_und_freiheit : **Einigkeit und Recht und Freiheit** - reach the end of 1933 without a civil war on hard. ?]
 
-[? if achievement_deport_hitler : **Der österreichische Gefreiter** - deported Hitler ?]
+#[? if achievement_schwarz_rot_gold : **Schwarz-Rot-Gold** - reach the end of 1933 without a civil war on historical mode. ?]
 
-[? if achievement_wirtschaftspolitik: **Wirtschaftspolitik** - enact an economic plan. ?]
+#[? if achievement_victory_for_the_republic: **Sieg für die Republik** - win the civil war. ?]
 
-[? if achievement_wirtschaftswunder: **Wirtschaftswunder** - In 1933, have unemployment less than 10%, inflation below 5%, and a budget surplus. ?]
+#[? if achievement_bollwerk_der_demokratie: **Bollwerk der Demokratie** - Resist the Prussian Coup and win. ?]
 
-[? if achievement_wirtschaftsexperiment: **Wirtschaftsexperiment** - enact two different economic plans. ?]
+#[? if achievement_red_tzar_of_prussia : **Roter Zar von Preußen** - Otto Braun is President, Chancellor, and Minister-President. ?]
 
-[? if achievement_freie_marktwirtschaft: **Freie Marktwirtschaft** - survive to 1933 without adopting an economic plan. ?]
+#[? if achievement_einheitsfront: **Einheitsfront** - Form a government consisting of the SPD and KPD. ?]
 
-[? if achievement_equality: **Gleichheit** - pass reforms for women's rights. ?]
+#[? if achievement_einheitsfront_2: **Sieg für die Einheitsfront** - Form a Left Front that survives the KPD demands. ?]
 
-[? if achievement_hirschfeld: **Hirschfeld** - pass reforms for homosexual rights. ?]
+#[? if achievement_volksfront: **Volksfront** - Form a government consisting of the SPD, KPD, Z, and DDP. ?]
 
-[? if achievement_women_reichsbanner: **Mädchen in Uniform** - a woman's place is in the Reichsbanner. ?]
+#[? if achievement_grosse_volksfront: **Große Volksfront** - With Joos leading the Center Party and the Conciliators leading the KPD, form a government consisting of the SPD, KPD, Z, and DDP. ?]
 
-[? if achievement_bruder_zur_sonne: **Brüder, zur Sonne, zur Freiheit** - reduce unemployment, pause reparations, increase women's rights, elect Otto Braun president, and deport Hitler in one playthrough on at least normal difficulty. ?]
+#[? if achievement_volksfront_2: **Sieg für die Volksfront** - Form a Popular Front that survives the KPD demands. ?]
 
-[? if achievement_die_rote_fahne: **Die Rote Fahne** - join the KPD in their May Day march. ?]
+#[? if achievement_constitutional_coalition: **Verfassungskoalition** - form a "constitutional coalition". ?]
 
-[? if achievement_panik_im_mittelstand: **Panik im Mittelstand** - SPD new middle class support is at least 50%. ?]
+#[? if achievement_weimar_coalition: **Weimarer Koalition** - form a Weimar coalition. ?]
 
-[? if achievement_bauernrevolution: **Bauernrevolution** - SPD rural support is at least 50%. ?]
+#[? if achievement_majority_party: **Mehrheitspartei** - form an SPD-only majority government. ?]
 
-[? if achievement_katholischer_sozialismus: **Katholischer Sozialismus** - SPD Catholic support is at least 50%. ?]
+#[? if achievement_minderheitsregierung: **Minderheitsregierung** - form an SPD minority government. ?]
 
-[? if achievement_klassenkampf: **Klassenkampf** - SPD worker support is at least 80%, while middle-class and rural supports are less than 20%. ?]
+#[? if achievement_volkspartei: **Volkspartei** - the SPD is a People's Party. ?]
 
-[? if achievement_raterepublik: **Räterepublik** - begin the transformation to a socialist economy. ?]
+#[? if achievement_sohn_seiner_klasse: **Sohn seiner Klasse** - Ernst Thälmann is either president or chancellor. ?]
 
-[? if achievement_polykrise: **Polykrise** - survive a capital strike and a fascist coup. ?]
+#[? if achievement_versohnler: **Versöhnler** - the Conciliators lead the KPD. ?]
 
-[? if achievement_syndikalismus: **Syndikalismus** - support factory takeovers by the workers. ?]
+#[? if achievement_deport_hitler : **Der österreichische Gefreiter** - deported Hitler ?]
 
-[? if achievement_drei_pfeile: **Drei Pfeile** - defeat a coup without a civil war. ?]
+#[? if achievement_wirtschaftspolitik: **Wirtschaftspolitik** - enact an economic plan. ?]
 
-[? if achievement_ausnahmezustand: **Ausnahmezustand** - use emergency powers to cancel elections. ?]
+#[? if achievement_wirtschaftswunder: **Wirtschaftswunder** - In 1933, have unemployment less than 10%, inflation below 5%, and a budget surplus. ?]
 
-[? if achievement_eu: **Vereinigte Staaten von Europa** - form a "European Union". ?]
+#[? if achievement_wirtschaftsexperiment: **Wirtschaftsexperiment** - enact two different economic plans. ?]
 
-[? if achievement_heidelberger_programm: **Heidelberger Programm** - achieve the goals of the SPD's Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a European Union. ?]
+#[? if achievement_freie_marktwirtschaft: **Freie Marktwirtschaft** - survive to 1933 without adopting an economic plan. ?]
 
-[? if achievement_verfassungsreform: **Verfassungsreform** - pass a constitutional amendment. ?]
+#[? if achievement_equality: **Gleichheit** - pass reforms for women's rights. ?]
 
-[? if achievement_stolperstein: **Stolperstein** - we lost, but history might memorialize us... ?]
+#[? if achievement_hirschfeld: **Hirschfeld** - pass reforms for homosexual rights. ?]
+
+#[? if achievement_women_reichsbanner: **Mädchen in Uniform** - a woman's place is in the Reichsbanner. ?]
+
+#[? if achievement_bruder_zur_sonne: **Brüder, zur Sonne, zur Freiheit** - reduce unemployment, pause reparations, increase women's rights, elect Otto Braun president, and deport Hitler in one playthrough on at least normal difficulty. ?]
+
+#[? if achievement_die_rote_fahne: **Die Rote Fahne** - join the KPD in their May Day march. ?]
+
+#[? if achievement_panik_im_mittelstand: **Panik im Mittelstand** - SPD new middle class support is at least 50%. ?]
+
+#[? if achievement_bauernrevolution: **Bauernrevolution** - SPD rural support is at least 50%. ?]
+
+#[? if achievement_katholischer_sozialismus: **Katholischer Sozialismus** - SPD Catholic support is at least 50%. ?]
+
+#[? if achievement_klassenkampf: **Klassenkampf** - SPD worker support is at least 80%, while middle-class and rural supports are less than 20%. ?]
+
+#[? if achievement_raterepublik: **Räterepublik** - begin the transformation to a socialist economy. ?]
+
+#[? if achievement_polykrise: **Polykrise** - survive a capital strike and a fascist coup. ?]
+
+#[? if achievement_syndikalismus: **Syndikalismus** - support factory takeovers by the workers. ?]
+
+#[? if achievement_drei_pfeile: **Drei Pfeile** - defeat a coup without a civil war. ?]
+
+#[? if achievement_ausnahmezustand: **Ausnahmezustand** - use emergency powers to cancel elections. ?]
+
+#[? if achievement_eu: **Vereinigte Staaten von Europa** - form a "European Union". ?]
+
+#[? if achievement_heidelberger_programm: **Heidelberger Programm** - achieve the goals of the SPD's Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a European Union. ?]
+
+#[? if achievement_verfassungsreform: **Verfassungsreform** - pass a constitutional amendment. ?]
+
+#[? if achievement_stolperstein: **Stolperstein** - we lost, but history might memorialize us... ?]
 
 
 = Incomplete Achievements
 
-[? if not achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
+[? if not achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members ?]
 
-[? if not achievement_eiserne_front : **Eiserne Front** - form the Iron Front. ?]
+[? if not achievement_dont_listen_to_wife: **You Never Listen to Your Wife!** - Finish the game without ever consulting Raisa Gorbacheva ?]
 
-[? if not achievement_civil_war : **Bürgerkrieg** - enter a long civil war. ?]
+[? if not achievement_go_alone: **Go it Alone** - Never take any advisor actions ?]
 
-[? if not achievement_einigkeit : **Einigkeit** - reach the end of 1933 without a civil war on easy. ?]
+[? if not achievement_world_communism: **World Communism** - End the game with high relations with China ?]
 
-[? if not achievement_einigkeit_und_recht : **Einigkeit und Recht** - reach the end of 1933 without a civil war on normal. ?]
+[? if not achievement_your_way: **Do It Your Way** - End the game with all Warsaw Pact states and SSRs having separated ?]
 
-[? if not achievement_einigkeit_und_recht_und_freiheit : **Einigkeit und Recht und Freiheit** - reach the end of 1933 without a civil war on hard. ?]
+[? if not achievement_unlce_tito: **Uncle Tito** - End the game with Yugoslavia in the Warsaw Pact ?]
 
-[? if not achievement_schwarz_rot_gold : **Schwarz-Rot-Gold** - reach the end of 1933 without a civil war on historical mode. ?]
+[? if not achievement_its_eighties: **It's The 80's, Man** - End the game with high support from reformers ?]
 
-[? if not achievement_victory_for_the_republic: **Sieg für die Republik** - win the civil war. ?]
+[? if not achievement_reject_modernity: **Reject Modernity, Embrace Tradition** -End the game with high support from the hardliners ?]
 
-[? if not achievement_bollwerk_der_demokratie: **Bollwerk der Demokratie** - Resist the Prussian Coup and win. ?]
+[? if not achievement_fell_out_window: **He Just Fell Out of a Window** - Disappear an opposition leader using Chebrikov more than once ?]
 
-[? if not achievement_red_tzar_of_prussia : **Roter Zar von Preußen** - Otto Braun is President, Chancellor, and Minister-President. ?]
+[? if not achievement_shrewd_economist: **Shrewd Economist** - Keep inflation below 5% for the entire game ?]
 
-[? if not achievement_einheitsfront: **Einheitsfront** - Form a government consisting of the SPD and KPD. ?]
+[? if not achievement_money_matters: **Money Matters** - Keep budget above zero for the entire game ?]
 
-[? if not achievement_einheitsfront_2: **Sieg für die Einheitsfront** - Form a Left Front that survives the KPD demands. ?]
+[? if not achievement_had_it: **I've Had It** - Lose your role as General Secretary of the Soviet Union ?]
 
-[? if not achievement_volksfront: **Volksfront** - Form a government consisting of the SPD, KPD, Z, and DDP. ?]
+[? if not achievement_wolf_in_shadows: **Wolf in the Shadows** - Lose your role as General Secretary to Boris Yeltsin ?]
 
-[? if not achievement_grosse_volksfront: **Große Volksfront** - With Joos leading the Center Party and the Conciliators leading the KPD, form a government consisting of the SPD, KPD, Z, and DDP. ?]
+[? if not achievement_buy_buy_buy: **Buy, Buy, Buy!** - Keep the Soviet Union together, but transition to a market economy ?]
 
-[? if not achievement_volksfront_2: **Sieg für die Volksfront** - Form a Popular Front that survives the KPD demands. ?]
+[? if not achievement_golf_tango_oscar: **Golf Tango Foxtrot Oscar** - Leave Afghanistan as soon as possible ?]
 
-[? if not achievement_constitutional_coalition: **Verfassungskoalition** - form a "constitutional coalition". ?]
+[? if not achievement_till_last_breath: **Till Our Last Breath** - Stay involved in Afghanistan until the end of the game ?]
 
-[? if not achievement_weimar_coalition: **Weimarer Koalition** - form a Weimar coalition. ?]
 
-[? if not achievement_majority_party: **Mehrheitspartei** - form an SPD-only majority government. ?]
+#[? if not achievement_eiserne_front : **Eiserne Front** - form the Iron Front. ?]
 
-[? if not achievement_minderheitsregierung: **Minderheitsregierung** - form an SPD minority government. ?]
+#[? if not achievement_civil_war : **Bürgerkrieg** - enter a long civil war. ?]
 
-[? if not achievement_volkspartei: **Volkspartei** - the SPD is a People's Party. ?]
+#[? if not achievement_einigkeit : **Einigkeit** - reach the end of 1933 without a civil war on easy. ?]
 
-[? if not achievement_sohn_seiner_klasse: **Sohn seiner Klasse** - Ernst Thälmann is either president or chancellor. ?]
+#[? if not achievement_einigkeit_und_recht : **Einigkeit und Recht** - reach the end of 1933 without a civil war on normal. ?]
 
-[? if not achievement_versohnler: **Versöhnler** - the Conciliators lead the KPD. ?]
+#[? if not achievement_einigkeit_und_recht_und_freiheit : **Einigkeit und Recht und Freiheit** - reach the end of 1933 without a civil war on hard. ?]
 
-[? if not achievement_deport_hitler : **Der österreichische Gefreiter** - deported Hitler ?]
+#[? if not achievement_schwarz_rot_gold : **Schwarz-Rot-Gold** - reach the end of 1933 without a civil war on historical mode. ?]
 
-[? if not achievement_wirtschaftspolitik: **Wirtschaftspolitik** - enact an economic plan. ?]
+#[? if not achievement_victory_for_the_republic: **Sieg für die Republik** - win the civil war. ?]
 
-[? if not achievement_wirtschaftswunder: **Wirtschaftswunder** - In 1933, have unemployment less than 10%, inflation below 5%, and a budget surplus. ?]
+#[? if not achievement_bollwerk_der_demokratie: **Bollwerk der Demokratie** - Resist the Prussian Coup and win. ?]
 
-[? if not achievement_wirtschaftsexperiment: **Wirtschaftsexperiment** - enact two different economic plans. ?]
+#[? if not achievement_red_tzar_of_prussia : **Roter Zar von Preußen** - Otto Braun is President, Chancellor, and Minister-President. ?]
 
-[? if not achievement_freie_marktwirtschaft: **Freie Marktwirtschaft** - survive to 1933 without adopting an economic plan. ?]
+#[? if not achievement_einheitsfront: **Einheitsfront** - Form a government consisting of the SPD and KPD. ?]
 
-[? if not achievement_equality: **Gleichheit** - pass reforms for women's rights. ?]
+#[? if not achievement_einheitsfront_2: **Sieg für die Einheitsfront** - Form a Left Front that survives the KPD demands. ?]
 
-[? if not achievement_hirschfeld: **Hirschfeld** - pass reforms for homosexual rights. ?]
+#[? if not achievement_volksfront: **Volksfront** - Form a government consisting of the SPD, KPD, Z, and DDP. ?]
 
-[? if not achievement_women_reichsbanner: **Mädchen in Uniform** - a woman's place is in the Reichsbanner. ?]
+#[? if not achievement_grosse_volksfront: **Große Volksfront** - With Joos leading the Center Party and the Conciliators leading the KPD, form a government consisting of the SPD, KPD, Z, and DDP. ?]
 
-[? if not achievement_bruder_zur_sonne: **Brüder, zur Sonne, zur Freiheit** - reduce unemployment, pause reparations, increase women's rights, elect Otto Braun president, and deport Hitler in one playthrough on at least normal difficulty. ?]
+#[? if not achievement_volksfront_2: **Sieg für die Volksfront** - Form a Popular Front that survives the KPD demands. ?]
 
-[? if not achievement_die_rote_fahne: **Die Rote Fahne** - join the KPD in their May Day march. ?]
+#[? if not achievement_constitutional_coalition: **Verfassungskoalition** - form a "constitutional coalition". ?]
 
-[? if not achievement_panik_im_mittelstand: **Panik im Mittelstand** - SPD new middle class support is at least 50%. ?]
+#[? if not achievement_weimar_coalition: **Weimarer Koalition** - form a Weimar coalition. ?]
 
-[? if not achievement_bauernrevolution: **Bauernrevolution** - SPD rural support is at least 50%. ?]
+#[? if not achievement_majority_party: **Mehrheitspartei** - form an SPD-only majority government. ?]
 
-[? if not achievement_katholischer_sozialismus: **Katholischer Sozialismus** - SPD Catholic support is at least 50%. ?]
+#[? if not achievement_minderheitsregierung: **Minderheitsregierung** - form an SPD minority government. ?]
 
-[? if not achievement_klassenkampf: **Klassenkampf** - SPD worker support is at least 80%, while middle-class and rural supports are less than 20%. ?]
+#[? if not achievement_volkspartei: **Volkspartei** - the SPD is a People's Party. ?]
 
-[? if not achievement_raterepublik: **Räterepublik** - begin the transformation to a socialist economy. ?]
+#[? if not achievement_sohn_seiner_klasse: **Sohn seiner Klasse** - Ernst Thälmann is either president or chancellor. ?]
 
-[? if not achievement_polykrise: **Polykrise** - survive a capital strike and a fascist coup. ?]
+#[? if not achievement_versohnler: **Versöhnler** - the Conciliators lead the KPD. ?]
 
-[? if not achievement_syndikalismus: **Syndikalismus** - support factory takeovers by the workers. ?]
+#[? if not achievement_deport_hitler : **Der österreichische Gefreiter** - deported Hitler ?]
 
-[? if not achievement_drei_pfeile: **Drei Pfeile** - defeat a coup without a civil war. ?]
+#[? if not achievement_wirtschaftspolitik: **Wirtschaftspolitik** - enact an economic plan. ?]
 
-[? if not achievement_ausnahmezustand: **Ausnahmezustand** - use emergency powers to cancel elections. ?]
+#[? if not achievement_wirtschaftswunder: **Wirtschaftswunder** - In 1933, have unemployment less than 10%, inflation below 5%, and a budget surplus. ?]
 
-[? if not achievement_eu: **Vereinigte Staaten von Europa** - form a "European Union". ?]
+#[? if not achievement_wirtschaftsexperiment: **Wirtschaftsexperiment** - enact two different economic plans. ?]
 
-[? if not achievement_heidelberger_programm: **Heidelberger Programm** - achieve the goals of the SPD's Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a European Union. ?]
+#[? if not achievement_freie_marktwirtschaft: **Freie Marktwirtschaft** - survive to 1933 without adopting an economic plan. ?]
 
-[? if not achievement_verfassungsreform: **Verfassungsreform** - pass a constitutional amendment. ?]
+#[? if not achievement_equality: **Gleichheit** - pass reforms for women's rights. ?]
 
-[? if not achievement_stolperstein: **Stolperstein** - we lost, but history might memorialize us... ?]
+#[? if not achievement_hirschfeld: **Hirschfeld** - pass reforms for homosexual rights. ?]
+
+#[? if not achievement_women_reichsbanner: **Mädchen in Uniform** - a woman's place is in the Reichsbanner. ?]
+
+#[? if not achievement_bruder_zur_sonne: **Brüder, zur Sonne, zur Freiheit** - reduce unemployment, pause reparations, increase women's rights, elect Otto Braun president, and deport Hitler in one playthrough on at least normal difficulty. ?]
+
+#[? if not achievement_die_rote_fahne: **Die Rote Fahne** - join the KPD in their May Day march. ?]
+
+#[? if not achievement_panik_im_mittelstand: **Panik im Mittelstand** - SPD new middle class support is at least 50%. ?]
+
+#[? if not achievement_bauernrevolution: **Bauernrevolution** - SPD rural support is at least 50%. ?]
+
+#[? if not achievement_katholischer_sozialismus: **Katholischer Sozialismus** - SPD Catholic support is at least 50%. ?]
+
+#[? if not achievement_klassenkampf: **Klassenkampf** - SPD worker support is at least 80%, while middle-class and rural supports are less than 20%. ?]
+
+#[? if not achievement_raterepublik: **Räterepublik** - begin the transformation to a socialist economy. ?]
+
+#[? if not achievement_polykrise: **Polykrise** - survive a capital strike and a fascist coup. ?]
+
+#[? if not achievement_syndikalismus: **Syndikalismus** - support factory takeovers by the workers. ?]
+
+#[? if not achievement_drei_pfeile: **Drei Pfeile** - defeat a coup without a civil war. ?]
+
+#[? if not achievement_ausnahmezustand: **Ausnahmezustand** - use emergency powers to cancel elections. ?]
+
+#[? if not achievement_eu: **Vereinigte Staaten von Europa** - form a "European Union". ?]
+
+#[? if not achievement_heidelberger_programm: **Heidelberger Programm** - achieve the goals of the SPD's Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a European Union. ?]
+
+#[? if not achievement_verfassungsreform: **Verfassungsreform** - pass a constitutional amendment. ?]
+
+#[? if not achievement_stolperstein: **Stolperstein** - we lost, but history might memorialize us... ?]
 
 
 @end_game

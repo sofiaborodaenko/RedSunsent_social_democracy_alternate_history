@@ -11,12 +11,13 @@ Herein is relevant information regarding the government, politics and organizati
 - @government: Soviet System of Government
 - @soviet_timeline: Timeline of Soviet Leaders
 - @curr_gov: Current Government Details
-- @terms: Political Terms
+- @terms: Political Terms USSR
 - @demographics: Religious Groups
 - @relations: International Relations
 - @sov_ssr: Soviet SSRs
 - @organization: Organizations
 - @factions: Soviet Satellite States
+- @additional_info: Additional Info – NATO members.
 - @backSpecialScene: Exit library.
 
 @government
@@ -33,31 +34,23 @@ Germany is divided into a number of states, each of which have their own governm
 @soviet_timeline
 go-to: menu
 
-= Timeline of the SPD and the Republic (until 1928)
+= Timeline of Soviet Leaders
 
-**1875**: The SPD is formed as a merger of the General German Workers' Association, founded by Ferdinand Lassalle, and the Social Democratic Workers' Party of Germany, led by Wilhelm Liebknecht and August Bebel. Eventually, the SPD grows to become the largest party in the German Empire.
+**Lenin**: Vladimir Lenin was in power from 1922-1924. He founded the Russian Communist Party, led the Russian Revolution and helped establish the Soviet Union. He died in 1924 after a stroke.
 
-**1914**: The Great War begins. The SPD votes in favor of war credits, with substantial internal dissent. This begins a policy of *Burgfriedenspolitik*, a general peace between all political parties and trade unions.
+**Stalin**: Joseph Stalin was in power from 1924-1953. He killed millions through starvation and purges in the 1930s to consolidate his power, and annexed many countries in Eastern Europe after World War Two. He died in 1953 after a cerebral hemorrhage.
 
-**1917**: The USPD, a left-wing anti-war split from the SPD, is formed.
+**Malenkov**: Georgy Malenkov was in power in 1953. He rose to power after Stalin’s death, and quickly lost his influence to Khruschev by the end of the year. He died in 1988.
 
-**1918**: Following defeats in the war and uprisings by soldiers, sailors, and workers, SPD leader Philip Scheidemann proclaims the German Republic, and Kaiser Wilhelm II abdicates from his throne. An armistice is declared, ending the Great War. Conflict between center-left social democrats and far-left radicals erupts in the streets of Berlin and elsewhere.
+**Khrushchev**: Nikita Khrushchev was in power from 1953-1964. He was focused on de-Stalinization, and moving away from isolationism. He died in 1971.
 
-**1919**: The Spartacist Uprising, in which communist workers attempt to seize control of government, is launched. The uprising is defeated by the Social Democratic government, now led by President Friedrich Ebert and Chancellor Philipp Scheidemann, with the support of the far-right Freikorps militas. The two key leaders of the uprising, Rosa Luxemburg and Karl Liebknecht, are murdered by the Freikorps. The Treaty of Versailles is signed under great protest from all political factions in Germany, officially ending the Great War. The Weimar Constitution is signed. The first "Weimar Coalition" government is formed, led by the SPD, DDP, and Center (Z) parties.
+**Brezhnev**: Leonid Brezhnev was in power from 1964-1982. He attempted to expand relations with the United States in a policy he termed Détente, which defined the Soviet Union’s international relations. He adopted a policy of intervention in Eastern Europe, termed the Brezhnev Doctrine, and notably ordered the USSR to invade Afghanistan in 1979. He died in 1982 from a heart attack.
 
-**1920**: The Kapp Putsch, an attempt by reactionary actors within the military to take power, is launched, and is defeated by the workers with a general strike. This is followed by left-wing uprisings in the Ruhr, which are defeated by the Reichswehr and Freikorps. The Weimar Coalition is defeated in the elections, with the right and far left increasing in vote share. Elected governments in this period are very unstable, often only lasting a matter of months. There is a split in the USPD, with the majority faction joining with the KPD and the Soviet Union's Communist International (Comintern) alliance.
+**Andropov**: Yuri Andropov was in power from 1982-1984. He was the former head of the KGB. He played an important role in elevating Gorbachev in the Party, and wanted Gorbachev to become his succesor. He died of kidney failure in 1984.
 
-**1921**: Communist uprisings in Saxony and Hamburg are defeated. Matthias Erzberger, the Center Party leader who signed the Versailles Treaty, is assassinated.
+**Chernenko**: Konstantin Chernenko was in power from 1984-1985. He died from emphysema in 1985.
 
-**1922**: Walther Rathenau, the DDP Foreign Minister, is assassinated. The SPD reunites with most of the remaining USPD.
-
-**1923**: Hyperinflation begins, largely due to the economic policy of "passive resistance" against the French occupation of the Ruhr and the Versailles reparations. The currency is rapidly devalued as prices for necessities rise to billions of Reichsmarks. The government launches a *Reichsexekution* against Saxony, which was led by a joint SPD-KPD government. The Nazi "Beer Hall Putsch" is launched in Munich, and fails, with the arrest of Hitler. Eventually, new policies manage to stabilize the currency, and the French occupation ends.
-
-**1924**: Parliamentary elections are held in May and December, the latter leading to the bourgeois-right governments that last until 1928. Germany begins to enter a period of relative stability, with the end of the hyperinflation crisis. Hitler is released from prison.
-
-**1925**:  President Friedrich Ebert dies, and new presidential elections are held, leading to the narrow election of Paul von Hindenburg in the second round. Hindenburg is a war hero and a right-wing reactionary. The SPD adopts the Heidelberg Program as its party platform. 
-
-**1926**: A referendum on the expropriation of the princes, supported by the SPD and KPD, fails.
+**Gorbachev**: Mikhail Gorbachev was in power from 1985-1991 and was the last leader of the Soviet Union. He was known for the policies of Glasnost and Perestroika in an attempt to modernize the Soviet Union for the globalized world. Gorbachev died in 2022.
 
 @curr_gov
 go-to: cabinet if spd_in_government; menu if not spd_in_government
@@ -97,6 +90,26 @@ SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in g
 
 @terms
 go-to: menu
+
+= Political Terms
+
+**Command/Centralized economy:** An economic system where the means of production are publicly owned, and economic activity is controlled by a central authority that assigns quantitative production goals and allots raw materials to productive enterprises.
+
+**Communism:** The political and economic ideology which aims to replace private property and a profit-based economy with public ownership and communal control of the means of production.
+
+**De-stalinization:** The process of condemning and undoing the reforms of Joseph Stalin, which began after his death in 1953.
+
+**Glasnost:** Gorbachev’s policy of open discussion of political issues
+
+**Perestroika:** Gorbachev’s policy of economic and political restructuring of the USSR
+
+**Politburo:** Supreme policy making body of the Soviet Union’s Communist Party
+
+**Samizdat:** Unofficially published, illicit literature in the Soviet Union that often critiques the Soviet government and Communism
+
+**Soviet:** Initially defined as a governing council in the USSR that operated at all levels of authority. This term was broadened to define the people of the Soviet Union themselves.
+
+**Stalinism:** The ideology associated with Joseph Stalin. Initially associated with strict dictation of Marxist-Leninist ideas and order within society, it later came to be connected with terror and totalitarian rule.
 
 @cabinet
 go-to: menu
@@ -274,6 +287,11 @@ Neorevisionists focus on defending the republic and expanding democracy, while a
 Strength: [+ neorevisionist_strength : strength +]
 
 Dissent: [+ neorevisionist_dissent : dissent +]
+
+@additional_info
+go-to: menu
+
+= Additional Info – NATO members
 
 
 @figures

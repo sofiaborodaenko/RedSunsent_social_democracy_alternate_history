@@ -294,8 +294,6 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
 
-
-
 [? if game_achievement_eiserne_front : **Eiserne Front** - form the Iron Front. ?]
 
 [? if game_achievement_civil_war : **Bürgerkrieg** - enter a long civil war. ?]
@@ -388,8 +386,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 = Completed Achievements Overall
 
-[? if game_achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
-
+[? if achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
 
 [? if achievement_eiserne_front : **Eiserne Front** - form the Iron Front. ?]
 
@@ -482,9 +479,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 = Incomplete Achievements
 
-[? if not game_achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
-
-
+[? if not achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
 
 [? if not achievement_eiserne_front : **Eiserne Front** - form the Iron Front. ?]
 

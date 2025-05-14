@@ -286,13 +286,13 @@ We have helped to form a European Union to bring peace and prosperity to the con
 
 @achievements
 title: Achievements
-view-if: achievement_game_completed == 1
+#view-if: achievement_game_completed == 1
 tags: endings
 go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 = Completed Achievements in this Playthrough
 
-#[? if game_achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
+[? if game_achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
 
 [? if game_achievement_eiserne_front : **Eiserne Front** - form the Iron Front. ?]
 
@@ -386,7 +386,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 = Completed Achievements Overall
 
-#[? if achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
+[? if achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
 
 [? if achievement_eiserne_front : **Eiserne Front** - form the Iron Front. ?]
 
@@ -479,7 +479,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 = Incomplete Achievements
 
-#[? if not achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
+[? if not achievement_yedinstvo : **Yedinstvo** - Finish the game without a coup from Politburo members. ?]
 
 [? if not achievement_eiserne_front : **Eiserne Front** - form the Iron Front. ?]
 
